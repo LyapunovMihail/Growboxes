@@ -14,7 +14,7 @@ var app = express();
 app.set('port', config.get('port'));
 
 app.engine('ejs', require('ejs-locals'));
-app.set('views', __dirname + '/template');
+app.set('views', __dirname);
 app.set('view engine', 'ejs');
 
 app.use(express.favicon());
@@ -41,7 +41,7 @@ app.use(require('./middleware/loadUser'));
 app.use(app.router);
 require('./routes')(app);
 
-app.use(express.static(path.join(__dirname, '/template/shop')));
+app.use(express.static(path.join(__dirname, '/public/shop')));
 
 
 app.use(function(err,req,res, next) {
