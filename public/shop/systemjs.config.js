@@ -11,6 +11,7 @@
     // map tells the System loader where to look for things
     map: {
       // our app is within the app folder
+      scripts:'assets/js/',
       shop: '/',
       // angular bundles
       '@angular/core': 'npm:@angular/core/bundles/core.umd.js',
@@ -28,9 +29,13 @@
     },
     // packages tells the System loader how to load when no filename and/or no extension
     packages: {
+      scripts: {
+        format: 'global',
+        defaultExtension: 'js'
+      },
       shop: {
         main: './main.js',
-        defaultExtension: 'js'
+        defaultExtension: 'js',
       },
       rxjs: {
         defaultExtension: 'js'
@@ -38,63 +43,6 @@
       'angular-in-memory-web-api': {
         main: './index.js',
         defaultExtension: 'js'
-      }
-    },
-
-    meta: { 
-      'assets/js/widgets.js': { 
-        format: 'global' 
-      }, 
-      'assets/js/jquery.js': { 
-        format: 'global' 
-      },
-      'assets/js/google-code-prettify/prettify.js': { 
-        format: 'global' 
-      },
-      'assets/js/bootstrap-transition.js': { 
-        format: 'global' 
-      },
-      'assets/js/bootstrap-modal.js': { 
-        format: 'global' 
-      },
-      'assets/js/bootstrap-scrollspy.js': { 
-        format: 'global' 
-      },
-      'assets/js/bootstrap-alert.js': { 
-        format: 'global' 
-      },
-      'assets/js/bootstrap-dropdown.js': { 
-        format: 'global' 
-      },
-      'assets/js/bootstrap-tab.js': { 
-        format: 'global' 
-      },
-      'assets/js/bootstrap-tooltip.js': { 
-        format: 'global' 
-      },
-      'assets/js/bootstrap-popover.js': { 
-        format: 'global' 
-      },
-      'assets/js/bootstrap-button.js': { 
-        format: 'global' 
-      },
-      'assets/js/bootstrap-collapse.js': { 
-        format: 'global' 
-      },
-      'assets/js/bootstrap-carousel.js': { 
-        format: 'global' 
-      },
-      'assets/js/bootstrap-typeahead.js': { 
-        format: 'global' 
-      },
-      'assets/js/bootstrap-affix.js': { 
-        format: 'global' 
-      },
-      'assets/js/jquery.lightbox-0.5.js': { 
-        format: 'global' 
-      },
-      'assets/js/bootsshoptgl.js': { 
-        format: 'global' 
       }
     }
 

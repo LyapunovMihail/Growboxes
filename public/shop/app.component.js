@@ -9,25 +9,6 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 var core_1 = require("@angular/core");
-require("assets/js/widgets.js");
-require("assets/js/jquery.js");
-require("assets/js/google-code-prettify/prettify.js");
-require("assets/js/application.js");
-require("assets/js/bootstrap-transition.js");
-require("assets/js/bootstrap-modal.js");
-require("assets/js/bootstrap-scrollspy.js");
-require("assets/js/bootstrap-alert.js");
-require("assets/js/bootstrap-dropdown.js");
-require("assets/js/bootstrap-tab.js");
-require("assets/js/bootstrap-tooltip.js");
-require("assets/js/bootstrap-popover.js");
-require("assets/js/bootstrap-button.js");
-require("assets/js/bootstrap-collapse.js");
-require("assets/js/bootstrap-carousel.js");
-require("assets/js/bootstrap-typeahead.js");
-require("assets/js/bootstrap-affix.js");
-require("assets/js/jquery.lightbox-0.5.js");
-require("assets/js/bootsshoptgl.js");
 var AppComponent = (function () {
     function AppComponent() {
     }

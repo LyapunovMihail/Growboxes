@@ -44,7 +44,27 @@
     <script src="systemjs.config.js"></script>
     <!--<script src="https://cdn.rawgit.com/angular/angular.io/b3c65a9/public/docs/_examples/_boilerplate/systemjs.config.web.js"></script>-->
     <script>
+     System.import('scripts/widgets.js').then(null, console.error.bind(console));
+      System.import('scripts/jquery.js').then(null, console.error.bind(console));
+      System.import('scripts/google-code-prettify/prettify.js').then(null, console.error.bind(console));
+      System.import('scripts/application.js').then(null, console.error.bind(console));
+      System.import('scripts/bootstrap-transition.js').then(null, console.error.bind(console));
+      System.import('scripts/bootstrap-modal.js').then(null, console.error.bind(console));
+      System.import('scripts/bootstrap-scrollspy.js').then(null, console.error.bind(console));
+      System.import('scripts/bootstrap-alert.js').then(null, console.error.bind(console));
+      System.import('scripts/bootstrap-dropdown.js').then(null, console.error.bind(console));
+      System.import('scripts/bootstrap-tab.js').then(null, console.error.bind(console));
+      System.import('scripts/bootstrap-tooltip.js').then(null, console.error.bind(console));
+      System.import('scripts/bootstrap-popover.js').then(null, console.error.bind(console));
+      System.import('scripts/bootstrap-button.js').then(null, console.error.bind(console));
+      System.import('scripts/bootstrap-collapse.js').then(null, console.error.bind(console));
+      System.import('scripts/bootstrap-carousel.js').then(null, console.error.bind(console));
+      System.import('scripts/bootstrap-typeahead.js').then(null, console.error.bind(console));
+      System.import('scripts/bootstrap-affix.js').then(null, console.error.bind(console));
+      System.import('scripts/jquery.lightbox-0.5.js').then(null, console.error.bind(console));
+      System.import('scripts/bootsshoptgl.js').then(null, console.error.bind(console));
       System.import('shop').catch(function(err){ console.error(err); });
+
     </script>
 
   </head>
