@@ -8,19 +8,19 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
-var core_1 = require("@angular/core");
+var core_1 = require('@angular/core');
 var SpecialOfferComponent = (function () {
     function SpecialOfferComponent() {
     }
+    SpecialOfferComponent = __decorate([
+        core_1.Component({
+            selector: 'shop-special-offer',
+            moduleId: module.id,
+            templateUrl: '/special_offer.component.html'
+        }), 
+        __metadata('design:paramtypes', [])
+    ], SpecialOfferComponent);
     return SpecialOfferComponent;
 }());
-SpecialOfferComponent = __decorate([
-    core_1.Component({
-        selector: 'shop-special-offer',
-        moduleId: module.id,
-        templateUrl: '/special_offer.component.html'
-    }),
-    __metadata("design:paramtypes", [])
-], SpecialOfferComponent);
 exports.SpecialOfferComponent = SpecialOfferComponent;
 //# sourceMappingURL=special_offer.component.js.map

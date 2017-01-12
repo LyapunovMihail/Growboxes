@@ -6,10 +6,11 @@ module.exports = function(app) {
 	app.get('/special_offer', require('./frontpage').get);
 	app.get('/home', require('./frontpage').get);
 
+	/*
 	app.get('/login', require('./login').get);
 	app.post('/login', require('./login').post);
 	app.post('/logout', require('./logout').post);
 
 	app.get('/chat', checkAuth, require('./chat').get);
-
+	*/
 }

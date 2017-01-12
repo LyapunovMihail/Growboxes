@@ -8,18 +8,42 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
-var core_1 = require("@angular/core");
+var core_1 = require('@angular/core');
+var $ = require("assets/js/jquery");
 var SidebarComponent = (function () {
     function SidebarComponent() {
     }
+    SidebarComponent.prototype.ngOnInit = function () {
+        console.log("ngOnInit", $("#sidebar .subMenu"));
+        $("#sidebar .subMenu").on("click", function (e) {
+            console.log("ngOnInit.click", e);
+            var el = $(e.target).parent();
+            $(el).toggleClass("open");
+            if ($(el).hasClass("open")) {
+                $(el).find("ul").show();
+            }
+            else {
+                $(el).find("ul").hide();
+            }
+        });
+        /*
+                 // side bar
+            $('.bs-docs-sidenav').affix({
+              offset: {
+                top: function () { return $window.width() <= 980 ? 290 : 210 }
+              , bottom: 270
+              }
+            });
+        */
+    };
+    SidebarComponent = __decorate([
+        core_1.Component({
+            selector: 'shop-sidebar',
+            templateUrl: 'sidebar.component.html'
+        }), 
+        __metadata('design:paramtypes', [])
+    ], SidebarComponent);
     return SidebarComponent;
 }());
-SidebarComponent = __decorate([
-    core_1.Component({
-        selector: 'shop-sidebar',
-        templateUrl: 'sidebar.component.html'
-    }),
-    __metadata("design:paramtypes", [])
-], SidebarComponent);
 exports.SidebarComponent = SidebarComponent;
 //# sourceMappingURL=sidebar.component.js.map

@@ -8,18 +8,18 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
-var core_1 = require("@angular/core");
+var core_1 = require('@angular/core');
 var HomeCarouselComponent = (function () {
     function HomeCarouselComponent() {
     }
+    HomeCarouselComponent = __decorate([
+        core_1.Component({
+            selector: 'shop-home-carousel',
+            templateUrl: 'homeCarousel.component.html'
+        }), 
+        __metadata('design:paramtypes', [])
+    ], HomeCarouselComponent);
     return HomeCarouselComponent;
 }());
-HomeCarouselComponent = __decorate([
-    core_1.Component({
-        selector: 'shop-home-carousel',
-        templateUrl: 'homeCarousel.component.html'
-    }),
-    __metadata("design:paramtypes", [])
-], HomeCarouselComponent);
 exports.HomeCarouselComponent = HomeCarouselComponent;
 //# sourceMappingURL=homeCarousel.component.js.map

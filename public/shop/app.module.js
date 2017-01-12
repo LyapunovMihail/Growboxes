@@ -27,57 +27,57 @@ require("assets/js/bootstrap-typeahead.js");
 require("assets/js/bootstrap-affix.js");
 require("assets/js/jquery.lightbox-0.5.js");
 require("assets/js/bootsshoptgl.js");
-var core_1 = require("@angular/core");
-var platform_browser_1 = require("@angular/platform-browser");
-var app_component_1 = require("./app.component");
-var navbar_component_1 = require("./navbar.component");
-var header_component_1 = require("./header.component");
-var sidebar_component_1 = require("./sidebar.component");
-var footer_component_1 = require("./footer.component");
-var homeCarousel_component_1 = require("./homeCarousel.component");
-var homeBody_component_1 = require("./homeBody.component");
-var special_offer_component_1 = require("./special_offer.component");
-var router_1 = require("@angular/router");
+var core_1 = require('@angular/core');
+var platform_browser_1 = require('@angular/platform-browser');
+var app_component_1 = require('./app.component');
+var navbar_component_1 = require('./navbar.component');
+var header_component_1 = require('./header.component');
+var sidebar_component_1 = require('./sidebar.component');
+var footer_component_1 = require('./footer.component');
+var homeCarousel_component_1 = require('./homeCarousel.component');
+var homeBody_component_1 = require('./homeBody.component');
+var special_offer_component_1 = require('./special_offer.component');
+var router_1 = require('@angular/router');
 var AppModule = (function () {
     function AppModule() {
     }
+    AppModule = __decorate([
+        core_1.NgModule({
+            imports: [
+                platform_browser_1.BrowserModule,
+                router_1.RouterModule.forRoot([
+                    {
+                        path: '',
+                        redirectTo: '/home',
+                        pathMatch: 'full'
+                    },
+                    {
+                        path: 'home',
+                        component: homeBody_component_1.HomeBodyComponent
+                    },
+                    {
+                        path: 'special_offer',
+                        component: special_offer_component_1.SpecialOfferComponent
+                    }
+                ])
+            ],
+            declarations: [
+                app_component_1.AppComponent,
+                navbar_component_1.NavbarComponent,
+                header_component_1.HeaderComponent,
+                sidebar_component_1.SidebarComponent,
+                homeCarousel_component_1.HomeCarouselComponent,
+                homeBody_component_1.HomeBodyComponent,
+                footer_component_1.FooterComponent,
+                special_offer_component_1.SpecialOfferComponent
+            ],
+            bootstrap: [
+                app_component_1.AppComponent
+            ]
+        }), 
+        __metadata('design:paramtypes', [])
+    ], AppModule);
     return AppModule;
 }());
-AppModule = __decorate([
-    core_1.NgModule({
-        imports: [
-            platform_browser_1.BrowserModule,
-            router_1.RouterModule.forRoot([
-                {
-                    path: '',
-                    redirectTo: '/home',
-                    pathMatch: 'full'
-                },
-                {
-                    path: 'home',
-                    component: homeBody_component_1.HomeBodyComponent
-                },
-                {
-                    path: 'special_offer',
-                    component: special_offer_component_1.SpecialOfferComponent
-                }
-            ])
-        ],
-        declarations: [
-            app_component_1.AppComponent,
-            navbar_component_1.NavbarComponent,
-            header_component_1.HeaderComponent,
-            sidebar_component_1.SidebarComponent,
-            homeCarousel_component_1.HomeCarouselComponent,
-            homeBody_component_1.HomeBodyComponent,
-            footer_component_1.FooterComponent,
-            special_offer_component_1.SpecialOfferComponent
-        ],
-        bootstrap: [
-            app_component_1.AppComponent
-        ]
-    }),
-    __metadata("design:paramtypes", [])
-], AppModule);
 exports.AppModule = AppModule;
 //# sourceMappingURL=app.module.js.map
