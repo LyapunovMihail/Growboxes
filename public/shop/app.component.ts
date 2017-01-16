@@ -4,7 +4,7 @@ declare var $:any;
 @Component({
   selector: 'my-app',
   moduleId: module.id,
-  templateUrl: '/index.html'
+  templateUrl: 'index.html'
 })
 
 
