@@ -13,9 +13,7 @@ export class AppComponent implements OnInit{
 	
 	
 	ngOnInit() {
-		$(function() {
-        $('#gallery a').lightBox();
-    });
+		
 	}
 
 }

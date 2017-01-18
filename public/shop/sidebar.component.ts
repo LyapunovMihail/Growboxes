@@ -1,5 +1,5 @@
 import { Component, OnInit} from '@angular/core';
-//let $ = require("assets/js/jquery");
+let $ = require("assets/js/jquery");
 
 @Component({
   selector: 'shop-sidebar',
@@ -10,19 +10,23 @@ import { Component, OnInit} from '@angular/core';
 
 export class SidebarComponent implements OnInit {
 
-	isSidebarOpen: boolean = false;
+	isSidebarOpen = {
+		subMenu1: false,
+		subMenu2: false,
+		subMenu3: false
+	};
 
-	menuTransition(id) {
+	menuTransition(id, name) {
 		console.log("access")
 		console.log("id: ", id)
-		if (!this.isSidebarOpen) {
+		if (!this.isSidebarOpen[name]) {
 			id.style.display = "block";
 			id.style.transition = "display 1s ease-out 0s";
 		}
 		else {
 			id.style.display = "none";
 		}
-		this.isSidebarOpen = !this.isSidebarOpen;
+		this.isSidebarOpen[name] = !this.isSidebarOpen[name];
 		
 	}
 

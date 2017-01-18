@@ -9,22 +9,26 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 var core_1 = require("@angular/core");
-//let $ = require("assets/js/jquery");
+var $ = require("assets/js/jquery");
 var SidebarComponent = (function () {
     function SidebarComponent() {
-        this.isSidebarOpen = false;
+        this.isSidebarOpen = {
+            subMenu1: false,
+            subMenu2: false,
+            subMenu3: false
+        };
     }
-    SidebarComponent.prototype.menuTransition = function (id) {
+    SidebarComponent.prototype.menuTransition = function (id, name) {
         console.log("access");
         console.log("id: ", id);
-        if (!this.isSidebarOpen) {
+        if (!this.isSidebarOpen[name]) {
             id.style.display = "block";
             id.style.transition = "display 1s ease-out 0s";
         }
         else {
             id.style.display = "none";
         }
-        this.isSidebarOpen = !this.isSidebarOpen;
+        this.isSidebarOpen[name] = !this.isSidebarOpen[name];
     };
     SidebarComponent.prototype.ngOnInit = function () {
         //console.log("ngOnInit", $("#sidebar .subMenu"));

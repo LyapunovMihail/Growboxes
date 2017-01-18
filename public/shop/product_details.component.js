@@ -8,10 +8,22 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
+require("assets/js/fancybox/source/jquery.fancybox.pack.js?v=2.1.6");
+require("assets/js/fancybox/source/helpers/jquery.fancybox-buttons.js?v=1.0.5");
+require("assets/js/fancybox/source/helpers/jquery.fancybox-media.js?v=1.0.6");
+require("assets/js/fancybox/source/helpers/jquery.fancybox-thumbs.js?v=1.0.7");
 var core_1 = require("@angular/core");
 var ProductDetailsComponent = (function () {
     function ProductDetailsComponent() {
     }
+    ProductDetailsComponent.prototype.ngOnInit = function () {
+        $(document).ready(function () {
+            $(".fancybox").fancybox({
+                openEffect: 'none',
+                closeEffect: 'none'
+            });
+        });
+    };
     return ProductDetailsComponent;
 }());
 ProductDetailsComponent = __decorate([

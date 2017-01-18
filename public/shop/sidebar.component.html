@@ -1,6 +1,6 @@
 <div id="sidebar" class="span3">
 	<ul class="nav nav-list bs-docs-sidenav" style="display: block;">											
-		<li class="subMenu" (click)="menuTransition(subMenu1)"><a> ELECTRONICS [230]</a>
+		<li class="subMenu" (click)="menuTransition(subMenu1, 'subMenu1')"><a> ELECTRONICS [230]</a>
 			<ul #subMenu1>
 			<li><a class="active" routerLink="/products">Cameras (100)</a></li>
 			<li><a routerLink="/products">Computers, Tablets & laptop (30)</a></li>
@@ -8,7 +8,7 @@
 			<li><a routerLink="/products">Sound & Vision (15)</a></li>
 			</ul>
 		</li>
-		<li class="subMenu" (click)="menuTransition(subMenu2)"><a> CLOTHES [840] </a>
+		<li class="subMenu" (click)="menuTransition(subMenu2, 'subMenu2')"><a> CLOTHES [840] </a>
 		<ul #subMenu2>
 			<li><a routerLink="/products">Women's Clothing (45)</a></li>
 			<li><a routerLink="/products">Women's Shoes (8)</a></li>	
@@ -19,7 +19,7 @@
 			<li><a routerLink="/products">Kids Shoes (3)</a></li>												
 		</ul>
 		</li>
-		<li class="subMenu" (click)="menuTransition(subMenu3)"><a>FOOD AND BEVERAGES [1000]</a>
+		<li class="subMenu" (click)="menuTransition(subMenu3, 'subMenu3')"><a>FOOD AND BEVERAGES [1000]</a>
 			<ul #subMenu3>
 			<li><a routerLink="/products">Angoves  (35)</a></li>
 			<li><a routerLink="/products">Bouchard Aine & Fils (8)</a></li>												

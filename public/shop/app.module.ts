@@ -1,5 +1,5 @@
-import "assets/js/widgets.js";
 import "assets/js/jquery.js";
+import "assets/js/widgets.js";
 import "assets/js/google-code-prettify/prettify.js";
 import "assets/js/application.js";
 import "assets/js/bootstrap-transition.js";

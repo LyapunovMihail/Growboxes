@@ -43,12 +43,29 @@
       }
     },
     meta: {
-        'assets/js/widgets.js': {
-          format: 'global'
-        },
         'assets/js/jquery.js': {
           format: 'global'
         },
+        'assets/js/widgets.js': {
+          format: 'global'
+        },
+        'assets/js/fancybox/lib/jquery.mousewheel-3.0.6.pack.js': {
+          format: 'global'
+        },
+        'assets/js/fancybox/source/jquery.fancybox.pack.js?v=2.1.6': {
+          format: 'global'
+        },
+        'assets/js/fancybox/source/helpers/jquery.fancybox-buttons.js?v=1.0.5': {
+          format: 'global'
+        },
+        'assets/js/fancybox/source/helpers/jquery.fancybox-media.js?v=1.0.6': {
+          format: 'global'
+        },
+        'assets/js/fancybox/source/helpers/jquery.fancybox-thumbs.js?v=1.0.7': {
+          format: 'global'
+        },
+
+
         'assets/js/google-code-prettify/prettify.js': {
           format: 'global'
         },

@@ -8,8 +8,8 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
-require("assets/js/widgets.js");
 require("assets/js/jquery.js");
+require("assets/js/widgets.js");
 require("assets/js/google-code-prettify/prettify.js");
 require("assets/js/application.js");
 require("assets/js/bootstrap-transition.js");

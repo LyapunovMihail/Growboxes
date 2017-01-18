@@ -13,9 +13,6 @@ var AppComponent = (function () {
     function AppComponent() {
     }
     AppComponent.prototype.ngOnInit = function () {
-        $(function () {
-            $('#gallery a').lightBox();
-        });
     };
     return AppComponent;
 }());
