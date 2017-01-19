@@ -8,6 +8,24 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
+var core_1 = require("@angular/core");
+var platform_browser_1 = require("@angular/platform-browser");
+var app_component_1 = require("./app.component");
+var navbar_component_1 = require("./navbar.component");
+var header_component_1 = require("./header.component");
+var sidebar_component_1 = require("./sidebar.component");
+var footer_component_1 = require("./footer.component");
+var homeCarousel_component_1 = require("./homeCarousel.component");
+var homeBody_component_1 = require("./homeBody.component");
+var special_offer_component_1 = require("./special_offer.component");
+var normal_component_1 = require("./normal.component");
+var contact_component_1 = require("./contact.component");
+var products_component_1 = require("./products.component");
+var product_summary_component_1 = require("./product_summary.component");
+var product_details_component_1 = require("./product_details.component");
+var login_component_1 = require("./login.component");
+var register_component_1 = require("./register.component");
+var router_1 = require("@angular/router");
 require("assets/js/jquery.js");
 require("assets/js/widgets.js");
 require("assets/js/google-code-prettify/prettify.js");
@@ -27,24 +45,6 @@ require("assets/js/bootstrap-typeahead.js");
 require("assets/js/bootstrap-affix.js");
 require("assets/js/jquery.lightbox-0.5.js");
 require("assets/js/bootsshoptgl.js");
-var core_1 = require("@angular/core");
-var platform_browser_1 = require("@angular/platform-browser");
-var app_component_1 = require("./app.component");
-var navbar_component_1 = require("./navbar.component");
-var header_component_1 = require("./header.component");
-var sidebar_component_1 = require("./sidebar.component");
-var footer_component_1 = require("./footer.component");
-var homeCarousel_component_1 = require("./homeCarousel.component");
-var homeBody_component_1 = require("./homeBody.component");
-var special_offer_component_1 = require("./special_offer.component");
-var normal_component_1 = require("./normal.component");
-var contact_component_1 = require("./contact.component");
-var products_component_1 = require("./products.component");
-var product_summary_component_1 = require("./product_summary.component");
-var product_details_component_1 = require("./product_details.component");
-var login_component_1 = require("./login.component");
-var register_component_1 = require("./register.component");
-var router_1 = require("@angular/router");
 var AppModule = (function () {
     function AppModule() {
     }

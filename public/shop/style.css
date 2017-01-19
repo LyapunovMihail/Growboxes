@@ -2,8 +2,8 @@ body {padding-top: 0;}
 a, a:hover{color:#444;}
 .clr{clear:both;}
 .navbar-fixed-top, .navbar-fixed-bottom {position: relative;}
-#header{padding:8px 0 4px; border-bottom:4px solid #444;margin-bottom:14px }
-#header a{text-decoration:none; color:#444;}
+#header1{padding:8px 0 4px; border-bottom:4px solid #444;margin-bottom:14px }
+#header1 a{text-decoration:none; color:#444;}
 #logoM{float:left;}
 .thumbnail img{ max-width:100%}
 .thumbnail:hover{ -webkit-border-radius: 0;-moz-border-radius: 0;border-radius: 0; border:1px solid #eee}
