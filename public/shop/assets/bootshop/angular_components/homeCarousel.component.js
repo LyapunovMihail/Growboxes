@@ -17,7 +17,13 @@ var HomeCarouselComponent = (function () {
 HomeCarouselComponent = __decorate([
     core_1.Component({
         selector: 'shop-home-carousel',
-        templateUrl: 'homeCarousel.component.html'
+        templateUrl: 'homeCarousel.component.html',
+        styleUrls: [
+            'assets/css/bootstrap.min.css',
+            'assets/css/font-awesome.min.css',
+            'assets/css/bootstrap-theme.css',
+            'assets/css/main.css'
+        ]
     }),
     __metadata("design:paramtypes", [])
 ], HomeCarouselComponent);

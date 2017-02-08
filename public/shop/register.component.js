@@ -17,7 +17,13 @@ var RegisterComponent = (function () {
 RegisterComponent = __decorate([
     core_1.Component({
         selector: 'shop-register',
-        templateUrl: 'register.component.html'
+        templateUrl: 'register.component.html',
+        styleUrls: [
+            'assets/css/bootstrap.min.css',
+            'assets/css/font-awesome.min.css',
+            'assets/css/bootstrap-theme.css',
+            'assets/css/main.css'
+        ]
     }),
     __metadata("design:paramtypes", [])
 ], RegisterComponent);

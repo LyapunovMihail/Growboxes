@@ -1,5 +1,4 @@
 import { Component, OnInit} from '@angular/core';
-let $ = require("assets/js/jquery");
 
 @Component({
   selector: 'shop-sidebar',

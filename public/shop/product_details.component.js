@@ -8,10 +8,10 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
-require("assets/js/fancybox/source/jquery.fancybox.pack.js?v=2.1.6");
-require("assets/js/fancybox/source/helpers/jquery.fancybox-buttons.js?v=1.0.5");
-require("assets/js/fancybox/source/helpers/jquery.fancybox-media.js?v=1.0.6");
-require("assets/js/fancybox/source/helpers/jquery.fancybox-thumbs.js?v=1.0.7");
+require("assets/fancybox/source/jquery.fancybox.pack.js?v=2.1.6");
+require("assets/fancybox/source/helpers/jquery.fancybox-buttons.js?v=1.0.5");
+require("assets/fancybox/source/helpers/jquery.fancybox-media.js?v=1.0.6");
+require("assets/fancybox/source/helpers/jquery.fancybox-thumbs.js?v=1.0.7");
 var core_1 = require("@angular/core");
 var ProductDetailsComponent = (function () {
     function ProductDetailsComponent() {
@@ -37,7 +37,12 @@ ProductDetailsComponent = __decorate([
     core_1.Component({
         selector: 'shop-product-details',
         templateUrl: 'product_details.component.html',
-        styleUrls: ['product_details.component.css']
+        styleUrls: [
+            'assets/bootshop/css/bootstrap.css',
+            'assets/bootshop/css/bootstrap-responsive.css',
+            'assets/bootshop/angular_components/style.css',
+            'assets/bootshop/js/google-code-prettify/prettify.css'
+        ]
     }),
     __metadata("design:paramtypes", [])
 ], ProductDetailsComponent);

@@ -1,13 +1,16 @@
 
-
 import { Component, OnInit} from '@angular/core';
 
 @Component({
   selector: 'shop-navbar',
-  templateUrl: 'navbar.component.html'
+  templateUrl: 'navbar.component.html',
+  styleUrls: [
+  	'assets/css/bootstrapNavbarButtonFix.min.css',
+  	'assets/css/font-awesome.min.css',
+	'assets/css/bootstrap-theme.css',	
+	'assets/css/main.css'   
+  ]
 })
-
-
 
 export class NavbarComponent implements OnInit{
 	showLogo = false;
@@ -26,5 +29,14 @@ export class NavbarComponent implements OnInit{
 		// или "два-в-одном", вместо двух последних строк:
 		$(window).on('load resize',windowSize);
 		*/
+		$(".headroom").headroom({
+		"tolerance": 20,
+		"offset": 50,
+		"classes": {
+			"initial": "animated",
+			"pinned": "slideDown",
+			"unpinned": "slideUp"
+		}
+	});
 	}
 }

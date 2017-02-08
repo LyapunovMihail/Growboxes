@@ -11,7 +11,9 @@
     // map tells the System loader where to look for things
     map: {
       // our app is within the app folder
-      scripts: "assets/js",
+      //scripts: "assets/bootshop/js",
+      progressus: "assets/js",
+      fancybox: "assets/fancybox",
       shop: '/',
       // angular bundles
       '@angular/core': 'npm:@angular/core/bundles/core.umd.js',
@@ -25,11 +27,18 @@
       // other libraries
       'rxjs':                      'npm:rxjs',
       'angular-in-memory-web-api': 'npm:angular-in-memory-web-api',
-      //'jquery': 'assets/js/jquery.js'
     },
     // packages tells the System loader how to load when no filename and/or no extension
     packages: {
-      scripts: {
+      /*scripts: {
+        defaultExtension: 'js',
+        format: 'global'
+      },*/
+      progressus: {
+        defaultExtension: 'js',
+        format: 'global'
+      },
+      fancybox: {
         defaultExtension: 'js',
         format: 'global'
       },
@@ -44,26 +53,7 @@
         main: './index.js',
         defaultExtension: 'js'
       }
-    },
-    meta: {
-  
-        'assets/js/fancybox/lib/jquery.mousewheel-3.0.6.pack.js': {
-          format: 'global'
-        },
-        'assets/js/fancybox/source/jquery.fancybox.pack.js?v=2.1.6': {
-          format: 'global'
-        },
-        'assets/js/fancybox/source/helpers/jquery.fancybox-buttons.js?v=1.0.5': {
-          format: 'global'
-        },
-        'assets/js/fancybox/source/helpers/jquery.fancybox-media.js?v=1.0.6': {
-          format: 'global'
-        },
-        'assets/js/fancybox/source/helpers/jquery.fancybox-thumbs.js?v=1.0.7': {
-          format: 'global'
-        },
-
-      }
+    }
 
   });
 })(this);

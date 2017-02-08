@@ -17,7 +17,8 @@ var HomeBodyComponent = (function () {
 HomeBodyComponent = __decorate([
     core_1.Component({
         selector: 'shop-home-body',
-        templateUrl: '/homeBody.component.html'
+        templateUrl: '/homeBody.component.html',
+        styleUrls: []
     }),
     __metadata("design:paramtypes", [])
 ], HomeBodyComponent);

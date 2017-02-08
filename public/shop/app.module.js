@@ -8,17 +8,25 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
+require("http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js");
+require("http://netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js");
+require("assets/js/headroom.min.js");
+require("assets/js/jQuery.headroom.min.js");
+require("assets/js/template.js");
 var core_1 = require("@angular/core");
 var platform_browser_1 = require("@angular/platform-browser");
 var app_component_1 = require("./app.component");
 var navbar_component_1 = require("./navbar.component");
 var header_component_1 = require("./header.component");
-var sidebar_component_1 = require("./sidebar.component");
+//import { SidebarComponent } from './sidebar.component';
 var footer_component_1 = require("./footer.component");
-var homeCarousel_component_1 = require("./homeCarousel.component");
+//import { HomeCarouselComponent } from './homeCarousel.component';
 var homeBody_component_1 = require("./homeBody.component");
-var special_offer_component_1 = require("./special_offer.component");
-var normal_component_1 = require("./normal.component");
+var homeBody_component1_1 = require("./homeBody.component1");
+var homeBody_component2_1 = require("./homeBody.component2");
+//import { SpecialOfferComponent } from './special_offer.component';
+//import { NormalComponent } from './normal.component';
+var aboutUs_component_1 = require("./aboutUs.component");
 var contact_component_1 = require("./contact.component");
 var products_component_1 = require("./products.component");
 var product_summary_component_1 = require("./product_summary.component");
@@ -26,25 +34,6 @@ var product_details_component_1 = require("./product_details.component");
 var login_component_1 = require("./login.component");
 var register_component_1 = require("./register.component");
 var router_1 = require("@angular/router");
-require("assets/js/jquery.js");
-require("assets/js/widgets.js");
-require("assets/js/google-code-prettify/prettify.js");
-require("assets/js/application.js");
-require("assets/js/bootstrap-transition.js");
-require("assets/js/bootstrap-modal.js");
-require("assets/js/bootstrap-scrollspy.js");
-require("assets/js/bootstrap-alert.js");
-require("assets/js/bootstrap-dropdown.js");
-require("assets/js/bootstrap-tab.js");
-require("assets/js/bootstrap-tooltip.js");
-require("assets/js/bootstrap-popover.js");
-require("assets/js/bootstrap-button.js");
-require("assets/js/bootstrap-collapse.js");
-require("assets/js/bootstrap-carousel.js");
-require("assets/js/bootstrap-typeahead.js");
-require("assets/js/bootstrap-affix.js");
-require("assets/js/jquery.lightbox-0.5.js");
-require("assets/js/bootsshoptgl.js");
 var AppModule = (function () {
     function AppModule() {
     }
@@ -65,12 +54,8 @@ AppModule = __decorate([
                     component: homeBody_component_1.HomeBodyComponent
                 },
                 {
-                    path: 'special_offer',
-                    component: special_offer_component_1.SpecialOfferComponent
-                },
-                {
-                    path: 'normal',
-                    component: normal_component_1.NormalComponent
+                    path: 'about_us',
+                    component: aboutUs_component_1.AboutUsComponent
                 },
                 {
                     path: 'contact',
@@ -102,12 +87,11 @@ AppModule = __decorate([
             app_component_1.AppComponent,
             navbar_component_1.NavbarComponent,
             header_component_1.HeaderComponent,
-            sidebar_component_1.SidebarComponent,
-            homeCarousel_component_1.HomeCarouselComponent,
             footer_component_1.FooterComponent,
             homeBody_component_1.HomeBodyComponent,
-            special_offer_component_1.SpecialOfferComponent,
-            normal_component_1.NormalComponent,
+            homeBody_component1_1.HomeBodyComponent1,
+            homeBody_component2_1.HomeBodyComponent2,
+            aboutUs_component_1.AboutUsComponent,
             contact_component_1.ContactComponent,
             products_component_1.ProductsComponent,
             product_summary_component_1.ProductSummaryComponent,

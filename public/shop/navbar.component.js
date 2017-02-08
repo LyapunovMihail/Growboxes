@@ -28,13 +28,28 @@ var NavbarComponent = (function () {
         // или "два-в-одном", вместо двух последних строк:
         $(window).on('load resize',windowSize);
         */
+        $(".headroom").headroom({
+            "tolerance": 20,
+            "offset": 50,
+            "classes": {
+                "initial": "animated",
+                "pinned": "slideDown",
+                "unpinned": "slideUp"
+            }
+        });
     };
     return NavbarComponent;
 }());
 NavbarComponent = __decorate([
     core_1.Component({
         selector: 'shop-navbar',
-        templateUrl: 'navbar.component.html'
+        templateUrl: 'navbar.component.html',
+        styleUrls: [
+            'assets/css/bootstrapNavbarButtonFix.min.css',
+            'assets/css/font-awesome.min.css',
+            'assets/css/bootstrap-theme.css',
+            'assets/css/main.css'
+        ]
     }),
     __metadata("design:paramtypes", [])
 ], NavbarComponent);

@@ -17,7 +17,13 @@ var ProductSummaryComponent = (function () {
 ProductSummaryComponent = __decorate([
     core_1.Component({
         selector: 'shop-product-summary',
-        templateUrl: 'product_summary.component.html'
+        templateUrl: 'product_summary.component.html',
+        styleUrls: [
+            'assets/bootshop/css/bootstrap.css',
+            'assets/bootshop/css/bootstrap-responsive.css',
+            'assets/bootshop/angular_components/style.css',
+            'assets/bootshop/js/google-code-prettify/prettify.css'
+        ]
     }),
     __metadata("design:paramtypes", [])
 ], ProductSummaryComponent);

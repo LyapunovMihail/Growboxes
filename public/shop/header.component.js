@@ -17,7 +17,13 @@ var HeaderComponent = (function () {
 HeaderComponent = __decorate([
     core_1.Component({
         selector: 'shop-header',
-        templateUrl: 'header.component.html'
+        templateUrl: 'header.component.html',
+        styleUrls: [
+            'assets/css/bootstrap.min.css',
+            'assets/css/font-awesome.min.css',
+            'assets/css/bootstrap-theme.css',
+            'assets/css/main.css'
+        ]
     }),
     __metadata("design:paramtypes", [])
 ], HeaderComponent);

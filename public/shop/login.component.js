@@ -24,7 +24,13 @@ var LoginComponent = (function () {
 LoginComponent = __decorate([
     core_1.Component({
         selector: 'shop-login',
-        templateUrl: 'login.component.html'
+        templateUrl: 'login.component.html',
+        styleUrls: [
+            'assets/css/bootstrap.min.css',
+            'assets/css/font-awesome.min.css',
+            'assets/css/bootstrap-theme.css',
+            'assets/css/main.css'
+        ]
     }),
     __metadata("design:paramtypes", [router_1.Router])
 ], LoginComponent);
