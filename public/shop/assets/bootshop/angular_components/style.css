@@ -64,7 +64,7 @@ hr.soften {margin: 8px 0 4px; background:#ddd;}
 .bs-docs-sidenav,.btn,
 select, textarea, input[type="text"], input[type="password"], input[type="datetime"], input[type="datetime-local"],
 input[type="date"], input[type="month"], input[type="time"], input[type="week"], input[type="number"], input[type="email"],
-input[type="url"], input[type="search"], input[type="tel"], input[type="color"], .uneditable-input {-webkit-border-radius: 0;-moz-border-radius: 0;border-radius: 0;}
+input[type="url"], input[type="search"], input[type="tel"], input[type="color"], .uneditable-input {-webkit-border-radius: 30px;-moz-border-radius: 30px;border-radius: 30px;border-color: buttonface;}
 /* Footer section--------------- */
 #footerSection a{font-size:11px; padding:0 13px; line-height:24px; display:block; }
 #footerSection a:hover{background:#eee;  }

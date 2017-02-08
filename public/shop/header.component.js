@@ -8,24 +8,24 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
-var core_1 = require("@angular/core");
+var core_1 = require('@angular/core');
 var HeaderComponent = (function () {
     function HeaderComponent() {
     }
+    HeaderComponent = __decorate([
+        core_1.Component({
+            selector: 'shop-header',
+            templateUrl: 'header.component.html',
+            styleUrls: [
+                'assets/css/bootstrap.min.css',
+                'assets/css/font-awesome.min.css',
+                'assets/css/bootstrap-theme.css',
+                'assets/css/main.css'
+            ]
+        }), 
+        __metadata('design:paramtypes', [])
+    ], HeaderComponent);
     return HeaderComponent;
 }());
-HeaderComponent = __decorate([
-    core_1.Component({
-        selector: 'shop-header',
-        templateUrl: 'header.component.html',
-        styleUrls: [
-            'assets/css/bootstrap.min.css',
-            'assets/css/font-awesome.min.css',
-            'assets/css/bootstrap-theme.css',
-            'assets/css/main.css'
-        ]
-    }),
-    __metadata("design:paramtypes", [])
-], HeaderComponent);
 exports.HeaderComponent = HeaderComponent;
 //# sourceMappingURL=header.component.js.map

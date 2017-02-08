@@ -8,24 +8,24 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
-var core_1 = require("@angular/core");
+var core_1 = require('@angular/core');
 var HomeBodyComponent1 = (function () {
     function HomeBodyComponent1() {
     }
+    HomeBodyComponent1 = __decorate([
+        core_1.Component({
+            selector: 'shop-home-body1',
+            templateUrl: '/homeBody.component1.html',
+            styleUrls: [
+                'assets/css/bootstrap.min.css',
+                'assets/css/font-awesome.min.css',
+                'assets/css/bootstrap-theme.css',
+                'assets/css/main.css'
+            ]
+        }), 
+        __metadata('design:paramtypes', [])
+    ], HomeBodyComponent1);
     return HomeBodyComponent1;
 }());
-HomeBodyComponent1 = __decorate([
-    core_1.Component({
-        selector: 'shop-home-body1',
-        templateUrl: '/homeBody.component1.html',
-        styleUrls: [
-            'assets/css/bootstrap.min.css',
-            'assets/css/font-awesome.min.css',
-            'assets/css/bootstrap-theme.css',
-            'assets/css/main.css'
-        ]
-    }),
-    __metadata("design:paramtypes", [])
-], HomeBodyComponent1);
 exports.HomeBodyComponent1 = HomeBodyComponent1;
 //# sourceMappingURL=homeBody.component1.js.map

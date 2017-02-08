@@ -8,24 +8,24 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
-var core_1 = require("@angular/core");
+var core_1 = require('@angular/core');
 var ProductSummaryComponent = (function () {
     function ProductSummaryComponent() {
     }
+    ProductSummaryComponent = __decorate([
+        core_1.Component({
+            selector: 'shop-product-summary',
+            templateUrl: 'product_summary.component.html',
+            styleUrls: [
+                'assets/bootshop/css/bootstrap.css',
+                'assets/bootshop/css/bootstrap-responsive.css',
+                'assets/bootshop/angular_components/style.css',
+                'assets/bootshop/js/google-code-prettify/prettify.css'
+            ]
+        }), 
+        __metadata('design:paramtypes', [])
+    ], ProductSummaryComponent);
     return ProductSummaryComponent;
 }());
-ProductSummaryComponent = __decorate([
-    core_1.Component({
-        selector: 'shop-product-summary',
-        templateUrl: 'product_summary.component.html',
-        styleUrls: [
-            'assets/bootshop/css/bootstrap.css',
-            'assets/bootshop/css/bootstrap-responsive.css',
-            'assets/bootshop/angular_components/style.css',
-            'assets/bootshop/js/google-code-prettify/prettify.css'
-        ]
-    }),
-    __metadata("design:paramtypes", [])
-], ProductSummaryComponent);
 exports.ProductSummaryComponent = ProductSummaryComponent;
 //# sourceMappingURL=product_summary.component.js.map

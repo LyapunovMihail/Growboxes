@@ -1,0 +1,26 @@
+h1,h2,h3,h4,h5,h6 {
+    font-family: "Open sans", Helvetica, Arial;
+    font-weight: 500;
+}
+
+.colorButton {
+    background-image: none;
+    background-color: #4add12;
+    color: white;
+}
+
+.colorButton:hover {
+    background-image: none;
+    background-color: #0a7e00;
+    color: white;
+}
+
+.colorButton:active {
+    background-image: none;
+    background-color: #0a7e00;
+    color: white;
+}
+
+#productView {
+	margin-top: 21px;
+}

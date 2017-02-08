@@ -6,9 +6,10 @@ import { Component} from '@angular/core';
   styleUrls: [
   	'assets/bootshop/css/bootstrap.css',
   	'assets/bootshop/css/bootstrap-responsive.css',
-	'assets/bootshop/angular_components/style.css',	
-	'assets/bootshop/js/google-code-prettify/prettify.css',
-	'assets/css/progressusFonts.css'
+  	'assets/bootshop/angular_components/style.css',	
+  	'assets/bootshop/js/google-code-prettify/prettify.css',
+    'assets/css/font-awesome.min.css',
+  	'assets/css/progressusStyles.css'
   ]
 })
 
