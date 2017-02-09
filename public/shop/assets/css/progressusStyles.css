@@ -3,9 +3,13 @@ h1,h2,h3,h4,h5,h6 {
     font-weight: 500;
 }
 
+.price {
+    color: #7EB237;
+}
+
 .colorButton {
     background-image: none;
-    background-color: #4add12;
+    background-color: #7EB237;
     color: white;
 }
 
@@ -24,3 +28,37 @@ h1,h2,h3,h4,h5,h6 {
 #productView {
 	margin-top: 21px;
 }
+
+a:hover {
+    text-decoration: none;
+}
+
+.thumbnail {
+    padding: 7px 0 0 0;
+}
+
+a .thumbnail div{
+    -webkit-transition: all 0.2s ease-in-out;
+     -moz-transition: all 0.2s ease-in-out;
+       -o-transition: all 0.2s ease-in-out;
+          transition: all 0.2s ease-in-out;
+}
+
+a .thumbnail:hover {
+  border-color: #7EB237;
+  -webkit-box-shadow: 0 4px 4px rgba(0, 105, 214, 0.25);
+     -moz-box-shadow: 0 4px 4px rgba(0, 105, 214, 0.25);
+          box-shadow: 0 4px 4px rgba(0, 105, 214, 0.25);
+}
+
+a .thumbnail:hover div {
+    background-color: #7EB237;
+    color: #fff;
+}
+
+a .thumbnail:hover .price {
+    color: black;
+}
+
+
+

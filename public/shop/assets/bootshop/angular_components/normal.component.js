@@ -8,18 +8,18 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
-var core_1 = require('@angular/core');
+var core_1 = require("@angular/core");
 var NormalComponent = (function () {
     function NormalComponent() {
     }
-    NormalComponent = __decorate([
-        core_1.Component({
-            selector: 'shop-normal',
-            templateUrl: 'normal.component.html'
-        }), 
-        __metadata('design:paramtypes', [])
-    ], NormalComponent);
     return NormalComponent;
 }());
+NormalComponent = __decorate([
+    core_1.Component({
+        selector: 'shop-normal',
+        templateUrl: 'normal.component.html'
+    }),
+    __metadata("design:paramtypes", [])
+], NormalComponent);
 exports.NormalComponent = NormalComponent;
 //# sourceMappingURL=normal.component.js.map

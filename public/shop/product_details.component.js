@@ -12,7 +12,7 @@ require("assets/fancybox/source/jquery.fancybox.pack.js?v=2.1.6");
 require("assets/fancybox/source/helpers/jquery.fancybox-buttons.js?v=1.0.5");
 require("assets/fancybox/source/helpers/jquery.fancybox-media.js?v=1.0.6");
 require("assets/fancybox/source/helpers/jquery.fancybox-thumbs.js?v=1.0.7");
-var core_1 = require('@angular/core');
+var core_1 = require("@angular/core");
 var ProductDetailsComponent = (function () {
     function ProductDetailsComponent() {
     }
@@ -31,20 +31,20 @@ var ProductDetailsComponent = (function () {
             }
         });
     };
-    ProductDetailsComponent = __decorate([
-        core_1.Component({
-            selector: 'shop-product-details',
-            templateUrl: 'product_details.component.html',
-            styleUrls: [
-                'assets/bootshop/css/bootstrap.css',
-                'assets/bootshop/css/bootstrap-responsive.css',
-                'assets/bootshop/angular_components/style.css',
-                'assets/bootshop/js/google-code-prettify/prettify.css'
-            ]
-        }), 
-        __metadata('design:paramtypes', [])
-    ], ProductDetailsComponent);
     return ProductDetailsComponent;
 }());
+ProductDetailsComponent = __decorate([
+    core_1.Component({
+        selector: 'shop-product-details',
+        templateUrl: 'product_details.component.html',
+        styleUrls: [
+            'assets/bootshop/css/bootstrap.css',
+            'assets/bootshop/css/bootstrap-responsive.css',
+            'assets/bootshop/angular_components/style.css',
+            'assets/bootshop/js/google-code-prettify/prettify.css'
+        ]
+    }),
+    __metadata("design:paramtypes", [])
+], ProductDetailsComponent);
 exports.ProductDetailsComponent = ProductDetailsComponent;
 //# sourceMappingURL=product_details.component.js.map
