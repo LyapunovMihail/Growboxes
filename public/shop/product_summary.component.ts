@@ -1,4 +1,4 @@
-import { Component} from '@angular/core';
+import { Component, OnInit} from '@angular/core';
 
 @Component({
   selector: 'shop-product-summary',
@@ -7,10 +7,13 @@ import { Component} from '@angular/core';
   	'assets/bootshop/css/bootstrap.css',
   	'assets/bootshop/css/bootstrap-responsive.css',
 	'assets/bootshop/angular_components/style.css',	
-	'assets/bootshop/js/google-code-prettify/prettify.css'   
+	'assets/bootshop/js/google-code-prettify/prettify.css',
+	'assets/css/progressusStyles.css'   
   ]
 })
 
-export class ProductSummaryComponent {
-	
+export class ProductSummaryComponent implements OnInit{
+	ngOnInit() {
+		
+	}
 }

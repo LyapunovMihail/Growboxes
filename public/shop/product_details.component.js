@@ -15,8 +15,10 @@ require("assets/fancybox/source/helpers/jquery.fancybox-thumbs.js?v=1.0.7");
 var core_1 = require("@angular/core");
 var ProductDetailsComponent = (function () {
     function ProductDetailsComponent() {
+        this.top = '0';
     }
     ProductDetailsComponent.prototype.ngOnInit = function () {
+        var _this = this;
         $(".fancybox-thumb").fancybox({
             prevEffect: 'none',
             nextEffect: 'none',
@@ -30,6 +32,25 @@ var ProductDetailsComponent = (function () {
                 }
             }
         });
+        $(window).resize(this.debounce(function () {
+            if (document.body.clientWidth < 962) {
+                _this.top = '13px';
+            }
+            else {
+                _this.top = '0';
+            }
+        }, 50));
+    };
+    ProductDetailsComponent.prototype.debounce = function (f, ms) {
+        var state = null;
+        var COOLDOWN = 1;
+        return function () {
+            if (state)
+                return;
+            f.apply(this, arguments);
+            state = COOLDOWN;
+            setTimeout(function () { state = null; }, ms);
+        };
     };
     return ProductDetailsComponent;
 }());

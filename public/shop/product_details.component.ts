@@ -20,20 +20,43 @@ import { Component, OnInit} from '@angular/core';
 
 export class ProductDetailsComponent implements OnInit {
 
+	top  = '0'
+
 	ngOnInit() {
-			$(".fancybox-thumb").fancybox({
-				prevEffect	: 'none',
-				nextEffect	: 'none',
-				helpers	: {
-					title	: {
-						type: 'outside'
-					},
-					thumbs	: {
-						width	: 50,
-						height	: 50
-					}
+		$(".fancybox-thumb").fancybox({
+			prevEffect	: 'none',
+			nextEffect	: 'none',
+			helpers	: {
+				title	: {
+					type: 'outside'
+				},
+				thumbs	: {
+					width	: 50,
+					height	: 50
 				}
-			});
 			}
+		});
+
+		$(window).resize(
+			this.debounce(() => {		
+				if (document.body.clientWidth < 962) {
+					this.top = '13px'
+				} else {
+					this.top = '0'
+				}
+			}, 50)	
+		);
+	}
+
+	debounce(f, ms) {
+	  var state = null;
+	  var COOLDOWN = 1;
+	  return function() {
+	    if (state) return;
+	    f.apply(this, arguments);
+	    state = COOLDOWN;
+	    setTimeout(function() { state = null }, ms);
+	  }
+	}
 	
 }

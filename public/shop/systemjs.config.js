@@ -13,6 +13,7 @@
       // our app is within the app folder
       //scripts: "assets/bootshop/js",
       progressus: "assets/js",
+      shopper: "assets/shopper_new",
       fancybox: "assets/fancybox",
       shop: '/',
       // angular bundles
@@ -35,6 +36,10 @@
         format: 'global'
       },*/
       progressus: {
+        defaultExtension: 'js',
+        format: 'global'
+      },
+      shopper: {
         defaultExtension: 'js',
         format: 'global'
       },
