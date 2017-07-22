@@ -11,6 +11,6 @@ function HttpError(status, message) {
 }
 
 util.inherits(HttpError, Error);
-HttpError.prototype.mame = 'HttpError';
+HttpError.prototype.name = 'HttpError';
 
 exports.HttpError = HttpError;

@@ -1,11 +1,16 @@
-<shop-navbar></shop-navbar>
+<div style="padding-left:50px;padding-right:50px; background: green url(assets/images/konoplya.jpg)">
+	<div style="background-color: #fff">
+		<shop-navbar></shop-navbar>
 
-<!--<shop-header></shop-header>-->
-<!--<shop-home-body></shop-home-body>-->
-<router-outlet></router-outlet>
+		<!--<shop-header></shop-header>-->
+		<!--<shop-home-body></shop-home-body>-->
+		<div style="min-height: calc(100vh - 285px)">
+			<router-outlet (onPurchased)="onPurchased($event)"></router-outlet>
+		</div>
 
-<shop-footer></shop-footer>
-
+		<shop-footer></shop-footer>
+	</div>
+</div>
 
 
     

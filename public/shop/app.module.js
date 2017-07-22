@@ -16,6 +16,8 @@ require("assets/js/template.js");
 var core_1 = require("@angular/core");
 var platform_browser_1 = require("@angular/platform-browser");
 var app_component_1 = require("./app.component");
+var ng2_toastr_1 = require("./node_modules/ng2-toastr/ng2-toastr");
+var animations_1 = require("@angular/platform-browser/animations");
 var navbar_component_1 = require("./navbar.component");
 var header_component_1 = require("./header.component");
 //import { SidebarComponent } from './sidebar.component';
@@ -29,11 +31,16 @@ var homeBody_component2_1 = require("./homeBody.component2");
 var aboutUs_component_1 = require("./aboutUs.component");
 var contact_component_1 = require("./contact.component");
 var products_component_1 = require("./products.component");
-var product_summary_component_1 = require("./product_summary.component");
 var product_details_component_1 = require("./product_details.component");
+var product_summary_component_1 = require("./product_summary.component");
+var checkout_component_1 = require("./checkout.component");
 var login_component_1 = require("./login.component");
 var register_component_1 = require("./register.component");
+var save_product_component_1 = require("./save_product.component");
+var product_service_1 = require("./product.service");
 var router_1 = require("@angular/router");
+var forms_1 = require("@angular/forms");
+var http_1 = require("@angular/http");
 var AppModule = (function () {
     function AppModule() {
     }
@@ -43,6 +50,10 @@ AppModule = __decorate([
     core_1.NgModule({
         imports: [
             platform_browser_1.BrowserModule,
+            animations_1.BrowserAnimationsModule,
+            forms_1.FormsModule,
+            http_1.HttpModule,
+            ng2_toastr_1.ToastModule.forRoot(),
             router_1.RouterModule.forRoot([
                 {
                     path: '',
@@ -62,7 +73,7 @@ AppModule = __decorate([
                     component: contact_component_1.ContactComponent
                 },
                 {
-                    path: 'products',
+                    path: 'products/:id',
                     component: products_component_1.ProductsComponent
                 },
                 {
@@ -70,7 +81,11 @@ AppModule = __decorate([
                     component: product_summary_component_1.ProductSummaryComponent
                 },
                 {
-                    path: 'product_details',
+                    path: 'checkout',
+                    component: checkout_component_1.CheckoutComponent
+                },
+                {
+                    path: 'product_details/:id',
                     component: product_details_component_1.ProductDetailsComponent
                 },
                 {
@@ -80,6 +95,10 @@ AppModule = __decorate([
                 {
                     path: 'register',
                     component: register_component_1.RegisterComponent
+                },
+                {
+                    path: 'save_product',
+                    component: save_product_component_1.SaveProductComponent
                 }
             ])
         ],
@@ -95,10 +114,13 @@ AppModule = __decorate([
             contact_component_1.ContactComponent,
             products_component_1.ProductsComponent,
             product_summary_component_1.ProductSummaryComponent,
+            checkout_component_1.CheckoutComponent,
             product_details_component_1.ProductDetailsComponent,
             login_component_1.LoginComponent,
-            register_component_1.RegisterComponent
+            register_component_1.RegisterComponent,
+            save_product_component_1.SaveProductComponent
         ],
+        providers: [product_service_1.ProductService],
         bootstrap: [
             app_component_1.AppComponent
         ]

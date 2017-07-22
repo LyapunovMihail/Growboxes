@@ -9,18 +9,28 @@ module.exports = function(app) {
 	app.get('/contact', require('./frontpage').get);
 	app.get('/products', require('./frontpage').get);
 	app.get('/product_summary', require('./frontpage').get);
+	app.get('/checkout', require('./frontpage').get);
 	app.get('/product_details', require('./frontpage').get);
 	app.get('/login', require('./frontpage').get);
 	app.get('/register', require('./frontpage').get);
 
+	app.get('/save_product', require('./frontpage').get);
 
+	app.get('/purchase', require('./api/purchase').get);
 
+	app.post('/api/products', require('./api/products').post);
+	app.get('/api/products', require('./api/products').get);
+	app.post('/api/productsUpdate', require('./api/products').update);
+	app.post('/api/productsDelete', require('./api/products').delete);
+	app.post('/api/categoryProducts', require('./api/products').getCategoryProducts);
 
-	/*
-	app.get('/login', require('./login').get);
-	app.post('/login', require('./login').post);
-	app.post('/logout', require('./logout').post);
+	app.post('/api/purchase', require('./api/purchase').post);
+	app.get('/api/purchase', require('./api/purchase').get);
 
-	app.get('/chat', checkAuth, require('./chat').get);
-	*/
+	app.post('/api/purchaseUpdate', require('./api/purchaseUpdate').update);
+	app.post('/api/purchaseDelete', require('./api/purchaseUpdate').delete);
+
+	app.post('/api/product_details', require('./api/product_details').post);
+
+	app.post('/api/products/getAccess', require('./api/products').getAccessToProdutcsManagement);
 }

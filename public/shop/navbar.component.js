@@ -9,10 +9,25 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 var core_1 = require("@angular/core");
+var product_service_1 = require("./product.service");
 var NavbarComponent = (function () {
-    function NavbarComponent() {
-        this.showLogo = false;
+    function NavbarComponent(productService) {
+        var _this = this;
+        this.productService = productService;
+        this.numberOfPurchasedProducts = 0;
+        productService.onPurchased$.subscribe(function (number) {
+            _this.numberOfPurchasedProducts = number;
+            console.log("this.numberOfPurchasedProducts: ", _this.numberOfPurchasedProducts);
+        });
     }
+    /* @Input()
+         set numberOfPurchasedProducts(numberOfPurchasedProducts: number) {
+           this._numberOfPurchasedProducts = numberOfPurchasedProducts
+           console.log("this._numberOfPurchasedProducts: ", this._numberOfPurchasedProducts)
+         }
+   
+         get numberOfPurchasedProducts(): number { return this._numberOfPurchasedProducts }
+    */
     NavbarComponent.prototype.ngOnInit = function () {
         /*function windowSize(){
                 console.log("windowWidth: ", $(window).width())
@@ -37,6 +52,16 @@ var NavbarComponent = (function () {
                 "unpinned": "slideUp"
             }
         });
+        this.getPurchasedProducts();
+    };
+    NavbarComponent.prototype.getPurchasedProducts = function () {
+        var _this = this;
+        this.productService
+            .getPurchasedProducts()
+            .then(function (products) {
+            _this.numberOfPurchasedProducts = products.numberOfPurchasedProducts;
+            console.log("this.numberOfPurchasedProducts: ", _this.numberOfPurchasedProducts);
+        });
     };
     return NavbarComponent;
 }());
@@ -48,10 +73,11 @@ NavbarComponent = __decorate([
             'assets/css/bootstrapNavbarButtonFix.min.css',
             'assets/css/font-awesome.min.css',
             'assets/css/bootstrap-theme.css',
-            'assets/css/main.css'
+            'assets/css/main.css',
+            'assets/css/progressusStyles.css'
         ]
     }),
-    __metadata("design:paramtypes", [])
+    __metadata("design:paramtypes", [product_service_1.ProductService])
 ], NavbarComponent);
 exports.NavbarComponent = NavbarComponent;
 //# sourceMappingURL=navbar.component.js.map

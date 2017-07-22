@@ -22,14 +22,14 @@ app.use(express.logger('dev'));
 app.use(express.bodyParser());
 app.use(express.cookieParser());
 
-//var sessionStore = require('./libs/sessionStore');
+var sessionStore = require('./libs/sessionStore');
 
-/*app.use(express.session({
+app.use(express.session({
 	secret: config.get('session:secret'),
 	key: config.get('session:key'),
 	cookie: config.get('session:cookie'),
 	store: sessionStore
-}));*/
+}));
 
 /*app.use(function(req, res, next) {
 	req.session.numberOfVisits = req.session.numberOfVisits + 1 || 1;

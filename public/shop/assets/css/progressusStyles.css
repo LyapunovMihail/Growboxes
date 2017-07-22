@@ -56,7 +56,7 @@ a:hover {
   top: 0px;
 }
 
-
+/*
 .thumbnail:hover h4 {
     color: black;
 }
@@ -67,6 +67,66 @@ a:hover {
 
 .thumbnail:hover .price {
     color: black;
+}
+*/
+.text {
+    opacity: 1;
+}
+
+.thumbnail:hover .text {
+    visibility: hidden;
+    opacity: 0;
+}
+
+.icons {
+  visibility: hidden;
+  opacity: 0;
+  position: relative;
+  bottom: 80px;
+  height: 0;
+}
+
+.thumbnail:hover .icons {
+    visibility: visible;
+    opacity: 1;
+}
+
+.iconBorderEdit {
+  border: 1px solid #ccc; 
+  border-radius: 25px; 
+  padding: 13px; 
+  padding-right: 12px; 
+  font-size: 22px;
+  position: relative;
+  top: -10px;
+}
+
+.iconBorderTrash {
+  border: 1px solid #ccc; 
+  border-radius: 25px; 
+  padding: 13px; 
+  padding-right: 15px; 
+  padding-left: 15px; 
+  font-size: 22px;
+  position: relative;
+  top: -10px;
+}
+
+.iconBorderCart {
+  border: 1px solid #ccc; 
+  border-radius: 36px; 
+  padding: 21px; 
+  padding-right: 22px; 
+  font-size: 27px;
+  position: relative;
+  top: -10px;
+}
+
+.iconBorder:hover {
+  cursor: pointer;
+  border: 1px solid #7EB237;
+  background-color: #7EB237;
+  color: white;
 }
 
 
@@ -84,3 +144,57 @@ a:hover {
     top: 4px;
 }
 
+.bucketBadge {
+  border-radius: 50%;
+  background-color: green;
+  color: white;
+  opacity: 0.7;
+  font-size: 11px;
+  padding: 5px;
+  padding-right: 8px;
+  padding-left: 8px;
+  position: relative;
+  right: 8px;
+}
+
+@media (max-width: 767px) {
+  .bucketBadge{
+    top: 10px;
+}
+}
+
+a:hover div span.bucketBadge {
+  opacity: 1;
+}
+
+a:focus div span.bucketBadge {
+  opacity: 1;
+}
+
+.bucketBorder {
+  border: 1px solid rgba(255, 255, 255, .4); 
+  border-radius: 25px; 
+  padding: 9px; 
+  padding-right: 11px; 
+  font-size: 22px;
+  position: relative;
+  top: -10px;
+}
+
+@media (max-width: 767px) {
+  .bucketBorder{
+    top: 0;
+}
+}
+
+a:hover i.bucketBorder {
+  border: 1px solid rgba(255, 255, 255, 1);
+  background-color: rgba(255, 255, 255, 1);
+  color: black;
+}
+
+a:focus i.bucketBorder {
+  border: 1px solid rgba(255, 255, 255, 1);
+  background-color: rgba(255, 255, 255, 1);
+  color: black;
+}

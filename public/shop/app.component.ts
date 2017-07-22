@@ -11,10 +11,15 @@ declare var $:any;
 
 export class AppComponent implements OnInit{
 	
-	
+	numberOfPurchasedProducts: number = 0
+
 	ngOnInit() {
 		
 	}
 
+	onPurchased(numberOfPurchasedProducts: number) {
+    this.numberOfPurchasedProducts = numberOfPurchasedProducts
+    console.log("this.numberOfPurchasedProducts: ", this.numberOfPurchasedProducts)
+  }
 }
 
