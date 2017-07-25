@@ -1,1 +1,1 @@
-web: concurrently \"npm run tsc:w\" \"node app.js\"
+web: concurrently "npm run tsc:w" "node app.js"
