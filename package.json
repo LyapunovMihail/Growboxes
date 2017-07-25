@@ -1,5 +1,5 @@
 {
-  "name": "chat",
+  "name": "growbosex",
   "version": "0.0.1",
   "private": true,
   "scripts": {
@@ -17,7 +17,7 @@
     "ejs": "*",
     "express": "3.3.8",
     "mongodb": "^1.3.19",
-    "karma": "0.13.19",
+    "karma": "0.13.19"
   },
   "devDependencies": {
     "@types/core-js": "^0.9.34",
