@@ -1,7 +1,7 @@
 {
-	"port": 3000,
+	"port": 5000,
 	"mongoose": {
-		"uri": process.env.MONGODB_URI,
+		"uri": "mongodb://heroku_4t11kqhm:lt57ddmudpes3qv1lglpfh5qq4@ds127063.mlab.com:27063/heroku_4t11kqhm",
 		"options": {
 			"server": {
 				"socketOptions": {
