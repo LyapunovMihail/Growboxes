@@ -10,8 +10,10 @@ var config = require('./config');
 //var mongoose = require('./libs/mongoose');
 var HttpError = require('./error/index').HttpError;
 
+var port = process.env.PORT || config.get('port');
+
 var app = express();
-app.set('port', process.env.PORT || config.get('port'));
+app.set('port', port);
 
 app.engine('ejs', require('ejs-locals'));
 app.set('views', __dirname);
@@ -66,8 +68,8 @@ app.use(function(err,req,res, next) {
 });
 
 var server = http.createServer(app);
-server.listen(process.env.PORT || config.get('port'), function(){
-  console.log('Express server listening on port ' + process.env.PORT || config.get('port'));
+server.listen(port, function(){
+  console.log('Express server listening on port ' + port);
 });
 
 //var io = require('./socket/index')(server);
