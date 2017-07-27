@@ -11,7 +11,7 @@ var config = require('./config');
 var HttpError = require('./error/index').HttpError;
 
 var app = express();
-app.set('port', config.get('port'));
+app.set('port', process.env.PORT);
 
 app.engine('ejs', require('ejs-locals'));
 app.set('views', __dirname);
@@ -66,8 +66,8 @@ app.use(function(err,req,res, next) {
 });
 
 var server = http.createServer(app);
-server.listen(config.get('port'), function(){
-  console.log('Express server listening on port ' + config.get('port'));
+server.listen(process.env.PORT, function(){
+  console.log('Express server listening on port ' + process.env.PORT);
 });
 
 //var io = require('./socket/index')(server);
