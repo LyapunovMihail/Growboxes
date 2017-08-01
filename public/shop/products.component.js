@@ -8,6 +8,7 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
+Object.defineProperty(exports, "__esModule", { value: true });
 var core_1 = require("@angular/core");
 var product_service_1 = require("./product.service");
 var router_1 = require("@angular/router");
@@ -53,8 +54,7 @@ ProductsComponent = __decorate([
             'assets/bootshop/css/bootstrap-responsive.css',
             'assets/bootshop/angular_components/style.css',
             'assets/bootshop/js/google-code-prettify/prettify.css',
-            'assets/css/progressusStyles.css',
-            'assets/css/font-awesome.min.css'
+            'assets/css/progressusStyles.css'
         ]
     }),
     __metadata("design:paramtypes", [product_service_1.ProductService,

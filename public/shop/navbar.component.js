@@ -8,6 +8,7 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
+Object.defineProperty(exports, "__esModule", { value: true });
 var core_1 = require("@angular/core");
 var product_service_1 = require("./product.service");
 var NavbarComponent = (function () {
@@ -71,7 +72,6 @@ NavbarComponent = __decorate([
         templateUrl: 'navbar.component.html',
         styleUrls: [
             'assets/css/bootstrapNavbarButtonFix.min.css',
-            'assets/css/font-awesome.min.css',
             'assets/css/bootstrap-theme.css',
             'assets/css/main.css',
             'assets/css/progressusStyles.css'

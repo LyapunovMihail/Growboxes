@@ -6,7 +6,6 @@ import { Component, OnInit} from '@angular/core';
   templateUrl: 'aboutUs.component.html',
   styleUrls: [
   	'assets/css/bootstrapNavbarButtonFix.min.css',
-  	'assets/css/font-awesome.min.css',
 	'assets/css/bootstrap-theme.css',	
 	'assets/css/main.css'   
   ]

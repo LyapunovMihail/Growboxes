@@ -8,6 +8,7 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
+Object.defineProperty(exports, "__esModule", { value: true });
 require("assets/fancybox/source/jquery.fancybox.pack.js?v=2.1.6");
 require("assets/fancybox/source/helpers/jquery.fancybox-buttons.js?v=1.0.5");
 require("assets/fancybox/source/helpers/jquery.fancybox-media.js?v=1.0.6");
@@ -98,8 +99,7 @@ ProductDetailsComponent = __decorate([
             'assets/bootshop/css/bootstrap-responsive.css',
             'assets/bootshop/angular_components/style.css',
             'assets/bootshop/js/google-code-prettify/prettify.css',
-            'assets/css/progressusStyles.css',
-            'assets/css/font-awesome.min.css'
+            'assets/css/progressusStyles.css'
         ]
     }),
     __metadata("design:paramtypes", [product_service_1.ProductService,

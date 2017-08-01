@@ -6,7 +6,6 @@ import { Router} from '@angular/router'
   templateUrl: 'login.component.html',
   styleUrls: [ 
 	  'assets/css/bootstrap.min.css',
-	  'assets/css/font-awesome.min.css',
 	  'assets/css/bootstrap-theme.css',
 	  'assets/css/main.css'  
   ]

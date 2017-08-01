@@ -1,3 +1,9 @@
+@import "assets/css/font-awesome.min.css";
+
+
+
+
+
 * {
     margin: 0;
     padding: 0;
@@ -21,6 +27,11 @@ body {
     color: #333;
     background-color: #fff;
     margin: 0;
+    background-image: url(assets/images/bg-body.png);
+    background-position: top center;
+    background-repeat: repeat !important; 
+    background-attachment: scroll !important;
+
 }
 
 html {
@@ -31,9 +42,22 @@ html {
     -webkit-text-size-adjust: 100%;
 }
 
+.mainContainer {
+    background-color: #fff; 
+    box-shadow: 0px 0px 60px 0px rgba(0,0,0,0.45);
+}
+
 .blackHeader {
     height:100px; 
     min-height: 100px; 
     padding-top:0px;
     background-color: black;
 }
+
+/*
+box-shadow: 0px 0px 60px 0px rgba(0,0,0,0.45);
+background-image: url(image/catalog/gardentools/bg-body.png);
+     background-position: top center;
+     background-repeat: repeat !important; 
+    background-attachment: scroll !important;
+*/

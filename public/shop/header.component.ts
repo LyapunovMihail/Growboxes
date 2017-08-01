@@ -5,7 +5,6 @@ import { Component} from '@angular/core';
   templateUrl: 'header.component.html',
   styleUrls: [ 
   	'assets/css/bootstrap.min.css',
-	'assets/css/font-awesome.min.css',
 	'assets/css/bootstrap-theme.css',
 	'assets/css/main.css' 
   ]
