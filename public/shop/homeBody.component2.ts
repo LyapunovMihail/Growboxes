@@ -5,9 +5,9 @@ import { Component} from '@angular/core';
   selector: 'shop-home-body2',
   templateUrl: '/homeBody.component2.html',
   styleUrls: [ 
-	  'assets/css/bootstrap.min.css',
-	  'assets/css/bootstrap-theme.css',
-	  'assets/css/main.css'  
+  	'assets/css/bootstrapNavbarButtonFix.min.css',
+  	'assets/css/bootstrap-theme.css',	
+	'assets/css/main.css'
   ]
 })
 

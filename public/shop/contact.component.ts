@@ -5,8 +5,8 @@ import { Component} from '@angular/core';
   templateUrl: 'contact.component.html',
   styleUrls: [
   	'assets/css/bootstrapNavbarButtonFix.min.css',
-	'assets/css/bootstrap-theme.css',	
-	'assets/css/main.css'   
+  	'assets/css/bootstrap-theme.css',	
+	'assets/css/main.css'
   ]
 })
 

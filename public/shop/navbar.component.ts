@@ -47,15 +47,6 @@ export class NavbarComponent implements OnInit{
 		// или "два-в-одном", вместо двух последних строк:
 		$(window).on('load resize',windowSize);
 		*/
-		$(".headroom").headroom({
-			"tolerance": 20,
-			"offset": 50,
-			"classes": {
-				"initial": "animated",
-				"pinned": "slideDown",
-				"unpinned": "slideUp"
-			}
-		});
 
 		this.getPurchasedProducts()
 	}

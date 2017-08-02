@@ -1,8 +1,5 @@
 import "http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js";
 import "http://netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js";
-import "assets/js/headroom.min.js";
-import "assets/js/jQuery.headroom.min.js";
-import "assets/js/template.js";
 
 
 
@@ -24,15 +21,15 @@ import { HomeBodyComponent } from './homeBody.component';
 	import { HomeBodyComponent2 } from './homeBody.component2';
 //import { SpecialOfferComponent } from './special_offer.component';
 //import { NormalComponent } from './normal.component';
-import { AboutUsComponent } from './aboutUs.component';
+//import { AboutUsComponent } from './aboutUs.component';
 import { ContactComponent } from './contact.component';
 
 import { ProductsComponent } from './products.component';
 import { ProductDetailsComponent } from './product_details.component';
 import { ProductSummaryComponent } from './product_summary.component';
 import { CheckoutComponent } from './checkout.component';
-import { LoginComponent } from './login.component';
-import { RegisterComponent } from './register.component';
+//import { LoginComponent } from './login.component';
+//import { RegisterComponent } from './register.component';
 
 import { SaveProductComponent } from './save_product.component';
 
@@ -59,10 +56,10 @@ import { HttpModule }    from '@angular/http';
 	        path: 'home',
 	        component: HomeBodyComponent
 	   },
-	   {
+	   /*{
 	        path: 'about_us',
 	        component: AboutUsComponent
-	   },
+	   },*/
 	   {
 	        path: 'contact',
 	        component: ContactComponent
@@ -83,14 +80,14 @@ import { HttpModule }    from '@angular/http';
 	        path: 'product_details/:id',
 	        component: ProductDetailsComponent
 	   },
-	   {
+	   /*{
 	        path: 'login',
 	        component: LoginComponent
 	   },
 	   {
 	        path: 'register',
 	        component: RegisterComponent
-	   },
+	   },*/
 	   {
 	        path: 'save_product',
 	        component: SaveProductComponent
@@ -108,15 +105,15 @@ import { HttpModule }    from '@angular/http';
   		HomeBodyComponent1,
   		HomeBodyComponent2,
 
-  	AboutUsComponent,
+  	//AboutUsComponent,
   	ContactComponent,
 
   	ProductsComponent,
   	ProductSummaryComponent,
   	CheckoutComponent,
   	ProductDetailsComponent,
-  	LoginComponent,
-  	RegisterComponent,
+  	//LoginComponent,
+  	//RegisterComponent,
 
   	SaveProductComponent
   ],

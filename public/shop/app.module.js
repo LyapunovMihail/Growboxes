@@ -5,12 +5,11 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
     else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
-Object.defineProperty(exports, "__esModule", { value: true });
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
 require("http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js");
 require("http://netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js");
-require("assets/js/headroom.min.js");
-require("assets/js/jQuery.headroom.min.js");
-require("assets/js/template.js");
 var core_1 = require("@angular/core");
 var platform_browser_1 = require("@angular/platform-browser");
 var app_component_1 = require("./app.component");
@@ -26,14 +25,14 @@ var homeBody_component1_1 = require("./homeBody.component1");
 var homeBody_component2_1 = require("./homeBody.component2");
 //import { SpecialOfferComponent } from './special_offer.component';
 //import { NormalComponent } from './normal.component';
-var aboutUs_component_1 = require("./aboutUs.component");
+//import { AboutUsComponent } from './aboutUs.component';
 var contact_component_1 = require("./contact.component");
 var products_component_1 = require("./products.component");
 var product_details_component_1 = require("./product_details.component");
 var product_summary_component_1 = require("./product_summary.component");
 var checkout_component_1 = require("./checkout.component");
-var login_component_1 = require("./login.component");
-var register_component_1 = require("./register.component");
+//import { LoginComponent } from './login.component';
+//import { RegisterComponent } from './register.component';
 var save_product_component_1 = require("./save_product.component");
 var product_service_1 = require("./product.service");
 var router_1 = require("@angular/router");
@@ -62,10 +61,10 @@ AppModule = __decorate([
                     path: 'home',
                     component: homeBody_component_1.HomeBodyComponent
                 },
-                {
-                    path: 'about_us',
-                    component: aboutUs_component_1.AboutUsComponent
-                },
+                /*{
+                     path: 'about_us',
+                     component: AboutUsComponent
+                },*/
                 {
                     path: 'contact',
                     component: contact_component_1.ContactComponent
@@ -86,14 +85,14 @@ AppModule = __decorate([
                     path: 'product_details/:id',
                     component: product_details_component_1.ProductDetailsComponent
                 },
-                {
-                    path: 'login',
-                    component: login_component_1.LoginComponent
+                /*{
+                     path: 'login',
+                     component: LoginComponent
                 },
                 {
-                    path: 'register',
-                    component: register_component_1.RegisterComponent
-                },
+                     path: 'register',
+                     component: RegisterComponent
+                },*/
                 {
                     path: 'save_product',
                     component: save_product_component_1.SaveProductComponent
@@ -108,21 +107,22 @@ AppModule = __decorate([
             homeBody_component_1.HomeBodyComponent,
             homeBody_component1_1.HomeBodyComponent1,
             homeBody_component2_1.HomeBodyComponent2,
-            aboutUs_component_1.AboutUsComponent,
+            //AboutUsComponent,
             contact_component_1.ContactComponent,
             products_component_1.ProductsComponent,
             product_summary_component_1.ProductSummaryComponent,
             checkout_component_1.CheckoutComponent,
             product_details_component_1.ProductDetailsComponent,
-            login_component_1.LoginComponent,
-            register_component_1.RegisterComponent,
+            //LoginComponent,
+            //RegisterComponent,
             save_product_component_1.SaveProductComponent
         ],
         providers: [product_service_1.ProductService],
         bootstrap: [
             app_component_1.AppComponent
         ]
-    })
+    }),
+    __metadata("design:paramtypes", [])
 ], AppModule);
 exports.AppModule = AppModule;
 //# sourceMappingURL=app.module.js.map
