@@ -1,4 +1,4 @@
-<div style="margin-top: 30px; padding-left: 30px; padding-right: 30px" *ngIf="productsInBucket">
+<div class="buyPagesContainer" *ngIf="productsInBucket">
 
 	<ul class="breadcrumb">
 		<li><a routerLink="/home">Главная</a> <span class="divider">/</span></li>
@@ -6,12 +6,12 @@
   </ul>
 
 	<section class="main-content">				
-		<div class="row">
-			<div class="span9">					
+		<div>
+			<div>					
 				<h3 class="title"><span class="text">Корзина покупок</span></h3>
 				<hr class="soft"/>
 
-				<div style="padding-left: 95px" *ngIf="productsInBucket.length > 0">
+				<div *ngIf="productsInBucket.length > 0">
 					<table class="table table-striped">
 						<thead>
 							<tr>
