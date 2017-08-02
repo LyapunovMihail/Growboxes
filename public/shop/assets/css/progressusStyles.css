@@ -202,3 +202,13 @@ a:focus i.bucketBorder {
 input {
   max-width: 375px;
 }
+
+select {
+  max-width: 375px;
+}
+
+.buyPagesContainer {
+  margin-top: 30px;
+  padding-left: 30px; 
+  padding-right: 30px
+}
