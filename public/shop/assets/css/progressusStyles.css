@@ -200,15 +200,19 @@ a:focus i.bucketBorder {
 }
 
 input {
-  max-width: 375px;
+  max-width: 265px;
 }
 
 select {
-  max-width: 375px;
+  max-width: 265px;
 }
 
 .buyPagesContainer {
   margin-top: 30px;
   padding-left: 30px; 
   padding-right: 30px
+}
+
+.bucketTable {
+  overflow: auto
 }
