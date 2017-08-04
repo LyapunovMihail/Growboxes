@@ -1,0 +1,62 @@
+.progressusButton {
+    display: inline-block;
+    margin-bottom: 0;
+    font-weight: 400;
+    text-align: center;
+    vertical-align: middle;
+    cursor: pointer;
+    background-image: none;
+    border: 1px solid transparent;
+    white-space: nowrap;
+    padding: 6px 12px;
+    font-size: 14px;
+    line-height: 1.428571429;
+    border-radius: 4px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+
+        color: #333;
+    background-color: #fff;
+    border-color: #ccc;
+
+        padding: 10px 40px;
+    font-weight: bold;
+    border: 0 none;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+
+        text-shadow: none;
+    background: transparent;
+    color: rgba(50,50,50,.5);
+    -webkit-box-shadow: inset 0px 0px 0px 3px rgba(50,50,50,.5);
+    -moz-box-shadow: inset 0px 0px 0px 3px rgba(50,50,50,.5);
+    box-shadow: inset 0px 0px 0px 3px rgba(50,50,50,.5);
+}
+
+.progressusButton2 {
+        user-select: none;
+        font-size: 14px;
+    line-height: 1.428571429;
+        white-space: nowrap;
+            text-align: center;
+    vertical-align: middle;
+    cursor: pointer;
+        display: inline-block;
+    margin-bottom: 0;
+        border-radius: 3px;
+            padding: 10px 40px;
+    font-weight: bold;
+    border: 0 none;
+        box-shadow: inset 0px 0px 0px 3px rgba(50,50,50,.5);
+        text-shadow: none;
+    background: transparent;
+    color: rgba(50,50,50,.5);
+}
+
+a:hover {
+    text-decoration: none;
+}
