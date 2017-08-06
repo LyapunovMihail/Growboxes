@@ -2,40 +2,40 @@
 
 
 	<div class="span9" style="width: auto">
-    <ul class="breadcrumb">
-    <li><a routerLink="/home">Главная</a> <span class="divider">/</span></li>
-    <li><a routerLink="/products/{{categories[productDetail.category]}}">{{productDetail.category}}</a> <span class="divider">/</span></li>
-    <li class="active">{{productDetail.name}}</li>
-    </ul>	
+	<ul class="breadcrumb">
+	<li><a routerLink="/home">Главная</a> <span class="divider">/</span></li>
+	<li><a routerLink="/products/{{categories[productDetail.category]}}">{{productDetail.category}}</a> <span class="divider">/</span></li>
+	<li class="active">{{productDetail.name}}</li>
+	</ul>	
 	<div class="row">	  
 			<div id="gallery" class="span4">
-	            <a class="fancybox-thumb" rel="fancybox-thumb" href="{{productDetail.imgUrl}}" title="Fujifilm FinePix S2950 Digital Camera">
+				<a class="fancybox-thumb" rel="fancybox-thumb" href="{{productDetail.imgUrl}}" title="Fujifilm FinePix S2950 Digital Camera">
 					<img src="{{productDetail.imgUrl}}" width="100%" alt="Fujifilm FinePix S2950 Digital Camera"/>
-	            </a>
+				</a>
 				<div id="myCarousel" class="moreOptopm carousel slide">
-	                <div class="carousel-inner">
-	                  <div class="item active">
-	                   <a class="fancybox-thumb" rel="fancybox-thumb" href="assets/products/large/f1.jpg" title="item 1" *ngIf="!productDetail.imgUrl1"> <img width="29%" src="assets/products/large/f1.jpg" alt=""/></a>
-	                   <a class="fancybox-thumb" rel="fancybox-thumb" href="{{productDetail.imgUrl1}}" title="item 1" *ngIf="productDetail.imgUrl1"> <img width="29%" src="{{productDetail.imgUrl1}}" alt=""/></a>
-	                   <a class="fancybox-thumb" rel="fancybox-thumb" href="assets/products/large/f2.jpg" title="item 2" *ngIf="!productDetail.imgUrl2"> <img width="29%" src="assets/products/large/f2.jpg" alt=""/></a>
-	                   <a class="fancybox-thumb" rel="fancybox-thumb" href="{{productDetail.imgUrl2}}" title="item 2" *ngIf="productDetail.imgUrl2"> <img width="29%" src="{{productDetail.imgUrl2}}" alt=""/></a>
-	                   <a class="fancybox-thumb" rel="fancybox-thumb" href="assets/products/large/f3.jpg" title="item 3" *ngIf="!productDetail.imgUrl3"> <img width="29%" src="assets/products/large/f3.jpg" alt=""/></a>
-	                   <a class="fancybox-thumb" rel="fancybox-thumb" href="{{productDetail.imgUrl3}}" title="item 3" *ngIf="productDetail.imgUrl3"> <img width="29%" src="{{productDetail.imgUrl3}}" alt=""/></a>
-	                  </div>
-	                  <div class="item">
-	                   <a href="assets/products/large/f3.jpg" *ngIf="!productDetail.imgUrl4"> <img width="29%" src="assets/products/large/f3.jpg" alt=""/></a>
-	                   <a href="{{productDetail.imgUrl4}}" *ngIf="productDetail.imgUrl4"> <img width="29%" src="{{productDetail.imgUrl4}}" alt=""/></a>
-	                   <a href="assets/products/large/f1.jpg" *ngIf="!productDetail.imgUrl5"> <img width="29%" src="assets/products/large/f1.jpg" alt=""/></a>
-	                   <a href="{{productDetail.imgUrl5}}" *ngIf="productDetail.imgUrl5"> <img width="29%" src="{{productDetail.imgUrl5}}" alt=""/></a>
-	                   <a href="assets/products/large/f2.jpg" *ngIf="!productDetail.imgUrl6"> <img width="29%" src="assets/products/large/f2.jpg" alt=""/></a>
-	                   <a href="{{productDetail.imgUrl6}}" *ngIf="productDetail.imgUrl6"> <img width="29%" src="{{productDetail.imgUrl6}}" alt=""/></a>
-	                  </div>
-	                </div>
-                
-			  		<a class="left carousel-control" href="#myCarousel" data-slide="prev">‹</a>
-              		<a class="right carousel-control" href="#myCarousel" data-slide="next">›</a> 
+					<div class="carousel-inner">
+					  <div class="item active">
+					   <a class="fancybox-thumb" rel="fancybox-thumb" href="assets/products/large/f1.jpg" title="item 1" *ngIf="!productDetail.imgUrl1"> <img width="29%" src="assets/products/large/f1.jpg" alt=""/></a>
+					   <a class="fancybox-thumb" rel="fancybox-thumb" href="{{productDetail.imgUrl1}}" title="item 1" *ngIf="productDetail.imgUrl1"> <img width="29%" src="{{productDetail.imgUrl1}}" alt=""/></a>
+					   <a class="fancybox-thumb" rel="fancybox-thumb" href="assets/products/large/f2.jpg" title="item 2" *ngIf="!productDetail.imgUrl2"> <img width="29%" src="assets/products/large/f2.jpg" alt=""/></a>
+					   <a class="fancybox-thumb" rel="fancybox-thumb" href="{{productDetail.imgUrl2}}" title="item 2" *ngIf="productDetail.imgUrl2"> <img width="29%" src="{{productDetail.imgUrl2}}" alt=""/></a>
+					   <a class="fancybox-thumb" rel="fancybox-thumb" href="assets/products/large/f3.jpg" title="item 3" *ngIf="!productDetail.imgUrl3"> <img width="29%" src="assets/products/large/f3.jpg" alt=""/></a>
+					   <a class="fancybox-thumb" rel="fancybox-thumb" href="{{productDetail.imgUrl3}}" title="item 3" *ngIf="productDetail.imgUrl3"> <img width="29%" src="{{productDetail.imgUrl3}}" alt=""/></a>
+					  </div>
+					  <div class="item" *ngIf="productDetail.imgUrl4">
+					   <a class="fancybox-thumb" rel="fancybox-thumb" href="assets/products/large/f3.jpg" *ngIf="!productDetail.imgUrl4"> <img width="29%" src="assets/products/large/f3.jpg" alt=""/></a>
+					   <a class="fancybox-thumb" rel="fancybox-thumb" href="{{productDetail.imgUrl4}}" *ngIf="productDetail.imgUrl4"> <img width="29%" src="{{productDetail.imgUrl4}}" alt=""/></a>
+					   <a class="fancybox-thumb" rel="fancybox-thumb" href="assets/products/large/f1.jpg" *ngIf="!productDetail.imgUrl5"> <img width="29%" src="assets/products/large/f1.jpg" alt=""/></a>
+					   <a class="fancybox-thumb" rel="fancybox-thumb" href="{{productDetail.imgUrl5}}" *ngIf="productDetail.imgUrl5"> <img width="29%" src="{{productDetail.imgUrl5}}" alt=""/></a>
+					   <a class="fancybox-thumb" rel="fancybox-thumb" href="assets/products/large/f2.jpg" *ngIf="!productDetail.imgUrl6"> <img width="29%" src="assets/products/large/f2.jpg" alt=""/></a>
+					   <a class="fancybox-thumb" rel="fancybox-thumb" href="{{productDetail.imgUrl6}}" *ngIf="productDetail.imgUrl6"> <img width="29%" src="{{productDetail.imgUrl6}}" alt=""/></a>
+					  </div>
+					</div>
+				
+					<a class="left carousel-control" href="#myCarousel" data-slide="prev">‹</a>
+					<a class="right carousel-control" href="#myCarousel" data-slide="next">›</a> 
 			  
-              	</div>
+				</div>
 			  
 			</div>
 
@@ -63,14 +63,14 @@
 			</div>
 			
 			<div class="span9">
-            <ul id="productDetail" class="nav nav-tabs">
-              <li class="active"><a href="#home" data-toggle="tab">Product Details</a></li>
-              <li><a href="#profile" data-toggle="tab">Related Products</a></li>
-            </ul>
-            <div id="myTabContent" class="tab-content">
-              <div class="tab-pane fade active in" id="home">
+			<ul id="productDetail" class="nav nav-tabs">
+			  <li class="active"><a href="#home" data-toggle="tab">Product Details</a></li>
+			  <!--<li><a href="#profile" data-toggle="tab">Related Products</a></li>-->
+			</ul>
+			<div id="myTabContent" class="tab-content">
+			  <div class="tab-pane fade active in" id="home">
 			  <h4>Product Information</h4>
-                <table class="table table-bordered" cellspacing="0">
+				<table class="table table-bordered" cellspacing="0">
 				<tbody>
 				<tr class="techSpecRow"><th colspan="2">Product Details</th></tr>
 				<tr class="techSpecRow"><td class="techSpecTD1">Brand: </td><td class="techSpecTD2">Fujifilm</td></tr>
@@ -106,150 +106,42 @@
 				<p>
 				Even at the longest zoom settings or in the most challenging of lighting conditions, the S2950 is able to produce crisp, clean results. With its mechanically stabilised 1/2 3", 14 megapixel CCD sensor, and high ISO sensitivity settings, Fujifilm's Dual Image Stabilisation technology combines to reduce the blurring effects of both hand-shake and subject movement to provide superb pictures.
 				</p>
-              </div>
-		<div class="tab-pane fade" id="profile">
-		<div id="myTab" class="pull-right">
-		 <a href="#listView" data-toggle="tab"><span class="btn btn-large"><i class="icon-list"></i></span></a>
-		 <a href="#blockView" data-toggle="tab"><span class="btn btn-large active"><i class="icon-th-large icon-white"></i></span></a>
-		</div>
-		<br class="clr"/>
-		<hr class="soft"/>
-
-		<div class="tab-content">
-			<div class="tab-pane" id="listView">
-
-			<div class="row" *ngFor="let item of products;">	  
-				<div id="productView" class="span2">
-					<img src="{{item.imgUrl}}" alt=""/>
-				</div>
-				<div class="span4" style="margin-bottom: 20px">
-					<h3>{{item.name}}</h3>				
-					<p>
-					{{item.description}}
-					</p>
-					<br class="clr"/>
-				</div>
-				<div class="span3 alignR">
-				<form class="form-horizontal qtyFrm">
-				<h3> ${{item.price}}</h3>
-				  <a class="btn btn-large colorButton" (click)="purchaseProduct({productId: item._id,
-				  number: 1})"><span class="icon-white icon-shopping-cart"></span> Купить</a>
-				  <a routerLink="/product_details/{{item._id}}" class="btn btn-large">Подробнее</a>
-					</form>
-				</div>
+			  </div>
+		<!--<div class="tab-pane fade" id="profile">
+			<div id="myTab" class="pull-right">
+			 <a href="#listView" data-toggle="tab" (click)="activeTabButton = 'list'"><span class="btn btn-large" [class.active]="activeTabButton === 'list'"><i class="icon-list" [class.icon-white]="activeTabButton === 'list'"></i></span></a>
+			 <a href="#blockView" data-toggle="tab" (click)="activeTabButton = 'block'"><span class="btn btn-large"  [class.active]="activeTabButton === 'block'"><i class="icon-th-large" [class.icon-white]="activeTabButton === 'block'"></i></span></a>
 			</div>
-
-
-			<div class="row">	  
-				<div id="productView" class="span2">
-					<img src="assets/products/4.jpg" alt=""/>
-				</div>
-				<div class="span4">
-					<h3>Гроубокс 4</h3>				
-					<p>
-					Nowadays the lingerie industry is one of the most successful business spheres.We always stay in touch with the latest fashion tendencies - 
-					that is why our goods are so popular..
-					</p>
-					<br class="clr"/>
-				</div>
-				<div class="span3 alignR">
-					<form class="form-horizontal qtyFrm">
-					<h3> $140.00</h3>		
-					<a routerLink="/product_details" class="btn btn-large colorButton"><i class="icon-white icon-shopping-cart"></i> Купить</a>
-					<a routerLink="/product_details" class="btn btn-large">Подробнее</a>				
-					</form>
-				</div>
-			</div>
-
+			<br class="clr"/>
 			<hr class="soft"/>
-			<div class="row">	  
-				<div id="productView" class="span2">
-					<img src="assets/products/4.jpg" alt=""/>
-				</div>
-				<div class="span4">
-					<h3>Гроубокс 4</h3>				
-					<p>
-					Nowadays the lingerie industry is one of the most successful business spheres.We always stay in touch with the latest fashion tendencies - 
-					that is why our goods are so popular..
-					</p>
-					<br class="clr"/>
-				</div>
-				<div class="span3 alignR">
-					<form class="form-horizontal qtyFrm">
-					<h3> $140.00</h3>		
-					<a routerLink="/product_details" class="btn btn-large colorButton"><i class="icon-white icon-shopping-cart"></i> Купить</a>
-					<a routerLink="/product_details" class="btn btn-large">Подробнее</a>				
-					</form>
-				</div>
-			</div>
 
-			<hr class="soft"/>
-			<div class="row">	  
-				<div id="productView" class="span2">
-					<img src="assets/products/4.jpg" alt=""/>
+			<div class="tab-content">
+				<div class="tab-pane" id="listView">
+				
+				<div *ngFor="let item of products;">
+					<div class="row">	  
+						<div id="productView" class="span2">
+							<img src="{{item.imgUrl}}" alt=""/>
+						</div>
+						<div class="span4" style="margin-bottom: 20px">
+							<h3>{{item.name}}</h3>				
+							<p>
+							{{item.description}}
+							</p>
+							<br class="clr"/>
+						</div>
+						<div class="span3 alignR">
+						<form class="form-horizontal qtyFrm">
+						<h3> ${{item.price}}</h3>
+						  <a class="btn btn-large colorButton" (click)="purchaseProduct({productId: item._id,
+						  number: 1})"><span class="icon-white icon-shopping-cart"></span> Купить</a>
+						  <a routerLink="/product_details/{{item._id}}" class="btn btn-large">Подробнее</a>
+							</form>
+						</div>
+					</div>
+					<hr class="soft"/>
 				</div>
-				<div class="span4">
-					<h3>Гроубокс 4</h3>				
-					<p>
-					Nowadays the lingerie industry is one of the most successful business spheres.We always stay in touch with the latest fashion tendencies - 
-					that is why our goods are so popular..
-					</p>
-					<br class="clr"/>
-				</div>
-				<div class="span3 alignR">
-					<form class="form-horizontal qtyFrm">
-					<h3> $140.00</h3>		
-					<a routerLink="/product_details" class="btn btn-large colorButton"><i class="icon-white icon-shopping-cart"></i> Купить</a>
-					<a routerLink="/product_details" class="btn btn-large">Подробнее</a>				
-					</form>
-				</div>
-			</div>
 
-			<hr class="soft"/>
-			<div class="row">	  
-				<div id="productView" class="span2">
-					<img src="assets/products/4.jpg" alt=""/>
-				</div>
-				<div class="span4">
-					<h3>Гроубокс 4</h3>				
-					<p>
-					Nowadays the lingerie industry is one of the most successful business spheres.We always stay in touch with the latest fashion tendencies - 
-					that is why our goods are so popular..
-					</p>
-					<br class="clr"/>
-				</div>
-				<div class="span3 alignR">
-					<form class="form-horizontal qtyFrm">
-					<h3> $140.00</h3>		
-					<a routerLink="/product_details" class="btn btn-large colorButton"><i class="icon-white icon-shopping-cart"></i> Купить</a>
-					<a routerLink="/product_details" class="btn btn-large">Подробнее</a>				
-					</form>
-				</div>
-			</div>
-			
-			<hr class="soft"/>
-			<div class="row">	  
-				<div id="productView" class="span2">
-					<img src="assets/products/4.jpg" alt=""/>
-				</div>
-				<div class="span4">
-					<h3>Гроубокс 4</h3>				
-					<p>
-					Nowadays the lingerie industry is one of the most successful business spheres.We always stay in touch with the latest fashion tendencies - 
-					that is why our goods are so popular..
-					</p>
-					<br class="clr"/>
-				</div>
-				<div class="span3 alignR">
-					<form class="form-horizontal qtyFrm">
-					<h3> $140.00</h3>		
-					<a routerLink="/product_details" class="btn btn-large colorButton"><i class="icon-white icon-shopping-cart"></i> Купить</a>
-					<a routerLink="/product_details" class="btn btn-large">Подробнее</a>				
-					</form>
-				</div>
-			</div>
-
-			<hr class="soft"/>
 				<div class="row">	  
 					<div id="productView" class="span2">
 						<img src="assets/products/4.jpg" alt=""/>
@@ -270,129 +162,239 @@
 						</form>
 					</div>
 				</div>
-			</div>
 
-			<hr class="soft"/>
+				<hr class="soft"/>
+				<div class="row">	  
+					<div id="productView" class="span2">
+						<img src="assets/products/4.jpg" alt=""/>
+					</div>
+					<div class="span4">
+						<h3>Гроубокс 4</h3>				
+						<p>
+						Nowadays the lingerie industry is one of the most successful business spheres.We always stay in touch with the latest fashion tendencies - 
+						that is why our goods are so popular..
+						</p>
+						<br class="clr"/>
+					</div>
+					<div class="span3 alignR">
+						<form class="form-horizontal qtyFrm">
+						<h3> $140.00</h3>		
+						<a routerLink="/product_details" class="btn btn-large colorButton"><i class="icon-white icon-shopping-cart"></i> Купить</a>
+						<a routerLink="/product_details" class="btn btn-large">Подробнее</a>				
+						</form>
+					</div>
+				</div>
+
+				<hr class="soft"/>
+				<div class="row">	  
+					<div id="productView" class="span2">
+						<img src="assets/products/4.jpg" alt=""/>
+					</div>
+					<div class="span4">
+						<h3>Гроубокс 4</h3>				
+						<p>
+						Nowadays the lingerie industry is one of the most successful business spheres.We always stay in touch with the latest fashion tendencies - 
+						that is why our goods are so popular..
+						</p>
+						<br class="clr"/>
+					</div>
+					<div class="span3 alignR">
+						<form class="form-horizontal qtyFrm">
+						<h3> $140.00</h3>		
+						<a routerLink="/product_details" class="btn btn-large colorButton"><i class="icon-white icon-shopping-cart"></i> Купить</a>
+						<a routerLink="/product_details" class="btn btn-large">Подробнее</a>				
+						</form>
+					</div>
+				</div>
+
+				<hr class="soft"/>
+				<div class="row">	  
+					<div id="productView" class="span2">
+						<img src="assets/products/4.jpg" alt=""/>
+					</div>
+					<div class="span4">
+						<h3>Гроубокс 4</h3>				
+						<p>
+						Nowadays the lingerie industry is one of the most successful business spheres.We always stay in touch with the latest fashion tendencies - 
+						that is why our goods are so popular..
+						</p>
+						<br class="clr"/>
+					</div>
+					<div class="span3 alignR">
+						<form class="form-horizontal qtyFrm">
+						<h3> $140.00</h3>		
+						<a routerLink="/product_details" class="btn btn-large colorButton"><i class="icon-white icon-shopping-cart"></i> Купить</a>
+						<a routerLink="/product_details" class="btn btn-large">Подробнее</a>				
+						</form>
+					</div>
+				</div>
+				
+				<hr class="soft"/>
+				<div class="row">	  
+					<div id="productView" class="span2">
+						<img src="assets/products/4.jpg" alt=""/>
+					</div>
+					<div class="span4">
+						<h3>Гроубокс 4</h3>				
+						<p>
+						Nowadays the lingerie industry is one of the most successful business spheres.We always stay in touch with the latest fashion tendencies - 
+						that is why our goods are so popular..
+						</p>
+						<br class="clr"/>
+					</div>
+					<div class="span3 alignR">
+						<form class="form-horizontal qtyFrm">
+						<h3> $140.00</h3>		
+						<a routerLink="/product_details" class="btn btn-large colorButton"><i class="icon-white icon-shopping-cart"></i> Купить</a>
+						<a routerLink="/product_details" class="btn btn-large">Подробнее</a>				
+						</form>
+					</div>
+				</div>
+
+				<hr class="soft"/>
+					<div class="row">	  
+						<div id="productView" class="span2">
+							<img src="assets/products/4.jpg" alt=""/>
+						</div>
+						<div class="span4">
+							<h3>Гроубокс 4</h3>				
+							<p>
+							Nowadays the lingerie industry is one of the most successful business spheres.We always stay in touch with the latest fashion tendencies - 
+							that is why our goods are so popular..
+							</p>
+							<br class="clr"/>
+						</div>
+						<div class="span3 alignR">
+							<form class="form-horizontal qtyFrm">
+							<h3> $140.00</h3>		
+							<a routerLink="/product_details" class="btn btn-large colorButton"><i class="icon-white icon-shopping-cart"></i> Купить</a>
+							<a routerLink="/product_details" class="btn btn-large">Подробнее</a>				
+							</form>
+						</div>
+					</div>
+				</div>
+
+				<hr class="soft"/>
+				
 			
-		
-			<div class="tab-pane active" id="blockView">
-				<ul class="thumbnails">
+				<div class="tab-pane active" id="blockView">
+					<ul class="thumbnails">
 
-					<li class="span3" *ngFor="let item of products;">
-				  
-						<div class="thumbnail">
-							<a routerLink="/product_details/{{item._id}}">
-								<img src="{{item.imgUrl}}" alt=""/>
-							</a>
-							<div class="caption" align="center">
-								<div class="text">
-									<h5>{{item.name}}</h5>
-									<p> 
-									 	I'm a paragraph. Click here 
-									</p>
-									<h4>${{item.price}}</h4>
-								</div>
-								<div class="icons" align="center">
-									<i class="fa fa-shopping-cart iconBorder iconBorderCart" 
-									(click)="purchaseProduct({productId: item._id, number: 1})"></i>
+						<li class="span3" *ngFor="let item of products;">
+					  
+							<div class="thumbnail">
+								<a routerLink="/product_details/{{item._id}}">
+									<img src="{{item.imgUrl}}" alt=""/>
+								</a>
+								<div class="caption" align="center">
+									<div class="text">
+										<h5>{{item.name}}</h5>
+										<p> 
+											I'm a paragraph. Click here 
+										</p>
+										<h4>${{item.price}}</h4>
+									</div>
+									<div class="icons" align="center">
+										<i class="fa fa-shopping-cart iconBorder iconBorderCart" 
+										(click)="purchaseProduct({productId: item._id, number: 1})"></i>
+									</div>
 								</div>
 							</div>
-						</div>
-						  
-					</li>
+							  
+						</li>
 
-					<li class="span3">
-					  <a routerLink="/product_details">
-						  <div class="thumbnail">
-								<img src="assets/products/4.jpg" alt=""/>
-								<div class="caption" align="center">
-								  <h5>Manicure &amp; Pedicure</h5>
-								  <p> 
-									I'm a paragraph. Click here 
-								  </p>
-								  <h4>$22.00</h4>
-								</div>	
-						  </div>
-					  </a>
-					</li>
-					<li class="span3">
-					  <a routerLink="/product_details">
-						  <div class="thumbnail">
-								<img src="assets/products/4.jpg" alt=""/>
-								<div class="caption" align="center">
-								  <h5>Manicure &amp; Pedicure</h5>
-								  <p> 
-									I'm a paragraph. Click here 
-								  </p>
-								  <h4>$22.00</h4>
-								</div>	
-						  </div>
-					  </a>
-					</li>
-					<li class="span3">
-					  <a routerLink="/product_details">
-						  <div class="thumbnail">
-								<img src="assets/products/4.jpg" alt=""/>
-								<div class="caption" align="center">
-								  <h5>Manicure &amp; Pedicure</h5>
-								  <p> 
-									I'm a paragraph. Click here 
-								  </p>
-								  <h4>$22.00</h4>
-								</div>	
-						  </div>
-					  </a>
-					</li>
-					<li class="span3">
-					  <a routerLink="/product_details">
-						  <div class="thumbnail">
-								<img src="assets/products/4.jpg" alt=""/>
-								<div class="caption" align="center">
-								  <h5>Manicure &amp; Pedicure</h5>
-								  <p> 
-									I'm a paragraph. Click here 
-								  </p>
-								  <h4>$22.00</h4>
-								</div>	
-						  </div>
-					  </a>
-					</li>
-					<li class="span3">
-					  <a routerLink="/product_details">
-						  <div class="thumbnail">
-								<img src="assets/products/4.jpg" alt=""/>
-								<div class="caption" align="center">
-								  <h5>Manicure &amp; Pedicure</h5>
-								  <p> 
-									I'm a paragraph. Click here 
-								  </p>
-								  <h4>$22.00</h4>
-								</div>	
-						  </div>
-					  </a>
-					</li>
-					<li class="span3">
-					  <a routerLink="/product_details">
-						  <div class="thumbnail">
-								<img src="assets/products/4.jpg" alt=""/>
-								<div class="caption" align="center">
-								  <h5>Manicure &amp; Pedicure</h5>
-								  <p> 
-									I'm a paragraph. Click here 
-								  </p>
-								  <h4>$22.00</h4>
-								</div>	
-						  </div>
-					  </a>
-					</li>
-				</ul>
-			<hr class="soft"/>
+						<li class="span3">
+						  <a routerLink="/product_details">
+							  <div class="thumbnail">
+									<img src="assets/products/4.jpg" alt=""/>
+									<div class="caption" align="center">
+									  <h5>Manicure &amp; Pedicure</h5>
+									  <p> 
+										I'm a paragraph. Click here 
+									  </p>
+									  <h4>$22.00</h4>
+									</div>	
+							  </div>
+						  </a>
+						</li>
+						<li class="span3">
+						  <a routerLink="/product_details">
+							  <div class="thumbnail">
+									<img src="assets/products/4.jpg" alt=""/>
+									<div class="caption" align="center">
+									  <h5>Manicure &amp; Pedicure</h5>
+									  <p> 
+										I'm a paragraph. Click here 
+									  </p>
+									  <h4>$22.00</h4>
+									</div>	
+							  </div>
+						  </a>
+						</li>
+						<li class="span3">
+						  <a routerLink="/product_details">
+							  <div class="thumbnail">
+									<img src="assets/products/4.jpg" alt=""/>
+									<div class="caption" align="center">
+									  <h5>Manicure &amp; Pedicure</h5>
+									  <p> 
+										I'm a paragraph. Click here 
+									  </p>
+									  <h4>$22.00</h4>
+									</div>	
+							  </div>
+						  </a>
+						</li>
+						<li class="span3">
+						  <a routerLink="/product_details">
+							  <div class="thumbnail">
+									<img src="assets/products/4.jpg" alt=""/>
+									<div class="caption" align="center">
+									  <h5>Manicure &amp; Pedicure</h5>
+									  <p> 
+										I'm a paragraph. Click here 
+									  </p>
+									  <h4>$22.00</h4>
+									</div>	
+							  </div>
+						  </a>
+						</li>
+						<li class="span3">
+						  <a routerLink="/product_details">
+							  <div class="thumbnail">
+									<img src="assets/products/4.jpg" alt=""/>
+									<div class="caption" align="center">
+									  <h5>Manicure &amp; Pedicure</h5>
+									  <p> 
+										I'm a paragraph. Click here 
+									  </p>
+									  <h4>$22.00</h4>
+									</div>	
+							  </div>
+						  </a>
+						</li>
+						<li class="span3">
+						  <a routerLink="/product_details">
+							  <div class="thumbnail">
+									<img src="assets/products/4.jpg" alt=""/>
+									<div class="caption" align="center">
+									  <h5>Manicure &amp; Pedicure</h5>
+									  <p> 
+										I'm a paragraph. Click here 
+									  </p>
+									  <h4>$22.00</h4>
+									</div>	
+							  </div>
+						  </a>
+						</li>
+					</ul>
+				<hr class="soft"/>
+				</div>
 			</div>
+					<br class="clr">
+					 </div>-->
 		</div>
-				<br class="clr">
-					 </div>
-		</div>
-          </div>
+		  </div>
 
 	</div>
 </div>

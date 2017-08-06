@@ -27,6 +27,7 @@ export class ProductsComponent implements OnInit {
   products: any
   productsInBucket: any
   category: any
+  activeTabButton = "block" 
 
   ngOnInit() {
     

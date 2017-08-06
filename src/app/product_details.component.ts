@@ -35,6 +35,7 @@ export class ProductDetailsComponent implements OnInit {
 	productDetail: any
 	products: any
 	productsInBucket: any
+	activeTabButton = "block" 
 
 	ngOnInit() {
 
