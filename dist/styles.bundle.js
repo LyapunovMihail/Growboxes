@@ -1,5 +1,12 @@
 webpackJsonp([2],{
 
+/***/ "../../../../../src/app/assets/images/bg-body.png":
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "bg-body.6b8dfd099c33fd558bfa.png";
+
+/***/ }),
+
 /***/ "../../../../../src/styles.css":
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -35,7 +42,7 @@ exports = module.exports = __webpack_require__("../../../../css-loader/lib/css-b
 exports.push([module.i, "@import url(https://netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css);", ""]);
 
 // module
-exports.push([module.i, "* {\r\n    margin: 0;\r\n    padding: 0;\r\n}\r\n\r\n\r\n*, :before, :after {\r\n    box-sizing: border-box;\r\n}\r\n\r\nhtml, body {\r\n    height: 100%;\r\n    min-width: 626px;\r\n}\r\n\r\nbody {\r\n    font-family: \"Helvetica Neue\",Helvetica,Arial,sans-serif;\r\n    font-size: 14px;\r\n    line-height: 1.428571429;\r\n    color: #333;\r\n    background-color: #fff;\r\n    margin: 0;\r\n    /*background-image: url(./app/assets/images/bg-body.png);\r\n    background-position: top center;\r\n    background-repeat: repeat !important; \r\n    background-attachment: scroll !important;*/\r\n\r\n}\r\n\r\nhtml {\r\n    font-size: 62.5%;\r\n    -webkit-tap-highlight-color: rgba(0,0,0,0);\r\n    font-family: sans-serif;\r\n    -ms-text-size-adjust: 100%;\r\n    -webkit-text-size-adjust: 100%;\r\n}\r\n\r\n.mainContainer {\r\n    background-color: #fff; \r\n    box-shadow: 0px 0px 60px 0px rgba(0,0,0,0.45);\r\n}\r\n\r\n\r\n", ""]);
+exports.push([module.i, "* {\r\n    margin: 0;\r\n    padding: 0;\r\n}\r\n\r\n\r\n*, :before, :after {\r\n    box-sizing: border-box;\r\n}\r\n\r\nhtml, body {\r\n    height: 100%;\r\n    min-width: 626px;\r\n}\r\n\r\nbody {\r\n    font-family: \"Helvetica Neue\",Helvetica,Arial,sans-serif;\r\n    font-size: 14px;\r\n    line-height: 1.428571429;\r\n    color: #333;\r\n    background-color: #fff;\r\n    margin: 0;\r\n    background-image: url(" + __webpack_require__("../../../../../src/app/assets/images/bg-body.png") + ");\r\n    /*background-position: top center;\r\n    background-repeat: repeat !important; \r\n    background-attachment: scroll !important;*/\r\n\r\n}\r\n\r\nhtml {\r\n    font-size: 62.5%;\r\n    -webkit-tap-highlight-color: rgba(0,0,0,0);\r\n    font-family: sans-serif;\r\n    -ms-text-size-adjust: 100%;\r\n    -webkit-text-size-adjust: 100%;\r\n}\r\n\r\n.mainContainer {\r\n    background-color: #fff; \r\n    box-shadow: 0px 0px 60px 0px rgba(0,0,0,0.45);\r\n}\r\n\r\n\r\n", ""]);
 
 // exports
 
