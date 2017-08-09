@@ -18,6 +18,7 @@ exports.post = function(req, res, next) {
 	console.log("req.body: ", req.body)
 	var name = req.body.name;
 	var category = req.body.category;
+	var properties = req.body.properties;
 	var description = req.body.description;
 	var price = req.body.price;
 	var imgUrl = req.body.imgUrl;
@@ -28,7 +29,7 @@ exports.post = function(req, res, next) {
 	var imgUrl5 = req.body.imgUrl5;
 	var imgUrl6 = req.body.imgUrl6;
 
-	Product.saveProduct(name, category, description, price, imgUrl, imgUrl1, imgUrl2, imgUrl3, imgUrl4,
+	Product.saveProduct(name, category, properties, description, price, imgUrl, imgUrl1, imgUrl2, imgUrl3, imgUrl4,
 		imgUrl5, imgUrl6, function(err, product) {
 		if (err) {
 			if (err instanceof AuthError) {
@@ -48,6 +49,7 @@ exports.update = function(req, res, next) {
 	console.log("req.body: ", req.body)
 	var name = req.body.name;
 	var category = req.body.category;
+	var properties = req.body.properties;
 	var description = req.body.description;
 	var price = req.body.price;
 	var imgUrl = req.body.imgUrl;
@@ -58,7 +60,7 @@ exports.update = function(req, res, next) {
 	var imgUrl5 = req.body.imgUrl5;
 	var imgUrl6 = req.body.imgUrl6;
 
-	Product.updateProduct(name, category, description, price, imgUrl, imgUrl1, imgUrl2, imgUrl3, imgUrl4,
+	Product.updateProduct(name, category, properties, description, price, imgUrl, imgUrl1, imgUrl2, imgUrl3, imgUrl4,
 		imgUrl5, imgUrl6, function(err, product) {
 		if (err) {
 			if (err instanceof AuthError) {

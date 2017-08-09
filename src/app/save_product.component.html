@@ -28,10 +28,49 @@
 						  <option *ngFor="let item of categories" value="{{item}}">{{item}}</option>
 						</select>
 					</div>
+
+					<div style="margin-left: 40px" *ngIf="data.category === 'Гроубоксы'" >
+						<div class="control-group">
+							<label class="control-label">Размер</label>
+							<div class="controls">
+								<input type="text" placeholder="" class="input-xlarge" [(ngModel)]="data.properties.size">
+							</div>
+						</div>
+						<div class="control-group">
+							<label class="control-label">Вес</label>
+							<div class="controls">
+								<input type="text" placeholder="" class="input-xlarge" [(ngModel)]="data.properties.weight">
+							</div>
+						</div>
+						<div class="control-group">
+							<label class="control-label">Свет</label>
+							<div class="controls">
+								<input type="text" placeholder="" class="input-xlarge" [(ngModel)]="data.properties.light">
+							</div>
+						</div>
+						<div class="control-group">
+							<label class="control-label">Вентиляция</label>
+							<div class="controls">
+								<input type="text" placeholder="" class="input-xlarge" [(ngModel)]="data.properties.ventilation">
+							</div>
+						</div>
+						<div class="control-group">
+							<label class="control-label">Обшивка</label>
+							<div class="controls">
+								<input type="text" placeholder="" class="input-xlarge" [(ngModel)]="data.properties.covering">
+							</div>
+						</div>
+						<div class="control-group">
+							<label class="control-label">Также в комплекте</label>
+							<div class="controls">
+								<input type="text" placeholder="" class="input-xlarge" [(ngModel)]="data.properties.other">
+							</div>
+						</div>
+					</div>
+
 					<div class="control-group">
 						<label class="control-label">Описание</label>
 						<div class="controls">
-							<!--<input type="text" placeholder="" class="input-xlarge" [(ngModel)]="data.description">-->
 							<textarea class="form-control" rows="3" [(ngModel)]="data.description" style="min-width: 267px; border-radius: 10px"></textarea>
 						</div>
 					</div>
@@ -93,8 +132,7 @@
 
 			<div *ngIf="view.currentView == 'showProducts' && products" style="margin-right: 150px">
 				<div>
-					<li class="span3" *ngFor="let item of products;">
-					  
+					<li class="span3" *ngFor="let item of products;">		  
 					  <div class="thumbnail">
 							<a routerLink="/product_details/{{item._id}}">
 								<img src="{{item.imgUrl}}" alt=""/>
@@ -105,7 +143,7 @@
 								  <p> 
 									I'm a paragraph. Click here 
 								  </p>
-								  <h4>${{item.price}}</h4>
+								  <h4>{{item.price}} RUB</h4>
 							  </div>
 							  <div class="icons" align="center">
 									<i class="fa fa-edit iconBorder iconBorderEdit" (click)="editProduct(item)"></i>
@@ -113,8 +151,7 @@
 									(click)="deleteProduct(item)"></i>
 								</div>
 							</div>
-					  </div>
-					  
+					  </div>				  
 					</li>
 				</div>
 

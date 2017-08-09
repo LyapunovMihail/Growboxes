@@ -17,8 +17,9 @@ import { ToastsManager} from './assets/ng2-toastr/ng2-toastr';
 
 export class SaveProductComponent implements OnInit{
 
-	data = {name: "", category: "", description: "", price: "", imgUrl: "", imgUrl1: "",
-    imgUrl2: "", imgUrl3: "", imgUrl4: "", imgUrl5: "", imgUrl6: ""}
+	data = {name: "", category: "", properties: {size: "", weight: "", light: "",
+          ventilation: "", covering: "", other: ""}, description: "", price: "", imgUrl: "", imgUrl1: "",
+          imgUrl2: "", imgUrl3: "", imgUrl4: "", imgUrl5: "", imgUrl6: ""}
 	passwordToAccess = ""
   access = {access: false, passwordChecked: false} 
 	view = {currentView: "editProducts"}

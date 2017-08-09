@@ -16,6 +16,10 @@ var schema = new Schema({
     type: String,
     required: true
   },
+  properties: {
+    type: Object,
+    required: false
+  },
   description: {
     type: String,
     required: true
@@ -60,7 +64,7 @@ var schema = new Schema({
 
 
 
-schema.statics.saveProduct = function(name, category, description, price, imgUrl, imgUrl1, imgUrl2, imgUrl3, 
+schema.statics.saveProduct = function(name, category, properties, description, price, imgUrl, imgUrl1, imgUrl2, imgUrl3, 
   imgUrl4, imgUrl5, imgUrl6, callback) {
   var Product = this;
 
@@ -76,7 +80,8 @@ schema.statics.saveProduct = function(name, category, description, price, imgUrl
       if (product) {
         callback(new HttpError(403, "product already exist"));
       } else {
-        product = new Product({name: name, category: category, description: description, price: price, 
+        product = new Product({name: name, category: category, properties: properties, 
+          description: description, price: price, 
           imgUrl: imgUrl, imgUrl1: imgUrl1, imgUrl2: imgUrl2, imgUrl3: imgUrl3, imgUrl4: imgUrl4,
           imgUrl5: imgUrl5, imgUrl6: imgUrl6});
         product.save(function(err) {
@@ -89,7 +94,7 @@ schema.statics.saveProduct = function(name, category, description, price, imgUrl
 
 };
 
-schema.statics.updateProduct = function(name, category, description, price, imgUrl, imgUrl1, imgUrl2, imgUrl3, 
+schema.statics.updateProduct = function(name, category, properties, description, price, imgUrl, imgUrl1, imgUrl2, imgUrl3, 
   imgUrl4, imgUrl5, imgUrl6, callback) {
   var Product = this;
 
@@ -101,6 +106,7 @@ schema.statics.updateProduct = function(name, category, description, price, imgU
       if (product) {
         product.name = name;
         product.category = category;
+        product.properties = properties;
         product.description = description;
         product.price = price;
         product.imgUrl = imgUrl;
