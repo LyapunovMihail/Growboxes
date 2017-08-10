@@ -7,20 +7,22 @@
 			their photos at <a href="http://unsplash.com">Unsplash</a>, thank you guys!
 		</p>
 		<div class="row">
-			<div class="col-sm-8 col-sm-offset-2">
+			<div class="col-sm-8 col-sm-offset-2" *ngFor="let item of products">
 				<div class="thumbnail">
-					<a routerLink="/product_details/5989f7d2d972ef0fa0e43a6e">	
-						<img src="assets/images/гроубокс_системник_средний/фото1.jpg" alt="">
+					<a routerLink="/product_details/{{item._id}}">	
+						<img src="{{item.imgUrl}}" alt="{{item.name}}">
 					</a>
 					<div class="caption" style="text-align: center">
-						<h2>Гроубокс средний системник. Модель 1</h2><br>
-						<h4><p>Размер: 520 х 500 х 205 мм</p></h4>
-						<h4><p>Вес: 6 кг</p></h4>
-						<h4><p>Свет: 3-и светильника с возможностью смены положения + таймер, регулирующий освещение</p></h4>
-						<h4><p>Вентиляция: 2-а вентилятора 12 вольтовых, регулируемые блоком питания. Фильтрация с помощью угольных фильтров</p></h4>
-						<h4><p>Обшивка: Пенофол, алюминиевая лента и майлар - 95% отражаемости</p></h4>
-						<h4><p>Также в комплекте: розетка для дополнительных приборов, выключатели вентиляторов и света, инструкции, гарантия</p></h4><br>
-						<p><a href="#" class="btn btn-primary" role="button">Купить</a> <a href="#" class="btn btn-default" role="button">Подробнее</a></p>
+						<h2>{{item.name}}</h2><br>
+						<h4><p>Размер: {{item.properties.size}}</p></h4>
+						<h4><p>Вес: {{item.properties.weight}}</p></h4>
+						<h4><p>Свет: {{item.properties.light}}</p></h4>
+						<h4><p>Вентиляция: {{item.properties.ventilation}}</p></h4>
+						<h4><p>Обшивка: {{item.properties.covering}}</p></h4>
+						<h4><p>Также в комплекте: {{item.properties.other}}</p></h4><br>
+						<p><a (click)="purchaseProduct({productId: item._id, number: 1})" 		class="btn btn-primary" role="button">Купить</a> 
+							<a routerLink="/product_details/{{item._id}}" class="btn btn-default" role="button">Подробнее</a>
+						</p>
 					</div>
 				</div>
 			</div>

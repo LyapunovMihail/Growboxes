@@ -362,7 +362,7 @@ exports = module.exports = __webpack_require__("../../../../css-loader/lib/css-b
 
 
 // module
-exports.push([module.i, ".hr1 {\r\n    display: block;\r\n    font-size: 2em;\r\n    font-weight: bold;\r\n}\r\n\r\n.hr4 {\r\n    display: block;\r\n    font-weight: bold;\r\n}\r\n\r\n.hr3 {\r\n    display: block;\r\n    font-size: 1.17em;\r\n    font-weight: 400;\r\n}\r\n\r\n.background {\r\n\tbackground: rgba(0, 0, 0, .8); \r\n\tborder-top-right-radius: 53px;\r\n    border-top-left-radius: 53px; \r\n    @media (max-width: 767px){\r\n    background: rgba(0,0,0,.9)}\r\n}\r\n\r\n.customContainer {\r\n\tbackground: linear-gradient(to bottom, #5d9600 0%,#9bc500 0%,#5d9600 99%); \r\n\tcolor: #fff; \r\n\tpadding: 15px; \r\n\tborder-radius: 53px; \r\n\tpadding-right: 25px;\r\n}\r\n\r\n.logo {\r\n\tmargin-top: -7px;\r\n\t\r\n}\r\n\r\n.work {\r\n\tmargin-top: 3px; \r\n\tcolor: aliceblue; \r\n\tfont-family: Verdana, Arial, Helvetica, Sans-Serif; \r\n\ttext-align: center;\r\n}\r\n\r\n.contacts {\r\n\tmargin-top: 4px;\r\n\ttext-align: center;\r\n}\r\n\r\n.row {\r\n\tmargin-left:  0 !important;\r\n    margin-right: 0 !important;\r\n}\r\n\r\n.nowrapString {\r\n\twhite-space: nowrap;\r\n}\r\n", ""]);
+exports.push([module.i, ".hr1 {\r\n    display: block;\r\n    font-size: 2em;\r\n    font-weight: bold;\r\n}\r\n\r\n.hr4 {\r\n    display: block;\r\n    font-weight: bold;\r\n}\r\n\r\n.hr3 {\r\n    display: block;\r\n    font-size: 1.17em;\r\n    font-weight: 400;\r\n}\r\n\r\n.background {\r\n\tbackground: rgba(0, 0, 0, .8); \r\n\tborder-top-right-radius: 53px;\r\n    border-top-left-radius: 53px; \r\n    @media (max-width: 767px){\r\n    background: rgba(0,0,0,.9)}\r\n}\r\n\r\n.customContainer {\r\n\tbackground: linear-gradient(to bottom, #5d9600 0%,#9bc500 0%,#5d9600 99%); \r\n\tcolor: #fff; \r\n\tpadding: 15px; \r\n\tborder-radius: 53px; \r\n\tpadding-right: 25px;\r\n}\r\n\r\n.logo {\r\n\tmargin-top: -7px;\r\n\t\r\n}\r\n\r\n.work {\r\n\tmargin-top: 3px; \r\n\tcolor: aliceblue; \r\n\t \r\n\ttext-align: center;\r\n}\r\n\r\n.contacts {\r\n\tmargin-top: 4px;\r\n\ttext-align: center;\r\n}\r\n\r\n.row {\r\n\tmargin-left:  0 !important;\r\n    margin-right: 0 !important;\r\n}\r\n\r\n.nowrapString {\r\n\twhite-space: nowrap;\r\n}\r\n", ""]);
 
 // exports
 
@@ -1680,7 +1680,7 @@ HomeBodyComponent = __decorate([
 /***/ "../../../../../src/app/homeBody.component1.html":
 /***/ (function(module, exports) {
 
-module.exports = "<section class=\"section\" id=\"themes\">\r\n\t<div class=\"container\">\r\n\t\r\n\t\t<h2 class=\"text-center title\">More Themes</h2>\r\n\t\t<p class=\"lead text-center\">\r\n\t\t\tHuge thank you to all people who publish<br>\r\n\t\t\ttheir photos at <a href=\"http://unsplash.com\">Unsplash</a>, thank you guys!\r\n\t\t</p>\r\n\t\t<div class=\"row\">\r\n\t\t\t<div class=\"col-sm-8 col-sm-offset-2\">\r\n\t\t\t\t<div class=\"thumbnail\">\r\n\t\t\t\t\t<a routerLink=\"/product_details/5989f7d2d972ef0fa0e43a6e\">\t\r\n\t\t\t\t\t\t<img src=\"assets/images/гроубокс_системник_средний/фото1.jpg\" alt=\"\">\r\n\t\t\t\t\t</a>\r\n\t\t\t\t\t<div class=\"caption\" style=\"text-align: center\">\r\n\t\t\t\t\t\t<h2>Гроубокс средний системник. Модель 1</h2><br>\r\n\t\t\t\t\t\t<h4><p>Размер: 520 х 500 х 205 мм</p></h4>\r\n\t\t\t\t\t\t<h4><p>Вес: 6 кг</p></h4>\r\n\t\t\t\t\t\t<h4><p>Свет: 3-и светильника с возможностью смены положения + таймер, регулирующий освещение</p></h4>\r\n\t\t\t\t\t\t<h4><p>Вентиляция: 2-а вентилятора 12 вольтовых, регулируемые блоком питания. Фильтрация с помощью угольных фильтров</p></h4>\r\n\t\t\t\t\t\t<h4><p>Обшивка: Пенофол, алюминиевая лента и майлар - 95% отражаемости</p></h4>\r\n\t\t\t\t\t\t<h4><p>Также в комплекте: розетка для дополнительных приборов, выключатели вентиляторов и света, инструкции, гарантия</p></h4><br>\r\n\t\t\t\t\t\t<p><a href=\"#\" class=\"btn btn-primary\" role=\"button\">Купить</a> <a href=\"#\" class=\"btn btn-default\" role=\"button\">Подробнее</a></p>\r\n\t\t\t\t\t</div>\r\n\t\t\t\t</div>\r\n\t\t\t</div>\r\n\t\t\t<!--<div class=\"col-sm-4\">\r\n\t\t\t\t<div class=\"thumbnail\">\r\n\t\t\t\t\t<img src=\"assets/products/large/2.jpg\" alt=\"\">\r\n\t\t\t\t\t<div class=\"caption\">\r\n\t\t\t\t\t\t<h3>Thumbnail label</h3>\r\n\t\t\t\t\t\t<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Neque doloribus enim vitae nam cupiditate eius at explicabo eaque facere iste.</p>\r\n\t\t\t\t\t\t<p><a href=\"#\" class=\"btn btn-primary\" role=\"button\">Купить</a> <a href=\"#\" class=\"btn btn-default\" role=\"button\">Подробнее</a></p>\r\n\t\t\t\t\t</div>\r\n\t\t\t\t</div>\r\n\t\t\t</div>\r\n\t\t\t<div class=\"col-sm-4 col-sm-offset-2\">\r\n\t\t\t\t<div class=\"thumbnail\">\r\n\t\t\t\t\t<img src=\"assets/products/large/6.jpg\" alt=\"\">\r\n\t\t\t\t\t<div class=\"caption\">\r\n\t\t\t\t\t\t<h3>Thumbnail label</h3>\r\n\t\t\t\t\t\t<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Neque doloribus enim vitae nam cupiditate eius at explicabo eaque facere iste.</p>\r\n\t\t\t\t\t\t<p><a href=\"#\" class=\"btn btn-primary\" role=\"button\">Купить</a> <a href=\"#\" class=\"btn btn-default\" role=\"button\">Подробнее</a></p>\r\n\t\t\t\t\t</div>\r\n\t\t\t\t</div>\r\n\t\t\t</div>\r\n\t\t\t<div class=\"col-sm-4\">\r\n\t\t\t\t<div class=\"thumbnail\">\r\n\t\t\t\t\t<img src=\"assets/products/large/7.jpg\" alt=\"\">\r\n\t\t\t\t\t<div class=\"caption\">\r\n\t\t\t\t\t\t<h3>Thumbnail label</h3>\r\n\t\t\t\t\t\t<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Neque doloribus enim vitae nam cupiditate eius at explicabo eaque facere iste.</p>\r\n\t\t\t\t\t\t<p><a href=\"#\" class=\"btn btn-primary\" role=\"button\">Купить</a> <a href=\"#\" class=\"btn btn-default\" role=\"button\">Подробнее</a></p>\r\n\t\t\t\t\t</div>\r\n\t\t\t\t</div>\r\n\t\t\t</div>-->\r\n\r\n\t\t</div>\r\n\r\n\t</div>\r\n</section>"
+module.exports = "<section class=\"section\" id=\"themes\">\r\n\t<div class=\"container\">\r\n\t\r\n\t\t<h2 class=\"text-center title\">More Themes</h2>\r\n\t\t<p class=\"lead text-center\">\r\n\t\t\tHuge thank you to all people who publish<br>\r\n\t\t\ttheir photos at <a href=\"http://unsplash.com\">Unsplash</a>, thank you guys!\r\n\t\t</p>\r\n\t\t<div class=\"row\">\r\n\t\t\t<div class=\"col-sm-8 col-sm-offset-2\" *ngFor=\"let item of products\">\r\n\t\t\t\t<div class=\"thumbnail\">\r\n\t\t\t\t\t<a routerLink=\"/product_details/{{item._id}}\">\t\r\n\t\t\t\t\t\t<img src=\"{{item.imgUrl}}\" alt=\"{{item.name}}\">\r\n\t\t\t\t\t</a>\r\n\t\t\t\t\t<div class=\"caption\" style=\"text-align: center\">\r\n\t\t\t\t\t\t<h2>{{item.name}}</h2><br>\r\n\t\t\t\t\t\t<h4><p>Размер: {{item.properties.size}}</p></h4>\r\n\t\t\t\t\t\t<h4><p>Вес: {{item.properties.weight}}</p></h4>\r\n\t\t\t\t\t\t<h4><p>Свет: {{item.properties.light}}</p></h4>\r\n\t\t\t\t\t\t<h4><p>Вентиляция: {{item.properties.ventilation}}</p></h4>\r\n\t\t\t\t\t\t<h4><p>Обшивка: {{item.properties.covering}}</p></h4>\r\n\t\t\t\t\t\t<h4><p>Также в комплекте: {{item.properties.other}}</p></h4><br>\r\n\t\t\t\t\t\t<p><a (click)=\"purchaseProduct({productId: item._id, number: 1})\" \t\tclass=\"btn btn-primary\" role=\"button\">Купить</a> \r\n\t\t\t\t\t\t\t<a routerLink=\"/product_details/{{item._id}}\" class=\"btn btn-default\" role=\"button\">Подробнее</a>\r\n\t\t\t\t\t\t</p>\r\n\t\t\t\t\t</div>\r\n\t\t\t\t</div>\r\n\t\t\t</div>\r\n\t\t\t<!--<div class=\"col-sm-4\">\r\n\t\t\t\t<div class=\"thumbnail\">\r\n\t\t\t\t\t<img src=\"assets/products/large/2.jpg\" alt=\"\">\r\n\t\t\t\t\t<div class=\"caption\">\r\n\t\t\t\t\t\t<h3>Thumbnail label</h3>\r\n\t\t\t\t\t\t<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Neque doloribus enim vitae nam cupiditate eius at explicabo eaque facere iste.</p>\r\n\t\t\t\t\t\t<p><a href=\"#\" class=\"btn btn-primary\" role=\"button\">Купить</a> <a href=\"#\" class=\"btn btn-default\" role=\"button\">Подробнее</a></p>\r\n\t\t\t\t\t</div>\r\n\t\t\t\t</div>\r\n\t\t\t</div>\r\n\t\t\t<div class=\"col-sm-4 col-sm-offset-2\">\r\n\t\t\t\t<div class=\"thumbnail\">\r\n\t\t\t\t\t<img src=\"assets/products/large/6.jpg\" alt=\"\">\r\n\t\t\t\t\t<div class=\"caption\">\r\n\t\t\t\t\t\t<h3>Thumbnail label</h3>\r\n\t\t\t\t\t\t<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Neque doloribus enim vitae nam cupiditate eius at explicabo eaque facere iste.</p>\r\n\t\t\t\t\t\t<p><a href=\"#\" class=\"btn btn-primary\" role=\"button\">Купить</a> <a href=\"#\" class=\"btn btn-default\" role=\"button\">Подробнее</a></p>\r\n\t\t\t\t\t</div>\r\n\t\t\t\t</div>\r\n\t\t\t</div>\r\n\t\t\t<div class=\"col-sm-4\">\r\n\t\t\t\t<div class=\"thumbnail\">\r\n\t\t\t\t\t<img src=\"assets/products/large/7.jpg\" alt=\"\">\r\n\t\t\t\t\t<div class=\"caption\">\r\n\t\t\t\t\t\t<h3>Thumbnail label</h3>\r\n\t\t\t\t\t\t<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Neque doloribus enim vitae nam cupiditate eius at explicabo eaque facere iste.</p>\r\n\t\t\t\t\t\t<p><a href=\"#\" class=\"btn btn-primary\" role=\"button\">Купить</a> <a href=\"#\" class=\"btn btn-default\" role=\"button\">Подробнее</a></p>\r\n\t\t\t\t\t</div>\r\n\t\t\t\t</div>\r\n\t\t\t</div>-->\r\n\r\n\t\t</div>\r\n\r\n\t</div>\r\n</section>"
 
 /***/ }),
 
@@ -1689,6 +1689,9 @@ module.exports = "<section class=\"section\" id=\"themes\">\r\n\t<div class=\"co
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/@angular/core.es5.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__product_service__ = __webpack_require__("../../../../../src/app/product.service.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__assets_ng2_toastr_ng2_toastr__ = __webpack_require__("../../../../../src/app/assets/ng2-toastr/ng2-toastr.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__assets_ng2_toastr_ng2_toastr___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2__assets_ng2_toastr_ng2_toastr__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return HomeBodyComponent1; });
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -1696,10 +1699,36 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
     else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
 
 var HomeBodyComponent1 = (function () {
-    function HomeBodyComponent1() {
+    function HomeBodyComponent1(productService, toastr, vcr) {
+        this.productService = productService;
+        this.toastr = toastr;
     }
+    HomeBodyComponent1.prototype.getCategoryProducts = function () {
+        var _this = this;
+        this.productService.getCategoryProducts("Гроубоксы")
+            .then(function (products) { return _this.products = products; }, function (err) { return console.log("httpError: ", err); });
+    };
+    HomeBodyComponent1.prototype.purchaseProduct = function (product) {
+        var _this = this;
+        console.log("product: ", product);
+        this.productService
+            .purchaseProduct(product)
+            .then(function (products) {
+            console.log("productsInBucket: ", products);
+            _this.productsInBucket = products;
+            _this.productService.onPurchased(_this.productsInBucket.numberOfPurchasedProducts);
+            _this.toastr.success('Товар добавлен в корзину');
+        }, function (err) {
+            _this.toastr.error('Товар не был добавлен в корзину', 'Ошибка');
+        });
+    };
     return HomeBodyComponent1;
 }());
 HomeBodyComponent1 = __decorate([
@@ -1707,9 +1736,11 @@ HomeBodyComponent1 = __decorate([
         selector: 'shop-home-body1',
         template: __webpack_require__("../../../../../src/app/homeBody.component1.html"),
         styles: [__webpack_require__("../../../../../src/app/assets/css/bootstrapNavbarButtonFix.min.css"), __webpack_require__("../../../../../src/app/assets/css/bootstrap-theme.css"), __webpack_require__("../../../../../src/app/assets/css/main.css")]
-    })
+    }),
+    __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1__product_service__["a" /* ProductService */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1__product_service__["a" /* ProductService */]) === "function" && _a || Object, typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_2__assets_ng2_toastr_ng2_toastr__["ToastsManager"] !== "undefined" && __WEBPACK_IMPORTED_MODULE_2__assets_ng2_toastr_ng2_toastr__["ToastsManager"]) === "function" && _b || Object, typeof (_c = typeof __WEBPACK_IMPORTED_MODULE_0__angular_core__["ViewContainerRef"] !== "undefined" && __WEBPACK_IMPORTED_MODULE_0__angular_core__["ViewContainerRef"]) === "function" && _c || Object])
 ], HomeBodyComponent1);
 
+var _a, _b, _c;
 //# sourceMappingURL=homeBody.component1.js.map
 
 /***/ }),
@@ -2393,7 +2424,7 @@ var _a, _b, _c;
 /***/ "../../../../../src/app/top_header.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"background\">\r\n\t<div class=\"customContainer row\">\r\n\t\t<div class=\"col-lg-5 row\" align=\"center\" >\r\n\t\t\t<div class=\"col-lg-2\">\r\n\t\t\t<a routerLink=\"/home\"><img src=\"assets/images/logoHB1.jpg\" alt=\"Progressus HTML5 template\"></a>\r\n\t\t\t</div>\r\n\t\t\t<div class=\"logo col-lg-2 col-lg-offset-2\">\r\n\t\t\t\t<span class=\"hr1\">growboxes</span>\r\n\t\t\t\t<span class=\"hr4 nowrapString\">прогрессивное растениеводство</span>\r\n\t\t\t</div>\r\n\t\t</div>\r\n\t\t<div class=\"work col-lg-4\">\r\n\t\t<span class=\"hr3\">производство и продажа изделий для гровинга</span>\r\n\t\t</div>\r\n\t\t<div class=\"contacts col-lg-3\">\r\n\t\t\t<span class=\"hr3\">8 904 772 00 46</span>\r\n\t\t\t<span class=\"hr3 nowrapString\">E-mail: Sivolobov.v@yandex.ru</span>\r\n\t\t</div>\r\n\t</div>\r\n</div>"
+module.exports = "<div class=\"background\">\r\n\t<div class=\"customContainer row\">\r\n\t\t<div class=\"col-lg-5 row\" align=\"center\" >\r\n\t\t\t<div class=\"col-lg-2\">\r\n\t\t\t<a routerLink=\"/home\"><img src=\"assets/images/logoHB1.jpg\" alt=\"Progressus HTML5 template\"></a>\r\n\t\t\t</div>\r\n\t\t\t<div class=\"logo col-lg-2 col-lg-offset-2\">\r\n\t\t\t\t<span class=\"hr1\">growboxes</span>\r\n\t\t\t\t<span class=\"hr4 nowrapString\">прогрессивное растениеводство</span>\r\n\t\t\t</div>\r\n\t\t</div>\r\n\t\t<div class=\"work col-lg-4\">\r\n\t\t<span class=\"hr3\">производство и продажа изделий для гровинга</span>\r\n\t\t</div>\r\n\t\t<div class=\"contacts col-lg-3\">\r\n\t\t\t<span class=\"hr3\">8 904 772 00 46</span>\r\n\t\t\t<span class=\"hr3 nowrapString\">E-mail: info@growbox.ru</span>\r\n\t\t</div>\r\n\t</div>\r\n</div>"
 
 /***/ }),
 
