@@ -28,23 +28,31 @@
 	color: #fff; 
 	padding: 15px; 
 	border-radius: 53px; 
-	padding-left:30px;
+	padding-right: 25px;
 }
 
 .logo {
-	margin-top: -10px;
+	margin-top: -7px;
+	
 }
 
 .work {
-	margin-top: 5px; 
+	margin-top: 3px; 
 	color: aliceblue; 
 	font-family: Verdana, Arial, Helvetica, Sans-Serif; 
+	text-align: center;
 }
 
 .contacts {
+	margin-top: 4px;
+	text-align: center;
 }
 
 .row {
 	margin-left:  0 !important;
     margin-right: 0 !important;
+}
+
+.nowrapString {
+	white-space: nowrap;
 }
