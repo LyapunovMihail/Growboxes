@@ -16,7 +16,7 @@ webpackEmptyContext.id = "../../../../../src async recursive";
 /***/ "../../../../../src/app/app.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<div style=\"padding: 50px 100px 50px 100px;\">\r\n\t<div class=\"mainContainer\">\r\n\t\t<shop-navbar></shop-navbar>\r\n\r\n\t\t<div style=\"min-height: calc(100vh - 285px)\">\r\n\t\t\t<router-outlet (onPurchased)=\"onPurchased($event)\"></router-outlet>\r\n\t\t</div>\r\n\r\n\t\t<shop-footer></shop-footer>\r\n\t</div>\r\n</div>\r\n\r\n\r\n    "
+module.exports = "<div style=\"padding: 50px 100px 50px 100px;\">\r\n\t<div class=\"mainContainer\">\r\n\t\t<shop-top-header></shop-top-header>\r\n\t\t<shop-navbar></shop-navbar>\r\n\r\n\t\t<div style=\"min-height: calc(100vh - 285px);\">\r\n\t\t\t<router-outlet (onPurchased)=\"onPurchased($event)\"></router-outlet>\r\n\t\t</div>\r\n\r\n\t\t<shop-footer></shop-footer>\r\n\t</div>\r\n</div>\r\n\r\n\r\n    "
 
 /***/ }),
 
@@ -66,22 +66,23 @@ AppComponent = __decorate([
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__assets_ng2_toastr_ng2_toastr__ = __webpack_require__("../../../../../src/app/assets/ng2-toastr/ng2-toastr.js");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__assets_ng2_toastr_ng2_toastr___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3__assets_ng2_toastr_ng2_toastr__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__angular_platform_browser_animations__ = __webpack_require__("../../../platform-browser/@angular/platform-browser/animations.es5.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__navbar_component__ = __webpack_require__("../../../../../src/app/navbar.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__header_component__ = __webpack_require__("../../../../../src/app/header.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__footer_component__ = __webpack_require__("../../../../../src/app/footer.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__homeBody_component__ = __webpack_require__("../../../../../src/app/homeBody.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__homeBody_component1__ = __webpack_require__("../../../../../src/app/homeBody.component1.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__homeBody_component2__ = __webpack_require__("../../../../../src/app/homeBody.component2.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__contact_component__ = __webpack_require__("../../../../../src/app/contact.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__products_component__ = __webpack_require__("../../../../../src/app/products.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__product_details_component__ = __webpack_require__("../../../../../src/app/product_details.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_14__product_summary_component__ = __webpack_require__("../../../../../src/app/product_summary.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_15__checkout_component__ = __webpack_require__("../../../../../src/app/checkout.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_16__save_product_component__ = __webpack_require__("../../../../../src/app/save_product.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_17__product_service__ = __webpack_require__("../../../../../src/app/product.service.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_18__angular_router__ = __webpack_require__("../../../router/@angular/router.es5.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_19__angular_forms__ = __webpack_require__("../../../forms/@angular/forms.es5.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_20__angular_http__ = __webpack_require__("../../../http/@angular/http.es5.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__top_header_component__ = __webpack_require__("../../../../../src/app/top_header.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__navbar_component__ = __webpack_require__("../../../../../src/app/navbar.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__header_component__ = __webpack_require__("../../../../../src/app/header.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__footer_component__ = __webpack_require__("../../../../../src/app/footer.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__homeBody_component__ = __webpack_require__("../../../../../src/app/homeBody.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__homeBody_component1__ = __webpack_require__("../../../../../src/app/homeBody.component1.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__homeBody_component2__ = __webpack_require__("../../../../../src/app/homeBody.component2.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__contact_component__ = __webpack_require__("../../../../../src/app/contact.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__products_component__ = __webpack_require__("../../../../../src/app/products.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_14__product_details_component__ = __webpack_require__("../../../../../src/app/product_details.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_15__product_summary_component__ = __webpack_require__("../../../../../src/app/product_summary.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_16__checkout_component__ = __webpack_require__("../../../../../src/app/checkout.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_17__save_product_component__ = __webpack_require__("../../../../../src/app/save_product.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_18__product_service__ = __webpack_require__("../../../../../src/app/product.service.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_19__angular_router__ = __webpack_require__("../../../router/@angular/router.es5.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_20__angular_forms__ = __webpack_require__("../../../forms/@angular/forms.es5.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_21__angular_http__ = __webpack_require__("../../../http/@angular/http.es5.js");
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return AppModule; });
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -89,6 +90,7 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
     else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
+
 
 
 
@@ -127,10 +129,10 @@ AppModule = __decorate([
         imports: [
             __WEBPACK_IMPORTED_MODULE_1__angular_platform_browser__["BrowserModule"],
             __WEBPACK_IMPORTED_MODULE_4__angular_platform_browser_animations__["a" /* BrowserAnimationsModule */],
-            __WEBPACK_IMPORTED_MODULE_19__angular_forms__["a" /* FormsModule */],
-            __WEBPACK_IMPORTED_MODULE_20__angular_http__["a" /* HttpModule */],
+            __WEBPACK_IMPORTED_MODULE_20__angular_forms__["a" /* FormsModule */],
+            __WEBPACK_IMPORTED_MODULE_21__angular_http__["a" /* HttpModule */],
             __WEBPACK_IMPORTED_MODULE_3__assets_ng2_toastr_ng2_toastr__["ToastModule"].forRoot(),
-            __WEBPACK_IMPORTED_MODULE_18__angular_router__["a" /* RouterModule */].forRoot([
+            __WEBPACK_IMPORTED_MODULE_19__angular_router__["a" /* RouterModule */].forRoot([
                 {
                     path: '',
                     redirectTo: '/home',
@@ -138,7 +140,7 @@ AppModule = __decorate([
                 },
                 {
                     path: 'home',
-                    component: __WEBPACK_IMPORTED_MODULE_8__homeBody_component__["a" /* HomeBodyComponent */]
+                    component: __WEBPACK_IMPORTED_MODULE_9__homeBody_component__["a" /* HomeBodyComponent */]
                 },
                 /*{
                      path: 'about_us',
@@ -146,23 +148,23 @@ AppModule = __decorate([
                 },*/
                 {
                     path: 'contact',
-                    component: __WEBPACK_IMPORTED_MODULE_11__contact_component__["a" /* ContactComponent */]
+                    component: __WEBPACK_IMPORTED_MODULE_12__contact_component__["a" /* ContactComponent */]
                 },
                 {
                     path: 'products/:id',
-                    component: __WEBPACK_IMPORTED_MODULE_12__products_component__["a" /* ProductsComponent */]
+                    component: __WEBPACK_IMPORTED_MODULE_13__products_component__["a" /* ProductsComponent */]
                 },
                 {
                     path: 'product_summary',
-                    component: __WEBPACK_IMPORTED_MODULE_14__product_summary_component__["a" /* ProductSummaryComponent */]
+                    component: __WEBPACK_IMPORTED_MODULE_15__product_summary_component__["a" /* ProductSummaryComponent */]
                 },
                 {
                     path: 'checkout',
-                    component: __WEBPACK_IMPORTED_MODULE_15__checkout_component__["a" /* CheckoutComponent */]
+                    component: __WEBPACK_IMPORTED_MODULE_16__checkout_component__["a" /* CheckoutComponent */]
                 },
                 {
                     path: 'product_details/:id',
-                    component: __WEBPACK_IMPORTED_MODULE_13__product_details_component__["a" /* ProductDetailsComponent */]
+                    component: __WEBPACK_IMPORTED_MODULE_14__product_details_component__["a" /* ProductDetailsComponent */]
                 },
                 /*{
                      path: 'login',
@@ -174,29 +176,30 @@ AppModule = __decorate([
                 },*/
                 {
                     path: 'save_product',
-                    component: __WEBPACK_IMPORTED_MODULE_16__save_product_component__["a" /* SaveProductComponent */]
+                    component: __WEBPACK_IMPORTED_MODULE_17__save_product_component__["a" /* SaveProductComponent */]
                 }
             ])
         ],
         declarations: [
             __WEBPACK_IMPORTED_MODULE_2__app_component__["a" /* AppComponent */],
-            __WEBPACK_IMPORTED_MODULE_5__navbar_component__["a" /* NavbarComponent */],
-            __WEBPACK_IMPORTED_MODULE_6__header_component__["a" /* HeaderComponent */],
-            __WEBPACK_IMPORTED_MODULE_7__footer_component__["a" /* FooterComponent */],
-            __WEBPACK_IMPORTED_MODULE_8__homeBody_component__["a" /* HomeBodyComponent */],
-            __WEBPACK_IMPORTED_MODULE_9__homeBody_component1__["a" /* HomeBodyComponent1 */],
-            __WEBPACK_IMPORTED_MODULE_10__homeBody_component2__["a" /* HomeBodyComponent2 */],
+            __WEBPACK_IMPORTED_MODULE_5__top_header_component__["a" /* TopHeaderComponent */],
+            __WEBPACK_IMPORTED_MODULE_6__navbar_component__["a" /* NavbarComponent */],
+            __WEBPACK_IMPORTED_MODULE_7__header_component__["a" /* HeaderComponent */],
+            __WEBPACK_IMPORTED_MODULE_8__footer_component__["a" /* FooterComponent */],
+            __WEBPACK_IMPORTED_MODULE_9__homeBody_component__["a" /* HomeBodyComponent */],
+            __WEBPACK_IMPORTED_MODULE_10__homeBody_component1__["a" /* HomeBodyComponent1 */],
+            __WEBPACK_IMPORTED_MODULE_11__homeBody_component2__["a" /* HomeBodyComponent2 */],
             //AboutUsComponent,
-            __WEBPACK_IMPORTED_MODULE_11__contact_component__["a" /* ContactComponent */],
-            __WEBPACK_IMPORTED_MODULE_12__products_component__["a" /* ProductsComponent */],
-            __WEBPACK_IMPORTED_MODULE_14__product_summary_component__["a" /* ProductSummaryComponent */],
-            __WEBPACK_IMPORTED_MODULE_15__checkout_component__["a" /* CheckoutComponent */],
-            __WEBPACK_IMPORTED_MODULE_13__product_details_component__["a" /* ProductDetailsComponent */],
+            __WEBPACK_IMPORTED_MODULE_12__contact_component__["a" /* ContactComponent */],
+            __WEBPACK_IMPORTED_MODULE_13__products_component__["a" /* ProductsComponent */],
+            __WEBPACK_IMPORTED_MODULE_15__product_summary_component__["a" /* ProductSummaryComponent */],
+            __WEBPACK_IMPORTED_MODULE_16__checkout_component__["a" /* CheckoutComponent */],
+            __WEBPACK_IMPORTED_MODULE_14__product_details_component__["a" /* ProductDetailsComponent */],
             //LoginComponent,
             //RegisterComponent,
-            __WEBPACK_IMPORTED_MODULE_16__save_product_component__["a" /* SaveProductComponent */]
+            __WEBPACK_IMPORTED_MODULE_17__save_product_component__["a" /* SaveProductComponent */]
         ],
-        providers: [__WEBPACK_IMPORTED_MODULE_17__product_service__["a" /* ProductService */]],
+        providers: [__WEBPACK_IMPORTED_MODULE_18__product_service__["a" /* ProductService */]],
         bootstrap: [
             __WEBPACK_IMPORTED_MODULE_2__app_component__["a" /* AppComponent */]
         ]
@@ -342,6 +345,24 @@ exports = module.exports = __webpack_require__("../../../../css-loader/lib/css-b
 
 // module
 exports.push([module.i, "h1,h2,h3,h4,h5,h6 {\r\n    font-family: \"Open sans\", Helvetica, Arial;\r\n    font-weight: 500;\r\n    color: #7EB237;\r\n}\r\n\r\n.price {\r\n    color: #7EB237;\r\n}\r\n\r\n.colorButton {\r\n    background-image: none;\r\n    background-color: #7EB237;\r\n    color: white;\r\n    box-shadow: inset 0px 3px 11px rgba(13, 200, 59, 0.9), 0 0px 2px rgba(0, 0, 0, 0.05);\r\n}\r\n\r\n.colorButton:hover {\r\n    background-image: none;\r\n    background-color: #0a7e00;\r\n    color: white;\r\n}\r\n\r\n.colorButton:active {\r\n    background-image: none;\r\n    background-color: #0a7e00;\r\n    color: white;\r\n}\r\n\r\n#productView {\r\n\tmargin-top: 21px;\r\n}\r\n\r\na:hover {\r\n    text-decoration: none;\r\n}\r\n\r\n.thumbnail {\r\n    top: 10px; \r\n    border: 3px solid white;\r\n    transition: all 0.2s ease-in-out;\r\n}\r\n\r\n.thumbnail div{\r\n    transition: all 0.2s ease-in-out;\r\n}\r\n\r\n.thumbnail:hover {\r\n  border: 3px solid #7EB237;\r\n  top: 0px;\r\n}\r\n\r\n/*\r\n.thumbnail:hover h4 {\r\n    color: black;\r\n}\r\n\r\n.thumbnail:hover h5 {\r\n    color: black;\r\n}\r\n\r\n.thumbnail:hover .price {\r\n    color: black;\r\n}\r\n*/\r\n.text {\r\n    opacity: 1;\r\n}\r\n\r\n.thumbnail:hover .text {\r\n    visibility: hidden;\r\n    opacity: 0;\r\n}\r\n\r\n.icons {\r\n  visibility: hidden;\r\n  opacity: 0;\r\n  position: relative;\r\n  bottom: 80px;\r\n  height: 0;\r\n}\r\n\r\n.thumbnail:hover .icons {\r\n    visibility: visible;\r\n    opacity: 1;\r\n}\r\n\r\n.iconBorderEdit {\r\n  border: 1px solid #ccc; \r\n  border-radius: 25px; \r\n  padding: 13px; \r\n  padding-right: 12px; \r\n  font-size: 22px;\r\n  position: relative;\r\n  top: -10px;\r\n}\r\n\r\n.iconBorderTrash {\r\n  border: 1px solid #ccc; \r\n  border-radius: 25px; \r\n  padding: 13px; \r\n  padding-right: 15px; \r\n  padding-left: 15px; \r\n  font-size: 22px;\r\n  position: relative;\r\n  top: -10px;\r\n}\r\n\r\n.iconBorderCart {\r\n  border: 1px solid #ccc; \r\n  border-radius: 36px; \r\n  padding: 21px; \r\n  padding-right: 22px; \r\n  font-size: 27px;\r\n  position: relative;\r\n  top: -10px;\r\n}\r\n\r\n.iconBorder:hover {\r\n  cursor: pointer;\r\n  border: 1px solid #7EB237;\r\n  background-color: #7EB237;\r\n  color: white;\r\n}\r\n\r\n\r\n.carousel-control {\r\n    left: -25px;\r\n    line-height: 25px;\r\n}\r\n\r\n.inputNumber {\r\n    height: 30px;\r\n}\r\n\r\n.buyForm {\r\n    position: relative;\r\n    top: 4px;\r\n}\r\n\r\n.bucketBadge {\r\n  border-radius: 50%;\r\n  background-color: green;\r\n  color: white;\r\n  opacity: 0.7;\r\n  font-size: 11px;\r\n  padding: 5px;\r\n  padding-right: 8px;\r\n  padding-left: 8px;\r\n  position: relative;\r\n  right: 8px;\r\n}\r\n\r\n@media (max-width: 767px) {\r\n  .bucketBadge{\r\n    top: 10px;\r\n}\r\n}\r\n\r\na:hover div span.bucketBadge {\r\n  opacity: 1;\r\n}\r\n\r\na:focus div span.bucketBadge {\r\n  opacity: 1;\r\n}\r\n\r\n.bucketBorder {\r\n  border: 1px solid rgba(255, 255, 255, .4); \r\n  border-radius: 25px; \r\n  padding: 9px; \r\n  padding-right: 11px; \r\n  font-size: 22px;\r\n  position: relative;\r\n  top: -10px;\r\n}\r\n\r\n@media (max-width: 767px) {\r\n  .bucketBorder{\r\n    top: 0;\r\n}\r\n}\r\n\r\na:hover i.bucketBorder {\r\n  border: 1px solid rgba(255, 255, 255, 1);\r\n  background-color: rgba(255, 255, 255, 1);\r\n  color: black;\r\n}\r\n\r\na:focus i.bucketBorder {\r\n  border: 1px solid rgba(255, 255, 255, 1);\r\n  background-color: rgba(255, 255, 255, 1);\r\n  color: black;\r\n}\r\n\r\ninput {\r\n  max-width: 265px;\r\n}\r\n\r\nselect {\r\n  max-width: 265px;\r\n}\r\n\r\n.buyPagesContainer {\r\n  margin-top: 30px;\r\n  padding-left: 30px; \r\n  padding-right: 30px\r\n}\r\n\r\n.bucketTable {\r\n  overflow: auto\r\n}", ""]);
+
+// exports
+
+
+/*** EXPORTS FROM exports-loader ***/
+module.exports = module.exports.toString();
+
+/***/ }),
+
+/***/ "../../../../../src/app/assets/css/top_header.component.css":
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__("../../../../css-loader/lib/css-base.js")(false);
+// imports
+
+
+// module
+exports.push([module.i, ".hr1 {\r\n    display: block;\r\n    font-size: 2em;\r\n    font-weight: bold;\r\n}\r\n\r\n.hr4 {\r\n    display: block;\r\n    font-weight: bold;\r\n}\r\n\r\n.hr3 {\r\n    display: block;\r\n    font-size: 1.17em;\r\n    font-weight: 400;\r\n}\r\n\r\n.background {\r\n\tbackground: rgba(0, 0, 0, .8); \r\n\tborder-top-right-radius: 53px;\r\n    border-top-left-radius: 53px; \r\n    @media (max-width: 767px){\r\n    background: rgba(0,0,0,.9)}\r\n}\r\n\r\n.customContainer {\r\n\tbackground: linear-gradient(to bottom, #5d9600 0%,#9bc500 0%,#5d9600 99%); \r\n\tcolor: #fff; \r\n\tpadding: 15px; \r\n\tborder-radius: 53px; \r\n\tpadding-left:30px;\r\n}\r\n\r\n.logo {\r\n\tmargin-top: -10px;\r\n}\r\n\r\n.work {\r\n\tmargin-top: 5px; \r\n\tcolor: aliceblue; \r\n\tfont-family: Verdana, Arial, Helvetica, Sans-Serif; \r\n}\r\n\r\n.contacts {\r\n}\r\n\r\n.row {\r\n\tmargin-left:  0 !important;\r\n    margin-right: 0 !important;\r\n}", ""]);
 
 // exports
 
@@ -1733,7 +1754,7 @@ HomeBodyComponent2 = __decorate([
 /***/ "../../../../../src/app/navbar.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"navbar navbar-inverse navbar-fixed-top headroom\">\r\n\t\t<div class=\"container\">\r\n\t\t\t<div class=\"navbar-header\">\r\n\t\t\t\t<!-- Button for smallest screens -->\r\n\t\t\t\t<button type=\"button\" class=\"navbar-toggle\" data-toggle=\"collapse\" data-target=\".navbar-collapse\"><span class=\"icon-bar\"></span> <span class=\"icon-bar\"></span> <span class=\"icon-bar\"></span> </button>\r\n\t\t\t\t<a class=\"navbar-brand\" routerLink=\"/home\"><img src=\"assets/images/logo.png\" alt=\"Progressus HTML5 template\"></a>\r\n\t\t\t</div>\r\n\t\t\t<div class=\"navbar-collapse collapse\">\r\n\t\t\t\t<ul class=\"nav navbar-nav pull-right\">\r\n\t\t\t\t\t<!--<li routerLinkActive=\"active\"><a routerLink=\"/save_product\">Т</a></li>-->\r\n\t\t\t\t\t<li><a style=\"pointer: none\">Телефон для связи: 8 904 772 00 46</a>\r\n\t\t\t\t\t<li routerLinkActive=\"active\"><a routerLink=\"/home\">Главная</a></li>\r\n\t\t\t\t\t<li><a routerLink=\"/products/growboxes\">Каталог</a></li>\r\n\t\t\t\t\t<!--<li class=\"dropdown\">\r\n\t\t\t\t\t\t<a href=\"#\" class=\"dropdown-toggle\" data-toggle=\"dropdown\">Каталог <b class=\"caret\"></b></a>\r\n\t\t\t\t\t\t<ul class=\"dropdown-menu\">\r\n\t\t\t\t\t\t\t<li routerLinkActive=\"active\"><a routerLink=\"/products/growboxes\">Гроубоксы</a></li>\r\n\t\t\t\t\t\t\t<li routerLinkActive=\"active\"><a routerLink=\"/products/lights\">Свет</a></li>\r\n\t\t\t\t\t\t\t<li routerLinkActive=\"active\"><a routerLink=\"/products/automatics\">Автоматизация</a></li>\r\n\t\t\t\t\t\t</ul>\r\n\t\t\t\t\t</li>-->\r\n\t\t\t\t\t<!--<li><a routerLink=\"/about_us\">О нас</a></li>-->\r\n\t\t\t\t\t<li><a routerLink=\"/contact\">Контакты</a></li>\r\n\t\t\t\t\t<!--<li><a class=\"btn\" routerLink=\"/login\">SIGN IN / SIGN UP</a></li>-->\r\n\t\t\t\t\t\r\n\t\t\t\t\t<li routerLinkActive=\"active\"><a routerLink=\"/product_summary\" style=\"display: inline-flex;\"><i class=\"fa fa-shopping-cart fa-2x bucketBorder\"></i><div style=\"width: 0px\"><span class=\"bucketBadge\">{{numberOfPurchasedProducts}}</span></div></a></li>\r\n\t\t\t\t</ul>\r\n\t\t\t</div><!--/.nav-collapse -->\r\n\t\t</div>\r\n\t</div> "
+module.exports = "<div class=\"navbar navbar-inverse navbar-fixed-top headroom\">\r\n\t\t<div class=\"container\">\r\n\t\t\t<div class=\"navbar-header\">\r\n\t\t\t\t<!-- Button for smallest screens -->\r\n\t\t\t\t<button type=\"button\" class=\"navbar-toggle\" data-toggle=\"collapse\" data-target=\".navbar-collapse\"><span class=\"icon-bar\"></span> <span class=\"icon-bar\"></span> <span class=\"icon-bar\"></span> </button>\r\n\t\t\t\t<!--<a class=\"navbar-brand\" routerLink=\"/home\"><img src=\"assets/images/logoHB1.jpg\" alt=\"Progressus HTML5 template\"></a>-->\r\n\t\t\t</div>\r\n\t\t\t<div class=\"navbar-collapse collapse\">\r\n\t\t\t\t<ul class=\"nav navbar-nav pull-right\">\r\n\t\t\t\t\t<!--<li routerLinkActive=\"active\"><a routerLink=\"/save_product\">Т</a></li>-->\r\n\t\t\t\t\t<li routerLinkActive=\"active\"><a routerLink=\"/home\">Главная</a></li>\r\n\t\t\t\t\t<li><a routerLink=\"/products/growboxes\">Каталог</a></li>\r\n\t\t\t\t\t<!--<li class=\"dropdown\">\r\n\t\t\t\t\t\t<a href=\"#\" class=\"dropdown-toggle\" data-toggle=\"dropdown\">Каталог <b class=\"caret\"></b></a>\r\n\t\t\t\t\t\t<ul class=\"dropdown-menu\">\r\n\t\t\t\t\t\t\t<li routerLinkActive=\"active\"><a routerLink=\"/products/growboxes\">Гроубоксы</a></li>\r\n\t\t\t\t\t\t\t<li routerLinkActive=\"active\"><a routerLink=\"/products/lights\">Свет</a></li>\r\n\t\t\t\t\t\t\t<li routerLinkActive=\"active\"><a routerLink=\"/products/automatics\">Автоматизация</a></li>\r\n\t\t\t\t\t\t</ul>\r\n\t\t\t\t\t</li>-->\r\n\t\t\t\t\t<!--<li><a routerLink=\"/about_us\">О нас</a></li>-->\r\n\t\t\t\t\t<li><a routerLink=\"/contact\">Контакты</a></li>\r\n\t\t\t\t\t<!--<li><a class=\"btn\" routerLink=\"/login\">SIGN IN / SIGN UP</a></li>-->\r\n\t\t\t\t\t\r\n\t\t\t\t\t<li routerLinkActive=\"active\"><a routerLink=\"/product_summary\" style=\"display: inline-flex;\"><i class=\"fa fa-shopping-cart fa-2x bucketBorder\"></i><div style=\"width: 0px\"><span class=\"bucketBadge\">{{numberOfPurchasedProducts}}</span></div></a></li>\r\n\t\t\t\t</ul>\r\n\t\t\t</div><!--/.nav-collapse -->\r\n\t\t</div>\r\n\t</div> "
 
 /***/ }),
 
@@ -2366,6 +2387,43 @@ SaveProductComponent = __decorate([
 
 var _a, _b, _c;
 //# sourceMappingURL=save_product.component.js.map
+
+/***/ }),
+
+/***/ "../../../../../src/app/top_header.component.html":
+/***/ (function(module, exports) {
+
+module.exports = "<div class=\"background\">\r\n\t<div class=\"customContainer row\">\r\n\t\t<div class=\"col-lg-5 row\" align=\"center\" >\r\n\t\t\t<div class=\"col-lg-2\" style=\"margin-top: 5px\">\r\n\t\t\t<a routerLink=\"/home\"><img src=\"assets/images/logoHB1.jpg\" alt=\"Progressus HTML5 template\"></a>\r\n\t\t\t</div>\r\n\t\t\t<div class=\"logo col-lg-2 col-lg-offset-2\">\r\n\t\t\t\t<span class=\"hr1\">growboxes</span>\r\n\t\t\t\t<span class=\"hr4\">прогрессивное растениеводство</span>\r\n\t\t\t</div>\r\n\t\t</div>\r\n\t\t<div class=\"work col-lg-4\"  style=\"text-align: center\">\r\n\t\t<span class=\"hr3\">производство и продажа изделий для гровинга</span>\r\n\t\t</div>\r\n\t\t<div class=\"contacts col-lg-3\"  style=\"text-align: center\">\r\n\t\t\t<span class=\"hr3\">8 904 772 00 46</span>\r\n\t\t\t<span class=\"hr3\">E-mail: Sivolobov.v@yandex.ru</span>\r\n\t\t</div>\r\n\t</div>\r\n</div>"
+
+/***/ }),
+
+/***/ "../../../../../src/app/top_header.component.ts":
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/@angular/core.es5.js");
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return TopHeaderComponent; });
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+
+var TopHeaderComponent = (function () {
+    function TopHeaderComponent() {
+    }
+    return TopHeaderComponent;
+}());
+TopHeaderComponent = __decorate([
+    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
+        selector: 'shop-top-header',
+        template: __webpack_require__("../../../../../src/app/top_header.component.html"),
+        styles: [__webpack_require__("../../../../../src/app/assets/css/bootstrapNavbarButtonFix.min.css"), __webpack_require__("../../../../../src/app/assets/css/bootstrap-theme.css"), __webpack_require__("../../../../../src/app/assets/css/top_header.component.css")]
+    })
+], TopHeaderComponent);
+
+//# sourceMappingURL=top_header.component.js.map
 
 /***/ }),
 

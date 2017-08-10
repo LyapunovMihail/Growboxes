@@ -19,7 +19,7 @@ html, body {
 }
 
 body {
-    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-family: "Open sans", Helvetica, Arial;
     font-size: 14px;
     line-height: 1.428571429;
     color: #333;
@@ -43,6 +43,6 @@ html {
 .mainContainer {
     background-color: #fff; 
     box-shadow: 0px 0px 60px 0px rgba(0,0,0,0.45);
+    border-top-right-radius: 53px;
+    border-top-left-radius: 53px;
 }
-
-

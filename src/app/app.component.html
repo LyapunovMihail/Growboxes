@@ -1,8 +1,9 @@
 <div style="padding: 50px 100px 50px 100px;">
 	<div class="mainContainer">
+		<shop-top-header></shop-top-header>
 		<shop-navbar></shop-navbar>
 
-		<div style="min-height: calc(100vh - 285px)">
+		<div style="min-height: calc(100vh - 285px);">
 			<router-outlet (onPurchased)="onPurchased($event)"></router-outlet>
 		</div>
 

@@ -7,6 +7,7 @@ import { AppComponent } from './app.component';
 import {ToastModule} from './assets/ng2-toastr/ng2-toastr';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 
+import { TopHeaderComponent } from './top_header.component';
 import { NavbarComponent } from './navbar.component';
 import { HeaderComponent } from './header.component';
 //import { SidebarComponent } from './sidebar.component';
@@ -94,6 +95,7 @@ import { HttpModule }    from '@angular/http';
   ],
   declarations: [ 
   	AppComponent,
+  	TopHeaderComponent,
   	NavbarComponent,
   	HeaderComponent,
   	FooterComponent,

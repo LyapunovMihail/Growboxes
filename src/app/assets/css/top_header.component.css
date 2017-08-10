@@ -1,0 +1,50 @@
+.hr1 {
+    display: block;
+    font-size: 2em;
+    font-weight: bold;
+}
+
+.hr4 {
+    display: block;
+    font-weight: bold;
+}
+
+.hr3 {
+    display: block;
+    font-size: 1.17em;
+    font-weight: 400;
+}
+
+.background {
+	background: rgba(0, 0, 0, .8); 
+	border-top-right-radius: 53px;
+    border-top-left-radius: 53px; 
+    @media (max-width: 767px){
+    background: rgba(0,0,0,.9)}
+}
+
+.customContainer {
+	background: linear-gradient(to bottom, #5d9600 0%,#9bc500 0%,#5d9600 99%); 
+	color: #fff; 
+	padding: 15px; 
+	border-radius: 53px; 
+	padding-left:30px;
+}
+
+.logo {
+	margin-top: -10px;
+}
+
+.work {
+	margin-top: 5px; 
+	color: aliceblue; 
+	font-family: Verdana, Arial, Helvetica, Sans-Serif; 
+}
+
+.contacts {
+}
+
+.row {
+	margin-left:  0 !important;
+    margin-right: 0 !important;
+}
