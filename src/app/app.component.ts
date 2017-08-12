@@ -4,7 +4,10 @@ declare var $:any;
 @Component({
   selector: 'app-root',
   moduleId: module.id,
-  templateUrl: 'app.component.html'
+  templateUrl: 'app.component.html',
+  styleUrls: [  
+  	'assets/css/bootstrapNavbarButtonFix.min.css'
+  ]
 })
 
 

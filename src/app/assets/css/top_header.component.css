@@ -18,9 +18,13 @@
 .background {
 	background: rgba(0, 0, 0, .8); 
 	border-top-right-radius: 53px;
-    border-top-left-radius: 53px; 
-    @media (max-width: 767px){
-    background: rgba(0,0,0,.9)}
+  border-top-left-radius: 53px; 
+}
+
+@media (max-width: 767px) {
+  .background{
+    background: rgba(0,0,0,.9);
+  }
 }
 
 .customContainer {

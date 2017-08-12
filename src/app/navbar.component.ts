@@ -7,9 +7,9 @@ import { ProductService } from './product.service';
   templateUrl: 'navbar.component.html',
   styleUrls: [
   	'assets/css/bootstrapNavbarButtonFix.min.css',
-		'assets/css/bootstrap-theme.css',	
-		'assets/css/main.css',
-		'assets/css/progressusStyles.css'   
+	'assets/css/bootstrap-theme.css',	
+	'assets/css/main.css',
+	'assets/css/progressusStyles.css'   
   ]
 })
 

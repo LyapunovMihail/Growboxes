@@ -29,7 +29,7 @@
 		 <a href="#blockView" data-toggle="tab" (click)="activeTabButton = 'block'"><span class="btn btn-large"  [class.active]="activeTabButton === 'block'"><i class="icon-th-large" [class.icon-white]="activeTabButton === 'block'"></i></span></a>
 		</div>
 		<br class="clr"/>
-		<div class="tab-content"  style="padding-left: 55px">
+		<div class="tab-content">
 			<div class="tab-pane" id="listView" >
 
 				<div *ngFor="let item of products">
@@ -37,7 +37,7 @@
 						<div id="productView" class="span2">
 							<img src="{{item.imgUrl}}" alt=""/>
 						</div>
-						<div class="span4" style="margin-bottom: 20px">
+						<div class="span4">
 							<h3>{{item.name}}</h3>				
 							<p>
 							{{item.description}}

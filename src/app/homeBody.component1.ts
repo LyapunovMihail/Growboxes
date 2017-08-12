@@ -8,7 +8,7 @@ import { ToastsManager} from './assets/ng2-toastr/ng2-toastr';
   styleUrls: [ 
   	'assets/css/bootstrapNavbarButtonFix.min.css',
   	'assets/css/bootstrap-theme.css',	
-	'assets/css/main.css'
+	  'assets/css/main.css'
   ]
 })
 

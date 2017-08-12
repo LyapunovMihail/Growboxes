@@ -160,7 +160,7 @@ a:hover {
 @media (max-width: 767px) {
   .bucketBadge{
     top: 10px;
-}
+  }
 }
 
 a:hover div span.bucketBadge {

@@ -1,4 +1,4 @@
-<div class="row buyPagesContainer" style="margin-left: 30px" *ngIf="productDetail">
+<div class="row buyPagesContainer" *ngIf="productDetail">
 
 
 	<div class="span9" style="width: auto">
@@ -15,9 +15,9 @@
 				<div id="myCarousel" class="moreOptopm carousel slide">
 					<div class="carousel-inner">
 					  <div class="item active">
-					   <a class="fancybox-thumb" rel="fancybox-thumb" href="{{productDetail.imgUrl1}}" title="item 1" *ngIf="productDetail.imgUrl1"> <img width="29%" src="{{productDetail.imgUrl1}}" alt=""/></a>
-					   <a class="fancybox-thumb" rel="fancybox-thumb" href="{{productDetail.imgUrl2}}" title="item 2" *ngIf="productDetail.imgUrl2"> <img width="29%" src="{{productDetail.imgUrl2}}" alt=""/></a>
-					   <a class="fancybox-thumb" rel="fancybox-thumb" href="{{productDetail.imgUrl3}}" title="item 3" *ngIf="productDetail.imgUrl3"> <img width="29%" src="{{productDetail.imgUrl3}}" alt=""/></a>
+					   <a class="fancybox-thumb" rel="fancybox-thumb" href="{{productDetail.imgUrl1}}" title="" *ngIf="productDetail.imgUrl1"> <img width="29%" src="{{productDetail.imgUrl1}}" alt=""/></a>
+					   <a class="fancybox-thumb" rel="fancybox-thumb" href="{{productDetail.imgUrl2}}" title="" *ngIf="productDetail.imgUrl2"> <img width="29%" src="{{productDetail.imgUrl2}}" alt=""/></a>
+					   <a class="fancybox-thumb" rel="fancybox-thumb" href="{{productDetail.imgUrl3}}" title="" *ngIf="productDetail.imgUrl3"> <img width="29%" src="{{productDetail.imgUrl3}}" alt=""/></a>
 					  </div>
 					  <div class="item" *ngIf="productDetail.imgUrl4">
 					   <a class="fancybox-thumb" rel="fancybox-thumb" href="{{productDetail.imgUrl4}}" *ngIf="productDetail.imgUrl4"> <img width="29%" src="{{productDetail.imgUrl4}}" alt=""/></a>
@@ -117,7 +117,7 @@
 										<div id="productView" class="span2">
 											<img src="{{item.imgUrl}}" alt=""/>
 										</div>
-										<div class="span4" style="margin-bottom: 20px">
+										<div class="span4">
 											<h3>{{item.name}}</h3>				
 											<p>
 											{{item.description}}
