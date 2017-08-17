@@ -88,6 +88,13 @@ export class ProductService {
                .catch(this.handleError);
   }
 
+  ordering(orderData): Promise<any> {
+    return this.http.post("/api/ordering", {orderData})
+               .toPromise()
+               .then(response =>  Promise.resolve(response.json()) )
+               .catch(this.handleError);
+  }
+
   getAccessToProductsManagement(password): Promise<any> {
     return this.http.post("/api/products/getAccess", {password})
                .toPromise()

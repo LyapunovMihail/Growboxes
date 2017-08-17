@@ -1449,7 +1449,7 @@ exports.ToastModule = ToastModule;
 /***/ "../../../../../src/app/checkout.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"buyPagesContainer\" *ngIf=\"productsInBucket\">\r\n\t<section class=\"main-content\" *ngIf=\"productsInBucket.length > 0\">\r\n\t\t<h3 class=\"title\"><span class=\"text\">Оформление заказа</span></h3>\r\n\t\t<hr class=\"soft\"/>\r\n\r\n\t\t<div class=\"bucketTable\">\r\n\t\t\t<table class=\"table table-striped\">\r\n\t\t\t\t<thead>\r\n\t\t\t\t\t<tr>\r\n\t\t\t\t\t\t<th>УБРАТЬ</th>\r\n\t\t\t\t\t\t<th>ИЗОБРАЖЕНИЕ</th>\r\n\t\t\t\t\t\t<th>НАЗВАНИЕ</th>\r\n\t\t\t\t\t\t<th>КОЛИЧЕСТВО</th>\r\n\t\t\t\t\t\t<th>ЦЕНА ЗА ШТ.</th>\r\n\t\t\t\t\t\t<th>ВСЕГО</th>\r\n\t\t\t\t\t</tr>\r\n\t\t\t\t</thead>\r\n\t\t\t\t<tbody>\r\n\t\t\t\t\t<tr *ngFor=\"let item of productsInBucket\">\r\n\t\t\t\t\t\t<td><button type=\"button\" class=\"close pull-left\" aria-label=\"Close\" (click)=\"deleteProduct(item)\"><span aria-hidden=\"true\">&times;</span></button></td>\r\n\t\t\t\t\t\t<td class=\"span1\"><a routerLink=\"/product_details/{{item.product._id}}\"><img alt=\"\" src=\"{{item.product.imgUrl}}\"></a></td>\r\n\t\t\t\t\t\t<td>{{item.product.name}}</td>\r\n\t\t\t\t\t\t<td><input type=\"number\" min=\"1\" class=\"input-mini\" [(ngModel)]=\"item.number\" (input)=\"updateProduct(item)\"></td>\r\n\t\t\t\t\t\t<td>{{item.product.price}}</td>\r\n\t\t\t\t\t\t<td>{{item.product.price * item.number}}</td>\r\n\t\t\t\t\t</tr>\r\n\t\t\t\t\t<tr>\r\n\t\t\t\t\t\t<td>&nbsp;</td>\r\n\t\t\t\t\t\t<td>&nbsp;</td>\r\n\t\t\t\t\t\t<td>&nbsp;</td>\r\n\t\t\t\t\t\t<td>&nbsp;</td>\r\n\t\t\t\t\t\t<td>&nbsp;</td>\r\n\t\t\t\t\t\t<td><strong>{{sumPrice}} RUB</strong></td>\r\n\t\t\t\t\t</tr>\t\t  \r\n\t\t\t\t</tbody>\r\n\t\t\t</table>\r\n\t\t</div>\r\n\r\n\t\t<div class=\"row-fluid\" style=\"margin-left: 50px\">\r\n\r\n\t\t\t<div class=\"span6\">\r\n\t\t\t\t<h4>Ваши персональные данные</h4>\r\n\t\t\t\t<div class=\"control-group\">\r\n\t\t\t\t\t<label class=\"control-label\">Email</label>\r\n\t\t\t\t\t<div class=\"controls\">\r\n\t\t\t\t\t\t<input type=\"text\" placeholder=\"\" class=\"input-xlarge\">\r\n\t\t\t\t\t</div>\r\n\t\t\t\t</div>\r\n\t\t\t\t<div class=\"control-group\">\r\n\t\t\t\t\t<label class=\"control-label\">Имя</label>\r\n\t\t\t\t\t<div class=\"controls\">\r\n\t\t\t\t\t\t<input type=\"text\" placeholder=\"\" class=\"input-xlarge\">\r\n\t\t\t\t\t</div>\r\n\t\t\t\t</div>\r\n\t\t\t\t<div class=\"control-group\">\r\n\t\t\t\t\t<label class=\"control-label\">Фамилия</label>\r\n\t\t\t\t\t<div class=\"controls\">\r\n\t\t\t\t\t\t<input type=\"text\" placeholder=\"\" class=\"input-xlarge\">\r\n\t\t\t\t\t</div>\r\n\t\t\t\t</div>\r\n\t\t\t\t<div class=\"control-group\">\r\n\t\t\t\t\t<label class=\"control-label\">Отчество</label>\r\n\t\t\t\t\t<div class=\"controls\">\r\n\t\t\t\t\t\t<input type=\"text\" placeholder=\"\" class=\"input-xlarge\">\r\n\t\t\t\t\t</div>\r\n\t\t\t\t</div>\t\t\t\t\t  \r\n\t\t\t\t<div class=\"control-group\">\r\n\t\t\t\t\t<label class=\"control-label\">Телефон</label>\r\n\t\t\t\t\t<div class=\"controls\">\r\n\t\t\t\t\t\t<input type=\"text\" placeholder=\"\" class=\"input-xlarge\">\r\n\t\t\t\t\t</div>\r\n\t\t\t\t</div>\r\n\t\t\t</div>\r\n\t\t\t<div class=\"span6\">\r\n\t\t\t\t<h4>Ваш адрес</h4>\r\n\t\t\t\t<div class=\"control-group\">\r\n\t\t\t\t\t<label class=\"control-label\"><span class=\"required\">*</span> Country:</label>\r\n\t\t\t\t\t<div class=\"controls\">\r\n\t\t\t\t\t\t<select class=\"input-xlarge\">\r\n\t\t\t\t\t\t\t<option value=\"1\">Afghanistan</option>\r\n\t\t\t\t\t\t\t<option value=\"2\">Albania</option>\r\n\t\t\t\t\t\t\t<option value=\"3\">Algeria</option>\r\n\t\t\t\t\t\t\t<option value=\"4\">American Samoa</option>\r\n\t\t\t\t\t\t\t<option value=\"5\">Andorra</option>\r\n\t\t\t\t\t\t\t<option value=\"6\">Angola</option>\r\n\t\t\t\t\t\t</select>\r\n\t\t\t\t\t</div>\r\n\t\t\t\t</div>\r\n\t\t\t\t<div class=\"control-group\">\r\n\t\t\t\t\t<label class=\"control-label\"><span class=\"required\">*</span> Region / State:</label>\r\n\t\t\t\t\t<div class=\"controls\">\r\n\t\t\t\t\t\t<select name=\"zone_id\" class=\"input-xlarge\">\r\n\t\t\t\t\t\t\t<option value=\"\"> --- Please Select --- </option>\r\n\t\t\t\t\t\t\t<option value=\"3513\">Aberdeen</option>\r\n\t\t\t\t\t\t\t<option value=\"3514\">Aberdeenshire</option>\r\n\t\t\t\t\t\t\t<option value=\"3515\">Anglesey</option>\r\n\t\t\t\t\t\t\t<option value=\"3516\">Angus</option>\r\n\t\t\t\t\t\t\t<option value=\"3517\">Argyll and Bute</option>\r\n\t\t\t\t\t\t</select>\r\n\t\t\t\t\t</div>\r\n\t\t\t\t</div>\r\n\t\t\t  <div class=\"control-group\">\r\n\t\t\t\t\t<label class=\"control-label\"><span class=\"required\">*</span> City:</label>\r\n\t\t\t\t\t<div class=\"controls\">\r\n\t\t\t\t\t\t<input type=\"text\" placeholder=\"\" class=\"input-xlarge\">\r\n\t\t\t\t\t</div>\r\n\t\t\t\t</div>\r\n\t\t\t\t<div class=\"control-group\">\r\n\t\t\t\t\t<label class=\"control-label\"><span class=\"required\">*</span> Post Code:</label>\r\n\t\t\t\t\t<div class=\"controls\">\r\n\t\t\t\t\t\t<input type=\"text\" placeholder=\"\" class=\"input-xlarge\">\r\n\t\t\t\t\t</div>\r\n\t\t\t\t</div>\r\n\t\t\t\t<div class=\"control-group\">\r\n\t\t\t\t\t<label class=\"control-label\"><span class=\"required\">*</span> Address 1:</label>\r\n\t\t\t\t\t<div class=\"controls\">\r\n\t\t\t\t\t\t<input type=\"text\" placeholder=\"\" class=\"input-xlarge\">\r\n\t\t\t\t\t</div>\r\n\t\t\t\t</div>\r\n\r\n\t\t\t\t<button class=\"btn btn-large colorButton\">ОФОРМИТЬ ЗАКАЗ</button>\r\n\r\n\t\t\t</div>\r\n\r\n\t\t</div>\r\n\t</section>\r\n\r\n\t<section class=\"main-content\" *ngIf=\"productsInBucket.length == 0\">\r\n\t\t<h3 class=\"title\"><span class=\"text\">Оформление заказа</span></h3>\r\n\t\t<hr class=\"soft\"/>\r\n\t\t<h5>Ваша корзина пуста!</h5>\r\n\t\t<p class=\"buttons center\" style=\"margin-top: 15px\">\t\t\t\t\r\n\t\t\t<button class=\"btn btn-large colorButton pull-right\" type=\"submit\" id=\"checkout\" routerLink=\"/home\">Продолжить</button>\r\n\t\t</p>\r\n\t</section>\r\n</div>"
+module.exports = "<div class=\"buyPagesContainer\" *ngIf=\"productsInBucket\">\r\n\t<section class=\"main-content\" *ngIf=\"productsInBucket.length > 0\">\r\n\t\t<h3 class=\"title\"><span class=\"text\">Оформление заказа</span></h3>\r\n\t\t<hr class=\"soft\"/>\r\n\r\n\t\t<div class=\"bucketTable\">\r\n\t\t\t<table class=\"table table-striped\">\r\n\t\t\t\t<thead>\r\n\t\t\t\t\t<tr>\r\n\t\t\t\t\t\t<th>УБРАТЬ</th>\r\n\t\t\t\t\t\t<th>ИЗОБРАЖЕНИЕ</th>\r\n\t\t\t\t\t\t<th>НАЗВАНИЕ</th>\r\n\t\t\t\t\t\t<th>КОЛИЧЕСТВО</th>\r\n\t\t\t\t\t\t<th>ЦЕНА ЗА ШТ.</th>\r\n\t\t\t\t\t\t<th>ВСЕГО</th>\r\n\t\t\t\t\t</tr>\r\n\t\t\t\t</thead>\r\n\t\t\t\t<tbody>\r\n\t\t\t\t\t<tr *ngFor=\"let item of productsInBucket\">\r\n\t\t\t\t\t\t<td><button type=\"button\" class=\"close pull-left\" aria-label=\"Close\" (click)=\"deleteProduct(item)\"><span aria-hidden=\"true\">&times;</span></button></td>\r\n\t\t\t\t\t\t<td class=\"span1\"><a routerLink=\"/product_details/{{item.product._id}}\"><img alt=\"\" src=\"{{item.product.imgUrl}}\"></a></td>\r\n\t\t\t\t\t\t<td>{{item.product.name}}</td>\r\n\t\t\t\t\t\t<td><input type=\"number\" min=\"1\" class=\"input-mini\" [(ngModel)]=\"item.number\" (input)=\"updateProduct(item)\"></td>\r\n\t\t\t\t\t\t<td>{{item.product.price}}</td>\r\n\t\t\t\t\t\t<td>{{item.product.price * item.number}}</td>\r\n\t\t\t\t\t</tr>\r\n\t\t\t\t\t<tr>\r\n\t\t\t\t\t\t<td>&nbsp;</td>\r\n\t\t\t\t\t\t<td>&nbsp;</td>\r\n\t\t\t\t\t\t<td>&nbsp;</td>\r\n\t\t\t\t\t\t<td>&nbsp;</td>\r\n\t\t\t\t\t\t<td>&nbsp;</td>\r\n\t\t\t\t\t\t<td><strong>{{sumPrice}} RUB</strong></td>\r\n\t\t\t\t\t</tr>\t\t  \r\n\t\t\t\t</tbody>\r\n\t\t\t</table>\r\n\t\t</div>\r\n\r\n\t\t<div class=\"row-fluid\" style=\"margin-left: 50px\">\r\n\r\n\t\t\t<div class=\"span6\">\r\n\t\t\t\t<h4>Ваши персональные данные</h4>\r\n\t\t\t\t<div class=\"control-group\">\r\n\t\t\t\t\t<label class=\"control-label\">Email</label>\r\n\t\t\t\t\t<div class=\"controls\">\r\n\t\t\t\t\t\t<input type=\"text\" placeholder=\"\" class=\"input-xlarge\" [(ngModel)]=\"personalData.email\">\r\n\t\t\t\t\t</div>\r\n\t\t\t\t</div>\r\n\t\t\t\t<div class=\"control-group\">\r\n\t\t\t\t\t<label class=\"control-label\">Имя</label>\r\n\t\t\t\t\t<div class=\"controls\">\r\n\t\t\t\t\t\t<input type=\"text\" placeholder=\"\" class=\"input-xlarge\" [(ngModel)]=\"personalData.name\">\r\n\t\t\t\t\t</div>\r\n\t\t\t\t</div>\r\n\t\t\t\t<div class=\"control-group\">\r\n\t\t\t\t\t<label class=\"control-label\">Фамилия</label>\r\n\t\t\t\t\t<div class=\"controls\">\r\n\t\t\t\t\t\t<input type=\"text\" placeholder=\"\" class=\"input-xlarge\" [(ngModel)]=\"personalData.surname\">\r\n\t\t\t\t\t</div>\r\n\t\t\t\t</div>\r\n\t\t\t\t<div class=\"control-group\">\r\n\t\t\t\t\t<label class=\"control-label\">Отчество</label>\r\n\t\t\t\t\t<div class=\"controls\">\r\n\t\t\t\t\t\t<input type=\"text\" placeholder=\"\" class=\"input-xlarge\" [(ngModel)]=\"personalData.patronymic\">\r\n\t\t\t\t\t</div>\r\n\t\t\t\t</div>\t\t\t\t\t  \r\n\t\t\t\t<div class=\"control-group\">\r\n\t\t\t\t\t<label class=\"control-label\">Телефон</label>\r\n\t\t\t\t\t<div class=\"controls\">\r\n\t\t\t\t\t\t<input type=\"text\" placeholder=\"+7-999-999-99-99\" class=\"input-xlarge\" [(ngModel)]=\"personalData.telephone\">\r\n\t\t\t\t\t</div>\r\n\t\t\t\t</div>\r\n\t\t\t</div>\r\n\t\t\t<div class=\"span6\">\r\n\t\t\t\t<h4>Ваш адрес</h4>\r\n\t\t\t\t<div class=\"control-group\">\r\n\t\t\t\t\t<label class=\"control-label\"><span class=\"required\">*</span> Регион</label>\r\n\t\t\t\t\t<div class=\"controls\">\r\n\t\t\t\t\t\t<select class=\"input-xlarge\" [(ngModel)]=\"personalData.region\" *ngIf=\"regions\">\r\n\t\t\t\t\t\t\t<option *ngFor=\"let region of regions\" value=\"{{region}}\">{{region}}</option>\r\n\t\t\t\t\t\t</select>\r\n\t\t\t\t\t</div>\r\n\t\t\t\t</div>\r\n\t\t\t  \t<div class=\"control-group\">\r\n\t\t\t\t\t<label class=\"control-label\"><span class=\"required\">*</span> Город</label>\r\n\t\t\t\t\t<div class=\"controls\">\r\n\t\t\t\t\t\t<input type=\"text\" placeholder=\"\" class=\"input-xlarge\" [(ngModel)]=\"personalData.city\">\r\n\t\t\t\t\t</div>\r\n\t\t\t\t\t<p style=\"color: red\" *ngIf=\"incorrectOrder && personalData.city === ''\">Введите ваш город</p>\r\n\t\t\t\t</div>\r\n\t\t\t\t<div class=\"control-group\">\r\n\t\t\t\t\t<label class=\"control-label\"><span class=\"required\">*</span> Почтовый индекс</label>\r\n\t\t\t\t\t<div class=\"controls\">\r\n\t\t\t\t\t\t<input type=\"text\" placeholder=\"\" class=\"input-xlarge\" [(ngModel)]=\"personalData.index\">\r\n\t\t\t\t\t</div>\r\n\t\t\t\t\t<p style=\"color: red\" *ngIf=\"incorrectOrder && personalData.index === ''\">Введите ваш почтовый индекс</p>\r\n\t\t\t\t</div>\r\n\t\t\t\t<div class=\"control-group\">\r\n\t\t\t\t\t<label class=\"control-label\"><span class=\"required\">*</span> Адрес</label>\r\n\t\t\t\t\t<div class=\"controls\">\r\n\t\t\t\t\t\t<input type=\"text\" placeholder=\"Таращанцев,43,52\" class=\"input-xlarge\" [(ngModel)]=\"personalData.adress\">\r\n\t\t\t\t\t</div>\r\n\t\t\t\t\t<p style=\"color: red\" *ngIf=\"incorrectOrder && personalData.adress === ''\">Введите ваш Адрес</p>\r\n\t\t\t\t</div>\r\n\r\n\t\t\t\t<button class=\"btn btn-large colorButton\" (click)=\"ordering()\">ОФОРМИТЬ ЗАКАЗ</button>\r\n\r\n\t\t\t</div>\r\n\r\n\t\t</div>\r\n\t</section>\r\n\r\n\t<section class=\"main-content\" *ngIf=\"productsInBucket.length == 0 && !successedOrder\">\r\n\t\t<h3 class=\"title\"><span class=\"text\">Оформление заказа</span></h3>\r\n\t\t<hr class=\"soft\"/>\r\n\t\t<h5>Ваша корзина пуста!</h5>\r\n\t\t<p class=\"buttons center\" style=\"margin-top: 15px\">\t\t\t\t\r\n\t\t\t<button class=\"btn btn-large colorButton pull-right\" type=\"submit\" id=\"checkout\" routerLink=\"/home\">Продолжить</button>\r\n\t\t</p>\r\n\t</section>\r\n\r\n\t<section class=\"main-content\" *ngIf=\"productsInBucket.length == 0 && successedOrder\">\r\n\t\t<h3 class=\"title\"><span class=\"text\">Оформление заказа</span></h3>\r\n\t\t<hr class=\"soft\"/>\r\n\t\t<h5>Ваш заказ принят в обработку. Максимальное время отправления заказа - 24 часа с момента\r\n\t\tподачи заявки.</h5>\r\n\t\t<p class=\"buttons center\" style=\"margin-top: 15px\">\t\t\t\t\r\n\t\t\t<button class=\"btn btn-large colorButton pull-right\" type=\"submit\" id=\"checkout\" routerLink=\"/home\">На главную</button>\r\n\t\t</p>\r\n\t</section>\r\n\r\n</div>"
 
 /***/ }),
 
@@ -1459,6 +1459,7 @@ module.exports = "<div class=\"buyPagesContainer\" *ngIf=\"productsInBucket\">\r
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/@angular/core.es5.js");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__product_service__ = __webpack_require__("../../../../../src/app/product.service.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__regions__ = __webpack_require__("../../../../../src/app/regions.ts");
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return CheckoutComponent; });
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -1471,12 +1472,19 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 };
 
 
+
 var CheckoutComponent = (function () {
     function CheckoutComponent(productService) {
         this.productService = productService;
         this.sumPrice = 0;
+        this.personalData = { email: "Postre11@gmail.com", name: "Mihan", surname: "Mihanov", patronymic: "Mihanich", telephone: "+7-917-845-16-07",
+            region: "Волгоградская область", city: "Волгоград", index: "400117", adress: "Космонавтов,45,96" };
+        this.incorrectOrder = false;
+        this.successedOrder = false;
     }
     CheckoutComponent.prototype.ngOnInit = function () {
+        console.log("REGIONS: ", __WEBPACK_IMPORTED_MODULE_2__regions__["a" /* REGIONS */]);
+        this.regions = __WEBPACK_IMPORTED_MODULE_2__regions__["a" /* REGIONS */];
         this.getPurchasedProducts();
     };
     CheckoutComponent.prototype.getPurchasedProducts = function () {
@@ -1487,6 +1495,8 @@ var CheckoutComponent = (function () {
             _this.productsInBucket = products.products;
             _this.sumPrice = products.sumPrice;
             console.log("productsInBucket: ", products);
+            _this.orderData = { personalData: _this.personalData,
+                productsInBucket: products };
         });
     };
     CheckoutComponent.prototype.deleteProduct = function (item) {
@@ -1497,6 +1507,7 @@ var CheckoutComponent = (function () {
             console.log("productsInBucket: ", products);
             _this.productsInBucket = products.products;
             _this.sumPrice = products.sumPrice;
+            _this.orderData.productsInBucket = products;
             _this.productService.onPurchased(products.numberOfPurchasedProducts);
         });
     };
@@ -1509,9 +1520,23 @@ var CheckoutComponent = (function () {
                 console.log("productsInBucket: ", products);
                 _this.productsInBucket = products.products;
                 _this.sumPrice = products.sumPrice;
+                _this.orderData.productsInBucket = products;
                 _this.productService.onPurchased(products.numberOfPurchasedProducts);
             });
         }, 0);
+        //this.router.navigate(['/checkout']);
+    };
+    CheckoutComponent.prototype.ordering = function () {
+        var _this = this;
+        this.productService
+            .ordering(this.orderData)
+            .then(function (products) {
+            console.log("productsInBucket: ", products);
+            _this.productsInBucket = products.products;
+            _this.sumPrice = products.sumPrice;
+            _this.successedOrder = true;
+            _this.productService.onPurchased(products.numberOfPurchasedProducts);
+        }, function (err) { _this.incorrectOrder = true; console.log("err: ", err); });
         //this.router.navigate(['/checkout']);
     };
     return CheckoutComponent;
@@ -1964,6 +1989,12 @@ var ProductService = (function () {
             .then(function (response) { return Promise.resolve(response.json()); })
             .catch(this.handleError);
     };
+    ProductService.prototype.ordering = function (orderData) {
+        return this.http.post("/api/ordering", { orderData: orderData })
+            .toPromise()
+            .then(function (response) { return Promise.resolve(response.json()); })
+            .catch(this.handleError);
+    };
     ProductService.prototype.getAccessToProductsManagement = function (password) {
         return this.http.post("/api/products/getAccess", { password: password })
             .toPromise()
@@ -2279,6 +2310,99 @@ ProductsComponent = __decorate([
 
 var _a, _b, _c, _d;
 //# sourceMappingURL=products.component.js.map
+
+/***/ }),
+
+/***/ "../../../../../src/app/regions.ts":
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return REGIONS; });
+var REGIONS = [
+    "Алтайский край",
+    "Амурская область",
+    "Архангельская область",
+    "Астраханская область",
+    "Белгородская область",
+    "Брянская область",
+    "Владимирская область",
+    "Волгоградская область",
+    "Вологодская область",
+    "Воронежская область",
+    "Еврейская автономная область",
+    "Забайкальский край",
+    "Ивановская область",
+    "Иркутская область",
+    "Кабардино-Балкарская Республика",
+    "Калининградская область",
+    "Калужская область",
+    "Камчатский край",
+    "Карачаево-Черкесская Республика",
+    "Кемеровская область",
+    "Кировская область",
+    "Костромская область",
+    "Краснодарский край",
+    "Красноярский край",
+    "Курганская область",
+    "Курская область",
+    "Ленинградская область",
+    "Липецкая область",
+    "Магаданская область",
+    "Московская область",
+    "Мурманская область",
+    "Ненецкий автономный округ",
+    "Нижегородская область",
+    "Новгородская область",
+    "Новосибирская область",
+    "Омская область",
+    "Оренбургская область",
+    "Орловская область",
+    "Пензенская область",
+    "Пермский край",
+    "Приморский край",
+    "Псковская область",
+    "Республика Адыгея (Адыгея)",
+    "Республика Алтай",
+    "Республика Башкортостан",
+    "Республика Бурятия",
+    "Республика Дагестан",
+    "Республика Ингушетия",
+    "Республика Калмыкия",
+    "Республика Карелия",
+    "Республика Коми",
+    "Республика Крым",
+    "Республика Марий Эл",
+    "Республика Мордовия",
+    "Республика Саха (Якутия)",
+    "Республика Северная Осетия - Алания",
+    "Республика Татарстан (Татарстан)",
+    "Республика Тыва",
+    "Республика Хакасия",
+    "Ростовская область",
+    "Рязанская область",
+    "Самарская область",
+    "Саратовская область",
+    "Сахалинская область",
+    "Свердловская область",
+    "Смоленская область",
+    "Ставропольский край",
+    "Тамбовская область",
+    "Тверская область",
+    "Томская область",
+    "Тульская область",
+    "Тюменская область",
+    "Удмуртская Республика",
+    "Ульяновская область",
+    "Хабаровский край",
+    "Ханты-Мансийский автономный округ - Югра",
+    "Челябинская область",
+    "Чеченская Республика",
+    "Чувашская Республика - Чувашия",
+    "Чукотский автономный округ",
+    "Ямало-Ненецкий автономный округ",
+    "Ярославская область"
+];
+//# sourceMappingURL=regions.js.map
 
 /***/ }),
 

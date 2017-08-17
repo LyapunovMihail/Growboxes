@@ -3,7 +3,7 @@ var HttpError = require('../../error/index').HttpError;
 var AuthError = require('../../models/product').AuthError;
 var async = require('async');
 
-exports.post = function(req, res, next) {
+exports.getProductDetails = function(req, res, next) {
 	var productId = req.body.productId;
 	
 	Product.getProduct(productId, function(err, product) {

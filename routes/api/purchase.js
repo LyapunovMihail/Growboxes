@@ -2,7 +2,8 @@ var Product = require('../../models/product').Product;
 var HttpError = require('../../error/index').HttpError;
 var AuthError = require('../../models/product').AuthError;
 var async = require('async');
-var countSumPriceAndNumber = require('./helpMethods/countSumPriceAndNumber').countSumPriceAndNumber
+var countSumPriceAndNumber = require('./helpMethods/countSumPriceAndNumber').countSumPriceAndNumber;
+
 
 exports.post = function(req, res, next) {
 	var productId = req.body.productId;

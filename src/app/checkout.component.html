@@ -43,89 +43,74 @@
 				<div class="control-group">
 					<label class="control-label">Email</label>
 					<div class="controls">
-						<input type="text" placeholder="" class="input-xlarge">
+						<input type="text" placeholder="" class="input-xlarge" [(ngModel)]="personalData.email">
 					</div>
 				</div>
 				<div class="control-group">
 					<label class="control-label">Имя</label>
 					<div class="controls">
-						<input type="text" placeholder="" class="input-xlarge">
+						<input type="text" placeholder="" class="input-xlarge" [(ngModel)]="personalData.name">
 					</div>
 				</div>
 				<div class="control-group">
 					<label class="control-label">Фамилия</label>
 					<div class="controls">
-						<input type="text" placeholder="" class="input-xlarge">
+						<input type="text" placeholder="" class="input-xlarge" [(ngModel)]="personalData.surname">
 					</div>
 				</div>
 				<div class="control-group">
 					<label class="control-label">Отчество</label>
 					<div class="controls">
-						<input type="text" placeholder="" class="input-xlarge">
+						<input type="text" placeholder="" class="input-xlarge" [(ngModel)]="personalData.patronymic">
 					</div>
 				</div>					  
 				<div class="control-group">
 					<label class="control-label">Телефон</label>
 					<div class="controls">
-						<input type="text" placeholder="" class="input-xlarge">
+						<input type="text" placeholder="+7-999-999-99-99" class="input-xlarge" [(ngModel)]="personalData.telephone">
 					</div>
 				</div>
 			</div>
 			<div class="span6">
 				<h4>Ваш адрес</h4>
 				<div class="control-group">
-					<label class="control-label"><span class="required">*</span> Country:</label>
+					<label class="control-label"><span class="required">*</span> Регион</label>
 					<div class="controls">
-						<select class="input-xlarge">
-							<option value="1">Afghanistan</option>
-							<option value="2">Albania</option>
-							<option value="3">Algeria</option>
-							<option value="4">American Samoa</option>
-							<option value="5">Andorra</option>
-							<option value="6">Angola</option>
+						<select class="input-xlarge" [(ngModel)]="personalData.region" *ngIf="regions">
+							<option *ngFor="let region of regions" value="{{region}}">{{region}}</option>
 						</select>
 					</div>
 				</div>
-				<div class="control-group">
-					<label class="control-label"><span class="required">*</span> Region / State:</label>
+			  	<div class="control-group">
+					<label class="control-label"><span class="required">*</span> Город</label>
 					<div class="controls">
-						<select name="zone_id" class="input-xlarge">
-							<option value=""> --- Please Select --- </option>
-							<option value="3513">Aberdeen</option>
-							<option value="3514">Aberdeenshire</option>
-							<option value="3515">Anglesey</option>
-							<option value="3516">Angus</option>
-							<option value="3517">Argyll and Bute</option>
-						</select>
+						<input type="text" placeholder="" class="input-xlarge" [(ngModel)]="personalData.city">
 					</div>
-				</div>
-			  <div class="control-group">
-					<label class="control-label"><span class="required">*</span> City:</label>
-					<div class="controls">
-						<input type="text" placeholder="" class="input-xlarge">
-					</div>
+					<p style="color: red" *ngIf="incorrectOrder && personalData.city === ''">Введите ваш город</p>
 				</div>
 				<div class="control-group">
-					<label class="control-label"><span class="required">*</span> Post Code:</label>
+					<label class="control-label"><span class="required">*</span> Почтовый индекс</label>
 					<div class="controls">
-						<input type="text" placeholder="" class="input-xlarge">
+						<input type="text" placeholder="" class="input-xlarge" [(ngModel)]="personalData.index">
 					</div>
+					<p style="color: red" *ngIf="incorrectOrder && personalData.index === ''">Введите ваш почтовый индекс</p>
 				</div>
 				<div class="control-group">
-					<label class="control-label"><span class="required">*</span> Address 1:</label>
+					<label class="control-label"><span class="required">*</span> Адрес</label>
 					<div class="controls">
-						<input type="text" placeholder="" class="input-xlarge">
+						<input type="text" placeholder="Таращанцев,43,52" class="input-xlarge" [(ngModel)]="personalData.adress">
 					</div>
+					<p style="color: red" *ngIf="incorrectOrder && personalData.adress === ''">Введите ваш Адрес</p>
 				</div>
 
-				<button class="btn btn-large colorButton">ОФОРМИТЬ ЗАКАЗ</button>
+				<button class="btn btn-large colorButton" (click)="ordering()">ОФОРМИТЬ ЗАКАЗ</button>
 
 			</div>
 
 		</div>
 	</section>
 
-	<section class="main-content" *ngIf="productsInBucket.length == 0">
+	<section class="main-content" *ngIf="productsInBucket.length == 0 && !successedOrder">
 		<h3 class="title"><span class="text">Оформление заказа</span></h3>
 		<hr class="soft"/>
 		<h5>Ваша корзина пуста!</h5>
@@ -133,4 +118,15 @@
 			<button class="btn btn-large colorButton pull-right" type="submit" id="checkout" routerLink="/home">Продолжить</button>
 		</p>
 	</section>
+
+	<section class="main-content" *ngIf="productsInBucket.length == 0 && successedOrder">
+		<h3 class="title"><span class="text">Оформление заказа</span></h3>
+		<hr class="soft"/>
+		<h5>Ваш заказ принят в обработку. Максимальное время отправления заказа - 24 часа с момента
+		подачи заявки.</h5>
+		<p class="buttons center" style="margin-top: 15px">				
+			<button class="btn btn-large colorButton pull-right" type="submit" id="checkout" routerLink="/home">На главную</button>
+		</p>
+	</section>
+
 </div>

@@ -28,7 +28,9 @@ module.exports = function(app) {
 	app.post('/api/purchaseUpdate', require('./api/purchaseUpdate').update);
 	app.post('/api/purchaseDelete', require('./api/purchaseUpdate').delete);
 
-	app.post('/api/product_details', require('./api/product_details').post);
+	app.post('/api/product_details', require('./api/product_details').getProductDetails);
+
+	app.post('/api/ordering', require('./api/ordering').postOrderData);
 
 	app.post('/api/products/getAccess', require('./api/products').getAccessToProdutcsManagement);
 }

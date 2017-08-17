@@ -1,5 +1,6 @@
 import { Component, OnInit} from '@angular/core';
 import { ProductService } from './product.service';
+import { REGIONS } from './regions';
 
 @Component({
   selector: 'shop-checkout',
@@ -20,8 +21,16 @@ export class CheckoutComponent implements OnInit{
 
 	productsInBucket: any;
   sumPrice: number = 0;
+  personalData = {email: "Postre11@gmail.com", name: "Mihan", surname: "Mihanov", patronymic: "Mihanich", telephone: "+7-917-845-16-07",
+                  region: "Волгоградская область", city: "Волгоград", index: "400117", adress: "Космонавтов,45,96"};
+  orderData: any;
+  incorrectOrder = false;
+  successedOrder = false;
 
+  regions: String[];
 	ngOnInit() {
+    console.log("REGIONS: ", REGIONS);
+    this.regions = REGIONS;
 		this.getPurchasedProducts()
 	}
 
@@ -32,6 +41,8 @@ export class CheckoutComponent implements OnInit{
         this.productsInBucket = products.products
         this.sumPrice = products.sumPrice
         console.log("productsInBucket: ", products)
+        this.orderData = {personalData: this.personalData,
+                          productsInBucket: products}
       });
 	}
 
@@ -42,6 +53,7 @@ export class CheckoutComponent implements OnInit{
         console.log("productsInBucket: ", products)
         this.productsInBucket = products.products
         this.sumPrice = products.sumPrice
+        this.orderData.productsInBucket = products
         this.productService.onPurchased(products.numberOfPurchasedProducts)
       });
 	}
@@ -54,10 +66,23 @@ export class CheckoutComponent implements OnInit{
         console.log("productsInBucket: ", products)
         this.productsInBucket = products.products
         this.sumPrice = products.sumPrice
+        this.orderData.productsInBucket = products
         this.productService.onPurchased(products.numberOfPurchasedProducts)
       });
   	}, 0)
     //this.router.navigate(['/checkout']);
 	}
 
+  ordering() {
+      this.productService
+      .ordering(this.orderData)
+      .then(products => {
+        console.log("productsInBucket: ", products)
+        this.productsInBucket = products.products
+        this.sumPrice = products.sumPrice
+        this.successedOrder = true
+        this.productService.onPurchased(products.numberOfPurchasedProducts)
+      }, err => {this.incorrectOrder = true; console.log("err: ", err)});
+    //this.router.navigate(['/checkout']);
+  }
 }
