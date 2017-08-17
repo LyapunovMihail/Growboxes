@@ -1477,8 +1477,8 @@ var CheckoutComponent = (function () {
     function CheckoutComponent(productService) {
         this.productService = productService;
         this.sumPrice = 0;
-        this.personalData = { email: "Postre11@gmail.com", name: "Mihan", surname: "Mihanov", patronymic: "Mihanich", telephone: "+7-917-845-16-07",
-            region: "Волгоградская область", city: "Волгоград", index: "400117", adress: "Космонавтов,45,96" };
+        this.personalData = { email: "", name: "", surname: "", patronymic: "", telephone: "",
+            region: "Алтайский край", city: "", index: "", adress: "" };
         this.incorrectOrder = false;
         this.successedOrder = false;
     }

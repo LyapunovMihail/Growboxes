@@ -21,8 +21,8 @@ export class CheckoutComponent implements OnInit{
 
 	productsInBucket: any;
   sumPrice: number = 0;
-  personalData = {email: "Postre11@gmail.com", name: "Mihan", surname: "Mihanov", patronymic: "Mihanich", telephone: "+7-917-845-16-07",
-                  region: "Волгоградская область", city: "Волгоград", index: "400117", adress: "Космонавтов,45,96"};
+  personalData = {email: "", name: "", surname: "", patronymic: "", telephone: "",
+                  region: "Алтайский край", city: "", index: "", adress: ""};
   orderData: any;
   incorrectOrder = false;
   successedOrder = false;
