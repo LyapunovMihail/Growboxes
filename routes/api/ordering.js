@@ -26,8 +26,8 @@ exports.postOrderData = function(req, res, next) {
 	    port: 465,
 	    secure: true, // secure:true for port 465, secure:false for port 587
 	    auth: {
-	        user: 'postre11@yandex.ru',
-	        pass: 'rbnftwww'
+	        user: 'info@growboxes.ru',
+	        pass: 'rbnftw11'
 	    }
 	});
 
@@ -60,7 +60,7 @@ exports.postOrderData = function(req, res, next) {
 
 	// setup email data with unicode symbols
 	let mailOptions = {
-	    from: '<postre11@yandex.ru>', // sender address
+	    from: '"growboxes" <info@growboxes.ru>', // sender address
 	    to: 'lyapunovMihail@gmail.com', // list of receivers
 	    subject: 'ПОКУПКА ТОВАРОВ growboxes.ru', // Subject line
 	    //text: 'Hello world ?', // plain text body
