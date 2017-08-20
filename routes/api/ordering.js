@@ -22,11 +22,11 @@ exports.postOrderData = function(req, res, next) {
 
 	// create reusable transporter object using the default SMTP transport
 	let transporter = nodemailer.createTransport({
-	    host: 'smtp.gmail.com',
+	    host: 'smtp.yandex.ru',
 	    port: 465,
 	    secure: true, // secure:true for port 465, secure:false for port 587
 	    auth: {
-	        user: 'lyapunovMihail',
+	        user: 'postre11@yandex.ru',
 	        pass: 'rbnftwww'
 	    }
 	});
@@ -60,7 +60,7 @@ exports.postOrderData = function(req, res, next) {
 
 	// setup email data with unicode symbols
 	let mailOptions = {
-	    from: '<lyapunovMihail@gmail.com>', // sender address
+	    from: '<postre11@yandex.ru>', // sender address
 	    to: 'lyapunovMihail@gmail.com', // list of receivers
 	    subject: 'ПОКУПКА ТОВАРОВ growboxes.ru', // Subject line
 	    //text: 'Hello world ?', // plain text body
