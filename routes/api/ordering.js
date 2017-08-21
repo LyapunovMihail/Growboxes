@@ -1,6 +1,7 @@
 var Order = require('../../models/order').Order;
 var HttpError = require('../../error/index').HttpError;
 var async = require('async');
+var ENV_DEV = require('../../libs/env').ENV_DEV;
 const nodemailer = require('nodemailer');
 
 exports.postOrderData = function(req, res, next) {
@@ -20,14 +21,24 @@ exports.postOrderData = function(req, res, next) {
 		orders = order;
 	});
 
+	var mail_user = 'info@growboxes.ru';
+	var mail_pass = 'rbnftw11';
+
+	if (!ENV_DEV) {
+		mail_user = process.env.MAIL_USER;
+		mail_pass = process.env.MAIL_PASS;
+	}
+	console.log("ENV_DEV: ", ENV_DEV);
+	console.log("process.env.MAIL_USER: ", process.env.MAIL_USER);
+	console.log("process.env.MAIL_PASS: ", process.env.MAIL_PASS);
 	// create reusable transporter object using the default SMTP transport
 	let transporter = nodemailer.createTransport({
 	    host: 'smtp.yandex.ru',
 	    port: 465,
 	    secure: true, // secure:true for port 465, secure:false for port 587
 	    auth: {
-	        user: 'info@growboxes.ru',
-	        pass: 'rbnftw11'
+	        user: mail_user,
+	        pass: mail_pass
 	    }
 	});
 
@@ -38,9 +49,7 @@ exports.postOrderData = function(req, res, next) {
 
 	var ending = "";
 	var sumProductsString = orderData.productsInBucket.numberOfPurchasedProducts + "";
-	console.log("sumProductsString.length: ", sumProductsString.length);
-	console.log("sumProductsString.substring: ", sumProductsString.substring(sumProductsString.length-2,
-			sumProductsString.length));
+	
 	if (sumProductsString.length >= 2 && sumProductsString.substring(sumProductsString.length-2,
 			sumProductsString.length) >= 11 && sumProductsString.substring(sumProductsString.length-2,
 			sumProductsString.length) <= 19){ 
@@ -60,8 +69,8 @@ exports.postOrderData = function(req, res, next) {
 
 	// setup email data with unicode symbols
 	let mailOptions = {
-	    from: '"growboxes" <info@growboxes.ru>', // sender address
-	    to: 'lyapunovMihail@gmail.com', // list of receivers
+	    from: '<info@growboxes.ru>', // sender address
+	    to: 'info@growboxes.ru', // list of receivers
 	    subject: 'ПОКУПКА ТОВАРОВ growboxes.ru', // Subject line
 	    //text: 'Hello world ?', // plain text body
 	    html: `

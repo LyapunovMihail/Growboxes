@@ -20,6 +20,7 @@ var port = process.env.PORT || config.get('port');
 
 var app = express();
 app.set('port', port);
+require('./libs/env').envDev(app);
 
 app.engine('ejs', require('ejs-locals'));
 app.set('views', path.join(__dirname, '/dist'));
@@ -69,6 +70,7 @@ app.use(function(err,req,res, next) {
 			log.error(err);
 			err = new HttpError(500);
 			res.sendHttpError(err);
+
 		}
 	}
 });
