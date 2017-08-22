@@ -18,5 +18,10 @@
 			"httpOnly": true,
 			"maxAge": null
 		}
+	},
+	"save_product_pass" : "kevrik",
+	"mail": {
+		"user": "info@growboxes.ru",
+		"pass": "rbnftw11"
 	}
 }

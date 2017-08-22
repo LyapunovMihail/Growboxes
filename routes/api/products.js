@@ -2,13 +2,14 @@ var Product = require('../../models/product').Product;
 var HttpError = require('../../error/index').HttpError;
 var AuthError = require('../../models/product').AuthError;
 var async = require('async');
+var config = require('../../config');
 var countSumPriceAndNumber = require('./helpMethods/countSumPriceAndNumber').countSumPriceAndNumber
 
 exports.getAccessToProdutcsManagement = function(req, res, next) {
 	console.log("req.body: ", req.body)
 	var password = req.body.password;
 
-	if (password == "kevrik")
+	if (password == config.get('save_product_pass'))
 		res.send({"access": true});
 	else
 		res.send({"access": false});

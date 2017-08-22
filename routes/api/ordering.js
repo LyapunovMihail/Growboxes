@@ -1,7 +1,7 @@
 var Order = require('../../models/order').Order;
 var HttpError = require('../../error/index').HttpError;
 var async = require('async');
-var ENV_DEV = require('../../libs/env').ENV_DEV;
+var config = require('../../config');
 const nodemailer = require('nodemailer');
 
 exports.postOrderData = function(req, res, next) {
@@ -21,16 +21,9 @@ exports.postOrderData = function(req, res, next) {
 		orders = order;
 	});
 
-	var mail_user = 'info@growboxes.ru';
-	var mail_pass = 'rbnftw11';
+	var mail_user = process.env.MAIL_USER || config.get('mail:user');
+	var mail_pass = process.env.MAIL_PASS || config.get('mail:pass');
 
-	if (!ENV_DEV) {
-		mail_user = process.env.MAIL_USER;
-		mail_pass = process.env.MAIL_PASS;
-	}
-	console.log("ENV_DEV: ", ENV_DEV);
-	console.log("process.env.MAIL_USER: ", process.env.MAIL_USER);
-	console.log("process.env.MAIL_PASS: ", process.env.MAIL_PASS);
 	// create reusable transporter object using the default SMTP transport
 	let transporter = nodemailer.createTransport({
 	    host: 'smtp.yandex.ru',

@@ -13,15 +13,12 @@ var config = require('./config');
 var HttpError = require('./error/index').HttpError;
 
 console.log("process.env.PORT: ", process.env.PORT);
-console.log("process.env.PORT || config.get('port'): ", process.env.PORT || config.get('port'));
 var port = process.env.PORT || config.get('port');
 
 
 
 var app = express();
 app.set('port', port);
-require('./libs/env').envDev(app);
-console.log("app.get('env'): ", app.get('env'));
 
 app.engine('ejs', require('ejs-locals'));
 app.set('views', path.join(__dirname, '/dist'));
