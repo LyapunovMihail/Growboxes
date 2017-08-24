@@ -151,8 +151,19 @@ exports.getCategoryProducts = function(req, res, next) {
 			}
 		}
 
+		console.log("products: ", products);
+		products.sort((a,b) => {
+			var keyA = new Date(a.created);
+        	var keyB = new Date(b.created);
+
+        	if(keyA < keyB) return -1;
+    		if(keyA > keyB) return 1;
+    		return 0
+		});
+		console.log("products: ", products);
 		res.send(products);
 	});
+
 
 }
 
