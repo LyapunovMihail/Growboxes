@@ -15,7 +15,6 @@ exports.getProductDetails = function(req, res, next) {
 			}
 		}
 
-
 		req.session.productDetails = product;
 		res.send(req.session.productDetails);
 	});

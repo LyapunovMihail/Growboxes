@@ -12,7 +12,6 @@ var config = require('./config');
 //"mongodb://heroku_4t11kqhm:lt57ddmudpes3qv1lglpfh5qq4@ds127063.mlab.com:27063/heroku_4t11kqhm"
 var HttpError = require('./error/index').HttpError;
 
-console.log("process.env.PORT: ", process.env.PORT);
 var port = process.env.PORT || config.get('port');
 
 

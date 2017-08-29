@@ -22,7 +22,6 @@ export class AppComponent implements OnInit{
 
 	onPurchased(numberOfPurchasedProducts: number) {
     this.numberOfPurchasedProducts = numberOfPurchasedProducts
-    console.log("this.numberOfPurchasedProducts: ", this.numberOfPurchasedProducts)
   }
 }
 

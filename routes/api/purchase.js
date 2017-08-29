@@ -9,7 +9,6 @@ exports.post = function(req, res, next) {
 	var productId = req.body.productId;
 	var number = req.body.number;
 
-	console.log("req.bodyPURCHASE: ", req.body);
 	Product.getProduct(productId, function(err, product) {
 		if (err) {
 			if (err instanceof AuthError) {
@@ -23,16 +22,12 @@ exports.post = function(req, res, next) {
 			req.session.products = {};
 			req.session.products.products = [];
 		}
-		console.log("number: ", number);
 		var push = true;
 
 		
 		if (req.session.products.products.length > 0) {
 			req.session.products.products.forEach(x => {
-				console.log("product._id: ", product._id);
-				console.log("x.product._id: ", x.product._id);
 				if (product._id == x.product._id) {
-					console.log("check");
 					x.number = +x.number + +number;
 					push = false;
 				}
@@ -51,7 +46,6 @@ exports.post = function(req, res, next) {
 }
 
 exports.get = function(req, res) {
-	console.log("req.session.products: ", req.session.products)
 	if (!req.session.products) {
 		req.session.products = {};
 		req.session.products.products = [];

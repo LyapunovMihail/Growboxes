@@ -37,10 +37,9 @@ export class SaveProductComponent implements OnInit{
 	}
 
 	saveProduct(data): void {
-	console.log("data: ", data)
     this.productService
         .saveProduct(data)
-        .then(product => {console.log("product: ", product);
+        .then(product => {
           this.toastr.success('Товар добавлен в базу данных')
         }, err => {console.log("httpError: ", err);
           if (data.name == '' || data.category == '' || data.description == '' || data.price == '')
@@ -50,21 +49,19 @@ export class SaveProductComponent implements OnInit{
   }
 
   updateProduct(data): void {
-  console.log("data: ", data)
     this.productService
         .updateProduct(data)
-        .then(product => {console.log("product: ", product);
+        .then(product => {
           this.toastr.success('Товар обновлен')
         }, err => {console.log("httpError: ", err);
            this.toastr.error('Товар с таким именем не найден', 'Ошибка обновления')} );
   }
 
 	deleteProduct(item): void {
-    console.log("item: ", item)
     if (window.confirm("Вы действительно хотите удалить товар?") == true) {
       this.productService
         .deleteProduct(item)
-        .then(response => {console.log("response: ", response);
+        .then(response => {
           if (response.product.n == 0) {
             this.toastr.error('Товар не найден', 'Ошибка удаления');
           } else {
@@ -80,7 +77,7 @@ export class SaveProductComponent implements OnInit{
   getProducts(): void {
     this.productService
       .getProducts()
-      .then(products => {console.log("products: ", products);
+      .then(products => {
               this.products = products},
             err => console.log("httpError: ", err) );
   }
@@ -99,10 +96,9 @@ export class SaveProductComponent implements OnInit{
   }
 
   getAccessToProductsManagement(): void {
-    console.log("this.passwordToAccess: ", this.passwordToAccess)
     this.productService
       .getAccessToProductsManagement(this.passwordToAccess)
-      .then(result => {console.log("result: ", result);
+      .then(result => {
                         this.access.access = result.access
                         this.access.passwordChecked = true
                       }, err => console.log("httpError: ", err) );

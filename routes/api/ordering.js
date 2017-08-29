@@ -11,7 +11,6 @@ exports.postOrderData = function(req, res, next) {
 		orderData.personalData.adress == "") {
 		next(new HttpError(403, "some of required fields are empty"));
 	}
-	console.log("orderData: ", orderData);
 
 	var oders = {};
 	Order.saveOrder(orderData, function(err, order) {
@@ -89,7 +88,6 @@ exports.postOrderData = function(req, res, next) {
 	    if (error) {
 	        return console.log(error);
 	    }
-	    console.log('Message %s sent: %s', info.messageId, info.response);
 	});
 
 	req.session.products = {};

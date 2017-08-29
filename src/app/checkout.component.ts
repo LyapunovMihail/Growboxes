@@ -29,7 +29,6 @@ export class CheckoutComponent implements OnInit{
 
   regions: String[];
 	ngOnInit() {
-    console.log("REGIONS: ", REGIONS);
     this.regions = REGIONS;
 		this.getPurchasedProducts()
 	}
@@ -40,7 +39,6 @@ export class CheckoutComponent implements OnInit{
       .then(products => {
         this.productsInBucket = products.products
         this.sumPrice = products.sumPrice
-        console.log("productsInBucket: ", products)
         this.orderData = {personalData: this.personalData,
                           productsInBucket: products}
       });
@@ -50,7 +48,6 @@ export class CheckoutComponent implements OnInit{
   	this.productService
       .deletePurchasedProduct(item)
       .then(products => {
-        console.log("productsInBucket: ", products)
         this.productsInBucket = products.products
         this.sumPrice = products.sumPrice
         this.orderData.productsInBucket = products
@@ -63,7 +60,6 @@ export class CheckoutComponent implements OnInit{
   		this.productService
       .updatePurchasedProduct(item)
       .then(products => {
-        console.log("productsInBucket: ", products)
         this.productsInBucket = products.products
         this.sumPrice = products.sumPrice
         this.orderData.productsInBucket = products
@@ -77,7 +73,6 @@ export class CheckoutComponent implements OnInit{
       this.productService
       .ordering(this.orderData)
       .then(products => {
-        console.log("productsInBucket: ", products)
         this.productsInBucket = products.products
         this.sumPrice = products.sumPrice
         this.successedOrder = true

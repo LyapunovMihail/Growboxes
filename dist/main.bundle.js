@@ -41,7 +41,6 @@ var AppComponent = (function () {
     };
     AppComponent.prototype.onPurchased = function (numberOfPurchasedProducts) {
         this.numberOfPurchasedProducts = numberOfPurchasedProducts;
-        console.log("this.numberOfPurchasedProducts: ", this.numberOfPurchasedProducts);
     };
     return AppComponent;
 }());
@@ -1483,7 +1482,6 @@ var CheckoutComponent = (function () {
         this.successedOrder = false;
     }
     CheckoutComponent.prototype.ngOnInit = function () {
-        console.log("REGIONS: ", __WEBPACK_IMPORTED_MODULE_2__regions__["a" /* REGIONS */]);
         this.regions = __WEBPACK_IMPORTED_MODULE_2__regions__["a" /* REGIONS */];
         this.getPurchasedProducts();
     };
@@ -1494,7 +1492,6 @@ var CheckoutComponent = (function () {
             .then(function (products) {
             _this.productsInBucket = products.products;
             _this.sumPrice = products.sumPrice;
-            console.log("productsInBucket: ", products);
             _this.orderData = { personalData: _this.personalData,
                 productsInBucket: products };
         });
@@ -1504,7 +1501,6 @@ var CheckoutComponent = (function () {
         this.productService
             .deletePurchasedProduct(item)
             .then(function (products) {
-            console.log("productsInBucket: ", products);
             _this.productsInBucket = products.products;
             _this.sumPrice = products.sumPrice;
             _this.orderData.productsInBucket = products;
@@ -1517,7 +1513,6 @@ var CheckoutComponent = (function () {
             _this.productService
                 .updatePurchasedProduct(item)
                 .then(function (products) {
-                console.log("productsInBucket: ", products);
                 _this.productsInBucket = products.products;
                 _this.sumPrice = products.sumPrice;
                 _this.orderData.productsInBucket = products;
@@ -1531,7 +1526,6 @@ var CheckoutComponent = (function () {
         this.productService
             .ordering(this.orderData)
             .then(function (products) {
-            console.log("productsInBucket: ", products);
             _this.productsInBucket = products.products;
             _this.sumPrice = products.sumPrice;
             _this.successedOrder = true;
@@ -1747,11 +1741,9 @@ var HomeBodyComponent1 = (function () {
     };
     HomeBodyComponent1.prototype.purchaseProduct = function (product) {
         var _this = this;
-        console.log("product: ", product);
         this.productService
             .purchaseProduct(product)
             .then(function (products) {
-            console.log("productsInBucket: ", products);
             _this.productsInBucket = products;
             _this.productService.onPurchased(_this.productsInBucket.numberOfPurchasedProducts);
             _this.toastr.success('Товар добавлен в корзину');
@@ -1844,7 +1836,6 @@ var NavbarComponent = (function () {
         this.numberOfPurchasedProducts = 0;
         productService.onPurchased$.subscribe(function (number) {
             _this.numberOfPurchasedProducts = number;
-            console.log("this.numberOfPurchasedProducts: ", _this.numberOfPurchasedProducts);
         });
     }
     /* @Input()
@@ -1878,7 +1869,6 @@ var NavbarComponent = (function () {
             .getPurchasedProducts()
             .then(function (products) {
             _this.numberOfPurchasedProducts = products.numberOfPurchasedProducts;
-            console.log("this.numberOfPurchasedProducts: ", _this.numberOfPurchasedProducts);
         });
     };
     return NavbarComponent;
@@ -1939,7 +1929,6 @@ var ProductService = (function () {
             .catch(this.handleError);
     };
     ProductService.prototype.deleteProduct = function (data) {
-        console.log("data: ", data);
         return this.http.post("/api/productsDelete", data)
             .toPromise()
             .then(function (response) { return Promise.resolve(response.json()); })
@@ -1958,14 +1947,12 @@ var ProductService = (function () {
             .catch(this.handleError);
     };
     ProductService.prototype.getProductDetails = function (productId) {
-        console.log("productId: ", productId);
         return this.http.post("/api/product_details", { productId: productId })
             .toPromise()
             .then(function (response) { return Promise.resolve(response.json()); })
             .catch(this.handleError);
     };
     ProductService.prototype.purchaseProduct = function (product) {
-        console.log("product: ", product);
         return this.http.post("/api/purchase", product)
             .toPromise()
             .then(function (response) { return Promise.resolve(response.json()); })
@@ -2078,7 +2065,6 @@ var ProductDetailsComponent = (function () {
             .switchMap(function (params) { return _this.productService.getProductDetails(params['id']); })
             .subscribe(function (productDetail) {
             _this.productDetail = productDetail;
-            console.log("product_details: ", productDetail);
             _this.getCategoryProducts();
         }, function (err) { return console.log("httpError: ", err); });
         $(".fancybox-thumb").fancybox({
@@ -2110,11 +2096,9 @@ var ProductDetailsComponent = (function () {
     };
     ProductDetailsComponent.prototype.purchaseProduct = function (product) {
         var _this = this;
-        console.log("product: ", product);
         this.productService
             .purchaseProduct(product)
             .then(function (products) {
-            console.log("productsInBucket: ", products);
             _this.productsInBucket = products;
             _this.productService.onPurchased(_this.productsInBucket.numberOfPurchasedProducts);
             _this.toastr.success('Товар добавлен в корзину');
@@ -2192,7 +2176,6 @@ var ProductSummaryComponent = (function () {
             .then(function (products) {
             _this.productsInBucket = products.products;
             _this.sumPrice = products.sumPrice;
-            console.log("productsInBucket: ", products);
         });
     };
     ProductSummaryComponent.prototype.deleteProduct = function (item) {
@@ -2200,7 +2183,6 @@ var ProductSummaryComponent = (function () {
         this.productService
             .deletePurchasedProduct(item)
             .then(function (products) {
-            console.log("productsInBucket: ", products);
             _this.productsInBucket = products.products;
             _this.sumPrice = products.sumPrice;
             _this.productService.onPurchased(products.numberOfPurchasedProducts);
@@ -2212,7 +2194,6 @@ var ProductSummaryComponent = (function () {
             _this.productService
                 .updatePurchasedProduct(item)
                 .then(function (products) {
-                console.log("productsInBucket: ", products);
                 _this.productsInBucket = products.products;
                 _this.sumPrice = products.sumPrice;
                 _this.productService.onPurchased(products.numberOfPurchasedProducts);
@@ -2285,11 +2266,9 @@ var ProductsComponent = (function () {
     };
     ProductsComponent.prototype.purchaseProduct = function (product) {
         var _this = this;
-        console.log("product: ", product);
         this.productService
             .purchaseProduct(product)
             .then(function (products) {
-            console.log("productsInBucket: ", products);
             _this.productsInBucket = products;
             _this.productService.onPurchased(_this.productsInBucket.numberOfPurchasedProducts);
             _this.toastr.success('Товар добавлен в корзину');
@@ -2451,11 +2430,9 @@ var SaveProductComponent = (function () {
     };
     SaveProductComponent.prototype.saveProduct = function (data) {
         var _this = this;
-        console.log("data: ", data);
         this.productService
             .saveProduct(data)
             .then(function (product) {
-            console.log("product: ", product);
             _this.toastr.success('Товар добавлен в базу данных');
         }, function (err) {
             console.log("httpError: ", err);
@@ -2467,11 +2444,9 @@ var SaveProductComponent = (function () {
     };
     SaveProductComponent.prototype.updateProduct = function (data) {
         var _this = this;
-        console.log("data: ", data);
         this.productService
             .updateProduct(data)
             .then(function (product) {
-            console.log("product: ", product);
             _this.toastr.success('Товар обновлен');
         }, function (err) {
             console.log("httpError: ", err);
@@ -2480,12 +2455,10 @@ var SaveProductComponent = (function () {
     };
     SaveProductComponent.prototype.deleteProduct = function (item) {
         var _this = this;
-        console.log("item: ", item);
         if (window.confirm("Вы действительно хотите удалить товар?") == true) {
             this.productService
                 .deleteProduct(item)
                 .then(function (response) {
-                console.log("response: ", response);
                 if (response.product.n == 0) {
                     _this.toastr.error('Товар не найден', 'Ошибка удаления');
                 }
@@ -2502,7 +2475,6 @@ var SaveProductComponent = (function () {
         this.productService
             .getProducts()
             .then(function (products) {
-            console.log("products: ", products);
             _this.products = products;
         }, function (err) { return console.log("httpError: ", err); });
     };
@@ -2521,11 +2493,9 @@ var SaveProductComponent = (function () {
     };
     SaveProductComponent.prototype.getAccessToProductsManagement = function () {
         var _this = this;
-        console.log("this.passwordToAccess: ", this.passwordToAccess);
         this.productService
             .getAccessToProductsManagement(this.passwordToAccess)
             .then(function (result) {
-            console.log("result: ", result);
             _this.access.access = result.access;
             _this.access.passwordChecked = true;
         }, function (err) { return console.log("httpError: ", err); });

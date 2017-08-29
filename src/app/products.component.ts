@@ -40,11 +40,9 @@ export class ProductsComponent implements OnInit {
 
 
   purchaseProduct(product): void {
-    console.log("product: ", product)
     this.productService
       .purchaseProduct(product)
       .then(products => {
-        console.log("productsInBucket: ", products)
         this.productsInBucket = products
         this.productService.onPurchased(this.productsInBucket.numberOfPurchasedProducts)
         this.toastr.success('Товар добавлен в корзину');

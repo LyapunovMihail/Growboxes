@@ -6,9 +6,6 @@ var countSumPriceAndNumber = require('./helpMethods/countSumPriceAndNumber').cou
 
 exports.update = function(req, res, next) {
 	var item = req.body;
-	console.log("req.body: ", req.body)
-	
-	console.log("req.session.products.products: ", req.session.products.products)
 
 	req.session.products.products.forEach(x => {
   		if (x.product._id == item.product._id)
@@ -18,7 +15,6 @@ exports.update = function(req, res, next) {
 	
 
 	const sumPriceAndNumber = countSumPriceAndNumber(req.session.products.products);
-	console.log("sumPriceAndNumber: ", sumPriceAndNumber)
 	req.session.products.sumPrice = sumPriceAndNumber[0];
 	req.session.products.numberOfPurchasedProducts = sumPriceAndNumber[1];
 
@@ -27,7 +23,6 @@ exports.update = function(req, res, next) {
 
 exports.delete = function(req, res, next) {
 	var item = req.body;
-	console.log("req.body: ", req.body)
 
 	req.session.products.products = req.session.products.products.filter(x => {
   		return x.product._id != item.product._id

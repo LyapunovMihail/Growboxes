@@ -32,7 +32,6 @@ export class ProductSummaryComponent implements OnInit{
       .then(products => {
         this.productsInBucket = products.products
         this.sumPrice = products.sumPrice
-        console.log("productsInBucket: ", products)
       });
   }
 
@@ -40,7 +39,6 @@ export class ProductSummaryComponent implements OnInit{
   	this.productService
       .deletePurchasedProduct(item)
       .then(products => {
-        console.log("productsInBucket: ", products)
         this.productsInBucket = products.products
         this.sumPrice = products.sumPrice
         this.productService.onPurchased(products.numberOfPurchasedProducts)
@@ -52,7 +50,6 @@ export class ProductSummaryComponent implements OnInit{
   		this.productService
       .updatePurchasedProduct(item)
       .then(products => {
-        console.log("productsInBucket: ", products)
         this.productsInBucket = products.products
         this.sumPrice = products.sumPrice
         this.productService.onPurchased(products.numberOfPurchasedProducts)

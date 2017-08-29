@@ -6,7 +6,6 @@ var config = require('../../config');
 var countSumPriceAndNumber = require('./helpMethods/countSumPriceAndNumber').countSumPriceAndNumber
 
 exports.getAccessToProdutcsManagement = function(req, res, next) {
-	console.log("req.body: ", req.body)
 	var password = req.body.password;
 
 	if (password == config.get('save_product_pass'))
@@ -16,7 +15,6 @@ exports.getAccessToProdutcsManagement = function(req, res, next) {
 }
 
 exports.post = function(req, res, next) {
-	console.log("req.body: ", req.body)
 	var name = req.body.name;
 	var category = req.body.category;
 	var properties = req.body.properties;
@@ -47,7 +45,6 @@ exports.post = function(req, res, next) {
 }
 
 exports.update = function(req, res, next) {
-	console.log("req.body: ", req.body)
 	var name = req.body.name;
 	var category = req.body.category;
 	var properties = req.body.properties;
@@ -151,7 +148,6 @@ exports.getCategoryProducts = function(req, res, next) {
 			}
 		}
 
-		console.log("products: ", products);
 		products.sort((a,b) => {
 			var keyA = new Date(a.created);
         	var keyB = new Date(b.created);
@@ -160,7 +156,6 @@ exports.getCategoryProducts = function(req, res, next) {
     		if(keyA > keyB) return 1;
     		return 0
 		});
-		console.log("products: ", products);
 		res.send(products);
 	});
 

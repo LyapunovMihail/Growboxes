@@ -17,7 +17,6 @@ export class NavbarComponent implements OnInit{
 
 	constructor(private productService: ProductService) {
 		productService.onPurchased$.subscribe(number => {this.numberOfPurchasedProducts = number;
-			console.log("this.numberOfPurchasedProducts: ", this.numberOfPurchasedProducts)
 		});  
   }
 
@@ -56,7 +55,6 @@ export class NavbarComponent implements OnInit{
       .getPurchasedProducts()
       .then(products => {
         this.numberOfPurchasedProducts = products.numberOfPurchasedProducts
-        console.log("this.numberOfPurchasedProducts: ", this.numberOfPurchasedProducts)
       });
   }
 

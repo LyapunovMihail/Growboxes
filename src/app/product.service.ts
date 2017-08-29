@@ -30,7 +30,6 @@ export class ProductService {
   }
 
   deleteProduct(data): Promise<any> {
-  	console.log("data: ", data)
     return this.http.post("/api/productsDelete", data)
                .toPromise()
                .then(response =>  Promise.resolve(response.json()) )
@@ -52,7 +51,6 @@ export class ProductService {
   }
 
   getProductDetails(productId): Promise<any> {
-  	console.log("productId: ", productId)
     return this.http.post("/api/product_details", {productId})
                .toPromise()
                .then(response =>  Promise.resolve(response.json()) )
@@ -60,7 +58,6 @@ export class ProductService {
   }
 
   purchaseProduct(product): Promise<any> {
-  	console.log("product: ", product)
     return this.http.post("/api/purchase", product)
                .toPromise()
                .then(response =>  Promise.resolve(response.json()) )
