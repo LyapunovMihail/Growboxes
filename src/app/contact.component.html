@@ -20,14 +20,14 @@
 					<form>
 						<div class="row">
 							<div class="col-sm-4">
-								<input class="form-control" type="text" placeholder="Email" [(ngModel)]="data.email" [ngModelOptions]="{standalone: true}">
+								<input class="form-control" type="email" placeholder="Email" [(ngModel)]="data.email" [ngModelOptions]="{standalone: true}">
 								<p style="color: red; margin-top: 10px;margin-left: 4px" *ngIf="incorrectMailing && data.email === ''">Введите ваш email</p>
 							</div>
 							<div class="col-sm-4">
 								<input class="form-control" type="text" placeholder="Имя" [(ngModel)]="data.name" [ngModelOptions]="{standalone: true}">
 							</div>
 							<div class="col-sm-4">
-								<input class="form-control" type="text" placeholder="Телефон" [(ngModel)]="data.telephone" [ngModelOptions]="{standalone: true}">
+								<input class="form-control" type="tel" placeholder="Телефон" [(ngModel)]="data.telephone" [ngModelOptions]="{standalone: true}">
 							</div>
 						</div>
 						<br>

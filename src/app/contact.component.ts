@@ -30,7 +30,7 @@ export class ContactComponent {
       .then(response => {
       	this.toastr.success('Сообщение отправлено');
       	this.incorrectMailing = false;
-      	this.data = {name: "", email: "", telephone: "", text: ""};
+      	this.data.text = "";
       }, err => {	this.incorrectMailing = true;});
 	}
 }
