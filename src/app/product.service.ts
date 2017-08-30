@@ -92,6 +92,13 @@ export class ProductService {
                .catch(this.handleError);
   }
 
+  sendMail(data): Promise<any> {
+    return this.http.post("/api/mailing", {data})
+               .toPromise()
+               .then(response =>  Promise.resolve(response.json()) )
+               .catch(this.handleError);
+  }
+
   getAccessToProductsManagement(password): Promise<any> {
     return this.http.post("/api/products/getAccess", {password})
                .toPromise()

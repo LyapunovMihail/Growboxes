@@ -32,5 +32,7 @@ module.exports = function(app) {
 
 	app.post('/api/ordering', require('./api/ordering').postOrderData);
 
+	app.post('/api/mailing', require('./api/mailing').sendMail);
+
 	app.post('/api/products/getAccess', require('./api/products').getAccessToProdutcsManagement);
 }
