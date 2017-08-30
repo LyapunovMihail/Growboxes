@@ -22,13 +22,15 @@ export class ContactComponent {
 	}
 
 	data = {name: "", email: "", telephone: "", text: ""}
+	incorrectMailing = false
 
 	sendMail() {
 		this.productService
       .sendMail(this.data)
       .then(response => {
       	this.toastr.success('Сообщение отправлено');
+      	this.incorrectMailing = false;
       	this.data = {name: "", email: "", telephone: "", text: ""};
-      }, err => this.toastr.error('Сообщение не отправлено', 'Ошибка'));
+      }, err => {	this.incorrectMailing = true;});
 	}
 }

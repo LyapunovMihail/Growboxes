@@ -5,8 +5,10 @@ const nodemailer = require('nodemailer');
 exports.sendMail = function(req, res, next) {
 	var mailData = req.body.data;
 
+	if (mailData.email == "") {
+		next(new HttpError(403, "some of required fields are empty"));
+	}
 
-	console.log("req.body: ", req.body);
 	var mail_user = process.env.MAIL_USER || config.get('mail:user');
 	var mail_pass = process.env.MAIL_PASS || config.get('mail:pass');
 
@@ -27,7 +29,7 @@ exports.sendMail = function(req, res, next) {
 	    to: 'info@growboxes.ru', // list of receivers
 	    subject: `Вопрос от клиента ${mailData.email} для growboxes.ru`, // Subject line
 	    html: `
-	    	<h3 style="font-size:15px">От ${mailData.name}, ${mailData.email}, 
+	    	<h3 style="font-size:15px">От ${mailData.name}, email: ${mailData.email}, 
 	    	телефон: ${mailData.telephone}</h3>
 	    	<p>${mailData.text}</p>
 	    `
