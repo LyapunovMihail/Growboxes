@@ -1592,7 +1592,7 @@ var ContactComponent = (function () {
             .then(function (response) {
             _this.toastr.success('Сообщение отправлено');
             _this.incorrectMailing = false;
-            _this.data = { name: "", email: "", telephone: "", text: "" };
+            _this.data.text = "";
         }, function (err) { _this.incorrectMailing = true; });
     };
     return ContactComponent;
