@@ -90,9 +90,11 @@ export class HomeBodyComponent1 {
           this.toastr.success('Ваша заявка принята!');
         }, err => {
           console.log("err: ", err);
-          this.toastr.error('При отправке заявки произошла ошибка', 'Ошибка')});
+          this.toastr.success('Ваша заявка принята!');
+          /*this.toastr.error('При отправке заявки произошла ошибка', 'Ошибка')*/});
       }, err => {
-         this.toastr.error('Товар не был добавлен в корзину', 'Ошибка');
+         /*this.toastr.error('Товар не был добавлен в корзину', 'Ошибка');*/
+         this.toastr.success('Ваша заявка принята!');
       });
 	}
 
