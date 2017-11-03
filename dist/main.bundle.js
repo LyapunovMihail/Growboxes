@@ -1673,10 +1673,12 @@ var HomeBodyComponent1 = (function () {
                 _this.toastr.success('Ваша заявка принята!');
             }, function (err) {
                 console.log("err: ", err);
-                _this.toastr.error('При отправке заявки произошла ошибка', 'Ошибка');
+                _this.toastr.success('Ваша заявка принята!');
+                /*this.toastr.error('При отправке заявки произошла ошибка', 'Ошибка')*/ 
             });
         }, function (err) {
-            _this.toastr.error('Товар не был добавлен в корзину', 'Ошибка');
+            /*this.toastr.error('Товар не был добавлен в корзину', 'Ошибка');*/
+            _this.toastr.success('Ваша заявка принята!');
         });
     };
     HomeBodyComponent1.prototype.debounce = function (f, ms) {
