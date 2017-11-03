@@ -57,11 +57,6 @@ var schema = new Schema({
 schema.statics.saveOrder = function(orderData, callback) {
   var Order = this;
 
-  if (orderData.region == '' || orderData.city == '' || orderData.index == '' || 
-      orderData.adress == '') {
-    callback(new HttpError(403, "some of required fields are empty"));
-  }
-
   order = new Order({email: orderData.personalData.email, 
                      name: orderData.personalData.name,
                      surname: orderData.personalData.surname, 

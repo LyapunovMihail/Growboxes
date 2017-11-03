@@ -87,3 +87,19 @@ img.pull-left { margin-right: 10px; }
 
 	.widget-simplenav { margin-left:-5px; }		
 	.widget-simplenav a{ margin:0 5px; }		
+
+
+.bucketBadge {
+  border-radius: 50%;
+  background-color: green;
+  color: white;
+  opacity: 0.7;
+  font-size: 11px;
+  padding: 5px;
+  padding-right: 9px;
+  padding-left: 9px;
+  position: relative;
+  right: 8px;
+}
+
+

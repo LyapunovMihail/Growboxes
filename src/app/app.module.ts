@@ -8,24 +8,21 @@ import {ToastModule} from './assets/ng2-toastr/ng2-toastr';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 
 import { TopHeaderComponent } from './top_header.component';
-import { NavbarComponent } from './navbar.component';
-import { HeaderComponent } from './header.component';
-//import { SidebarComponent } from './sidebar.component';
+//import { NavbarComponent } from './navbar.component';
+//import { HeaderComponent } from './header.component';
 import { FooterComponent } from './footer.component';
-//import { HomeCarouselComponent } from './homeCarousel.component';
 
 import { HomeBodyComponent } from './homeBody.component';
 	import { HomeBodyComponent1 } from './homeBody.component1';
 	import { HomeBodyComponent2 } from './homeBody.component2';
-//import { SpecialOfferComponent } from './special_offer.component';
-//import { NormalComponent } from './normal.component';
+
 //import { AboutUsComponent } from './aboutUs.component';
 import { ContactComponent } from './contact.component';
 
-import { ProductsComponent } from './products.component';
-import { ProductDetailsComponent } from './product_details.component';
-import { ProductSummaryComponent } from './product_summary.component';
-import { CheckoutComponent } from './checkout.component';
+//import { ProductsComponent } from './products.component';
+//import { ProductDetailsComponent } from './product_details.component';
+//import { ProductSummaryComponent } from './product_summary.component';
+//import { CheckoutComponent } from './checkout.component';
 //import { LoginComponent } from './login.component';
 //import { RegisterComponent } from './register.component';
 
@@ -62,7 +59,7 @@ import { HttpModule }    from '@angular/http';
 	        path: 'contact',
 	        component: ContactComponent
 	   },
-	   {
+	   /*{
 	        path: 'products/:id',
 	        component: ProductsComponent
 	   },
@@ -77,7 +74,7 @@ import { HttpModule }    from '@angular/http';
 	   {
 	        path: 'product_details/:id',
 	        component: ProductDetailsComponent
-	   },
+	   },*/
 	   /*{
 	        path: 'login',
 	        component: LoginComponent
@@ -96,8 +93,8 @@ import { HttpModule }    from '@angular/http';
   declarations: [ 
   	AppComponent,
   	TopHeaderComponent,
-  	NavbarComponent,
-  	HeaderComponent,
+  	//NavbarComponent,
+  	//HeaderComponent,
   	FooterComponent,
 
   	HomeBodyComponent,
@@ -107,10 +104,10 @@ import { HttpModule }    from '@angular/http';
   	//AboutUsComponent,
   	ContactComponent,
 
-  	ProductsComponent,
-  	ProductSummaryComponent,
-  	CheckoutComponent,
-  	ProductDetailsComponent,
+  	//ProductsComponent,
+  	//ProductSummaryComponent,
+  	//CheckoutComponent,
+  	//ProductDetailsComponent,
   	//LoginComponent,
   	//RegisterComponent,
 

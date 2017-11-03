@@ -16,7 +16,7 @@ webpackEmptyContext.id = "../../../../../src async recursive";
 /***/ "../../../../../src/app/app.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"row\" style=\"padding: 50px 0px 50px 0px; margin-right: 0;margin-left: 0\">\r\n\t<div class=\"mainContainer col-sm-10 col-sm-offset-1\" style=\"padding-right: 0; padding-left: 0\">\r\n\t\t<shop-top-header></shop-top-header>\r\n\t\t<shop-navbar></shop-navbar>\r\n\r\n\t\t<div style=\"min-height: calc(100vh - 285px)\">\r\n\t\t\t<router-outlet (onPurchased)=\"onPurchased($event)\"></router-outlet>\r\n\t\t</div>\r\n\r\n\t\t<shop-footer></shop-footer>\r\n\t</div>\r\n</div>\r\n\r\n\r\n    "
+module.exports = "<div class=\"row\" style=\"padding: 50px 0px 50px 0px; margin-right: 0;margin-left: 0\">\r\n\t<div class=\"mainContainer col-sm-10 col-sm-offset-1\" style=\"padding-right: 0; padding-left: 0\">\r\n\t\t<shop-top-header></shop-top-header>\r\n\t\t<!--<shop-navbar></shop-navbar>-->\r\n\r\n\t\t<div style=\"min-height: calc(100vh - 285px)\">\r\n\t\t\t<router-outlet (onPurchased)=\"onPurchased($event)\"></router-outlet>\r\n\t\t</div>\r\n\r\n\t\t<shop-footer></shop-footer>\r\n\t</div>\r\n</div>\r\n\r\n\r\n    "
 
 /***/ }),
 
@@ -67,22 +67,16 @@ AppComponent = __decorate([
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__assets_ng2_toastr_ng2_toastr___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3__assets_ng2_toastr_ng2_toastr__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__angular_platform_browser_animations__ = __webpack_require__("../../../platform-browser/@angular/platform-browser/animations.es5.js");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__top_header_component__ = __webpack_require__("../../../../../src/app/top_header.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__navbar_component__ = __webpack_require__("../../../../../src/app/navbar.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__header_component__ = __webpack_require__("../../../../../src/app/header.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__footer_component__ = __webpack_require__("../../../../../src/app/footer.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__homeBody_component__ = __webpack_require__("../../../../../src/app/homeBody.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__homeBody_component1__ = __webpack_require__("../../../../../src/app/homeBody.component1.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__homeBody_component2__ = __webpack_require__("../../../../../src/app/homeBody.component2.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__contact_component__ = __webpack_require__("../../../../../src/app/contact.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__products_component__ = __webpack_require__("../../../../../src/app/products.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_14__product_details_component__ = __webpack_require__("../../../../../src/app/product_details.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_15__product_summary_component__ = __webpack_require__("../../../../../src/app/product_summary.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_16__checkout_component__ = __webpack_require__("../../../../../src/app/checkout.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_17__save_product_component__ = __webpack_require__("../../../../../src/app/save_product.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_18__product_service__ = __webpack_require__("../../../../../src/app/product.service.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_19__angular_router__ = __webpack_require__("../../../router/@angular/router.es5.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_20__angular_forms__ = __webpack_require__("../../../forms/@angular/forms.es5.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_21__angular_http__ = __webpack_require__("../../../http/@angular/http.es5.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__footer_component__ = __webpack_require__("../../../../../src/app/footer.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__homeBody_component__ = __webpack_require__("../../../../../src/app/homeBody.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__homeBody_component1__ = __webpack_require__("../../../../../src/app/homeBody.component1.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__homeBody_component2__ = __webpack_require__("../../../../../src/app/homeBody.component2.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__contact_component__ = __webpack_require__("../../../../../src/app/contact.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__save_product_component__ = __webpack_require__("../../../../../src/app/save_product.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__product_service__ = __webpack_require__("../../../../../src/app/product.service.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__angular_router__ = __webpack_require__("../../../router/@angular/router.es5.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_14__angular_forms__ = __webpack_require__("../../../forms/@angular/forms.es5.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_15__angular_http__ = __webpack_require__("../../../http/@angular/http.es5.js");
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return AppModule; });
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -96,22 +90,18 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 
 
 
-
-
-//import { SidebarComponent } from './sidebar.component';
-
-//import { HomeCarouselComponent } from './homeCarousel.component';
+//import { NavbarComponent } from './navbar.component';
+//import { HeaderComponent } from './header.component';
 
 
 
-//import { SpecialOfferComponent } from './special_offer.component';
-//import { NormalComponent } from './normal.component';
+
 //import { AboutUsComponent } from './aboutUs.component';
 
-
-
-
-
+//import { ProductsComponent } from './products.component';
+//import { ProductDetailsComponent } from './product_details.component';
+//import { ProductSummaryComponent } from './product_summary.component';
+//import { CheckoutComponent } from './checkout.component';
 //import { LoginComponent } from './login.component';
 //import { RegisterComponent } from './register.component';
 
@@ -129,10 +119,10 @@ AppModule = __decorate([
         imports: [
             __WEBPACK_IMPORTED_MODULE_1__angular_platform_browser__["BrowserModule"],
             __WEBPACK_IMPORTED_MODULE_4__angular_platform_browser_animations__["a" /* BrowserAnimationsModule */],
-            __WEBPACK_IMPORTED_MODULE_20__angular_forms__["a" /* FormsModule */],
-            __WEBPACK_IMPORTED_MODULE_21__angular_http__["a" /* HttpModule */],
+            __WEBPACK_IMPORTED_MODULE_14__angular_forms__["a" /* FormsModule */],
+            __WEBPACK_IMPORTED_MODULE_15__angular_http__["a" /* HttpModule */],
             __WEBPACK_IMPORTED_MODULE_3__assets_ng2_toastr_ng2_toastr__["ToastModule"].forRoot(),
-            __WEBPACK_IMPORTED_MODULE_19__angular_router__["a" /* RouterModule */].forRoot([
+            __WEBPACK_IMPORTED_MODULE_13__angular_router__["a" /* RouterModule */].forRoot([
                 {
                     path: '',
                     redirectTo: '/home',
@@ -140,7 +130,7 @@ AppModule = __decorate([
                 },
                 {
                     path: 'home',
-                    component: __WEBPACK_IMPORTED_MODULE_9__homeBody_component__["a" /* HomeBodyComponent */]
+                    component: __WEBPACK_IMPORTED_MODULE_7__homeBody_component__["a" /* HomeBodyComponent */]
                 },
                 /*{
                      path: 'about_us',
@@ -148,24 +138,24 @@ AppModule = __decorate([
                 },*/
                 {
                     path: 'contact',
-                    component: __WEBPACK_IMPORTED_MODULE_12__contact_component__["a" /* ContactComponent */]
+                    component: __WEBPACK_IMPORTED_MODULE_10__contact_component__["a" /* ContactComponent */]
+                },
+                /*{
+                     path: 'products/:id',
+                     component: ProductsComponent
                 },
                 {
-                    path: 'products/:id',
-                    component: __WEBPACK_IMPORTED_MODULE_13__products_component__["a" /* ProductsComponent */]
+                     path: 'product_summary',
+                     component: ProductSummaryComponent
                 },
                 {
-                    path: 'product_summary',
-                    component: __WEBPACK_IMPORTED_MODULE_15__product_summary_component__["a" /* ProductSummaryComponent */]
+                     path: 'checkout',
+                     component: CheckoutComponent
                 },
                 {
-                    path: 'checkout',
-                    component: __WEBPACK_IMPORTED_MODULE_16__checkout_component__["a" /* CheckoutComponent */]
-                },
-                {
-                    path: 'product_details/:id',
-                    component: __WEBPACK_IMPORTED_MODULE_14__product_details_component__["a" /* ProductDetailsComponent */]
-                },
+                     path: 'product_details/:id',
+                     component: ProductDetailsComponent
+                },*/
                 /*{
                      path: 'login',
                      component: LoginComponent
@@ -176,30 +166,30 @@ AppModule = __decorate([
                 },*/
                 {
                     path: 'save_product',
-                    component: __WEBPACK_IMPORTED_MODULE_17__save_product_component__["a" /* SaveProductComponent */]
+                    component: __WEBPACK_IMPORTED_MODULE_11__save_product_component__["a" /* SaveProductComponent */]
                 }
             ])
         ],
         declarations: [
             __WEBPACK_IMPORTED_MODULE_2__app_component__["a" /* AppComponent */],
             __WEBPACK_IMPORTED_MODULE_5__top_header_component__["a" /* TopHeaderComponent */],
-            __WEBPACK_IMPORTED_MODULE_6__navbar_component__["a" /* NavbarComponent */],
-            __WEBPACK_IMPORTED_MODULE_7__header_component__["a" /* HeaderComponent */],
-            __WEBPACK_IMPORTED_MODULE_8__footer_component__["a" /* FooterComponent */],
-            __WEBPACK_IMPORTED_MODULE_9__homeBody_component__["a" /* HomeBodyComponent */],
-            __WEBPACK_IMPORTED_MODULE_10__homeBody_component1__["a" /* HomeBodyComponent1 */],
-            __WEBPACK_IMPORTED_MODULE_11__homeBody_component2__["a" /* HomeBodyComponent2 */],
+            //NavbarComponent,
+            //HeaderComponent,
+            __WEBPACK_IMPORTED_MODULE_6__footer_component__["a" /* FooterComponent */],
+            __WEBPACK_IMPORTED_MODULE_7__homeBody_component__["a" /* HomeBodyComponent */],
+            __WEBPACK_IMPORTED_MODULE_8__homeBody_component1__["a" /* HomeBodyComponent1 */],
+            __WEBPACK_IMPORTED_MODULE_9__homeBody_component2__["a" /* HomeBodyComponent2 */],
             //AboutUsComponent,
-            __WEBPACK_IMPORTED_MODULE_12__contact_component__["a" /* ContactComponent */],
-            __WEBPACK_IMPORTED_MODULE_13__products_component__["a" /* ProductsComponent */],
-            __WEBPACK_IMPORTED_MODULE_15__product_summary_component__["a" /* ProductSummaryComponent */],
-            __WEBPACK_IMPORTED_MODULE_16__checkout_component__["a" /* CheckoutComponent */],
-            __WEBPACK_IMPORTED_MODULE_14__product_details_component__["a" /* ProductDetailsComponent */],
+            __WEBPACK_IMPORTED_MODULE_10__contact_component__["a" /* ContactComponent */],
+            //ProductsComponent,
+            //ProductSummaryComponent,
+            //CheckoutComponent,
+            //ProductDetailsComponent,
             //LoginComponent,
             //RegisterComponent,
-            __WEBPACK_IMPORTED_MODULE_17__save_product_component__["a" /* SaveProductComponent */]
+            __WEBPACK_IMPORTED_MODULE_11__save_product_component__["a" /* SaveProductComponent */]
         ],
-        providers: [__WEBPACK_IMPORTED_MODULE_18__product_service__["a" /* ProductService */]],
+        providers: [__WEBPACK_IMPORTED_MODULE_12__product_service__["a" /* ProductService */]],
         bootstrap: [
             __WEBPACK_IMPORTED_MODULE_2__app_component__["a" /* AppComponent */]
         ]
@@ -254,7 +244,7 @@ exports = module.exports = __webpack_require__("../../../../css-loader/lib/css-b
 
 
 // module
-exports.push([module.i, "body {padding-top: 0;}\r\na, a:hover{color:#444;}\r\n.clr{clear:both;}\r\n.navbar-fixed-top, .navbar-fixed-bottom {position: relative;}\r\n#header1{padding:8px 0 4px; border-bottom:4px solid #444;margin-bottom:14px }\r\n#header1 a{text-decoration:none; color:#444;}\r\n#logoM{float:left;}\r\n.thumbnail img{ max-width:100%}\r\n.thumbnail:hover{border-radius: 0; border:1px solid #eee}\r\n.thumbnail h4{line-height:42px}\r\nhr.soften {margin: 8px 0 4px; background:#ddd;}\r\n/* Fade in fade out transition  */\r\n#srchFld {/*background: url(assets/img/search.png) no-repeat right center;*/border-radius: 0;padding: 4px;margin: 0;line-height: 16px;}\r\n#myCarousel .btn{position:absolute; bottom:10%; right:17%; padding:2% 6%; z-index:9999}\r\n#myCarousel .carousel-caption{display:none;}\r\n#myCarousel.homCar .item img{width:100%; max-height:506px}\r\n#productView .btn-toolbar{padding-left:3px;}\r\n#productDetail > li, .nav-pills > li {float: right;}\r\n#myTabContent{text-align:justify}\r\n#compairTbl td{text-align:center;}\r\n#accordion2, #legalNotice, .justify, #mainCol{text-align:justify}\r\n\r\n/*.carousel .item {-webkit-transition: opacity 3s; -moz-transition: opacity 3s; -ms-transition: opacity 3s; -o-transition: opacity 3s; transition: opacity 3s;}\r\n.carousel .active.left {left:0;opacity:0;z-index:2;}\r\n.carousel .next {left:0;opacity:1;z-index:1;}*/\r\n\r\n.navbar-inner {padding-left: 0;padding-right: 0;}\r\n.navbar .nav > .active > a, .navbar .nav > .active > a:hover, .navbar .nav > .active > a:focus {color: white;background-color: #CF0007;text-shadow: none;}\r\n/* Sidebar--------- */\r\n#sidebar .bs-docs-sidenav > li > a {border: 0; }\r\n#sidebar ul{margin-top:0px; padding:0}\r\n#sidebar ul li {  border-bottom:1px solid #e5e5e5; }\r\n#sidebar ul li a.dropdown-toggle.collapsed{/*background-image: url(\"assets/img/arrowR.png\");*/background-color:transparent; }\r\n#sidebar ul li a.dropdown-toggle{/*background-image: url(\"assets/img/arrowD.png\");*/ background-color:#F8F8F8;}\r\n#sidebar ul li a{/*background-image: url(\"assets/img/arrowR.png\");*/ border-radius:0;  padding-left:24px;background-position: 6px center;background-repeat: no-repeat;}\r\n#sidebar ul ul{ padding:0; margin:0; list-style:none;font-size:12px; background:#F8F8F8; display:none;}\r\n#sidebar ul ul li{padding:0 14px; border-bottom:1px solid #e5e5e5; }\r\n#sidebar ul li li {border-bottom:0; border-top:1px solid #e5e5e5;}\r\n#sidebar ul li li a{padding-top:4px; padding-bottom:4px; display:block;}\r\n#sidebar ul li a.active{font-weight:bold; color:#CF0007;}\r\n.form-horizontal.qtyFrm .control-label{text-align: left;}\r\n.form-horizontal.qtyFrm .control-label span{font-size:18px}\r\n.moreOptopm.carousel .item img{padding:2px; border:1px solid #ddd}\r\n.moreOptopm.carousel .item img:hover{ border:1px solid pink}\r\n.carousel .item > img {display:inline;}\r\n.btn.active{color: white;background-color: #CF0007;text-shadow: none;}\r\n/* Product page--- */\r\n.alignR{text-align:right;}\r\n.control-label.alignL, .alignL{text-align:left;}\r\n.loginFrm{ margin-bottom:8px;}\r\n.loginFrm .control-group{padding:8px 14px 0; margin-bottom:0 }\r\n.marginLess{margin:0}\r\n.cntr{text-align:center}\r\n.cart{border:1px solid #ddd;}\r\n.thumbnail>a{display:block; text-align:center}\r\n.thumbnail h5,.thumbnail p{text-align:center}\r\n.thumbnail{background:#fff;}\r\n.thumbnail {position:relative;border: 1px solid white;}\r\n/* Compair product page */\r\n.table td[align=right] {text-align: right;}\r\n.tag {/*background:url(assets/img/new.png) no-repeat 0 0;*/ position: absolute; display:block; top: -4px;right: -18px; height:48px; width:48px;}\r\n.bs-docs-sidenav .icon-chevron-right {float: left;margin-top: 2px;margin-right: 6px;opacity: .25;}\r\n.checkbox input[type=\"checkbox\"]{float:right; margin:4px 0 8px 8px }\r\n#sm{text-align:right}\r\n#sm a {margin: 4px;width:32px;}\r\n.bs-docs-sidenav,.btn,\r\nselect, textarea, input[type=\"text\"], input[type=\"password\"], input[type=\"datetime\"], input[type=\"datetime-local\"],\r\ninput[type=\"date\"], input[type=\"month\"], input[type=\"time\"], input[type=\"week\"], input[type=\"number\"], input[type=\"email\"],\r\ninput[type=\"url\"], input[type=\"search\"], input[type=\"tel\"], input[type=\"color\"], .uneditable-input {border-radius: 30px;border-color: buttonface;}\r\n/* Footer section--------------- */\r\n#footerSection a{font-size:11px; padding:0 13px; line-height:24px; display:block; }\r\n#footerSection a:hover{background:#eee;  }\r\n#footerSection  #socialMedia a{ min-width:25px; display:inline; margin-right:6px; text-align:center; line-height:1.5em;}\r\n#footerSection  #socialMedia a:hover{background:none;}\r\n/* ===================================================== */", ""]);
+exports.push([module.i, "body {padding-top: 0;}\r\na, a:hover{color:#444;}\r\n.clr{clear:both;}\r\n.navbar-fixed-top, .navbar-fixed-bottom {position: relative;}\r\n#header1{padding:8px 0 4px; border-bottom:4px solid #444;margin-bottom:14px }\r\n#header1 a{text-decoration:none; color:#444;}\r\n#logoM{float:left;}\r\n.thumbnail img{ max-width:100%}\r\n.thumbnail:hover{border-radius: 0; border:1px solid #eee}\r\n.thumbnail h4{line-height:42px}\r\nhr.soften {margin: 8px 0 4px; background:#ddd;}\r\n/* Fade in fade out transition  */\r\n#srchFld {/*background: url(assets/img/search.png) no-repeat right center;*/border-radius: 0;padding: 4px;margin: 0;line-height: 16px;}\r\n#myCarousel .btn{position:absolute; bottom:10%; right:17%; padding:2% 6%; z-index:9999}\r\n#myCarousel .carousel-caption{display:none;}\r\n#myCarousel.homCar .item img{width:100%; max-height:506px}\r\n#productView .btn-toolbar{padding-left:3px;}\r\n#productDetail > li, .nav-pills > li {float: right;}\r\n#myTabContent{text-align:justify}\r\n#compairTbl td{text-align:center;}\r\n#accordion2, #legalNotice, .justify, #mainCol{text-align:justify}\r\n\r\n/*.carousel .item {-webkit-transition: opacity 3s; -moz-transition: opacity 3s; -ms-transition: opacity 3s; -o-transition: opacity 3s; transition: opacity 3s;}\r\n.carousel .active.left {left:0;opacity:0;z-index:2;}\r\n.carousel .next {left:0;opacity:1;z-index:1;}*/\r\n\r\n.navbar-inner {padding-left: 0;padding-right: 0;}\r\n.navbar .nav > .active > a, .navbar .nav > .active > a:hover, .navbar .nav > .active > a:focus {color: white;background-color: #CF0007;text-shadow: none;}\r\n/* Sidebar--------- */\r\n#sidebar .bs-docs-sidenav > li > a {border: 0; }\r\n#sidebar ul{margin-top:0px; padding:0}\r\n#sidebar ul li {  border-bottom:1px solid #e5e5e5; }\r\n#sidebar ul li a.dropdown-toggle.collapsed{/*background-image: url(\"assets/img/arrowR.png\");*/background-color:transparent; }\r\n#sidebar ul li a.dropdown-toggle{/*background-image: url(\"assets/img/arrowD.png\");*/ background-color:#F8F8F8;}\r\n#sidebar ul li a{/*background-image: url(\"assets/img/arrowR.png\");*/ border-radius:0;  padding-left:24px;background-position: 6px center;background-repeat: no-repeat;}\r\n#sidebar ul ul{ padding:0; margin:0; list-style:none;font-size:12px; background:#F8F8F8; display:none;}\r\n#sidebar ul ul li{padding:0 14px; border-bottom:1px solid #e5e5e5; }\r\n#sidebar ul li li {border-bottom:0; border-top:1px solid #e5e5e5;}\r\n#sidebar ul li li a{padding-top:4px; padding-bottom:4px; display:block;}\r\n#sidebar ul li a.active{font-weight:bold; color:#CF0007;}\r\n.form-horizontal.qtyFrm .control-label{text-align: left;}\r\n.form-horizontal.qtyFrm .control-label span{font-size:18px}\r\n.moreOptopm.carousel .item img{padding:2px; border:1px solid #ddd}\r\n.moreOptopm.carousel .item img:hover{ border:1px solid pink}\r\n.carousel .item > img {display:inline;}\r\n.btn.active{color: white;background-color: #CF0007;text-shadow: none;}\r\n/* Product page--- */\r\n.alignR{text-align:right;}\r\n.control-label.alignL, .alignL{text-align:left;}\r\n.loginFrm{ margin-bottom:8px;}\r\n.loginFrm .control-group{padding:8px 14px 0; margin-bottom:0 }\r\n.marginLess{margin:0}\r\n.cntr{text-align:center}\r\n.cart{border:1px solid #ddd;}\r\n.thumbnail>a{display:block; text-align:center}\r\n.thumbnail h5,.thumbnail p{text-align:center}\r\n.thumbnail{background:#fff;}\r\n.thumbnail {position:relative;border: 1px solid white;}\r\n/* Compair product page */\r\n.table td[align=right] {text-align: right;}\r\n.tag {/*background:url(assets/img/new.png) no-repeat 0 0;*/ position: absolute; display:block; top: -4px;right: -18px; height:48px; width:48px;}\r\n.bs-docs-sidenav .icon-chevron-right {float: left;margin-top: 2px;margin-right: 6px;opacity: .25;}\r\n.checkbox input[type=\"checkbox\"]{float:right; margin:4px 0 8px 8px }\r\n#sm{text-align:right}\r\n#sm a {margin: 4px;width:32px;}\r\n.bs-docs-sidenav,.btn,\r\nselect, textarea, input[type=\"text\"], input[type=\"password\"], input[type=\"datetime\"], input[type=\"datetime-local\"],\r\ninput[type=\"date\"], input[type=\"month\"], input[type=\"time\"], input[type=\"week\"], input[type=\"number\"], input[type=\"email\"],\r\ninput[type=\"url\"], input[type=\"search\"], input[type=\"tel\"], input[type=\"color\"], .uneditable-input {border-radius: 30px;border-color: buttonface;}\r\n/* Footer section--------------- */\r\n#footerSection a{font-size:11px; padding:0 13px; line-height:24px; display:block; }\r\n#footerSection a:hover{background:#eee;  }\r\n#footerSection  #socialMedia a{ min-width:25px; display:inline; margin-right:6px; text-align:center; line-height:1.5em;}\r\n#footerSection  #socialMedia a:hover{background:none;}\r\n/* ===================================================== */\r\n\r\n.badge {\r\n\tmax-width: 116px; \r\n\tmargin-left: auto; \r\n\tmargin-right: auto; \r\n\tborder-radius: 50%; \r\n\tbackground-color: green; \r\n\tcolor: white; \r\n\topacity: 0.7; \r\n\tpadding: 5px; \r\n\tfont-size: 24px\r\n}", ""]);
 
 // exports
 
@@ -326,7 +316,7 @@ exports = module.exports = __webpack_require__("../../../../css-loader/lib/css-b
 
 
 // module
-exports.push([module.i, "/* Header */\r\n#head { background:#181015 url('/assets/images/bdudcryslkm-neslihan-gunaydin.jpg') no-repeat; background-size: cover; min-height:520px; text-align: center; padding-top:240px; color:white; font-family:\"Open sans\", Helvetica, Arial; font-weight:300; }\r\n#head.secondary { height:100px; min-height: 100px; padding-top:0px; }\r\n\t#head .lead { font-family:\"Open sans\", Helvetica, Arial; font-size:44px; margin-bottom:6px; color:white; line-height:1.15em; } \r\n\t#head .tagline { color:rgba(255,255,255,0.75); margin-bottom:25px; }\r\n\t\t#head .tagline a { color:#fff; } \r\n\t#head .btn { margin-bottom:10px;}\r\n\t#head .btn-default { text-shadow: none; background:transparent; color:rgba(255,255,255,.5); box-shadow:inset 0px 0px 0px 3px rgba(255,255,255,.5); background: transparent; }\r\n\t\t#head .btn-default:hover,\r\n\t\t#head .btn-default:focus { color:rgba(255,255,255,.8); box-shadow:inset 0px 0px 0px 3px rgba(255,255,255,.8); background: transparent; }\r\n\t\t#head .btn-default:active, \r\n\t\t#head .btn-default.active { color:#fff; box-shadow:inset 0px 0px 0px 3px #fff; background: transparent; }\r\n\r\n@media (max-width: 767px) {\r\n\t#head { min-height:420px; padding-top:160px; }\r\n\t#head .lead { font-size: 34px; }\r\n}\r\n\r\n\r\n/* Autohide navbar */\r\n.slideUp { top:-100px; }\r\n.headroom { transition: all 0.4s ease-out; }\r\n\r\n\r\n/* Highlights (in jumbotron in most cases) */\r\n.highlight { margin-top:40px; }\r\n\t.h-caption { text-align: center; } \r\n\t.h-caption i { display:block; font-size: 54px; color:#382526; margin-bottom:36px; }\r\n\t.h-caption h4 { color:#382526; font-size: 16px; font-weight: bold; margin-bottom:20px; }\r\n\t.h-body { }\r\n\r\n\r\n/* Typography */\r\n.thumbnail .caption h4 {\r\n\tfont-size: 17px;\r\n}\r\nh1, h2, h3, h4, h5, h6 { font-family:\"Open sans\", Helvetica, Arial; }\r\nh1, .h1, h2, .h2, h3, .h3 { margin-top:30px; } \r\nblockquote { font-style: italic; font-family: Georgia; color:#999; margin:30px 0 30px; }\r\nlabel { color: #777; }\r\n.thin { font-weight:300; }\r\n.page-title { margin-top:20px; font-weight:300; }\r\n.text-muted { color:#888; }\r\n.breadcrumb { background:none; padding:0; margin:30px 0 0px 0; }\r\nul.list-spaces li{ margin-bottom:10px; }\r\n\r\n/* Helpers */\r\n.container-full { margin: 0 auto; width: 100%; }\r\n.top-space { margin-top: 60px; }\r\n.top-margin { margin-top:20px; }\r\n\r\nimg { max-width:100%; }\r\nimg.pull-right { margin-left: 10px; }\r\nimg.pull-left { margin-right: 10px; }\r\n#map { width:100%; height:280px; }\r\n#social { margin-top:50px; margin-bottom:50px; }\r\n\t#social .wrapper { width:340px; margin:0 auto; }\r\n\r\n/* Main content block */\r\n.maincontent { }\r\n\r\n/* Sidebars */\r\n.sidebar { padding-top:36px; padding-bottom:30px; }\r\n\t.sidebar .widget { margin-bottom:20px; }\r\n\t.sidebar h1, .sidebar .h1, .sidebar h2, .sidebar .h2, .sidebar h3, .sidebar .h3 { margin-top:20px; } \r\n\r\n/* Footer */\r\n#footer {\r\n  height: 60px;\r\n}\r\n\r\n.footer1 { background: #232323; padding: 30px 0 0 0; font-size: 12px; color: #999; }\r\n\t.footer1 a { color: #ccc; }\r\n\t\t.footer1 a:hover {color: #fff; }\r\n\t.footer1 .widget { margin-bottom:30px; }\t\t\r\n\t.footer1 .widget-title { font-size: 17px; font-weight: bold; color: #ccc; margin: 0 0 20px; }\r\n\t.footer1 .entry-meta { border-top: 1px solid #ccc; border-bottom: 1px solid #ccc; margin: 0 0 35px 0; padding: 2px 0; color: #888888; font-size: 12px; font-size: 0.75rem; }\r\n\t\t.footer1 .entry-meta a { color: #333333; }\r\n\t\t.footer1 .entry-meta .meta-in { border-top: 1px solid #ccc; border-bottom: 1px solid #ccc; padding: 10px 0; }\r\n\t.follow-me-icons { font-size:30px; }\t\t\r\n\t\t.follow-me-icons i { float:left; margin:0 10px 0 0; }\t\t\r\n\r\n.footer2 { background: #191919; padding: 15px 0; color: #777; font-size: 12px; }\r\n\t.footer2 a { color: #aaa; }\r\n\t\t.footer2 a:hover { color: #fff; }\r\n\t\t.footer2 p { margin: 0; }\r\n\r\n\t.widget-simplenav { margin-left:-5px; }\t\t\r\n\t.widget-simplenav a{ margin:0 5px; }\t\t", ""]);
+exports.push([module.i, "/* Header */\r\n#head { background:#181015 url('/assets/images/bdudcryslkm-neslihan-gunaydin.jpg') no-repeat; background-size: cover; min-height:520px; text-align: center; padding-top:240px; color:white; font-family:\"Open sans\", Helvetica, Arial; font-weight:300; }\r\n#head.secondary { height:100px; min-height: 100px; padding-top:0px; }\r\n\t#head .lead { font-family:\"Open sans\", Helvetica, Arial; font-size:44px; margin-bottom:6px; color:white; line-height:1.15em; } \r\n\t#head .tagline { color:rgba(255,255,255,0.75); margin-bottom:25px; }\r\n\t\t#head .tagline a { color:#fff; } \r\n\t#head .btn { margin-bottom:10px;}\r\n\t#head .btn-default { text-shadow: none; background:transparent; color:rgba(255,255,255,.5); box-shadow:inset 0px 0px 0px 3px rgba(255,255,255,.5); background: transparent; }\r\n\t\t#head .btn-default:hover,\r\n\t\t#head .btn-default:focus { color:rgba(255,255,255,.8); box-shadow:inset 0px 0px 0px 3px rgba(255,255,255,.8); background: transparent; }\r\n\t\t#head .btn-default:active, \r\n\t\t#head .btn-default.active { color:#fff; box-shadow:inset 0px 0px 0px 3px #fff; background: transparent; }\r\n\r\n@media (max-width: 767px) {\r\n\t#head { min-height:420px; padding-top:160px; }\r\n\t#head .lead { font-size: 34px; }\r\n}\r\n\r\n\r\n/* Autohide navbar */\r\n.slideUp { top:-100px; }\r\n.headroom { transition: all 0.4s ease-out; }\r\n\r\n\r\n/* Highlights (in jumbotron in most cases) */\r\n.highlight { margin-top:40px; }\r\n\t.h-caption { text-align: center; } \r\n\t.h-caption i { display:block; font-size: 54px; color:#382526; margin-bottom:36px; }\r\n\t.h-caption h4 { color:#382526; font-size: 16px; font-weight: bold; margin-bottom:20px; }\r\n\t.h-body { }\r\n\r\n\r\n/* Typography */\r\n.thumbnail .caption h4 {\r\n\tfont-size: 17px;\r\n}\r\nh1, h2, h3, h4, h5, h6 { font-family:\"Open sans\", Helvetica, Arial; }\r\nh1, .h1, h2, .h2, h3, .h3 { margin-top:30px; } \r\nblockquote { font-style: italic; font-family: Georgia; color:#999; margin:30px 0 30px; }\r\nlabel { color: #777; }\r\n.thin { font-weight:300; }\r\n.page-title { margin-top:20px; font-weight:300; }\r\n.text-muted { color:#888; }\r\n.breadcrumb { background:none; padding:0; margin:30px 0 0px 0; }\r\nul.list-spaces li{ margin-bottom:10px; }\r\n\r\n/* Helpers */\r\n.container-full { margin: 0 auto; width: 100%; }\r\n.top-space { margin-top: 60px; }\r\n.top-margin { margin-top:20px; }\r\n\r\nimg { max-width:100%; }\r\nimg.pull-right { margin-left: 10px; }\r\nimg.pull-left { margin-right: 10px; }\r\n#map { width:100%; height:280px; }\r\n#social { margin-top:50px; margin-bottom:50px; }\r\n\t#social .wrapper { width:340px; margin:0 auto; }\r\n\r\n/* Main content block */\r\n.maincontent { }\r\n\r\n/* Sidebars */\r\n.sidebar { padding-top:36px; padding-bottom:30px; }\r\n\t.sidebar .widget { margin-bottom:20px; }\r\n\t.sidebar h1, .sidebar .h1, .sidebar h2, .sidebar .h2, .sidebar h3, .sidebar .h3 { margin-top:20px; } \r\n\r\n/* Footer */\r\n#footer {\r\n  height: 60px;\r\n}\r\n\r\n.footer1 { background: #232323; padding: 30px 0 0 0; font-size: 12px; color: #999; }\r\n\t.footer1 a { color: #ccc; }\r\n\t\t.footer1 a:hover {color: #fff; }\r\n\t.footer1 .widget { margin-bottom:30px; }\t\t\r\n\t.footer1 .widget-title { font-size: 17px; font-weight: bold; color: #ccc; margin: 0 0 20px; }\r\n\t.footer1 .entry-meta { border-top: 1px solid #ccc; border-bottom: 1px solid #ccc; margin: 0 0 35px 0; padding: 2px 0; color: #888888; font-size: 12px; font-size: 0.75rem; }\r\n\t\t.footer1 .entry-meta a { color: #333333; }\r\n\t\t.footer1 .entry-meta .meta-in { border-top: 1px solid #ccc; border-bottom: 1px solid #ccc; padding: 10px 0; }\r\n\t.follow-me-icons { font-size:30px; }\t\t\r\n\t\t.follow-me-icons i { float:left; margin:0 10px 0 0; }\t\t\r\n\r\n.footer2 { background: #191919; padding: 15px 0; color: #777; font-size: 12px; }\r\n\t.footer2 a { color: #aaa; }\r\n\t\t.footer2 a:hover { color: #fff; }\r\n\t\t.footer2 p { margin: 0; }\r\n\r\n\t.widget-simplenav { margin-left:-5px; }\t\t\r\n\t.widget-simplenav a{ margin:0 5px; }\t\t\r\n\r\n\r\n.bucketBadge {\r\n  border-radius: 50%;\r\n  background-color: green;\r\n  color: white;\r\n  opacity: 0.7;\r\n  font-size: 11px;\r\n  padding: 5px;\r\n  padding-right: 9px;\r\n  padding-left: 9px;\r\n  position: relative;\r\n  right: 8px;\r\n}\r\n\r\n\r\n", ""]);
 
 // exports
 
@@ -1445,110 +1435,6 @@ exports.ToastModule = ToastModule;
 
 /***/ }),
 
-/***/ "../../../../../src/app/checkout.component.html":
-/***/ (function(module, exports) {
-
-module.exports = "<div class=\"buyPagesContainer\" *ngIf=\"productsInBucket\">\r\n\t<section class=\"main-content\" *ngIf=\"productsInBucket.length > 0\">\r\n\t\t<h3 class=\"title\"><span class=\"text\">Оформление заказа</span></h3>\r\n\t\t<hr class=\"soft\"/>\r\n\r\n\t\t<div class=\"bucketTable\">\r\n\t\t\t<table class=\"table table-striped\">\r\n\t\t\t\t<thead>\r\n\t\t\t\t\t<tr>\r\n\t\t\t\t\t\t<th>УБРАТЬ</th>\r\n\t\t\t\t\t\t<th>ИЗОБРАЖЕНИЕ</th>\r\n\t\t\t\t\t\t<th>НАЗВАНИЕ</th>\r\n\t\t\t\t\t\t<th>КОЛИЧЕСТВО</th>\r\n\t\t\t\t\t\t<th>ЦЕНА ЗА ШТ.</th>\r\n\t\t\t\t\t\t<th>ВСЕГО</th>\r\n\t\t\t\t\t</tr>\r\n\t\t\t\t</thead>\r\n\t\t\t\t<tbody>\r\n\t\t\t\t\t<tr *ngFor=\"let item of productsInBucket\">\r\n\t\t\t\t\t\t<td><button type=\"button\" class=\"close pull-left\" aria-label=\"Close\" (click)=\"deleteProduct(item)\"><span aria-hidden=\"true\">&times;</span></button></td>\r\n\t\t\t\t\t\t<td class=\"span1\"><a routerLink=\"/product_details/{{item.product._id}}\"><img alt=\"\" src=\"{{item.product.imgUrl}}\"></a></td>\r\n\t\t\t\t\t\t<td>{{item.product.name}}</td>\r\n\t\t\t\t\t\t<td><input type=\"number\" min=\"1\" class=\"input-mini\" [(ngModel)]=\"item.number\" (input)=\"updateProduct(item)\"></td>\r\n\t\t\t\t\t\t<td>{{item.product.price}}</td>\r\n\t\t\t\t\t\t<td>{{item.product.price * item.number}}</td>\r\n\t\t\t\t\t</tr>\r\n\t\t\t\t\t<tr>\r\n\t\t\t\t\t\t<td>&nbsp;</td>\r\n\t\t\t\t\t\t<td>&nbsp;</td>\r\n\t\t\t\t\t\t<td>&nbsp;</td>\r\n\t\t\t\t\t\t<td>&nbsp;</td>\r\n\t\t\t\t\t\t<td>&nbsp;</td>\r\n\t\t\t\t\t\t<td><strong>{{sumPrice}} RUB</strong></td>\r\n\t\t\t\t\t</tr>\t\t  \r\n\t\t\t\t</tbody>\r\n\t\t\t</table>\r\n\t\t</div>\r\n\r\n\t\t<p style=\"margin-left: 50px; margin-bottom: 30px\">\r\n\t\t\tДоставка осуществляется почтой России, оплата производится наложенным платежом при получении товара\r\n\t\t</p>\r\n\r\n\t\t<div class=\"row-fluid\" style=\"margin-left: 50px\">\r\n\r\n\t\t\t<div class=\"span6\">\r\n\t\t\t\t<h4>Ваши персональные данные</h4>\r\n\t\t\t\t<div class=\"control-group\">\r\n\t\t\t\t\t<label class=\"control-label\">Email</label>\r\n\t\t\t\t\t<div class=\"controls\">\r\n\t\t\t\t\t\t<input type=\"text\" placeholder=\"\" class=\"input-xlarge\" [(ngModel)]=\"personalData.email\">\r\n\t\t\t\t\t</div>\r\n\t\t\t\t</div>\r\n\t\t\t\t<div class=\"control-group\">\r\n\t\t\t\t\t<label class=\"control-label\">Имя</label>\r\n\t\t\t\t\t<div class=\"controls\">\r\n\t\t\t\t\t\t<input type=\"text\" placeholder=\"\" class=\"input-xlarge\" [(ngModel)]=\"personalData.name\">\r\n\t\t\t\t\t</div>\r\n\t\t\t\t</div>\r\n\t\t\t\t<div class=\"control-group\">\r\n\t\t\t\t\t<label class=\"control-label\">Фамилия</label>\r\n\t\t\t\t\t<div class=\"controls\">\r\n\t\t\t\t\t\t<input type=\"text\" placeholder=\"\" class=\"input-xlarge\" [(ngModel)]=\"personalData.surname\">\r\n\t\t\t\t\t</div>\r\n\t\t\t\t</div>\r\n\t\t\t\t<div class=\"control-group\">\r\n\t\t\t\t\t<label class=\"control-label\">Отчество</label>\r\n\t\t\t\t\t<div class=\"controls\">\r\n\t\t\t\t\t\t<input type=\"text\" placeholder=\"\" class=\"input-xlarge\" [(ngModel)]=\"personalData.patronymic\">\r\n\t\t\t\t\t</div>\r\n\t\t\t\t</div>\t\t\t\t\t  \r\n\t\t\t\t<div class=\"control-group\">\r\n\t\t\t\t\t<label class=\"control-label\">Телефон</label>\r\n\t\t\t\t\t<div class=\"controls\">\r\n\t\t\t\t\t\t<input type=\"text\" placeholder=\"+7-999-999-99-99\" class=\"input-xlarge\" [(ngModel)]=\"personalData.telephone\">\r\n\t\t\t\t\t</div>\r\n\t\t\t\t</div>\r\n\t\t\t</div>\r\n\t\t\t<div class=\"span6\">\r\n\t\t\t\t<h4>Ваш адрес</h4>\r\n\t\t\t\t<div class=\"control-group\">\r\n\t\t\t\t\t<label class=\"control-label\"><span class=\"required\">*</span> Регион</label>\r\n\t\t\t\t\t<div class=\"controls\">\r\n\t\t\t\t\t\t<select class=\"input-xlarge\" [(ngModel)]=\"personalData.region\" *ngIf=\"regions\">\r\n\t\t\t\t\t\t\t<option *ngFor=\"let region of regions\" value=\"{{region}}\">{{region}}</option>\r\n\t\t\t\t\t\t</select>\r\n\t\t\t\t\t</div>\r\n\t\t\t\t</div>\r\n\t\t\t  \t<div class=\"control-group\">\r\n\t\t\t\t\t<label class=\"control-label\"><span class=\"required\">*</span> Город</label>\r\n\t\t\t\t\t<div class=\"controls\">\r\n\t\t\t\t\t\t<input type=\"text\" placeholder=\"\" class=\"input-xlarge\" [(ngModel)]=\"personalData.city\">\r\n\t\t\t\t\t</div>\r\n\t\t\t\t\t<p style=\"color: red\" *ngIf=\"incorrectOrder && personalData.city === ''\">Введите ваш город</p>\r\n\t\t\t\t</div>\r\n\t\t\t\t<div class=\"control-group\">\r\n\t\t\t\t\t<label class=\"control-label\"><span class=\"required\">*</span> Почтовый индекс</label>\r\n\t\t\t\t\t<div class=\"controls\">\r\n\t\t\t\t\t\t<input type=\"text\" placeholder=\"\" class=\"input-xlarge\" [(ngModel)]=\"personalData.index\">\r\n\t\t\t\t\t</div>\r\n\t\t\t\t\t<p style=\"color: red\" *ngIf=\"incorrectOrder && personalData.index === ''\">Введите ваш почтовый индекс</p>\r\n\t\t\t\t</div>\r\n\t\t\t\t<div class=\"control-group\">\r\n\t\t\t\t\t<label class=\"control-label\"><span class=\"required\">*</span> Адрес</label>\r\n\t\t\t\t\t<div class=\"controls\">\r\n\t\t\t\t\t\t<input type=\"text\" placeholder=\"Таращанцев,43,52\" class=\"input-xlarge\" [(ngModel)]=\"personalData.adress\">\r\n\t\t\t\t\t</div>\r\n\t\t\t\t\t<p style=\"color: red\" *ngIf=\"incorrectOrder && personalData.adress === ''\">Введите ваш Адрес</p>\r\n\t\t\t\t</div>\r\n\r\n\t\t\t\t<button class=\"btn btn-large colorButton\" (click)=\"ordering()\">ОФОРМИТЬ ЗАКАЗ</button>\r\n\r\n\t\t\t</div>\r\n\r\n\t\t</div>\r\n\t</section>\r\n\r\n\t<section class=\"main-content\" *ngIf=\"productsInBucket.length == 0 && !successedOrder\">\r\n\t\t<h3 class=\"title\"><span class=\"text\">Оформление заказа</span></h3>\r\n\t\t<hr class=\"soft\"/>\r\n\t\t<h5>Ваша корзина пуста!</h5>\r\n\t\t<p class=\"buttons center\" style=\"margin-top: 15px\">\t\t\t\t\r\n\t\t\t<button class=\"btn btn-large colorButton pull-right\" type=\"submit\" id=\"checkout\" routerLink=\"/home\">Продолжить</button>\r\n\t\t</p>\r\n\t</section>\r\n\r\n\t<section class=\"main-content\" *ngIf=\"productsInBucket.length == 0 && successedOrder\">\r\n\t\t<h3 class=\"title\"><span class=\"text\">Оформление заказа</span></h3>\r\n\t\t<hr class=\"soft\"/>\r\n\t\t<h5>Ваш заказ принят в обработку. Максимальное время отправления заказа - 24 часа с момента\r\n\t\tподачи заявки.</h5>\r\n\t\t<p class=\"buttons center\" style=\"margin-top: 15px\">\t\t\t\t\r\n\t\t\t<button class=\"btn btn-large colorButton pull-right\" type=\"submit\" id=\"checkout\" routerLink=\"/home\">На главную</button>\r\n\t\t</p>\r\n\t</section>\r\n\r\n</div>"
-
-/***/ }),
-
-/***/ "../../../../../src/app/checkout.component.ts":
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/@angular/core.es5.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__product_service__ = __webpack_require__("../../../../../src/app/product.service.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__regions__ = __webpack_require__("../../../../../src/app/regions.ts");
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return CheckoutComponent; });
-var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
-    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-    return c > 3 && r && Object.defineProperty(target, key, r), r;
-};
-var __metadata = (this && this.__metadata) || function (k, v) {
-    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
-};
-
-
-
-var CheckoutComponent = (function () {
-    function CheckoutComponent(productService) {
-        this.productService = productService;
-        this.sumPrice = 0;
-        this.personalData = { email: "", name: "", surname: "", patronymic: "", telephone: "",
-            region: "Алтайский край", city: "", index: "", adress: "" };
-        this.incorrectOrder = false;
-        this.successedOrder = false;
-    }
-    CheckoutComponent.prototype.ngOnInit = function () {
-        this.regions = __WEBPACK_IMPORTED_MODULE_2__regions__["a" /* REGIONS */];
-        this.getPurchasedProducts();
-    };
-    CheckoutComponent.prototype.getPurchasedProducts = function () {
-        var _this = this;
-        this.productService
-            .getPurchasedProducts()
-            .then(function (products) {
-            _this.productsInBucket = products.products;
-            _this.sumPrice = products.sumPrice;
-            _this.orderData = { personalData: _this.personalData,
-                productsInBucket: products };
-        });
-    };
-    CheckoutComponent.prototype.deleteProduct = function (item) {
-        var _this = this;
-        this.productService
-            .deletePurchasedProduct(item)
-            .then(function (products) {
-            _this.productsInBucket = products.products;
-            _this.sumPrice = products.sumPrice;
-            _this.orderData.productsInBucket = products;
-            _this.productService.onPurchased(products.numberOfPurchasedProducts);
-        });
-    };
-    CheckoutComponent.prototype.updateProduct = function (item) {
-        var _this = this;
-        setTimeout(function () {
-            _this.productService
-                .updatePurchasedProduct(item)
-                .then(function (products) {
-                _this.productsInBucket = products.products;
-                _this.sumPrice = products.sumPrice;
-                _this.orderData.productsInBucket = products;
-                _this.productService.onPurchased(products.numberOfPurchasedProducts);
-            });
-        }, 0);
-        //this.router.navigate(['/checkout']);
-    };
-    CheckoutComponent.prototype.ordering = function () {
-        var _this = this;
-        this.productService
-            .ordering(this.orderData)
-            .then(function (products) {
-            _this.productsInBucket = products.products;
-            _this.sumPrice = products.sumPrice;
-            _this.successedOrder = true;
-            _this.productService.onPurchased(products.numberOfPurchasedProducts);
-        }, function (err) { _this.incorrectOrder = true; console.log("err: ", err); });
-        //this.router.navigate(['/checkout']);
-    };
-    return CheckoutComponent;
-}());
-CheckoutComponent = __decorate([
-    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
-        selector: 'shop-checkout',
-        template: __webpack_require__("../../../../../src/app/checkout.component.html"),
-        styles: [__webpack_require__("../../../../../src/app/assets/bootshop/css/bootstrap.css"), __webpack_require__("../../../../../src/app/assets/bootshop/css/bootstrap-responsive.css"), __webpack_require__("../../../../../src/app/assets/bootshop/css/style.css"), __webpack_require__("../../../../../src/app/assets/bootshop/js/google-code-prettify/prettify.css"), __webpack_require__("../../../../../src/app/assets/css/progressusStyles.css")]
-    }),
-    __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1__product_service__["a" /* ProductService */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1__product_service__["a" /* ProductService */]) === "function" && _a || Object])
-], CheckoutComponent);
-
-var _a;
-//# sourceMappingURL=checkout.component.js.map
-
-/***/ }),
-
 /***/ "../../../../../src/app/contact.component.html":
 /***/ (function(module, exports) {
 
@@ -1614,7 +1500,7 @@ var _a, _b, _c;
 /***/ "../../../../../src/app/footer.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<footer id=\"footer\" class=\"top-space\">\r\n\r\n\t\t<!--<div class=\"footer1\">\r\n\t\t\t<div class=\"container\">\r\n\t\t\t\t<div class=\"row\">\r\n\t\t\t\t\t\r\n\t\t\t\t\t<div class=\"col-md-3 widget\">\r\n\t\t\t\t\t\t<h3 class=\"widget-title\">Contact</h3>\r\n\t\t\t\t\t\t<div class=\"widget-body\">\r\n\t\t\t\t\t\t\t<p>+234 23 9873237<br>\r\n\t\t\t\t\t\t\t\t<a href=\"mailto:#\">some.email@somewhere.com</a><br>\r\n\t\t\t\t\t\t\t\t<br>\r\n\t\t\t\t\t\t\t\t234 Hidden Pond Road, Ashland City, TN 37015\r\n\t\t\t\t\t\t\t</p>\t\r\n\t\t\t\t\t\t</div>\r\n\t\t\t\t\t</div>\r\n\r\n\t\t\t\t\t<div class=\"col-md-3 widget\">\r\n\t\t\t\t\t\t<h3 class=\"widget-title\">Follow me</h3>\r\n\t\t\t\t\t\t<div class=\"widget-body\">\r\n\t\t\t\t\t\t\t<p class=\"follow-me-icons\">\r\n\t\t\t\t\t\t\t\t<a href=\"\"><i class=\"fa fa-twitter fa-2\"></i></a>\r\n\t\t\t\t\t\t\t\t<a href=\"\"><i class=\"fa fa-dribbble fa-2\"></i></a>\r\n\t\t\t\t\t\t\t\t<a href=\"\"><i class=\"fa fa-github fa-2\"></i></a>\r\n\t\t\t\t\t\t\t\t<a href=\"\"><i class=\"fa fa-facebook fa-2\"></i></a>\r\n\t\t\t\t\t\t\t</p>\t\r\n\t\t\t\t\t\t</div>\r\n\t\t\t\t\t</div>\r\n\r\n\t\t\t\t\t<div class=\"col-md-6 widget\">\r\n\t\t\t\t\t\t<h3 class=\"widget-title\">Text widget</h3>\r\n\t\t\t\t\t\t<div class=\"widget-body\">\r\n\t\t\t\t\t\t\t<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi, dolores, quibusdam architecto voluptatem amet fugiat nesciunt placeat provident cumque accusamus itaque voluptate modi quidem dolore optio velit hic iusto vero praesentium repellat commodi ad id expedita cupiditate repellendus possimus unde?</p>\r\n\t\t\t\t\t\t\t<p>Eius consequatur nihil quibusdam! Laborum, rerum, quis, inventore ipsa autem repellat provident assumenda labore soluta minima alias temporibus facere distinctio quas adipisci nam sunt explicabo officia tenetur at ea quos doloribus dolorum voluptate reprehenderit architecto sint libero illo et hic.</p>\r\n\t\t\t\t\t\t</div>\r\n\t\t\t\t\t</div>\r\n\r\n\t\t\t\t</div>\r\n\t\t\t</div>\r\n\t\t</div>-->\r\n\r\n\t\t<div class=\"footer2\">\r\n\t\t\t<div class=\"container\">\r\n\t\t\t\t<div class=\"row\">\r\n\t\t\t\t\t\r\n\t\t\t\t\t<div class=\"col-md-5 widget\">\r\n\t\t\t\t\t\t<div class=\"widget-body\">\r\n\t\t\t\t\t\t\t<p class=\"simplenav\">\r\n\t\t\t\t\t\t\t\t<a routerLink=\"/home\">Главная</a> | \r\n\t\t\t\t\t\t\t\t<a routerLink=\"/products/growboxes\">Каталог</a> |\r\n\t\t\t\t\t\t\t\t<a routerLink=\"/contact\">Контакты</a>\r\n\t\t\t\t\t\t\t</p>\r\n\t\t\t\t\t\t</div>\r\n\t\t\t\t\t</div>\r\n\r\n\t\t\t\t\t<div class=\"col-md-2 widget\">\r\n\t\t\t\t\t\t<p>\r\n\t\t\t\t\t\t\t<!-- Yandex.Metrika informer -->\r\n\t\t\t\t\t\t\t<a href=\"https://metrika.yandex.ru/stat/?id=45551829&amp;from=informer\"\r\n\t\t\t\t\t\t\ttarget=\"_blank\" rel=\"nofollow\"><img src=\"https://informer.yandex.ru/informer/45551829/3_0_B9B9B9FF_999999FF_1_pageviews\"\r\n\t\t\t\t\t\t\tstyle=\"width:88px; height:31px; border:0;\" alt=\"Яндекс.Метрика\" title=\"Яндекс.Метрика: данные за сегодня (просмотры, визиты и уникальные посетители)\" class=\"ym-advanced-informer\" data-cid=\"45551829\" data-lang=\"ru\" /></a>\r\n\t\t\t\t\t\t\t<!-- /Yandex.Metrika informer -->\r\n\t\t\t\t\t\t</p>\r\n\t\t\t\t\t</div>\r\n\r\n\t\t\t\t\t<div class=\"col-md-5 widget\">\r\n\t\t\t\t\t\t<div class=\"widget-body\">\r\n\t\t\t\t\t\t\t<p class=\"text-right\">\r\n\t\t\t\t\t\t\t\tCopyright &copy; 2017, Lyapunov Mikhail\r\n\t\t\t\t\t\t\t</p>\r\n\t\t\t\t\t\t</div>\r\n\t\t\t\t\t</div>\r\n\r\n\t\t\t\t</div> <!-- /row of widgets -->\r\n\t\t\t</div>\r\n\t\t</div>\r\n\r\n\t</footer>"
+module.exports = "<footer id=\"footer\" class=\"top-space\">\r\n\r\n\t\t<!--<div class=\"footer1\">\r\n\t\t\t<div class=\"container\">\r\n\t\t\t\t<div class=\"row\">\r\n\t\t\t\t\t\r\n\t\t\t\t\t<div class=\"col-md-3 widget\">\r\n\t\t\t\t\t\t<h3 class=\"widget-title\">Contact</h3>\r\n\t\t\t\t\t\t<div class=\"widget-body\">\r\n\t\t\t\t\t\t\t<p>+234 23 9873237<br>\r\n\t\t\t\t\t\t\t\t<a href=\"mailto:#\">some.email@somewhere.com</a><br>\r\n\t\t\t\t\t\t\t\t<br>\r\n\t\t\t\t\t\t\t\t234 Hidden Pond Road, Ashland City, TN 37015\r\n\t\t\t\t\t\t\t</p>\t\r\n\t\t\t\t\t\t</div>\r\n\t\t\t\t\t</div>\r\n\r\n\t\t\t\t\t<div class=\"col-md-3 widget\">\r\n\t\t\t\t\t\t<h3 class=\"widget-title\">Follow me</h3>\r\n\t\t\t\t\t\t<div class=\"widget-body\">\r\n\t\t\t\t\t\t\t<p class=\"follow-me-icons\">\r\n\t\t\t\t\t\t\t\t<a href=\"\"><i class=\"fa fa-twitter fa-2\"></i></a>\r\n\t\t\t\t\t\t\t\t<a href=\"\"><i class=\"fa fa-dribbble fa-2\"></i></a>\r\n\t\t\t\t\t\t\t\t<a href=\"\"><i class=\"fa fa-github fa-2\"></i></a>\r\n\t\t\t\t\t\t\t\t<a href=\"\"><i class=\"fa fa-facebook fa-2\"></i></a>\r\n\t\t\t\t\t\t\t</p>\t\r\n\t\t\t\t\t\t</div>\r\n\t\t\t\t\t</div>\r\n\r\n\t\t\t\t\t<div class=\"col-md-6 widget\">\r\n\t\t\t\t\t\t<h3 class=\"widget-title\">Text widget</h3>\r\n\t\t\t\t\t\t<div class=\"widget-body\">\r\n\t\t\t\t\t\t\t<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi, dolores, quibusdam architecto voluptatem amet fugiat nesciunt placeat provident cumque accusamus itaque voluptate modi quidem dolore optio velit hic iusto vero praesentium repellat commodi ad id expedita cupiditate repellendus possimus unde?</p>\r\n\t\t\t\t\t\t\t<p>Eius consequatur nihil quibusdam! Laborum, rerum, quis, inventore ipsa autem repellat provident assumenda labore soluta minima alias temporibus facere distinctio quas adipisci nam sunt explicabo officia tenetur at ea quos doloribus dolorum voluptate reprehenderit architecto sint libero illo et hic.</p>\r\n\t\t\t\t\t\t</div>\r\n\t\t\t\t\t</div>\r\n\r\n\t\t\t\t</div>\r\n\t\t\t</div>\r\n\t\t</div>-->\r\n\r\n\t\t<div class=\"footer2\">\r\n\t\t\t<div class=\"container\">\r\n\t\t\t\t<div class=\"row\">\r\n\t\t\t\t\t\r\n\t\t\t\t\t<div class=\"col-md-5 widget\">\r\n\t\t\t\t\t\t<div class=\"widget-body\">\r\n\t\t\t\t\t\t\t<p class=\"simplenav\">\r\n\t\t\t\t\t\t\t\t<a routerLink=\"/home\">Главная</a> | \r\n\t\t\t\t\t\t\t\t<a routerLink=\"/contact\">Контакты</a>\r\n\t\t\t\t\t\t\t</p>\r\n\t\t\t\t\t\t</div>\r\n\t\t\t\t\t</div>\r\n\r\n\t\t\t\t\t<div class=\"col-md-2 widget\">\r\n\t\t\t\t\t\t<p>\r\n\t\t\t\t\t\t\t<!-- Yandex.Metrika informer -->\r\n\t\t\t\t\t\t\t<a href=\"https://metrika.yandex.ru/stat/?id=45551829&amp;from=informer\"\r\n\t\t\t\t\t\t\ttarget=\"_blank\" rel=\"nofollow\"><img src=\"https://informer.yandex.ru/informer/45551829/3_0_B9B9B9FF_999999FF_1_pageviews\"\r\n\t\t\t\t\t\t\tstyle=\"width:88px; height:31px; border:0;\" alt=\"Яндекс.Метрика\" title=\"Яндекс.Метрика: данные за сегодня (просмотры, визиты и уникальные посетители)\" class=\"ym-advanced-informer\" data-cid=\"45551829\" data-lang=\"ru\" /></a>\r\n\t\t\t\t\t\t\t<!-- /Yandex.Metrika informer -->\r\n\t\t\t\t\t\t</p>\r\n\t\t\t\t\t</div>\r\n\r\n\t\t\t\t\t<div class=\"col-md-5 widget\">\r\n\t\t\t\t\t\t<div class=\"widget-body\">\r\n\t\t\t\t\t\t\t<p class=\"text-right\">\r\n\t\t\t\t\t\t\t\tCopyright &copy; 2017, Lyapunov Mikhail\r\n\t\t\t\t\t\t\t</p>\r\n\t\t\t\t\t\t</div>\r\n\t\t\t\t\t</div>\r\n\r\n\t\t\t\t</div> <!-- /row of widgets -->\r\n\t\t\t</div>\r\n\t\t</div>\r\n\r\n\t</footer>"
 
 /***/ }),
 
@@ -1645,43 +1531,6 @@ FooterComponent = __decorate([
 ], FooterComponent);
 
 //# sourceMappingURL=footer.component.js.map
-
-/***/ }),
-
-/***/ "../../../../../src/app/header.component.html":
-/***/ (function(module, exports) {
-
-module.exports = "<header id=\"head\">\r\n    <div class=\"container\">\r\n      <div class=\"row\">\r\n        <h1 class=\"lead\">РАЗЛИЧНАЯ ОТЛИЧНАЯ ПРОДУКЦИЯ</h1>\r\n        <p class=\"tagline\">PROGRESSUS: free business bootstrap template by <a href=\"http://www.gettemplate.com/?utm_source=progressus&amp;utm_medium=template&amp;utm_campaign=progressus\">GetTemplate</a></p>\r\n        <p><a class=\"btn btn-default btn-lg\" role=\"button\">MORE INFO</a> <a class=\"btn btn-action btn-lg\" role=\"button\">DOWNLOAD NOW</a></p>\r\n      </div>\r\n    </div>\r\n</header>"
-
-/***/ }),
-
-/***/ "../../../../../src/app/header.component.ts":
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/@angular/core.es5.js");
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return HeaderComponent; });
-var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
-    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-    return c > 3 && r && Object.defineProperty(target, key, r), r;
-};
-
-var HeaderComponent = (function () {
-    function HeaderComponent() {
-    }
-    return HeaderComponent;
-}());
-HeaderComponent = __decorate([
-    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
-        selector: 'shop-header',
-        template: __webpack_require__("../../../../../src/app/header.component.html"),
-        styles: [__webpack_require__("../../../../../src/app/assets/css/bootstrapNavbarButtonFix.min.css"), __webpack_require__("../../../../../src/app/assets/css/bootstrap-theme.css"), __webpack_require__("../../../../../src/app/assets/css/main.css")]
-    })
-], HeaderComponent);
-
-//# sourceMappingURL=header.component.js.map
 
 /***/ }),
 
@@ -1725,7 +1574,7 @@ HomeBodyComponent = __decorate([
 /***/ "../../../../../src/app/homeBody.component1.html":
 /***/ (function(module, exports) {
 
-module.exports = "<section class=\"section\" id=\"themes\" *ngIf=\"products\">\r\n\t<div class=\"container\">\r\n\t\r\n\t\t<!--<h2 class=\"text-center title\">More Themes</h2>\r\n\t\t<p class=\"lead text-center\">\r\n\t\t\tHuge thank you to all people who publish<br>\r\n\t\t\ttheir photos at <a href=\"http://unsplash.com\">Unsplash</a>, thank you guys!\r\n\t\t</p>-->\r\n\r\n\t\t<div class=\"row\">\r\n\t\t\t\r\n\t\t\t<div class=\"col-lg-4\" *ngFor=\"let item of products; index as i\" [class.col-lg-offset-2]=\"i%2===0\">\r\n\t\t\t\t<h2 align=\"center\">{{item.name}}</h2>\r\n\t\t\t\t<div class=\"thumbnail\">\r\n\t\t\t\t\t<a routerLink=\"/product_details/{{item._id}}\">\t\r\n\t\t\t\t\t\t<img src=\"{{item.imgUrl}}\" alt=\"{{item.name}}\">\r\n\t\t\t\t\t</a>\r\n\t\t\t\t\t<div class=\"caption\" style=\"text-align: center\">\r\n\t\t\t\t\t\t<h4><p>Размер: {{item.properties.size}}</p></h4>\r\n\t\t\t\t\t\t<h4><p>Вес: {{item.properties.weight}}</p></h4>\r\n\t\t\t\t\t\t<h4><p>Свет: {{item.properties.light}}</p></h4>\r\n\t\t\t\t\t\t<h4><p>Вентиляция: {{item.properties.ventilation}}</p></h4>\r\n\t\t\t\t\t\t<h4><p>Обшивка: {{item.properties.covering}}</p></h4>\r\n\t\t\t\t\t\t<h4><p>Также в комплекте: {{item.properties.other}}</p></h4><br>\r\n\t\t\t\t\t\t<p><a (click)=\"purchaseProduct({productId: item._id, number: 1})\" \t\tclass=\"btn btn-primary\" role=\"button\">Купить</a> \r\n\t\t\t\t\t\t\t<a routerLink=\"/product_details/{{item._id}}\" class=\"btn btn-default\" role=\"button\">Подробнее</a>\r\n\t\t\t\t\t\t</p>\r\n\t\t\t\t\t</div>\r\n\t\t\t\t</div>\r\n\t\t\t</div>\r\n\r\n\t\t\t<!--<div class=\"col-sm-8\" *ngFor=\"let item of products; index as i\">\r\n\t\t\t\t<h2 align=\"center\">{{item.name}}</h2>\r\n\t\t\t\t<div class=\"thumbnail\">\r\n\t\t\t\t\t<a routerLink=\"/product_details/{{item._id}}\">\t\r\n\t\t\t\t\t\t<img src=\"{{item.imgUrl}}\" alt=\"{{item.name}}\">\r\n\t\t\t\t\t</a>\r\n\t\t\t\t\t<div class=\"caption\" style=\"text-align: center\">\r\n\t\t\t\t\t\t<h4><p>Размер: {{item.properties.size}}</p></h4>\r\n\t\t\t\t\t\t<h4><p>Вес: {{item.properties.weight}}</p></h4>\r\n\t\t\t\t\t\t<h4><p>Свет: {{item.properties.light}}</p></h4>\r\n\t\t\t\t\t\t<h4><p>Вентиляция: {{item.properties.ventilation}}</p></h4>\r\n\t\t\t\t\t\t<h4><p>Обшивка: {{item.properties.covering}}</p></h4>\r\n\t\t\t\t\t\t<h4><p>Также в комплекте: {{item.properties.other}}</p></h4><br>\r\n\t\t\t\t\t\t<p><a (click)=\"purchaseProduct({productId: item._id, number: 1})\" \t\tclass=\"btn btn-primary\" role=\"button\">Купить</a> \r\n\t\t\t\t\t\t\t<a routerLink=\"/product_details/{{item._id}}\" class=\"btn btn-default\" role=\"button\">Подробнее</a>\r\n\t\t\t\t\t\t</p>\r\n\t\t\t\t\t</div>\r\n\t\t\t\t</div>\r\n\t\t\t</div>-->\r\n\t\t\t\r\n\t\t</div>\r\n\t</div>\r\n</section>"
+module.exports = "<section class=\"section\" id=\"themes\" *ngIf=\"products\">\r\n\t<div class=\"container\">\r\n\t\r\n\t\t<!--<h2 class=\"text-center title\">More Themes</h2>\r\n\t\t<p class=\"lead text-center\">\r\n\t\t\tHuge thank you to all people who publish<br>\r\n\t\t\ttheir photos at <a href=\"http://unsplash.com\">Unsplash</a>, thank you guys!\r\n\t\t</p>-->\r\n\r\n\t\t<div class=\"row\">\r\n\t\t\t\r\n\t\t\t<!--<div class=\"col-lg-4\" [class.col-lg-offset-2]=\"i%2===0\" *ngFor=\"let item of products; index as i\">\r\n\t\t\t\t<h2 align=\"center\">{{item.name}}</h2>\r\n\t\t\t\t<div class=\"thumbnail\">\r\n\t\t\t\t\t<a routerLink=\"/product_details/{{item._id}}\">\t\r\n\t\t\t\t\t\t<img src=\"{{item.imgUrl}}\" alt=\"{{item.name}}\">\r\n\t\t\t\t\t</a>\r\n\t\t\t\t\t<div class=\"caption\" style=\"text-align: center\">\r\n\t\t\t\t\t\t<h4><p>Размер: {{item.properties.size}}</p></h4>\r\n\t\t\t\t\t\t<h4><p>Вес: {{item.properties.weight}}</p></h4>\r\n\t\t\t\t\t\t<h4><p>Свет: {{item.properties.light}}</p></h4>\r\n\t\t\t\t\t\t<h4><p>Вентиляция: {{item.properties.ventilation}}</p></h4>\r\n\t\t\t\t\t\t<h4><p>Обшивка: {{item.properties.covering}}</p></h4>\r\n\t\t\t\t\t\t<h4><p>Также в комплекте: {{item.properties.other}}</p></h4><br>\r\n\t\t\t\t\t\t<p><a (click)=\"purchaseProduct({productId: item._id, number: 1})\" \t\tclass=\"btn btn-primary\" role=\"button\">Купить</a> \r\n\t\t\t\t\t\t\t<a routerLink=\"/product_details/{{item._id}}\" class=\"btn btn-default\" role=\"button\">Подробнее</a>\r\n\t\t\t\t\t\t</p>\r\n\t\t\t\t\t</div>\r\n\t\t\t\t</div>\r\n\t\t\t</div>-->\r\n\r\n\t\t\t<!--<div class=\"col-sm-8\" [class.col-sm-offset-2]=\"true\" *ngFor=\"let item of products; index as i\">\r\n\t\t\t\t<h2 align=\"center\">{{item.name}}</h2>\r\n\t\t\t\t<div class=\"thumbnail\">\r\n\t\t\t\t\t<a routerLink=\"/product_details/{{item._id}}\">\t\r\n\t\t\t\t\t\t<img src=\"{{item.imgUrl}}\" alt=\"{{item.name}}\">\r\n\t\t\t\t\t</a>\r\n\t\t\t\t\t<div class=\"caption\" style=\"text-align: center\">\r\n\t\t\t\t\t\t<h4><p>Размер: {{item.properties.size}}</p></h4>\r\n\t\t\t\t\t\t<h4><p>Вес: {{item.properties.weight}}</p></h4>\r\n\t\t\t\t\t\t<h4><p>Свет: {{item.properties.light}}</p></h4>\r\n\t\t\t\t\t\t<h4><p>Вентиляция: {{item.properties.ventilation}}</p></h4>\r\n\t\t\t\t\t\t<h4><p>Обшивка: {{item.properties.covering}}</p></h4>\r\n\t\t\t\t\t\t<h4><p>Также в комплекте: {{item.properties.other}}</p></h4><br>\r\n\t\t\t\t\t\t<p><a (click)=\"purchaseProduct({productId: item._id, number: 1})\" \t\tclass=\"btn btn-primary\" role=\"button\">Купить</a> \r\n\t\t\t\t\t\t\t<a routerLink=\"/product_details/{{item._id}}\" class=\"btn btn-default\" role=\"button\">Подробнее</a>\r\n\t\t\t\t\t\t</p>\r\n\t\t\t\t\t</div>\r\n\t\t\t\t</div>\r\n\t\t\t</div>-->\r\n\r\n\t\t\t<div class=\"col-sm-8 col-sm-offset-2\">\r\n\t\t\t\t<h2 align=\"center\">Гроубокс системник</h2>\r\n\t\t\t\t<div class=\"thumbnail\">\r\n\t\t\t\t\t<!--<a routerLink=\"/product_details/{{products[1]._id}}\">\t\r\n\t\t\t\t\t\t<img src=\"{{products[1].imgUrl}}\" alt=\"Гроубокс системник\">\r\n\t\t\t\t\t</a>-->\r\n\t\t\t\t\t<div>\r\n\t\t\t\t\t\t<a class=\"fancybox-thumb\" rel=\"fancybox-thumb\" href=\"{{products[1].imgUrl}}\" title=\"Гроубокс системник. Модель 1\">\r\n\t\t\t\t\t\t\t<img src=\"{{products[1].imgUrl}}\" alt=\"Гроубокс системник\"/>\r\n\t\t\t\t\t\t</a>\r\n\t\t\t\t\t\t<div>\t\r\n\t\t\t\t\t\t   <a class=\"fancybox-thumb\" rel=\"fancybox-thumb\" href=\"{{products[1].imgUrl1}}\" title=\"Гроубокс системник. Модель 1\" *ngIf=\"products[1].imgUrl1\"> <img width=\"0%\" src=\"{{products[1].imgUrl1}}\" alt=\"\"/></a>\r\n\t\t\t\t\t\t   <a class=\"fancybox-thumb\" rel=\"fancybox-thumb\" href=\"{{products[1].imgUrl2}}\" title=\"Гроубокс системник. Модель 1\" *ngIf=\"products[1].imgUrl2\"> <img width=\"0%\" src=\"{{products[1].imgUrl2}}\" alt=\"\"/></a>\r\n\t\t\t\t\t\t</div>  \r\n\t\t\t\t  </div>\r\n\r\n\t\t\t\t  <br>\r\n\r\n\t\t\t\t\t<div class=\"caption\" style=\"text-align: center\">\r\n\t\t\t\t\t\t<h4><p>Размер: {{products[1].properties.size}}</p></h4>\r\n\t\t\t\t\t\t<h4><p>Вес: {{products[1].properties.weight}}</p></h4>\r\n\t\t\t\t\t\t<h4><p>Свет: {{products[1].properties.light}}</p></h4>\r\n\t\t\t\t\t\t<h4><p>Вентиляция: {{products[1].properties.ventilation}}</p></h4>\r\n\t\t\t\t\t\t<h4><p>Обшивка: {{products[1].properties.covering}}</p></h4>\r\n\t\t\t\t\t\t<h4><p>Также в комплекте: {{products[1].properties.other}}</p></h4><br>\r\n\t\t\t\t\t\t<div class=\"badge\"><span><span style=\"text-decoration: line-through; text-decoration-color: red; opacity: 0.7\">22000</span><br>15000<br><span style=\"opacity: 0.7; padding-left: 2px\">руб.</span></span></div>\r\n\r\n\t\t\t\t\t\t<p *ngIf=\"showDescription\">\r\n\t\t\t\t\t\t\t<br>\r\n\t\t\t\t\t\t\t{{products[1].description}}\r\n\t\t\t\t\t\t</p>\r\n\t\t\t\t\t\t<br>\r\n\r\n\t\t\t\t\t\t<p>\r\n\t\t\t\t\t\t\t<a (click)=\"showDescription = !showDescription\" class=\"btn btn-default\" role=\"button\">Подробнее</a>\r\n\t\t\t\t\t\t</p>\r\n\t\t\t\t\t</div>\r\n\r\n\t\t\t\t\t<br>\r\n\r\n\t\t\t\t\t<h3 class=\"text-center title\">Купить гроубокс стелс за 15 000 вместо 22 000 руб! Оставь заявку и мы с тобой сразу же свяжемся</h3><br>\r\n\r\n\t\t\t\t\t<form style=\"margin-left: 10px; margin-right: 10px\">\r\n\t\t\t\t\t\t<div class=\"row\">\r\n\t\t\t\t\t\t\t<div class=\"form-group col-lg-3\">\r\n\t\t\t\t\t\t\t\t<label for=\"inputName\">Имя</label>\r\n\t\t\t\t\t\t\t\t<input class=\"form-control\" type=\"text\" id=\"inputName\" [(ngModel)]=\"personalData.name\" [ngModelOptions]=\"{standalone: true}\" #myName=\"ngModel\" required>\r\n\t\t\t\t\t\t\t\t<p style=\"color: red; margin-top: 10px;margin-left: 4px\" *ngIf=\"myName.touched && myName.invalid\">Введите ваше имя</p>\r\n\t\t\t\t\t\t\t</div>\r\n\t\t\t\t\t\t\t<div class=\"form-group col-lg-3\">\r\n\t\t\t\t\t\t\t\t<label for=\"inputEmail\">Email</label>\r\n\t\t\t\t\t\t\t\t<input class=\"form-control\" type=\"email\" id=\"inputEmail\" [(ngModel)]=\"personalData.email\" [ngModelOptions]=\"{standalone: true}\" #myEmail=\"ngModel\" required email>\r\n\t\t\t\t\t\t\t\t<p style=\"color: red; margin-top: 10px;margin-left: 4px\" *ngIf=\"myEmail.touched && myEmail.invalid\">Некорректный email</p>\r\n\t\t\t\t\t\t\t</div>\r\n\t\t\t\t\t\t\t<div class=\"form-group col-lg-3\">\r\n\t\t\t\t\t\t\t\t<label for=\"inputTelephone\">Телефон</label>\r\n\t\t\t\t\t\t\t\t<input class=\"form-control\" type=\"tel\" id=\"inputTelephone\" [(ngModel)]=\"personalData.telephone\" [ngModelOptions]=\"{standalone: true}\" #myTel=\"ngModel\" required>\r\n\t\t\t\t\t\t\t\t<p style=\"color: red; margin-top: 10px;margin-left: 4px\" *ngIf=\"myTel.touched && myTel.invalid\">Введите ваш телефон</p>\r\n\t\t\t\t\t\t\t</div>\r\n\t\t\t\t\t\t\t<div class=\"form-group col-lg-2\">\r\n\t\t\t\t\t\t\t  <label style=\"visibility: hidden\" for=\"submitButton\" *ngIf=\"showLabelSubmitButton\">заказать</label>\r\n\t\t\t\t\t\t      <button (click)=\"purchaseProduct({productId: products[1]._id, number: 1})\" [disabled]=\"myName.invalid || myEmail.invalid || myTel.invalid\" type=\"submit\" class=\"btn btn-primary\" role=\"button\" id=\"submitButton\" style=\"padding: 7px 30px\">Заказать</button>\r\n\t\t\t\t\t\t    </div>\t \r\n\t\t\t\t\t\t</div>\r\n\t\t\t\t\t</form>\r\n\r\n\t\t\t\t</div>\r\n\t\t\t</div>\r\n\t\t\t\r\n\t\t</div>\r\n\t</div>\r\n</section>"
 
 /***/ }),
 
@@ -1733,10 +1582,18 @@ module.exports = "<section class=\"section\" id=\"themes\" *ngIf=\"products\">\r
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/@angular/core.es5.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__product_service__ = __webpack_require__("../../../../../src/app/product.service.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__assets_ng2_toastr_ng2_toastr__ = __webpack_require__("../../../../../src/app/assets/ng2-toastr/ng2-toastr.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__assets_ng2_toastr_ng2_toastr___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2__assets_ng2_toastr_ng2_toastr__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__assets_fancybox_source_jquery_fancybox_pack_js_v_2_1_6__ = __webpack_require__("../../../../../src/app/assets/fancybox/source/jquery.fancybox.pack.js?v=2.1.6");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__assets_fancybox_source_jquery_fancybox_pack_js_v_2_1_6___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0__assets_fancybox_source_jquery_fancybox_pack_js_v_2_1_6__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__assets_fancybox_source_helpers_jquery_fancybox_buttons_js_v_1_0_5__ = __webpack_require__("../../../../../src/app/assets/fancybox/source/helpers/jquery.fancybox-buttons.js?v=1.0.5");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__assets_fancybox_source_helpers_jquery_fancybox_buttons_js_v_1_0_5___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1__assets_fancybox_source_helpers_jquery_fancybox_buttons_js_v_1_0_5__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__assets_fancybox_source_helpers_jquery_fancybox_media_js_v_1_0_6__ = __webpack_require__("../../../../../src/app/assets/fancybox/source/helpers/jquery.fancybox-media.js?v=1.0.6");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__assets_fancybox_source_helpers_jquery_fancybox_media_js_v_1_0_6___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2__assets_fancybox_source_helpers_jquery_fancybox_media_js_v_1_0_6__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__assets_fancybox_source_helpers_jquery_fancybox_thumbs_js_v_1_0_7__ = __webpack_require__("../../../../../src/app/assets/fancybox/source/helpers/jquery.fancybox-thumbs.js?v=1.0.7");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__assets_fancybox_source_helpers_jquery_fancybox_thumbs_js_v_1_0_7___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3__assets_fancybox_source_helpers_jquery_fancybox_thumbs_js_v_1_0_7__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__angular_core__ = __webpack_require__("../../../core/@angular/core.es5.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__product_service__ = __webpack_require__("../../../../../src/app/product.service.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__assets_ng2_toastr_ng2_toastr__ = __webpack_require__("../../../../../src/app/assets/ng2-toastr/ng2-toastr.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__assets_ng2_toastr_ng2_toastr___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_6__assets_ng2_toastr_ng2_toastr__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return HomeBodyComponent1; });
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -1750,41 +1607,98 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 
 
 
+
+
+
+
 var HomeBodyComponent1 = (function () {
     function HomeBodyComponent1(productService, toastr, vcr) {
         this.productService = productService;
         this.toastr = toastr;
+        this.showDescription = false;
+        this.personalData = { email: "", name: "", surname: "", patronymic: "", telephone: "",
+            region: "", city: "", index: "", adress: "" };
         this.toastr.setRootViewContainerRef(vcr);
     }
     HomeBodyComponent1.prototype.ngOnInit = function () {
+        var _this = this;
+        if (document.body.clientWidth < 1171) {
+            this.showLabelSubmitButton = false;
+        }
+        else {
+            this.showLabelSubmitButton = true;
+        }
         this.getCategoryProducts();
+        $(".fancybox-thumb").fancybox({
+            prevEffect: 'none',
+            nextEffect: 'none',
+            helpers: {
+                title: {
+                    type: 'outside'
+                },
+                thumbs: {
+                    width: 50,
+                    height: 50
+                }
+            }
+        });
+        $(window).resize(this.debounce(function () {
+            if (document.body.clientWidth < 1171) {
+                _this.showLabelSubmitButton = false;
+            }
+            else {
+                _this.showLabelSubmitButton = true;
+            }
+        }, 50));
     };
     HomeBodyComponent1.prototype.getCategoryProducts = function () {
         var _this = this;
         this.productService.getCategoryProducts("Гроубоксы")
-            .then(function (products) { return _this.products = products; }, function (err) { return console.log("httpError: ", err); });
+            .then(function (products) {
+            _this.products = products;
+        }, function (err) {
+            console.log("httpError: ", err);
+        });
     };
     HomeBodyComponent1.prototype.purchaseProduct = function (product) {
         var _this = this;
         this.productService
             .purchaseProduct(product)
             .then(function (products) {
-            _this.productsInBucket = products;
-            _this.productService.onPurchased(_this.productsInBucket.numberOfPurchasedProducts);
-            _this.toastr.success('Товар добавлен в корзину');
+            _this.orderData = { personalData: _this.personalData,
+                productsInBucket: products };
+            _this.productService
+                .ordering(_this.orderData)
+                .then(function (products) {
+                _this.toastr.success('Ваша заявка принята!');
+            }, function (err) {
+                console.log("err: ", err);
+                _this.toastr.error('При отправке заявки произошла ошибка', 'Ошибка');
+            });
         }, function (err) {
             _this.toastr.error('Товар не был добавлен в корзину', 'Ошибка');
         });
     };
+    HomeBodyComponent1.prototype.debounce = function (f, ms) {
+        var state = null;
+        var COOLDOWN = 1;
+        return function () {
+            if (state)
+                return;
+            f.apply(this, arguments);
+            state = COOLDOWN;
+            setTimeout(function () { state = null; }, ms);
+        };
+    };
     return HomeBodyComponent1;
 }());
 HomeBodyComponent1 = __decorate([
-    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
+    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_4__angular_core__["Component"])({
         selector: 'shop-home-body1',
         template: __webpack_require__("../../../../../src/app/homeBody.component1.html"),
         styles: [__webpack_require__("../../../../../src/app/assets/css/bootstrapNavbarButtonFix.min.css"), __webpack_require__("../../../../../src/app/assets/css/bootstrap-theme.css"), __webpack_require__("../../../../../src/app/assets/css/main.css")]
     }),
-    __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1__product_service__["a" /* ProductService */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1__product_service__["a" /* ProductService */]) === "function" && _a || Object, typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_2__assets_ng2_toastr_ng2_toastr__["ToastsManager"] !== "undefined" && __WEBPACK_IMPORTED_MODULE_2__assets_ng2_toastr_ng2_toastr__["ToastsManager"]) === "function" && _b || Object, typeof (_c = typeof __WEBPACK_IMPORTED_MODULE_0__angular_core__["ViewContainerRef"] !== "undefined" && __WEBPACK_IMPORTED_MODULE_0__angular_core__["ViewContainerRef"]) === "function" && _c || Object])
+    __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_5__product_service__["a" /* ProductService */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_5__product_service__["a" /* ProductService */]) === "function" && _a || Object, typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_6__assets_ng2_toastr_ng2_toastr__["ToastsManager"] !== "undefined" && __WEBPACK_IMPORTED_MODULE_6__assets_ng2_toastr_ng2_toastr__["ToastsManager"]) === "function" && _b || Object, typeof (_c = typeof __WEBPACK_IMPORTED_MODULE_4__angular_core__["ViewContainerRef"] !== "undefined" && __WEBPACK_IMPORTED_MODULE_4__angular_core__["ViewContainerRef"]) === "function" && _c || Object])
 ], HomeBodyComponent1);
 
 var _a, _b, _c;
@@ -1826,89 +1740,6 @@ HomeBodyComponent2 = __decorate([
 ], HomeBodyComponent2);
 
 //# sourceMappingURL=homeBody.component2.js.map
-
-/***/ }),
-
-/***/ "../../../../../src/app/navbar.component.html":
-/***/ (function(module, exports) {
-
-module.exports = "<div class=\"navbar navbar-inverse navbar-fixed-top headroom\">\r\n\t\t<div class=\"container\">\r\n\t\t\t<div class=\"navbar-header\">\r\n\t\t\t\t<!-- Button for smallest screens -->\r\n\t\t\t\t<button type=\"button\" class=\"navbar-toggle\" data-toggle=\"collapse\" data-target=\".navbar-collapse\"><span class=\"icon-bar\"></span> <span class=\"icon-bar\"></span> <span class=\"icon-bar\"></span> </button>\r\n\t\t\t\t<!--<a class=\"navbar-brand\" routerLink=\"/home\"><img src=\"assets/images/logoHB1.jpg\" alt=\"Progressus HTML5 template\"></a>-->\r\n\t\t\t</div>\r\n\t\t\t<div class=\"navbar-collapse collapse\">\r\n\t\t\t\t<ul class=\"nav navbar-nav pull-right\">\r\n\t\t\t\t\t<!--<li routerLinkActive=\"active\"><a routerLink=\"/save_product\">Т</a></li>-->\r\n\t\t\t\t\t<li routerLinkActive=\"active\"><a routerLink=\"/home\">Главная</a></li>\r\n\t\t\t\t\t<li><a routerLink=\"/products/growboxes\">Каталог</a></li>\r\n\t\t\t\t\t<!--<li class=\"dropdown\">\r\n\t\t\t\t\t\t<a href=\"#\" class=\"dropdown-toggle\" data-toggle=\"dropdown\">Каталог <b class=\"caret\"></b></a>\r\n\t\t\t\t\t\t<ul class=\"dropdown-menu\">\r\n\t\t\t\t\t\t\t<li routerLinkActive=\"active\"><a routerLink=\"/products/growboxes\">Гроубоксы</a></li>\r\n\t\t\t\t\t\t\t<li routerLinkActive=\"active\"><a routerLink=\"/products/lights\">Свет</a></li>\r\n\t\t\t\t\t\t\t<li routerLinkActive=\"active\"><a routerLink=\"/products/automatics\">Автоматизация</a></li>\r\n\t\t\t\t\t\t</ul>\r\n\t\t\t\t\t</li>-->\r\n\t\t\t\t\t<!--<li><a routerLink=\"/about_us\">О нас</a></li>-->\r\n\t\t\t\t\t<li><a routerLink=\"/contact\">Контакты</a></li>\r\n\t\t\t\t\t<!--<li><a class=\"btn\" routerLink=\"/login\">SIGN IN / SIGN UP</a></li>-->\r\n\t\t\t\t\t\r\n\t\t\t\t\t<li routerLinkActive=\"active\"><a routerLink=\"/product_summary\" style=\"display: inline-flex;\"><i class=\"fa fa-shopping-cart fa-2x bucketBorder\"></i><div style=\"width: 0px\"><span class=\"bucketBadge\">{{numberOfPurchasedProducts}}</span></div></a></li>\r\n\t\t\t\t</ul>\r\n\t\t\t</div><!--/.nav-collapse -->\r\n\t\t</div>\r\n\t</div> "
-
-/***/ }),
-
-/***/ "../../../../../src/app/navbar.component.ts":
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/@angular/core.es5.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__product_service__ = __webpack_require__("../../../../../src/app/product.service.ts");
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return NavbarComponent; });
-var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
-    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-    return c > 3 && r && Object.defineProperty(target, key, r), r;
-};
-var __metadata = (this && this.__metadata) || function (k, v) {
-    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
-};
-
-
-var NavbarComponent = (function () {
-    function NavbarComponent(productService) {
-        var _this = this;
-        this.productService = productService;
-        this.numberOfPurchasedProducts = 0;
-        productService.onPurchased$.subscribe(function (number) {
-            _this.numberOfPurchasedProducts = number;
-        });
-    }
-    /* @Input()
-         set numberOfPurchasedProducts(numberOfPurchasedProducts: number) {
-           this._numberOfPurchasedProducts = numberOfPurchasedProducts
-           console.log("this._numberOfPurchasedProducts: ", this._numberOfPurchasedProducts)
-         }
-   
-         get numberOfPurchasedProducts(): number { return this._numberOfPurchasedProducts }
-    */
-    NavbarComponent.prototype.ngOnInit = function () {
-        /*function windowSize(){
-                console.log("windowWidth: ", $(window).width())
-                console.log("this.showLogo: ", this.showLogo)
-            if ($(window).width() < '980'){
-                this.showLogo = true
-            } else {
-                this.showLogo = false
-            }
-        }
-        $(window).load(windowSize); // при загрузке
-        $(window).resize(windowSize); // при изменении размеров
-        // или "два-в-одном", вместо двух последних строк:
-        $(window).on('load resize',windowSize);
-        */
-        this.getPurchasedProducts();
-    };
-    NavbarComponent.prototype.getPurchasedProducts = function () {
-        var _this = this;
-        this.productService
-            .getPurchasedProducts()
-            .then(function (products) {
-            _this.numberOfPurchasedProducts = products.numberOfPurchasedProducts;
-        });
-    };
-    return NavbarComponent;
-}());
-NavbarComponent = __decorate([
-    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
-        selector: 'shop-navbar',
-        template: __webpack_require__("../../../../../src/app/navbar.component.html"),
-        styles: [__webpack_require__("../../../../../src/app/assets/css/bootstrapNavbarButtonFix.min.css"), __webpack_require__("../../../../../src/app/assets/css/bootstrap-theme.css"), __webpack_require__("../../../../../src/app/assets/css/main.css"), __webpack_require__("../../../../../src/app/assets/css/progressusStyles.css")]
-    }),
-    __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1__product_service__["a" /* ProductService */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1__product_service__["a" /* ProductService */]) === "function" && _a || Object])
-], NavbarComponent);
-
-var _a;
-//# sourceMappingURL=navbar.component.js.map
 
 /***/ }),
 
@@ -2032,387 +1863,6 @@ ProductService = __decorate([
 
 var _a;
 //# sourceMappingURL=product.service.js.map
-
-/***/ }),
-
-/***/ "../../../../../src/app/product_details.component.html":
-/***/ (function(module, exports) {
-
-module.exports = "<div class=\"row buyPagesContainer\" *ngIf=\"productDetail\">\r\n\r\n\r\n\t<div class=\"span9\" style=\"width: auto\">\r\n\t\t<ul class=\"breadcrumb\">\r\n\t\t<li><a routerLink=\"/home\">Главная</a> <span class=\"divider\">/</span></li>\r\n\t\t<li><a routerLink=\"/products/{{categories[productDetail.category]}}\">{{productDetail.category}}</a> <span class=\"divider\">/</span></li>\r\n\t\t<li class=\"active\">{{productDetail.name}}</li>\r\n\t\t</ul>\t\r\n\t\t<div class=\"row\">\t  \r\n\t\t\t<div id=\"gallery\" class=\"span4\">\r\n\t\t\t\t<a class=\"fancybox-thumb\" rel=\"fancybox-thumb\" href=\"{{productDetail.imgUrl}}\" title=\"{{productDetail.name}}\">\r\n\t\t\t\t\t<img src=\"{{productDetail.imgUrl}}\" width=\"100%\" alt=\"{{productDetail.name}}\"/>\r\n\t\t\t\t</a>\r\n\t\t\t\t<div id=\"myCarousel\" class=\"moreOptopm carousel slide\">\r\n\t\t\t\t\t<div class=\"carousel-inner\">\r\n\t\t\t\t\t  <div class=\"item active\">\r\n\t\t\t\t\t   <a class=\"fancybox-thumb\" rel=\"fancybox-thumb\" href=\"{{productDetail.imgUrl1}}\" title=\"\" *ngIf=\"productDetail.imgUrl1\"> <img width=\"29%\" src=\"{{productDetail.imgUrl1}}\" alt=\"\"/></a>\r\n\t\t\t\t\t   <a class=\"fancybox-thumb\" rel=\"fancybox-thumb\" href=\"{{productDetail.imgUrl2}}\" title=\"\" *ngIf=\"productDetail.imgUrl2\"> <img width=\"29%\" src=\"{{productDetail.imgUrl2}}\" alt=\"\"/></a>\r\n\t\t\t\t\t   <a class=\"fancybox-thumb\" rel=\"fancybox-thumb\" href=\"{{productDetail.imgUrl3}}\" title=\"\" *ngIf=\"productDetail.imgUrl3\"> <img width=\"29%\" src=\"{{productDetail.imgUrl3}}\" alt=\"\"/></a>\r\n\t\t\t\t\t  </div>\r\n\t\t\t\t\t  <div class=\"item\" *ngIf=\"productDetail.imgUrl4\">\r\n\t\t\t\t\t   <a class=\"fancybox-thumb\" rel=\"fancybox-thumb\" href=\"{{productDetail.imgUrl4}}\" *ngIf=\"productDetail.imgUrl4\"> <img width=\"29%\" src=\"{{productDetail.imgUrl4}}\" alt=\"\"/></a>\r\n\t\t\t\t\t   <a class=\"fancybox-thumb\" rel=\"fancybox-thumb\" href=\"{{productDetail.imgUrl5}}\" *ngIf=\"productDetail.imgUrl5\"> <img width=\"29%\" src=\"{{productDetail.imgUrl5}}\" alt=\"\"/></a>\r\n\t\t\t\t\t   <a class=\"fancybox-thumb\" rel=\"fancybox-thumb\" href=\"{{productDetail.imgUrl6}}\" *ngIf=\"productDetail.imgUrl6\"> <img width=\"29%\" src=\"{{productDetail.imgUrl6}}\" alt=\"\"/></a>\r\n\t\t\t\t\t  </div>\r\n\t\t\t\t\t</div>\r\n\t\t\t\t\r\n\t\t\t\t\t<a class=\"left carousel-control\" href=\"#myCarousel\" data-slide=\"prev\" *ngIf=\"productDetail.imgUrl4\">‹</a>\r\n\t\t\t\t\t<a class=\"right carousel-control\" href=\"#myCarousel\" data-slide=\"next\" *ngIf=\"productDetail.imgUrl4\">›</a> \r\n\t\t\t  \r\n\t\t\t\t</div>\r\n\t\t\t  \r\n\t\t\t</div>\r\n\r\n\t\t\t<div class=\"span5\">\r\n\t\t\t\t<h3>{{productDetail.name}}  </h3>\r\n\t\t\t\t<!--<small>- (14MP, 18x Optical Zoom) 3-inch LCD</small>-->\r\n\t\t\t\t<hr class=\"soft\"/>\r\n\t\t\t\t<form class=\"form-horizontal qtyFrm\">\r\n\t\t\t\t  <div class=\"control-group\">\r\n\t\t\t\t\t<label class=\"control-label buyForm\"><span class=\"price\">{{productDetail.price}} RUB</span></label>\r\n\t\t\t\t\t<div>\r\n\t\t\t\t\t  <input #numb type=\"number\" min=\"1\" class=\"span2 buyForm\" style=\"height: 30px\" placeholder=\"Количество\" value=\"1\"/>\r\n\t\t\t\t\t  <button type=\"submit\" class=\"btn btn-large pull-right colorButton\" style=\"position:relative\" [style.top] = \"top\"  (click)=\"purchaseProduct({productId: productDetail._id, number: numb.value})\"><i class=\"icon-white icon-shopping-cart\"></i> Купить</button>\r\n\t\t\t\t\t</div>\r\n\t\t\t\t  </div>\r\n\t\t\t\t</form>\r\n\r\n\t\t\t\t<hr class=\"soft clr\"/>\r\n\r\n\t\t\t\t<p>\r\n\t\t\t\t\t{{productDetail.description}}\r\n\t\t\t\t</p>\r\n\t\t\t\t\r\n\t\t\t\t<br class=\"clr\"/>\t\r\n\t\t\t</div>\r\n\t\t\t\r\n\t\t\t<div class=\"span9\">\r\n\t\t\t\t<ul id=\"productDetail\" class=\"nav nav-tabs\">\r\n\t\t\t\t  <li class=\"active\"><a href=\"#home\" data-toggle=\"tab\">Информация о продукте</a></li>\r\n\t\t\t\t  <li><a href=\"#profile\" data-toggle=\"tab\">Похожие продукты</a></li>\r\n\t\t\t\t</ul>\r\n\t\t\t\t<div id=\"myTabContent\" class=\"tab-content\">\r\n\t\t\t\t  <div class=\"tab-pane fade active in\" id=\"home\">\r\n\t\t\t\t\t  <h4>Характеристики</h4>\r\n\t\t\t\t\t\t<table class=\"table table-bordered\" cellspacing=\"0\">\r\n\t\t\t\t\t\t<tbody>\r\n\t\t\t\t\t\t<!--<tr class=\"techSpecRow\"><th colspan=\"2\">В комплекте имеется</th></tr>-->\r\n\t\t\t\t\t\t<tr class=\"techSpecRow\"><td class=\"techSpecTD1\">Размер: </td><td class=\"techSpecTD2\">{{productDetail.properties.size}}</td></tr>\r\n\t\t\t\t\t\t<tr class=\"techSpecRow\"><td class=\"techSpecTD1\">Вес:</td><td class=\"techSpecTD2\">{{productDetail.properties.weight}}</td></tr>\r\n\t\t\t\t\t\t<tr class=\"techSpecRow\"><td class=\"techSpecTD1\">Свет:</td><td class=\"techSpecTD2\">{{productDetail.properties.light}}</td></tr>\r\n\t\t\t\t\t\t<tr class=\"techSpecRow\"><td class=\"techSpecTD1\">Вентиляция:</td><td class=\"techSpecTD2\">{{productDetail.properties.ventilation}}</td></tr>\r\n\t\t\t\t\t\t<tr class=\"techSpecRow\"><td class=\"techSpecTD1\">Обшивка:</td><td class=\"techSpecTD2\">{{productDetail.properties.covering}}</td></tr>\r\n\t\t\t\t\t\t<tr class=\"techSpecRow\"><td class=\"techSpecTD1\">Также в комплекте:</td><td class=\"techSpecTD2\">{{productDetail.properties.other}}</td></tr>\r\n\t\t\t\t\t\t</tbody>\r\n\t\t\t\t\t\t</table>\r\n\t\t\t\t\t\t\r\n\t\t\t\t\t\t<!--<h5>Features</h5>\r\n\t\t\t\t\t\t<p>\r\n\t\t\t\t\t\t14 Megapixels. 18.0 x Optical Zoom. 3.0-inch LCD Screen. Full HD photos and 1280 x 720p HD movie capture. ISO sensitivity ISO6400 at reduced resolution. Tracking Auto Focus. Motion Panorama Mode. Face Detection technology with Blink detection and Smile and shoot mode. 4 x AA batteries not included. WxDxH 110.2 ×81.4x73.4mm. Weight 0.341kg (excluding battery and memory card). Weight 0.437kg (including battery and memory card).<br/>\r\n\t\t\t\t\t\tOND363338\r\n\t\t\t\t\t\t</p>\r\n\r\n\t\t\t\t\t\t<h4>Editorial Reviews</h4>\r\n\t\t\t\t\t\t<h5>Manufacturer's Description </h5>\r\n\t\t\t\t\t\t<p>\r\n\t\t\t\t\t\tWith a generous 18x Fujinon optical zoom lens, the S2950 really packs a punch, especially when matched with its 14 megapixel sensor, large 3.0\" LCD screen and 720p HD (30fps) movie capture.\r\n\t\t\t\t\t\t</p>\r\n\r\n\t\t\t\t\t\t<h5>Electric powered Fujinon 18x zoom lens</h5>\r\n\t\t\t\t\t\t<p>\r\n\t\t\t\t\t\tThe S2950 sports an impressive 28mm – 504mm* high precision Fujinon optical zoom lens. Simple to operate with an electric powered zoom lever, the huge zoom range means that you can capture all the detail, even when you're at a considerable distance away. You can even operate the zoom during video shooting. Unlike a bulky D-SLR, bridge cameras allow you great versatility of zoom, without the hassle of carrying a bag of lenses.\r\n\t\t\t\t\t\t</p>\r\n\t\t\t\t\t\t<h5>Impressive panoramas</h5>\r\n\t\t\t\t\t\t<p>\r\n\t\t\t\t\t\tWith its easy to use Panoramic shooting mode you can get creative on the S2950, however basic your skills, and rest assured that you will not risk shooting uneven landscapes or shaky horizons. The camera enables you to take three successive shots with a helpful tool which automatically releases the shutter once the images are fully aligned to seamlessly stitch the shots together in-camera. It's so easy and the results are impressive.\r\n\t\t\t\t\t\t</p>\r\n\r\n\t\t\t\t\t\t<h5>Sharp, clear shots</h5>\r\n\t\t\t\t\t\t<p>\r\n\t\t\t\t\t\tEven at the longest zoom settings or in the most challenging of lighting conditions, the S2950 is able to produce crisp, clean results. With its mechanically stabilised 1/2 3\", 14 megapixel CCD sensor, and high ISO sensitivity settings, Fujifilm's Dual Image Stabilisation technology combines to reduce the blurring effects of both hand-shake and subject movement to provide superb pictures.\r\n\t\t\t\t\t\t</p>-->\r\n\t\t\t\t  </div>\r\n\t\t\t\t\t<div class=\"tab-pane fade\" id=\"profile\">\r\n\t\t\t\t\t\t<div id=\"myTab\" class=\"pull-right\">\r\n\t\t\t\t\t\t <a href=\"#listView\" data-toggle=\"tab\" (click)=\"activeTabButton = 'list'\"><span class=\"btn btn-large\" [class.active]=\"activeTabButton === 'list'\"><i class=\"icon-list\" [class.icon-white]=\"activeTabButton === 'list'\"></i></span></a>\r\n\t\t\t\t\t\t <a href=\"#blockView\" data-toggle=\"tab\" (click)=\"activeTabButton = 'block'\"><span class=\"btn btn-large\"  [class.active]=\"activeTabButton === 'block'\"><i class=\"icon-th-large\" [class.icon-white]=\"activeTabButton === 'block'\"></i></span></a>\r\n\t\t\t\t\t\t</div>\r\n\t\t\t\t\t\t<br class=\"clr\"/>\r\n\r\n\t\t\t\t\t\t<div class=\"tab-content\">\r\n\t\t\t\t\t\t\t<div class=\"tab-pane\" id=\"listView\">\r\n\t\t\t\t\t\t\t\r\n\t\t\t\t\t\t\t\t<div *ngFor=\"let item of products;\">\r\n\t\t\t\t\t\t\t\t\t<div class=\"row\">\t  \r\n\t\t\t\t\t\t\t\t\t\t<div id=\"productView\" class=\"span2\">\r\n\t\t\t\t\t\t\t\t\t\t\t<img src=\"{{item.imgUrl}}\" alt=\"\"/>\r\n\t\t\t\t\t\t\t\t\t\t</div>\r\n\t\t\t\t\t\t\t\t\t\t<div class=\"span4\">\r\n\t\t\t\t\t\t\t\t\t\t\t<h3>{{item.name}}</h3>\t\t\t\t\r\n\t\t\t\t\t\t\t\t\t\t\t<p>\r\n\t\t\t\t\t\t\t\t\t\t\t{{item.description}}\r\n\t\t\t\t\t\t\t\t\t\t\t</p>\r\n\t\t\t\t\t\t\t\t\t\t\t<br class=\"clr\"/>\r\n\t\t\t\t\t\t\t\t\t\t</div>\r\n\t\t\t\t\t\t\t\t\t\t<div class=\"span3 alignR\">\r\n\t\t\t\t\t\t\t\t\t\t<form class=\"form-horizontal qtyFrm\">\r\n\t\t\t\t\t\t\t\t\t\t<h3>{{item.price}} RUB</h3>\r\n\t\t\t\t\t\t\t\t\t\t  <a class=\"btn btn-large colorButton\" (click)=\"purchaseProduct({productId: item._id,\r\n\t\t\t\t\t\t\t\t\t\t  number: 1})\"><span class=\"icon-white icon-shopping-cart\"></span> Купить</a>\r\n\t\t\t\t\t\t\t\t\t\t  <a routerLink=\"/product_details/{{item._id}}\" class=\"btn btn-large\">Подробнее</a>\r\n\t\t\t\t\t\t\t\t\t\t\t</form>\r\n\t\t\t\t\t\t\t\t\t\t</div>\r\n\t\t\t\t\t\t\t\t\t</div>\r\n\t\t\t\t\t\t\t\t\t<hr class=\"soft\"/>\r\n\t\t\t\t\t\t\t\t</div>\r\n\r\n\t\t\t\t\t\t\t</div>\t\t\t\t\t\r\n\t\t\t\t\t\t\r\n\t\t\t\t\t\t\t<div class=\"tab-pane active\" id=\"blockView\">\r\n\t\t\t\t\t\t\t\t<ul class=\"thumbnails\">\r\n\r\n\t\t\t\t\t\t\t\t\t<li class=\"span3\" *ngFor=\"let item of products;\">\r\n\t\t\t\t\t\t\t\t  \r\n\t\t\t\t\t\t\t\t\t\t<div class=\"thumbnail\">\r\n\t\t\t\t\t\t\t\t\t\t\t<a routerLink=\"/product_details/{{item._id}}\">\r\n\t\t\t\t\t\t\t\t\t\t\t\t<img src=\"{{item.imgUrl}}\" alt=\"\"/>\r\n\t\t\t\t\t\t\t\t\t\t\t</a>\r\n\t\t\t\t\t\t\t\t\t\t\t<div class=\"caption\" align=\"center\">\r\n\t\t\t\t\t\t\t\t\t\t\t\t<div class=\"text\">\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t<h5>{{item.name}}</h5>\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t<p> \r\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t<!--I'm a paragraph. Click here--> \r\n\t\t\t\t\t\t\t\t\t\t\t\t\t</p>\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t<h4>{{item.price}} RUB</h4>\r\n\t\t\t\t\t\t\t\t\t\t\t\t</div>\r\n\t\t\t\t\t\t\t\t\t\t\t\t<div class=\"icons\" align=\"center\">\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t<i class=\"fa fa-shopping-cart iconBorder iconBorderCart\" \r\n\t\t\t\t\t\t\t\t\t\t\t\t\t(click)=\"purchaseProduct({productId: item._id, number: 1})\"></i>\r\n\t\t\t\t\t\t\t\t\t\t\t\t</div>\r\n\t\t\t\t\t\t\t\t\t\t\t</div>\r\n\t\t\t\t\t\t\t\t\t\t</div>\r\n\t\t\t\t\t\t\t\t\t\t  \r\n\t\t\t\t\t\t\t\t\t</li>\r\n\r\n\t\t\t\t\t\t\t\t</ul>\r\n\r\n\t\t\t\t\t\t\t</div>\r\n\t\t\t\t\t\t</div>\r\n\r\n\t\t\t\t\t\t<br class=\"clr\">\r\n\r\n\t\t\t\t\t</div>\r\n\t\t\t\t</div>\r\n\t\t  </div>\r\n\r\n\t\t</div>\r\n\t</div>\r\n</div> <!-- Body wrapper -->"
-
-/***/ }),
-
-/***/ "../../../../../src/app/product_details.component.ts":
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__assets_fancybox_source_jquery_fancybox_pack_js_v_2_1_6__ = __webpack_require__("../../../../../src/app/assets/fancybox/source/jquery.fancybox.pack.js?v=2.1.6");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__assets_fancybox_source_jquery_fancybox_pack_js_v_2_1_6___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0__assets_fancybox_source_jquery_fancybox_pack_js_v_2_1_6__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__assets_fancybox_source_helpers_jquery_fancybox_buttons_js_v_1_0_5__ = __webpack_require__("../../../../../src/app/assets/fancybox/source/helpers/jquery.fancybox-buttons.js?v=1.0.5");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__assets_fancybox_source_helpers_jquery_fancybox_buttons_js_v_1_0_5___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1__assets_fancybox_source_helpers_jquery_fancybox_buttons_js_v_1_0_5__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__assets_fancybox_source_helpers_jquery_fancybox_media_js_v_1_0_6__ = __webpack_require__("../../../../../src/app/assets/fancybox/source/helpers/jquery.fancybox-media.js?v=1.0.6");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__assets_fancybox_source_helpers_jquery_fancybox_media_js_v_1_0_6___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2__assets_fancybox_source_helpers_jquery_fancybox_media_js_v_1_0_6__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__assets_fancybox_source_helpers_jquery_fancybox_thumbs_js_v_1_0_7__ = __webpack_require__("../../../../../src/app/assets/fancybox/source/helpers/jquery.fancybox-thumbs.js?v=1.0.7");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__assets_fancybox_source_helpers_jquery_fancybox_thumbs_js_v_1_0_7___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3__assets_fancybox_source_helpers_jquery_fancybox_thumbs_js_v_1_0_7__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__angular_core__ = __webpack_require__("../../../core/@angular/core.es5.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__angular_router__ = __webpack_require__("../../../router/@angular/router.es5.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__product_service__ = __webpack_require__("../../../../../src/app/product.service.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__assets_ng2_toastr_ng2_toastr__ = __webpack_require__("../../../../../src/app/assets/ng2-toastr/ng2-toastr.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__assets_ng2_toastr_ng2_toastr___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_7__assets_ng2_toastr_ng2_toastr__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8_rxjs_add_operator_switchMap__ = __webpack_require__("../../../../rxjs/add/operator/switchMap.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8_rxjs_add_operator_switchMap___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_8_rxjs_add_operator_switchMap__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return ProductDetailsComponent; });
-var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
-    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-    return c > 3 && r && Object.defineProperty(target, key, r), r;
-};
-var __metadata = (this && this.__metadata) || function (k, v) {
-    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
-};
-
-
-
-
-
-
-
-
-
-var ProductDetailsComponent = (function () {
-    function ProductDetailsComponent(productService, toastr, vcr, route) {
-        this.productService = productService;
-        this.toastr = toastr;
-        this.route = route;
-        this.categories = { "Гроубоксы": "growboxes", "Свет": "lights", "Автоматизация": "automatics" };
-        this.top = '0';
-        this.activeTabButton = "block";
-        this.toastr.setRootViewContainerRef(vcr);
-    }
-    ProductDetailsComponent.prototype.ngOnInit = function () {
-        var _this = this;
-        this.route.params
-            .switchMap(function (params) { return _this.productService.getProductDetails(params['id']); })
-            .subscribe(function (productDetail) {
-            _this.productDetail = productDetail;
-            _this.getCategoryProducts();
-        }, function (err) { return console.log("httpError: ", err); });
-        $(".fancybox-thumb").fancybox({
-            prevEffect: 'none',
-            nextEffect: 'none',
-            helpers: {
-                title: {
-                    type: 'outside'
-                },
-                thumbs: {
-                    width: 50,
-                    height: 50
-                }
-            }
-        });
-        $(window).resize(this.debounce(function () {
-            if (document.body.clientWidth < 962) {
-                _this.top = '13px';
-            }
-            else {
-                _this.top = '0';
-            }
-        }, 50));
-    };
-    ProductDetailsComponent.prototype.getCategoryProducts = function () {
-        var _this = this;
-        this.productService.getCategoryProducts(this.productDetail.category)
-            .then(function (products) { return _this.products = products; }, function (err) { return console.log("httpError: ", err); });
-    };
-    ProductDetailsComponent.prototype.purchaseProduct = function (product) {
-        var _this = this;
-        this.productService
-            .purchaseProduct(product)
-            .then(function (products) {
-            _this.productsInBucket = products;
-            _this.productService.onPurchased(_this.productsInBucket.numberOfPurchasedProducts);
-            _this.toastr.success('Товар добавлен в корзину');
-        }, function (err) {
-            _this.toastr.error('Товар не был добавлен в корзину', 'Ошибка');
-        });
-    };
-    ProductDetailsComponent.prototype.debounce = function (f, ms) {
-        var state = null;
-        var COOLDOWN = 1;
-        return function () {
-            if (state)
-                return;
-            f.apply(this, arguments);
-            state = COOLDOWN;
-            setTimeout(function () { state = null; }, ms);
-        };
-    };
-    return ProductDetailsComponent;
-}());
-ProductDetailsComponent = __decorate([
-    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_4__angular_core__["Component"])({
-        selector: 'shop-product-details',
-        template: __webpack_require__("../../../../../src/app/product_details.component.html"),
-        styles: [__webpack_require__("../../../../../src/app/assets/bootshop/css/bootstrap.css"), __webpack_require__("../../../../../src/app/assets/bootshop/css/bootstrap-responsive.css"), __webpack_require__("../../../../../src/app/assets/bootshop/css/style.css"), __webpack_require__("../../../../../src/app/assets/bootshop/js/google-code-prettify/prettify.css"), __webpack_require__("../../../../../src/app/assets/css/progressusStyles.css")]
-    }),
-    __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_6__product_service__["a" /* ProductService */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_6__product_service__["a" /* ProductService */]) === "function" && _a || Object, typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_7__assets_ng2_toastr_ng2_toastr__["ToastsManager"] !== "undefined" && __WEBPACK_IMPORTED_MODULE_7__assets_ng2_toastr_ng2_toastr__["ToastsManager"]) === "function" && _b || Object, typeof (_c = typeof __WEBPACK_IMPORTED_MODULE_4__angular_core__["ViewContainerRef"] !== "undefined" && __WEBPACK_IMPORTED_MODULE_4__angular_core__["ViewContainerRef"]) === "function" && _c || Object, typeof (_d = typeof __WEBPACK_IMPORTED_MODULE_5__angular_router__["b" /* ActivatedRoute */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_5__angular_router__["b" /* ActivatedRoute */]) === "function" && _d || Object])
-], ProductDetailsComponent);
-
-var _a, _b, _c, _d;
-//# sourceMappingURL=product_details.component.js.map
-
-/***/ }),
-
-/***/ "../../../../../src/app/product_summary.component.html":
-/***/ (function(module, exports) {
-
-module.exports = "<div class=\"buyPagesContainer\" *ngIf=\"productsInBucket\">\r\n\r\n\t<ul class=\"breadcrumb\">\r\n\t\t<li><a routerLink=\"/home\">Главная</a> <span class=\"divider\">/</span></li>\r\n\t\t<li class=\"active\">Корзина покупок</li>\r\n    </ul>\r\n\r\n\t<section class=\"main-content\">\t\t\t\t\r\n\t\t<div>\r\n\t\t\t<div>\t\t\t\t\t\r\n\t\t\t\t<h3 class=\"title\"><span class=\"text\">Корзина покупок</span></h3>\r\n\t\t\t\t<hr class=\"soft\"/>\r\n\r\n\t\t\t\t<div class=\"bucketTable\" *ngIf=\"productsInBucket.length > 0\">\r\n\t\t\t\t\t<table class=\"table table-striped\">\r\n\t\t\t\t\t\t<thead>\r\n\t\t\t\t\t\t\t<tr>\r\n\t\t\t\t\t\t\t\t<th>УБРАТЬ</th>\r\n\t\t\t\t\t\t\t\t<th>ИЗОБРАЖЕНИЕ</th>\r\n\t\t\t\t\t\t\t\t<th>НАЗВАНИЕ</th>\r\n\t\t\t\t\t\t\t\t<th>КОЛИЧЕСТВО</th>\r\n\t\t\t\t\t\t\t\t<th>ЦЕНА ЗА ШТ.</th>\r\n\t\t\t\t\t\t\t\t<th>ВСЕГО</th>\r\n\t\t\t\t\t\t\t</tr>\r\n\t\t\t\t\t\t</thead>\r\n\t\t\t\t\t\t<tbody>\r\n\t\t\t\t\t\t\t<tr *ngFor=\"let item of productsInBucket\">\r\n\t\t\t\t\t\t\t\t<td><button type=\"button\" class=\"close pull-left\" aria-label=\"Close\" (click)=\"deleteProduct(item)\"><span aria-hidden=\"true\">&times;</span></button></td>\r\n\t\t\t\t\t\t\t\t<td class=\"span4\"><a routerLink=\"/product_details/{{item.product._id}}\"><img alt=\"\" src=\"{{item.product.imgUrl}}\"></a></td>\r\n\t\t\t\t\t\t\t\t<td>{{item.product.name}}</td>\r\n\t\t\t\t\t\t\t\t<td><input type=\"number\" min=\"1\" class=\"input-mini\" [(ngModel)]=\"item.number\" (input)=\"updateProduct(item)\"></td>\r\n\t\t\t\t\t\t\t\t<td>{{item.product.price}}</td>\r\n\t\t\t\t\t\t\t\t<td>{{item.product.price * item.number}}</td>\r\n\t\t\t\t\t\t\t</tr>\r\n\t\t\t\t\t\t\t<!--<tr>\r\n\t\t\t\t\t\t\t\t<td><button type=\"button\" class=\"close pull-left\" aria-label=\"Close\"><span aria-hidden=\"true\">&times;</span></button></td>\r\n\t\t\t\t\t\t\t\t<td class=\"span4\"><a href=\"product_detail.html\"><img alt=\"\" src=\"assets/products/large/1.jpg\"></a></td>\r\n\t\t\t\t\t\t\t\t<td>Fusce id molestie massa</td>\r\n\t\t\t\t\t\t\t\t<td><input type=\"text\" placeholder=\"1\" class=\"input-mini\"></td>\r\n\t\t\t\t\t\t\t\t<td>$2,350.00</td>\r\n\t\t\t\t\t\t\t\t<td>$2,350.00</td>\r\n\t\t\t\t\t\t\t</tr>\t\t\t  \r\n\t\t\t\t\t\t\t<tr>\r\n\t\t\t\t\t\t\t\t<td class=\"center-block\"><button type=\"button\" class=\"close pull-left\" aria-label=\"Close\"><span aria-hidden=\"true\">&times;</span></button></td>\r\n\t\t\t\t\t\t\t\t<td class=\"span4\"><a href=\"product_detail.html\"><img alt=\"\" src=\"assets/products/large/2.jpg\"></a></td>\r\n\t\t\t\t\t\t\t\t<td>Luctus quam ultrices rutrum</td>\r\n\t\t\t\t\t\t\t\t<td><input type=\"text\" placeholder=\"2\" class=\"input-mini\"></td>\r\n\t\t\t\t\t\t\t\t<td>$1,150.00</td>\r\n\t\t\t\t\t\t\t\t<td>$2,450.00</td>\r\n\t\t\t\t\t\t\t</tr>\r\n\t\t\t\t\t\t\t<tr>\r\n\t\t\t\t\t\t\t\t<td class=\"center-block\"><button type=\"button\" class=\"close pull-left\" aria-label=\"Close\"><span aria-hidden=\"true\">&times;</span></button></td>\r\n\t\t\t\t\t\t\t\t<td class=\"span4\"><a href=\"product_detail.html\"><img alt=\"\" src=\"assets/products/large/6.jpg\"></a></td>\r\n\t\t\t\t\t\t\t\t<td>Wuam ultrices rutrum</td>\r\n\t\t\t\t\t\t\t\t<td><input type=\"text\" placeholder=\"1\" class=\"input-mini\"></td>\r\n\t\t\t\t\t\t\t\t<td>$1,210.00</td>\r\n\t\t\t\t\t\t\t\t<td>$1,123.00</td>\r\n\t\t\t\t\t\t\t</tr>-->\r\n\t\t\t\t\t\t\t<tr>\r\n\t\t\t\t\t\t\t\t<td>&nbsp;</td>\r\n\t\t\t\t\t\t\t\t<td>&nbsp;</td>\r\n\t\t\t\t\t\t\t\t<td>&nbsp;</td>\r\n\t\t\t\t\t\t\t\t<td>&nbsp;</td>\r\n\t\t\t\t\t\t\t\t<td>&nbsp;</td>\r\n\t\t\t\t\t\t\t\t<td><strong>{{sumPrice}} RUB</strong></td>\r\n\t\t\t\t\t\t\t</tr>\t\t  \r\n\t\t\t\t\t\t</tbody>\r\n\t\t\t\t\t</table>\r\n\t\t\t\t\t\r\n\t\t\t\t\t<p class=\"buttons center\">\t\t\t\t\r\n\t\t\t\t\t\t<button class=\"btn btn-large\" type=\"button\" routerLink=\"/products/growboxes\">Продолжить покупки</button>\r\n\t\t\t\t\t\t<button class=\"btn btn-large colorButton pull-right\" type=\"submit\" id=\"checkout\" routerLink=\"/checkout\">Оформление заказа</button>\r\n\t\t\t\t\t</p>\r\n\t\t\t\t</div>\t\r\n\t\t\t\t<div *ngIf=\"productsInBucket.length == 0\">\r\n\t\t\t\t\t<h5>Корзина пуста!</h5>\r\n\t\t\t\t\t<p class=\"buttons center\" style=\"margin-top: 15px\">\t\t\t\t\r\n\t\t\t\t\t\t<button class=\"btn btn-large colorButton pull-right\" type=\"submit\" id=\"checkout\" routerLink=\"/home\">Продолжить</button>\r\n\t\t\t\t\t</p>\r\n\t\t\t\t</div>\t\t\t\t\r\n\t\t\t</div>\r\n\t\t</div>\r\n\t</section>\t\r\n\t\r\n</div>"
-
-/***/ }),
-
-/***/ "../../../../../src/app/product_summary.component.ts":
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/@angular/core.es5.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_router__ = __webpack_require__("../../../router/@angular/router.es5.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__product_service__ = __webpack_require__("../../../../../src/app/product.service.ts");
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return ProductSummaryComponent; });
-var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
-    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-    return c > 3 && r && Object.defineProperty(target, key, r), r;
-};
-var __metadata = (this && this.__metadata) || function (k, v) {
-    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
-};
-
-
-
-var ProductSummaryComponent = (function () {
-    function ProductSummaryComponent(router, productService) {
-        this.router = router;
-        this.productService = productService;
-        this.sumPrice = 0;
-    }
-    ProductSummaryComponent.prototype.ngOnInit = function () {
-        this.getPurchasedProducts();
-    };
-    ProductSummaryComponent.prototype.getPurchasedProducts = function () {
-        var _this = this;
-        this.productService
-            .getPurchasedProducts()
-            .then(function (products) {
-            _this.productsInBucket = products.products;
-            _this.sumPrice = products.sumPrice;
-        });
-    };
-    ProductSummaryComponent.prototype.deleteProduct = function (item) {
-        var _this = this;
-        this.productService
-            .deletePurchasedProduct(item)
-            .then(function (products) {
-            _this.productsInBucket = products.products;
-            _this.sumPrice = products.sumPrice;
-            _this.productService.onPurchased(products.numberOfPurchasedProducts);
-        });
-    };
-    ProductSummaryComponent.prototype.updateProduct = function (item) {
-        var _this = this;
-        setTimeout(function () {
-            _this.productService
-                .updatePurchasedProduct(item)
-                .then(function (products) {
-                _this.productsInBucket = products.products;
-                _this.sumPrice = products.sumPrice;
-                _this.productService.onPurchased(products.numberOfPurchasedProducts);
-            });
-        }, 0);
-        //this.router.navigate(['/checkout']);
-    };
-    return ProductSummaryComponent;
-}());
-ProductSummaryComponent = __decorate([
-    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
-        selector: 'shop-product-summary',
-        template: __webpack_require__("../../../../../src/app/product_summary.component.html"),
-        styles: [__webpack_require__("../../../../../src/app/assets/bootshop/css/bootstrap.css"), __webpack_require__("../../../../../src/app/assets/bootshop/css/bootstrap-responsive.css"), __webpack_require__("../../../../../src/app/assets/bootshop/css/style.css"), __webpack_require__("../../../../../src/app/assets/bootshop/js/google-code-prettify/prettify.css"), __webpack_require__("../../../../../src/app/assets/css/progressusStyles.css")]
-    }),
-    __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1__angular_router__["c" /* Router */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1__angular_router__["c" /* Router */]) === "function" && _a || Object, typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_2__product_service__["a" /* ProductService */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_2__product_service__["a" /* ProductService */]) === "function" && _b || Object])
-], ProductSummaryComponent);
-
-var _a, _b;
-//# sourceMappingURL=product_summary.component.js.map
-
-/***/ }),
-
-/***/ "../../../../../src/app/products.component.html":
-/***/ (function(module, exports) {
-
-module.exports = "<div class=\"row buyPagesContainer\" *ngIf=\"products\">\r\n\r\n\t\r\n\t<div class=\"span9\" style=\"width: auto\">\r\n    <ul class=\"breadcrumb\">\r\n\t\t\t<li><a routerLink=\"/home\">Главная</a> <span class=\"divider\">/</span></li>\r\n\t\t\t<li class=\"active\">{{categories[category]}}</li>\r\n    </ul>\r\n\t\t<h3> {{categories[category]}} <!--<small class=\"pull-right\"> 40 products are available </small>--></h3>\t\r\n\t\t<hr class=\"soft\"/>\r\n\t\t<p>\r\n\t\t\t<!--Nowadays the lingerie industry is one of the most successful business spheres.We always stay in touch with the latest fashion tendencies - that is why our goods are so popular and we have a great number of faithful customers all over the country.-->\r\n\t\t\tГроубоксы выполнены в корпусах системных блоков. Совокупность эстетического внешнего вида, малых габаритов, современных технических решений обеспечивает необходимые условия роста и развития растения, одновременно с этим гроубокс не вызывает излишний интерес окружающих.\r\n\t\t</p>\r\n\t\t<hr class=\"soft\"/>\r\n\t\t<!--<form class=\"form-horizontal span6\">\r\n\t\t\t<div class=\"control-group\">\r\n\t\t\t  <label class=\"control-label alignL\">Sort By &nbsp;</label>\r\n\t\t\t\t<select>\r\n\t\t      <option>Product name A - Z</option>\r\n\t\t      <option>Product name Z - A</option>\r\n\t\t      <option>Product Stoke</option>\r\n\t\t      <option>Price Lowest first</option>\r\n\t      </select>\r\n\t\t\t</div>\r\n\t\t</form>-->\r\n\t  \r\n\t\t<div id=\"myTab\" class=\"pull-right\">\r\n\t\t <a href=\"#listView\" data-toggle=\"tab\" (click)=\"activeTabButton = 'list'\"><span class=\"btn btn-large\" [class.active]=\"activeTabButton === 'list'\"><i class=\"icon-list\" [class.icon-white]=\"activeTabButton === 'list'\"></i></span></a>\r\n\t\t <a href=\"#blockView\" data-toggle=\"tab\" (click)=\"activeTabButton = 'block'\"><span class=\"btn btn-large\"  [class.active]=\"activeTabButton === 'block'\"><i class=\"icon-th-large\" [class.icon-white]=\"activeTabButton === 'block'\"></i></span></a>\r\n\t\t</div>\r\n\t\t<br class=\"clr\"/>\r\n\t\t<div class=\"tab-content\">\r\n\t\t\t<div class=\"tab-pane\" id=\"listView\" >\r\n\r\n\t\t\t\t<div *ngFor=\"let item of products\">\r\n\t\t\t\t\t<div class=\"row\">\t  \r\n\t\t\t\t\t\t<div id=\"productView\" class=\"span2\">\r\n\t\t\t\t\t\t\t<img src=\"{{item.imgUrl}}\" alt=\"\"/>\r\n\t\t\t\t\t\t</div>\r\n\t\t\t\t\t\t<div class=\"span4\">\r\n\t\t\t\t\t\t\t<h3>{{item.name}}</h3>\t\t\t\t\r\n\t\t\t\t\t\t\t<p>\r\n\t\t\t\t\t\t\t{{item.description}}\r\n\t\t\t\t\t\t\t</p>\r\n\t\t\t\t\t\t\t<br class=\"clr\"/>\r\n\t\t\t\t\t\t</div>\r\n\t\t\t\t\t\t<div class=\"span3 alignR\">\r\n\t\t\t\t\t\t<form class=\"form-horizontal qtyFrm\">\r\n\t\t\t\t\t\t<h3> {{item.price}} RUB</h3>\r\n\t\t\t\t\t\t  <a class=\"btn btn-large colorButton\" (click)=\"purchaseProduct({productId: item._id,\r\n\t\t\t\t\t\t\t  number: 1})\"><span class=\"icon-white icon-shopping-cart\"></span> Купить</a>\r\n\t\t\t\t\t\t  <a routerLink=\"/product_details/{{item._id}}\" class=\"btn btn-large\">Подробнее</a>\r\n\t\t\t\t\t\t\t</form>\r\n\t\t\t\t\t\t</div>\r\n\t\t\t\t\t</div>\r\n\t\t\t\t\t<hr class=\"soft\"/>\r\n\t\t\t\t</div>\r\n\r\n\t\t\t\t<!--<hr class=\"soft\"/>-->\r\n\t\t\t</div>\r\n\r\n\t\t\t<div class=\"tab-pane active\" id=\"blockView\">\r\n\t\t\t\t<ul class=\"thumbnails\">\r\n\r\n\t\t\t\t\t<li class=\"span3\" *ngFor=\"let item of products;\">\r\n\t\t\t\t\t\t  \r\n\t\t\t\t\t\t  <div class=\"thumbnail\">\r\n\t\t\t\t\t\t\t\t<a routerLink=\"/product_details/{{item._id}}\">\r\n\t\t\t\t\t\t\t\t\t<img src=\"{{item.imgUrl}}\" alt=\"\"/>\r\n\t\t\t\t\t\t\t\t</a>\r\n\t\t\t\t\t\t\t\t<div class=\"caption\" align=\"center\">\r\n\t\t\t\t\t\t\t\t\t<div class=\"text\">\r\n\t\t\t\t\t\t\t\t\t  <h5>{{item.name}}</h5>\r\n\t\t\t\t\t\t\t\t\t  <p> \r\n\t\t\t\t\t\t\t\t\t\t<!--I'm a paragraph. Click here--> \r\n\t\t\t\t\t\t\t\t\t  </p>\r\n\t\t\t\t\t\t\t\t\t  <h4>{{item.price}} RUB</h4>\r\n\t\t\t\t\t\t\t\t  </div>\r\n\t\t\t\t\t\t\t\t  <div class=\"icons\" align=\"center\">\r\n\t\t\t\t\t\t\t\t\t\t<i class=\"fa fa-shopping-cart iconBorder iconBorderCart\" \r\n\t\t\t\t\t\t\t\t\t\t(click)=\"purchaseProduct({productId: item._id, number: 1})\"></i>\r\n\t\t\t\t\t\t\t\t\t</div>\r\n\t\t\t\t\t\t\t\t</div>\r\n\t\t\t\t\t\t  </div>\r\n\t\t\t\t\t\t  \r\n\t\t\t\t\t</li>\r\n\t\t\t\t\t\r\n\t\t\t\t</ul>\r\n\t\t\t<!--<hr class=\"soft\"/>-->\r\n\t\t\t</div>\r\n\t\t</div>\r\n\r\n\t\t<!--<div class=\"pagination\">\r\n\t\t\t\t<ul>\r\n\t\t\t\t<li><a href=\"#\">&lsaquo;</a></li>\r\n\t\t\t\t<li><a href=\"#\">1</a></li>\r\n\t\t\t\t<li><a href=\"#\">2</a></li>\r\n\t\t\t\t<li><a href=\"#\">3</a></li>\r\n\t\t\t\t<li><a href=\"#\">4</a></li>\r\n\t\t\t\t<li><a href=\"#\">...</a></li>\r\n\t\t\t\t<li><a href=\"#\">&rsaquo;</a></li>\r\n\t\t\t\t</ul>\r\n\t\t</div>\r\n\t\t\t\t<br class=\"clr\"/>-->\r\n\t</div>\r\n\r\n</div>"
-
-/***/ }),
-
-/***/ "../../../../../src/app/products.component.ts":
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/@angular/core.es5.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__product_service__ = __webpack_require__("../../../../../src/app/product.service.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_router__ = __webpack_require__("../../../router/@angular/router.es5.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__assets_ng2_toastr_ng2_toastr__ = __webpack_require__("../../../../../src/app/assets/ng2-toastr/ng2-toastr.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__assets_ng2_toastr_ng2_toastr___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3__assets_ng2_toastr_ng2_toastr__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return ProductsComponent; });
-var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
-    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-    return c > 3 && r && Object.defineProperty(target, key, r), r;
-};
-var __metadata = (this && this.__metadata) || function (k, v) {
-    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
-};
-
-
-
-
-var ProductsComponent = (function () {
-    function ProductsComponent(productService, toastr, vcr, route) {
-        this.productService = productService;
-        this.toastr = toastr;
-        this.route = route;
-        this.categories = { growboxes: "Гроубоксы", lights: "Свет", automatics: "Автоматизация" };
-        this.activeTabButton = "block";
-        this.toastr.setRootViewContainerRef(vcr);
-    }
-    ProductsComponent.prototype.ngOnInit = function () {
-        var _this = this;
-        this.route.params
-            .switchMap(function (params) {
-            return _this.productService.getCategoryProducts(_this.categories[_this.category = params['id']]);
-        })
-            .subscribe(function (products) { return _this.products = products; }, function (err) { return console.log("httpError: ", err); });
-    };
-    ProductsComponent.prototype.purchaseProduct = function (product) {
-        var _this = this;
-        this.productService
-            .purchaseProduct(product)
-            .then(function (products) {
-            _this.productsInBucket = products;
-            _this.productService.onPurchased(_this.productsInBucket.numberOfPurchasedProducts);
-            _this.toastr.success('Товар добавлен в корзину');
-        }, function (err) {
-            _this.toastr.error('Товар не был добавлен в корзину', 'Ошибка');
-        });
-    };
-    return ProductsComponent;
-}());
-ProductsComponent = __decorate([
-    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
-        selector: 'shop-products',
-        template: __webpack_require__("../../../../../src/app/products.component.html"),
-        styles: [__webpack_require__("../../../../../src/app/assets/bootshop/css/bootstrap.css"), __webpack_require__("../../../../../src/app/assets/bootshop/css/bootstrap-responsive.css"), __webpack_require__("../../../../../src/app/assets/bootshop/css/style.css"), __webpack_require__("../../../../../src/app/assets/bootshop/js/google-code-prettify/prettify.css"), __webpack_require__("../../../../../src/app/assets/css/progressusStyles.css")]
-    }),
-    __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1__product_service__["a" /* ProductService */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1__product_service__["a" /* ProductService */]) === "function" && _a || Object, typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_3__assets_ng2_toastr_ng2_toastr__["ToastsManager"] !== "undefined" && __WEBPACK_IMPORTED_MODULE_3__assets_ng2_toastr_ng2_toastr__["ToastsManager"]) === "function" && _b || Object, typeof (_c = typeof __WEBPACK_IMPORTED_MODULE_0__angular_core__["ViewContainerRef"] !== "undefined" && __WEBPACK_IMPORTED_MODULE_0__angular_core__["ViewContainerRef"]) === "function" && _c || Object, typeof (_d = typeof __WEBPACK_IMPORTED_MODULE_2__angular_router__["b" /* ActivatedRoute */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_2__angular_router__["b" /* ActivatedRoute */]) === "function" && _d || Object])
-], ProductsComponent);
-
-var _a, _b, _c, _d;
-//# sourceMappingURL=products.component.js.map
-
-/***/ }),
-
-/***/ "../../../../../src/app/regions.ts":
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return REGIONS; });
-var REGIONS = [
-    "Алтайский край",
-    "Амурская область",
-    "Архангельская область",
-    "Астраханская область",
-    "Белгородская область",
-    "Брянская область",
-    "Владимирская область",
-    "Волгоградская область",
-    "Вологодская область",
-    "Воронежская область",
-    "Еврейская автономная область",
-    "Забайкальский край",
-    "Ивановская область",
-    "Иркутская область",
-    "Кабардино-Балкарская Республика",
-    "Калининградская область",
-    "Калужская область",
-    "Камчатский край",
-    "Карачаево-Черкесская Республика",
-    "Кемеровская область",
-    "Кировская область",
-    "Костромская область",
-    "Краснодарский край",
-    "Красноярский край",
-    "Курганская область",
-    "Курская область",
-    "Ленинградская область",
-    "Липецкая область",
-    "Магаданская область",
-    "Московская область",
-    "Мурманская область",
-    "Ненецкий автономный округ",
-    "Нижегородская область",
-    "Новгородская область",
-    "Новосибирская область",
-    "Омская область",
-    "Оренбургская область",
-    "Орловская область",
-    "Пензенская область",
-    "Пермский край",
-    "Приморский край",
-    "Псковская область",
-    "Республика Адыгея (Адыгея)",
-    "Республика Алтай",
-    "Республика Башкортостан",
-    "Республика Бурятия",
-    "Республика Дагестан",
-    "Республика Ингушетия",
-    "Республика Калмыкия",
-    "Республика Карелия",
-    "Республика Коми",
-    "Республика Крым",
-    "Республика Марий Эл",
-    "Республика Мордовия",
-    "Республика Саха (Якутия)",
-    "Республика Северная Осетия - Алания",
-    "Республика Татарстан (Татарстан)",
-    "Республика Тыва",
-    "Республика Хакасия",
-    "Ростовская область",
-    "Рязанская область",
-    "Самарская область",
-    "Саратовская область",
-    "Сахалинская область",
-    "Свердловская область",
-    "Смоленская область",
-    "Ставропольский край",
-    "Тамбовская область",
-    "Тверская область",
-    "Томская область",
-    "Тульская область",
-    "Тюменская область",
-    "Удмуртская Республика",
-    "Ульяновская область",
-    "Хабаровский край",
-    "Ханты-Мансийский автономный округ - Югра",
-    "Челябинская область",
-    "Чеченская Республика",
-    "Чувашская Республика - Чувашия",
-    "Чукотский автономный округ",
-    "Ямало-Ненецкий автономный округ",
-    "Ярославская область"
-];
-//# sourceMappingURL=regions.js.map
 
 /***/ }),
 
@@ -2554,7 +2004,7 @@ var _a, _b, _c;
 /***/ "../../../../../src/app/top_header.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"background\">\r\n\t<div class=\"customContainer row\">\r\n\t\t<div class=\"col-lg-5 row\" align=\"center\" >\r\n\t\t\t<div class=\"col-lg-2\">\r\n\t\t\t<a routerLink=\"/home\"><img src=\"assets/images/logoHB1.jpg\" alt=\"Progressus HTML5 template\"></a>\r\n\t\t\t</div>\r\n\t\t\t<div class=\"logo col-lg-2 col-lg-offset-2\">\r\n\t\t\t\t<span class=\"hr1\">growboxes</span>\r\n\t\t\t\t<span class=\"hr4 nowrapString\">прогрессивное растениеводство</span>\r\n\t\t\t</div>\r\n\t\t</div>\r\n\t\t<div class=\"work col-lg-4\">\r\n\t\t<span class=\"hr3\">производство и продажа изделий для гровинга</span>\r\n\t\t</div>\r\n\t\t<div class=\"contacts col-lg-3\">\r\n\t\t\t<span class=\"hr3\">8 909 379 82 67</span>\r\n\t\t\t<span class=\"hr3 nowrapString\">E-mail: info@growboxes.ru</span>\r\n\t\t</div>\r\n\t</div>\r\n</div>"
+module.exports = "\r\n<div class=\"customContainer row\">\r\n\t<div class=\"col-lg-5 row\" align=\"center\" >\r\n\t\t<div class=\"col-lg-2\">\r\n\t\t<a routerLink=\"/home\"><img src=\"assets/images/logoHB1.jpg\" alt=\"Progressus HTML5 template\"></a>\r\n\t\t</div>\r\n\t\t<div class=\"logo col-lg-2 col-lg-offset-2\">\r\n\t\t\t<span class=\"hr1\">growboxes</span>\r\n\t\t\t<span class=\"hr4 nowrapString\">прогрессивное растениеводство</span>\r\n\t\t</div>\r\n\t</div>\r\n\t<div class=\"work col-lg-4\">\r\n\t<span class=\"hr3\">производство и продажа изделий для гровинга</span>\r\n\t</div>\r\n\t<div class=\"contacts col-lg-3\">\r\n\t\t<span class=\"hr3\">8 909 379 82 67</span>\r\n\t\t<span class=\"hr3 nowrapString\">E-mail: info@growboxes.ru</span>\r\n\t</div>\r\n</div>\r\n"
 
 /***/ }),
 
