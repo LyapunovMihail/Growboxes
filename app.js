@@ -2,7 +2,7 @@
 /**
  * Module dependencies.
  */
-
+var compression = require('compression')
 var express = require('express');
 var http = require('http');
 var path = require('path');
@@ -17,6 +17,8 @@ var port = process.env.PORT || config.get('port');
 
 
 var app = express();
+app.use(compression());
+
 app.set('port', port);
 
 app.engine('ejs', require('ejs-locals'));

@@ -26,7 +26,7 @@ import { ContactComponent } from './contact.component';
 //import { LoginComponent } from './login.component';
 //import { RegisterComponent } from './register.component';
 
-import { SaveProductComponent } from './save_product.component';
+//import { SaveProductComponent } from './save_product.component';
 
 import { ProductService } from './product.service';
 
@@ -82,11 +82,11 @@ import { HttpModule }    from '@angular/http';
 	   {
 	        path: 'register',
 	        component: RegisterComponent
-	   },*/
+	   },
 	   {
 	        path: 'save_product',
 	        component: SaveProductComponent
-	   }
+	   }*/
 	   
 	]) 
   ],
@@ -111,7 +111,7 @@ import { HttpModule }    from '@angular/http';
   	//LoginComponent,
   	//RegisterComponent,
 
-  	SaveProductComponent
+  	//SaveProductComponent
   ],
   providers: [ ProductService ],
   bootstrap: [ 
