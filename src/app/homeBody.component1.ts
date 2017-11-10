@@ -3,7 +3,9 @@ import "./assets/fancybox/source/helpers/jquery.fancybox-buttons.js?v=1.0.5"
 import "./assets/fancybox/source/helpers/jquery.fancybox-media.js?v=1.0.6"
 import "./assets/fancybox/source/helpers/jquery.fancybox-thumbs.js?v=1.0.7"
 
-import { Component, OnInit, ViewContainerRef } from '@angular/core';
+
+import { Component, OnInit, ViewContainerRef, ViewChild, ElementRef } from '@angular/core';
+import { NgModel } from '@angular/forms';
 import { ProductService } from './product.service';
 import { ToastsManager} from './assets/ng2-toastr/ng2-toastr';
 declare var $:any;
@@ -32,8 +34,14 @@ export class HomeBodyComponent1 {
   personalData = {email: "", name: "", surname: "", patronymic: "", telephone: "",
                   region: "", city: "", index: "", adress: ""};
   orderData: any;
-
   showLabelSubmitButton: boolean;
+
+  /*@ViewChild('myName') 
+  myName: NgModel;
+  @ViewChild('myEmail') 
+  myEmail: NgModel;
+  @ViewChild('myTel') 
+  myTel: NgModel;*/
 
 	ngOnInit() {
     if (document.body.clientWidth < 1171) {
@@ -41,6 +49,8 @@ export class HomeBodyComponent1 {
     } else {
       this.showLabelSubmitButton = true
     }
+    
+    
 
 		this.getCategoryProducts()
 
@@ -87,9 +97,15 @@ export class HomeBodyComponent1 {
         this.productService
         .ordering(this.orderData)
         .then(products => {
-          this.toastr.success('Ваша заявка принята!');
+          this.personalData.name = ""
+          this.personalData.email = ""
+          this.personalData.telephone = ""
+          this.toastr.success('Ваша заявка принята!');    
         }, err => {
           console.log("err: ", err);
+          this.personalData.name = ""
+          this.personalData.email = ""
+          this.personalData.telephone = ""
           this.toastr.success('Ваша заявка принята!');
           /*this.toastr.error('При отправке заявки произошла ошибка', 'Ошибка')*/});
       }, err => {
