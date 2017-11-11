@@ -9,11 +9,11 @@ var mongoose = require('../libs/mongoose');
 var schema = new Schema({
   email: {
     type: String,
-    required: false
+    required: true
   },
   name: {
     type: String,
-    required: false
+    required: true
   },
   surname: {
     type: String,
@@ -25,23 +25,23 @@ var schema = new Schema({
   },
   telephone: {
     type: String,
-    required: false
+    required: true
   },
   region: {
     type: String,
-    required: true
+    required: false
   },
   city: {
     type: String,
-    required: true
+    required: false
   },
   index: {
     type: String,
-    required: true
+    required: false
   },
   adress: {
     type: String,
-    required: true
+    required: false
   },
   products: {
     type: Object,
