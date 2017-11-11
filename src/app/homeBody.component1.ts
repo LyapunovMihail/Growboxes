@@ -106,11 +106,9 @@ export class HomeBodyComponent1 {
           this.personalData.name = ""
           this.personalData.email = ""
           this.personalData.telephone = ""
-          this.toastr.success('Ваша заявка принята!');
-          /*this.toastr.error('При отправке заявки произошла ошибка', 'Ошибка')*/});
+          this.toastr.error('При отправке заявки произошла ошибка', 'Ошибка')});
       }, err => {
-         /*this.toastr.error('Товар не был добавлен в корзину', 'Ошибка');*/
-         this.toastr.success('Ваша заявка принята!');
+         this.toastr.error('Товар не был добавлен в корзину', 'Ошибка');
       });
 	}
 
