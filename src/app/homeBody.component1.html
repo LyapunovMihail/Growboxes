@@ -110,7 +110,7 @@
 							</div>
 							<div class="form-group col-lg-2">
 							  <label style="visibility: hidden" for="submitButton" *ngIf="showLabelSubmitButton">заказать</label>
-						      <button (click)="purchaseProduct({productId: products[1]._id, number: 1}); yandexCounter.reachGoal('order')" [disabled]="myName.invalid || myEmail.invalid || myTel.invalid" type="submit" class="btn btn-primary" role="button" id="submitButton" style="padding: 7px 30px">Заказать</button>
+						      <button (click)="purchaseProduct({productId: products[1]._id, number: 1})" [disabled]="myName.invalid || myEmail.invalid || myTel.invalid" type="submit" class="btn btn-primary" role="button" id="submitButton" style="padding: 7px 30px">Заказать</button>
 						    </div>	 
 						</div>
 					</form>
