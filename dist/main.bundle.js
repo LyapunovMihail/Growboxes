@@ -124,12 +124,13 @@ AppModule = __decorate([
             __WEBPACK_IMPORTED_MODULE_12__angular_router__["a" /* RouterModule */].forRoot([
                 {
                     path: '',
+                    redirectTo: '/home',
+                    pathMatch: 'full'
+                },
+                {
+                    path: 'home',
                     component: __WEBPACK_IMPORTED_MODULE_7__homeBody_component__["a" /* HomeBodyComponent */]
                 },
-                /*{
-                     path: 'home',
-                     component: HomeBodyComponent
-                },*/
                 /*{
                      path: 'about_us',
                      component: AboutUsComponent
@@ -137,35 +138,7 @@ AppModule = __decorate([
                 {
                     path: 'contact',
                     component: __WEBPACK_IMPORTED_MODULE_10__contact_component__["a" /* ContactComponent */]
-                }
-                /*{
-                     path: 'products/:id',
-                     component: ProductsComponent
                 },
-                {
-                     path: 'product_summary',
-                     component: ProductSummaryComponent
-                },
-                {
-                     path: 'checkout',
-                     component: CheckoutComponent
-                },
-                {
-                     path: 'product_details/:id',
-                     component: ProductDetailsComponent
-                },*/
-                /*{
-                     path: 'login',
-                     component: LoginComponent
-                },
-                {
-                     path: 'register',
-                     component: RegisterComponent
-                },
-                {
-                     path: 'save_product',
-                     component: SaveProductComponent
-                }*/
             ])
         ],
         declarations: [
@@ -1424,7 +1397,7 @@ FooterComponent = __decorate([
 /***/ "../../../../../src/app/homeBody.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<!--<shop-header></shop-header>-->\r\n<shop-home-body1></shop-home-body1>\r\n<shop-home-body2></shop-home-body2>"
+module.exports = "<!-- Yandex.Metrika counter -->\r\n    <script type=\"text/javascript\" >\r\n        (function (d, w, c) {\r\n            (w[c] = w[c] || []).push(function() {\r\n                try {\r\n                    w.yaCounter45551829 = new Ya.Metrika({\r\n                        id:45551829,\r\n                        clickmap:true,\r\n                        trackLinks:true,\r\n                        accurateTrackBounce:true,\r\n                        webvisor:true\r\n                    });\r\n                } catch(e) { }\r\n            });\r\n\r\n            var n = d.getElementsByTagName(\"script\")[0],\r\n                s = d.createElement(\"script\"),\r\n                f = function () { n.parentNode.insertBefore(s, n); };\r\n            s.type = \"text/javascript\";\r\n            s.async = true;\r\n            s.src = \"https://mc.yandex.ru/metrika/watch.js\";\r\n\r\n            if (w.opera == \"[object Opera]\") {\r\n                d.addEventListener(\"DOMContentLoaded\", f, false);\r\n            } else { f(); }\r\n        })(document, window, \"yandex_metrika_callbacks\");\r\n    </script>\r\n    <noscript><div><img src=\"https://mc.yandex.ru/watch/45551829\" style=\"position:absolute; left:-9999px;\" alt=\"\" /></div></noscript>\r\n<!-- /Yandex.Metrika counter -->\r\n\r\n<!--<shop-header></shop-header>-->\r\n<shop-home-body1></shop-home-body1>\r\n<shop-home-body2></shop-home-body2>"
 
 /***/ }),
 
