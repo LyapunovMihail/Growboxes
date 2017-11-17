@@ -41,8 +41,8 @@ import { HttpModule }    from '@angular/http';
 	ToastModule.forRoot(),
 	RouterModule.forRoot([
 	   {
-        path: '',
-        component: HomeBodyComponent
+	        path: '',
+	        component: HomeBodyComponent
        },
 	   /*{
 	        path: 'home',

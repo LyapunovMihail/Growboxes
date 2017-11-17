@@ -1,6 +1,7 @@
 var checkAuth = require('../middleware/checkAuth');
 
 module.exports = function(app) {
+	app.get('growboxes.ru', require('./frontpage').get);
 	app.get('/', require('./frontpage').get);
 	app.get('/home', require('./frontpage').get);
 	app.get('/special_offer', require('./frontpage').get);
