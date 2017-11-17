@@ -9,6 +9,7 @@ import { NgModel } from '@angular/forms';
 import { ProductService } from './product.service';
 import { ToastsManager} from './assets/ng2-toastr/ng2-toastr';
 declare var $:any;
+declare var yaCounter45551829:any;
 
 @Component({
   selector: 'shop-home-body1',
@@ -36,6 +37,8 @@ export class HomeBodyComponent1 {
   orderData: any;
   showLabelSubmitButton: boolean;
 
+  yandexCounter: any;
+
   /*@ViewChild('myName') 
   myName: NgModel;
   @ViewChild('myEmail') 
@@ -50,8 +53,7 @@ export class HomeBodyComponent1 {
       this.showLabelSubmitButton = true
     }
     
-    
-
+    this.yandexCounter = yaCounter45551829
 		this.getCategoryProducts()
 
     $(".fancybox-thumb").fancybox({
