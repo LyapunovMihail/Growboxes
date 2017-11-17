@@ -41,14 +41,13 @@ import { HttpModule }    from '@angular/http';
 	ToastModule.forRoot(),
 	RouterModule.forRoot([
 	   {
-        path: '',
-        redirectTo: '/home',
-        pathMatch: 'full'
+	        path: '',
+	        component: HomeBodyComponent
        },
-	   {
+	   /*{
 	        path: 'home',
 	        component: HomeBodyComponent
-	   },
+	   },*/
 	   /*{
 	        path: 'about_us',
 	        component: AboutUsComponent
@@ -56,7 +55,7 @@ import { HttpModule }    from '@angular/http';
 	   {
 	        path: 'contact',
 	        component: ContactComponent
-	   },
+	   }
 	   /*{
 	        path: 'products/:id',
 	        component: ProductsComponent
