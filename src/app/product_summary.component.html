@@ -1,7 +1,7 @@
 <div class="buyPagesContainer" *ngIf="productsInBucket">
 
 	<ul class="breadcrumb">
-		<li><a routerLink="/home">Главная</a> <span class="divider">/</span></li>
+		<li><a routerLink="/">Главная</a> <span class="divider">/</span></li>
 		<li class="active">Корзина покупок</li>
     </ul>
 
@@ -75,7 +75,7 @@
 				<div *ngIf="productsInBucket.length == 0">
 					<h5>Корзина пуста!</h5>
 					<p class="buttons center" style="margin-top: 15px">				
-						<button class="btn btn-large colorButton pull-right" type="submit" id="checkout" routerLink="/home">Продолжить</button>
+						<button class="btn btn-large colorButton pull-right" type="submit" id="checkout" routerLink="/">Продолжить</button>
 					</p>
 				</div>				
 			</div>
