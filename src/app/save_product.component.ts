@@ -41,11 +41,13 @@ export class SaveProductComponent implements OnInit{
         .saveProduct(data)
         .then(product => {
           this.toastr.success('Товар добавлен в базу данных')
-        }, err => {console.log("httpError: ", err);
-          if (data.name == '' || data.category == '' || data.description == '' || data.price == '')
-            this.toastr.error('Не введены имя, категория, описание или цена', 'Ошибка добавления')
-          else
-            this.toastr.error('Этот товар уже в базе', 'Ошибка добавления')} );
+        }, err => {
+        		console.log("httpError: ", err);
+	          if (data.name == '' || data.category == '' || data.description == '' || data.price == '')
+	            this.toastr.error('Не введены имя, категория, описание или цена', 'Ошибка добавления')
+	          else
+	            this.toastr.error('Этот товар уже в базе', 'Ошибка добавления')
+        	} );
   }
 
   updateProduct(data): void {
@@ -65,7 +67,7 @@ export class SaveProductComponent implements OnInit{
           if (response.product.n == 0) {
             this.toastr.error('Товар не найден', 'Ошибка удаления');
           } else {
-            this.toastr.success('Товар удалён'+response.message);
+            this.toastr.success('Товар удалён '+response.message);
           }
 
           this.getProducts()
@@ -78,8 +80,8 @@ export class SaveProductComponent implements OnInit{
     this.productService
       .getProducts()
       .then(products => {
-              this.products = products},
-            err => console.log("httpError: ", err) );
+              this.products = products
+            }, err => console.log("httpError: ", err) );
   }
   changeView() {
     if (this.view.currentView == 'editProducts') {
