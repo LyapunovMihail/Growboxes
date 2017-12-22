@@ -15,7 +15,6 @@ var HttpError = require('./error/index').HttpError;
 var port = process.env.PORT || config.get('port');
 
 
-
 var app = express();
 app.use(compression());
 
@@ -39,19 +38,13 @@ app.use(express.session({
 	store: sessionStore
 }));
 
-/*app.use(function(req, res, next) {
-	req.session.numberOfVisits = req.session.numberOfVisits + 1 || 1;
-	res.send("Visits: " + req.session.numberOfVisits);
-});*/
-
 app.use(require('./middleware/sendHttpError'));
-//app.use(require('./middleware/loadUser'));
+
 
 app.use(app.router);
 require('./routes')(app);
 
 app.use(express.static(path.join(__dirname, '/dist')));
-
 
 app.use(function(err,req,res, next) {
 	//Node_ENV = 'production';
@@ -69,7 +62,6 @@ app.use(function(err,req,res, next) {
 			log.error(err);
 			err = new HttpError(500);
 			res.sendHttpError(err);
-
 		}
 	}
 });
@@ -79,5 +71,3 @@ server.listen(port, function(){
   console.log('Express server listening on port ' + port);
 });
 
-//var io = require('./socket/index')(server);
-//app.set('io', io);
