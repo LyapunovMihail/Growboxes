@@ -7,8 +7,8 @@ const nodemailer = require('nodemailer');
 exports.postOrderData = function(req, res, next) {
 	var orderData = req.body.orderData;
 	
-	if (orderData.personalData.email == "" || orderData.personalData.name == "" ||
-		orderData.personalData.telephone == "") {
+	if (orderData.personalData.city == "" || orderData.personalData.index == "" ||
+		orderData.personalData.adress == "") {
 		next(new HttpError(403, "some of required fields are empty"));
 	}
 

@@ -1,6 +1,7 @@
 import { Component, OnInit} from '@angular/core';
 import { ProductService } from './product.service';
 import { REGIONS } from './regions';
+declare var yaCounter45551829:any;
 
 @Component({
   selector: 'shop-checkout',
@@ -26,10 +27,13 @@ export class CheckoutComponent implements OnInit{
   orderData: any;
   incorrectOrder = false;
   successedOrder = false;
+  yandexCounter: any;
 
   regions: String[];
+  
 	ngOnInit() {
     this.regions = REGIONS;
+    this.yandexCounter = yaCounter45551829
 		this.getPurchasedProducts()
 	}
 

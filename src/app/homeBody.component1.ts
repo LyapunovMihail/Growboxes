@@ -1,15 +1,8 @@
-import "./assets/fancybox/source/jquery.fancybox.pack.js?v=2.1.6"
-import "./assets/fancybox/source/helpers/jquery.fancybox-buttons.js?v=1.0.5"
-import "./assets/fancybox/source/helpers/jquery.fancybox-media.js?v=1.0.6"
-import "./assets/fancybox/source/helpers/jquery.fancybox-thumbs.js?v=1.0.7"
-
 
 import { Component, OnInit, ViewContainerRef, ViewChild, ElementRef } from '@angular/core';
 import { NgModel } from '@angular/forms';
 import { ProductService } from './product.service';
 import { ToastsManager} from './assets/ng2-toastr/ng2-toastr';
-declare var $:any;
-declare var yaCounter45551829:any;
 
 @Component({
   selector: 'shop-home-body1',
@@ -29,15 +22,9 @@ export class HomeBodyComponent1 {
 	  public toastr: ToastsManager, vcr: ViewContainerRef
 	) {this.toastr.setRootViewContainerRef(vcr)}
 
-  showDescription: boolean = false
 	products: any
 	productsInBucket: any
-  personalData = {email: "", name: "", surname: "", patronymic: "", telephone: "",
-                  region: "", city: "", index: "", adress: ""};
-  orderData: any;
-  showLabelSubmitButton: boolean;
-
-  yandexCounter: any;
+ 
 
   /*@ViewChild('myName') 
   myName: NgModel;
@@ -47,39 +34,9 @@ export class HomeBodyComponent1 {
   myTel: NgModel;*/
 
 	ngOnInit() {
-    if (document.body.clientWidth < 1171) {
-      this.showLabelSubmitButton = false
-    } else {
-      this.showLabelSubmitButton = true
-    }
-    
-    this.yandexCounter = yaCounter45551829
 
 		this.getCategoryProducts()
 
-    $(".fancybox-thumb").fancybox({
-      prevEffect  : 'none',
-      nextEffect  : 'none',
-      helpers  : {
-        title  : {
-          type: 'outside'
-        },
-        thumbs  : {
-          width  : 50,
-          height  : 50
-        }
-      }
-    });
-
-    $(window).resize(
-      this.debounce(() => {    
-        if (document.body.clientWidth < 1171) {
-          this.showLabelSubmitButton = false
-        } else {
-          this.showLabelSubmitButton = true
-        }
-      }, 50)  
-    );
 	}
 
 	getCategoryProducts() {
@@ -95,25 +52,13 @@ export class HomeBodyComponent1 {
     this.productService
       .purchaseProduct(product)
       .then(products => {
-        this.orderData = {personalData: this.personalData,
-                          productsInBucket: products}
-        this.productService
-        .ordering(this.orderData)
-        .then(products => {
-          this.personalData.name = ""
-          this.personalData.email = ""
-          this.personalData.telephone = ""
-          this.toastr.success('Ваша заявка принята!');    
-        }, err => {
-          console.log("err: ", err);
-          this.personalData.name = ""
-          this.personalData.email = ""
-          this.personalData.telephone = ""
-          this.toastr.error('При отправке заявки произошла ошибка', 'Ошибка')});
+        this.productsInBucket = products
+        this.productService.onPurchased(this.productsInBucket.numberOfPurchasedProducts)
+        this.toastr.success('Товар добавлен в корзину');
       }, err => {
          this.toastr.error('Товар не был добавлен в корзину', 'Ошибка');
       });
-	}
+  }
 
   debounce(f, ms) {
     var state = null;
