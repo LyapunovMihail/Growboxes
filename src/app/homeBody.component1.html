@@ -1,15 +1,9 @@
 <section class="section" id="themes" *ngIf="products">
 	<div class="container">
-	
-		<!--<h2 class="text-center title">More Themes</h2>
-		<p class="lead text-center">
-			Huge thank you to all people who publish<br>
-			their photos at <a href="http://unsplash.com">Unsplash</a>, thank you guys!
-		</p>-->
 
 		<div class="row">
 			
-			<!--<div class="col-lg-4" [class.col-lg-offset-2]="i%2===0" *ngFor="let item of products; index as i">
+			<div class="col-lg-4" [class.col-lg-offset-2]="i%2===0" *ngFor="let item of products; index as i">
 				<h2 align="center">{{item.name}}</h2>
 				<div class="thumbnail">
 					<a routerLink="/product_details/{{item._id}}">	
@@ -26,98 +20,9 @@
 							<a routerLink="/product_details/{{item._id}}" class="btn btn-default" role="button">Подробнее</a>
 						</p>
 					</div>
-				</div>
-			</div>-->
-
-			<!--<div class="col-sm-8" [class.col-sm-offset-2]="true" *ngFor="let item of products; index as i">
-				<h2 align="center">{{item.name}}</h2>
-				<div class="thumbnail">
-					<a routerLink="/product_details/{{item._id}}">	
-						<img src="{{item.imgUrl}}" alt="{{item.name}}">
-					</a>
-					<div class="caption" style="text-align: center">
-						<h4><p>Размер: {{item.properties.size}}</p></h4>
-						<h4><p>Вес: {{item.properties.weight}}</p></h4>
-						<h4><p>Свет: {{item.properties.light}}</p></h4>
-						<h4><p>Вентиляция: {{item.properties.ventilation}}</p></h4>
-						<h4><p>Обшивка: {{item.properties.covering}}</p></h4>
-						<h4><p>Также в комплекте: {{item.properties.other}}</p></h4><br>
-						<p><a (click)="purchaseProduct({productId: item._id, number: 1})" 		class="btn btn-primary" role="button">Купить</a> 
-							<a routerLink="/product_details/{{item._id}}" class="btn btn-default" role="button">Подробнее</a>
-						</p>
-					</div>
-				</div>
-			</div>-->
-
-			<div class="col-sm-8 col-sm-offset-2">
-				<h2 align="center">Гроубокс системник</h2>
-				<div class="thumbnail">
-					<!--<a routerLink="/product_details/{{products[1]._id}}">	
-						<img src="{{products[1].imgUrl}}" alt="Гроубокс системник">
-					</a>-->
-					<div>
-						<a class="fancybox-thumb" rel="fancybox-thumb" href="{{products[1].imgUrl}}" title="Гроубокс системник. Модель 1">
-							<img src="{{products[1].imgUrl}}" alt="Гроубокс системник"/>
-						</a>
-						<div>	
-						   <a class="fancybox-thumb" rel="fancybox-thumb" href="{{products[1].imgUrl1}}" title="Гроубокс системник. Модель 1" *ngIf="products[1].imgUrl1"> <img width="0%" src="{{products[1].imgUrl1}}" alt=""/></a>
-						   <a class="fancybox-thumb" rel="fancybox-thumb" href="{{products[1].imgUrl2}}" title="Гроубокс системник. Модель 1" *ngIf="products[1].imgUrl2"> <img width="0%" src="{{products[1].imgUrl2}}" alt=""/></a>
-						</div>  
-				  </div>
-
-				  <br>
-
-					<div class="caption" style="text-align: center">
-						<h4><p>Размер: {{products[1].properties.size}}</p></h4>
-						<h4><p>Вес: {{products[1].properties.weight}}</p></h4>
-						<h4><p>Свет: {{products[1].properties.light}}</p></h4>
-						<h4><p>Вентиляция: {{products[1].properties.ventilation}}</p></h4>
-						<h4><p>Обшивка: {{products[1].properties.covering}}</p></h4>
-						<h4><p>Также в комплекте: {{products[1].properties.other}}</p></h4><br>
-						<div class="badgePrice" style="max-width: 116px; margin-left: auto;margin-right: auto; border-radius: 50%; background-color: green; color: white; opacity: 0.7; padding: 5px; font-size: 24px"><span><span style="text-decoration: line-through; text-decoration-color: red; opacity: 0.7">22000</span><br>15000<br><span style="opacity: 0.7; padding-left: 2px">руб.</span></span></div>
-
-						<p *ngIf="showDescription">
-							<br>
-							{{products[1].description}}
-						</p>
-						<br>
-
-						<p>
-							<a (click)="showDescription = !showDescription" class="btn btn-default" role="button">Подробнее</a>
-						</p>
-					</div>
-
-					<br>
-
-					<h3 class="text-center title">Купить гроубокс стелс за 15 000 вместо 22 000 руб! Оставь заявку и мы с тобой сразу же свяжемся</h3><br>
-
-					<form style="margin-left: 10px; margin-right: 10px">
-						<div class="row">
-							<div class="form-group col-lg-3">
-								<label for="inputName">Имя</label>
-								<input class="form-control" type="text" id="inputName" [(ngModel)]="personalData.name" [ngModelOptions]="{standalone: true}" #myName="ngModel" required>
-								<p style="color: red; margin-top: 10px;margin-left: 4px" *ngIf="myName.touched && myName.invalid">Введите ваше имя</p>
-							</div>
-							<div class="form-group col-lg-3">
-								<label for="inputEmail">Email</label>
-								<input class="form-control" type="email" id="inputEmail" [(ngModel)]="personalData.email" [ngModelOptions]="{standalone: true}" #myEmail="ngModel" required email>
-								<p style="color: red; margin-top: 10px;margin-left: 4px" *ngIf="myEmail.touched && myEmail.invalid">Некорректный email</p>
-							</div>
-							<div class="form-group col-lg-3">
-								<label for="inputTelephone">Телефон</label>
-								<input class="form-control" type="tel" id="inputTelephone" [(ngModel)]="personalData.telephone" [ngModelOptions]="{standalone: true}" #myTel="ngModel" required>
-								<p style="color: red; margin-top: 10px;margin-left: 4px" *ngIf="myTel.touched && myTel.invalid">Введите ваш телефон</p>
-							</div>
-							<div class="form-group col-lg-2">
-							  <label style="visibility: hidden" for="submitButton" *ngIf="showLabelSubmitButton">заказать</label>
-						      <button (click)="purchaseProduct({productId: products[1]._id, number: 1}); yandexCounter.reachGoal('order')" [disabled]="myName.invalid || myEmail.invalid || myTel.invalid" type="submit" class="btn btn-primary" role="button" id="submitButton" style="padding: 7px 30px">Заказать</button>
-						    </div>	 
-						</div>
-					</form>
-
 				</div>
 			</div>
-			
+
 		</div>
 	</div>
 </section>
