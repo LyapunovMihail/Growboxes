@@ -37,9 +37,9 @@ exports.sendMail = function(req, res, next) {
 
 	// send mail with defined transport object
 	transporter.sendMail(mailOptions, (error, info) => {
-	    if (error) {
-	        return console.log(error);
-	    }
+    if (error) {
+      return console.log(error);
+    }
 	});
 
 	res.send(true);

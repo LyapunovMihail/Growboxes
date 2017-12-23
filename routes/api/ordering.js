@@ -72,7 +72,14 @@ exports.postOrderData = function(req, res, next) {
 	    	<h3 style="font-size:15px">Персональные данные покупателя</h3>
 	    	<b>Email: ${orderData.personalData.email}</b> <br>
 	    	<b>Имя: ${orderData.personalData.name}</b> <br>
+	    	<b>Фамилия: ${orderData.personalData.surname}</b> <br>
+	    	<b>Отчество: ${orderData.personalData.patronymic}</b> <br>
 	    	<b>Телефон: ${orderData.personalData.telephone}</b> <br> <br>
+
+	    	<b>Регион: ${orderData.personalData.region}</b> <br>
+	    	<b>Город: ${orderData.personalData.city}</b> <br>
+	    	<b>Почтовый индекс: ${orderData.personalData.index}</b> <br>
+	    	<b>Адрес: ${orderData.personalData.adress}</b> <br>
 	    `
 	};
 
@@ -83,10 +90,11 @@ exports.postOrderData = function(req, res, next) {
 	    }
 	});
 
-	req.session.products = {};
-	req.session.products.products = [];
-	req.session.products.sumPrice = 0;
-	req.session.products.numberOfPurchasedProducts = 0;
+	req.session.products = {
+		products: [],
+		sumPrice: 0,
+		numberOfPurchasedProducts: 0
+	};
 
 	res.send(req.session.products);
 	

@@ -38,16 +38,16 @@ export class SaveProductComponent implements OnInit{
 
 	saveProduct(data): void {
     this.productService
-        .saveProduct(data)
-        .then(product => {
-          this.toastr.success('Товар добавлен в базу данных')
-        }, err => {
-        		console.log("httpError: ", err);
-	          if (data.name == '' || data.category == '' || data.description == '' || data.price == '')
-	            this.toastr.error('Не введены имя, категория, описание или цена', 'Ошибка добавления')
-	          else
-	            this.toastr.error('Этот товар уже в базе', 'Ошибка добавления')
-        	} );
+      .saveProduct(data)
+      .then(product => {
+        this.toastr.success('Товар добавлен в базу данных')
+      }, err => {
+      		console.log("httpError: ", err);
+          if (data.name == '' || data.category == '' || data.description == '' || data.price == '')
+            this.toastr.error('Не введены имя, категория, описание или цена', 'Ошибка добавления')
+          else
+            this.toastr.error('Этот товар уже в базе', 'Ошибка добавления')
+      	} );
   }
 
   updateProduct(data): void {
@@ -80,8 +80,8 @@ export class SaveProductComponent implements OnInit{
     this.productService
       .getProducts()
       .then(products => {
-              this.products = products
-            }, err => console.log("httpError: ", err) );
+        this.products = products
+      }, err => console.log("httpError: ", err) );
   }
   changeView() {
     if (this.view.currentView == 'editProducts') {
@@ -101,9 +101,9 @@ export class SaveProductComponent implements OnInit{
     this.productService
       .getAccessToProductsManagement(this.passwordToAccess)
       .then(result => {
-                        this.access.access = result.access
-                        this.access.passwordChecked = true
-                      }, err => console.log("httpError: ", err) );
+        this.access.access = result.access
+        this.access.passwordChecked = true
+      }, err => console.log("httpError: ", err) );
   }
 
   appearanceOfErrorPassword() {
