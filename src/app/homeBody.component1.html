@@ -16,7 +16,7 @@
 						<h4><p>Вентиляция: {{item.properties.ventilation}}</p></h4>
 						<h4><p>Обшивка: {{item.properties.covering}}</p></h4>
 						<h4><p>Также в комплекте: {{item.properties.other}}</p></h4><br>
-						<p><a (click)="purchaseProduct({productId: item._id, number: 1})" 		class="btn btn-primary" role="button">Купить</a> 
+						<p><a (click)="purchaseProduct({productId: item._id, number: 1})" class="btn btn-primary" role="button">Купить</a> 
 							<a routerLink="/product_details/{{item._id}}" class="btn btn-default" role="button">Подробнее</a>
 						</p>
 					</div>

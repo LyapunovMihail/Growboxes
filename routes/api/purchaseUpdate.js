@@ -1,5 +1,4 @@
 var HttpError = require('../../error/index').HttpError;
-var async = require('async');
 var deleteOrUpdateSessionProducts = require('./helpMethods/forPurchaseUpdate/deleteOrUpdateSessionProducts').deleteOrUpdateSessionProducts
 
 exports.update = function(req, res, next) {

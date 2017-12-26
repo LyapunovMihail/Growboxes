@@ -1,6 +1,5 @@
 var Product = require('../../models/product').Product;
 var HttpError = require('../../error/index').HttpError;
-var async = require('async');
 var config = require('../../config');
 var deleteDeletedProductFromSession = require('./helpMethods/forProducts/deleteDeletedProductFromSession').deleteDeletedProductFromSession
 var sortProducts = require('./helpMethods/forProducts/sortProducts').sortProducts

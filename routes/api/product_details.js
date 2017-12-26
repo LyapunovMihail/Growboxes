@@ -1,6 +1,5 @@
 var Product = require('../../models/product').Product;
 var HttpError = require('../../error/index').HttpError;
-var async = require('async');
 
 exports.getProductDetails = function(req, res, next) {
 	var productId = req.body.productId;
